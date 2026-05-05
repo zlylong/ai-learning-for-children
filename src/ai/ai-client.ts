@@ -27,6 +27,10 @@ export type GenerateJsonInput = {
   prompt: string;
   subject?: string;
   rawText?: string;
+  knowledgePointTitle?: string;
+  questionCount?: number;
+  difficulty?: 'easy' | 'medium' | 'hard';
+  questionType?: 'single_choice' | 'fill_blank' | 'short_answer';
 };
 
 export const aiClient = {
@@ -38,6 +42,10 @@ export async function generateJson(input: GenerateJsonInput): Promise<unknown> {
 }
 
 async function mockGenerateJson(input: GenerateJsonInput): Promise<unknown> {
+  if (input.knowledgePointTitle || input.prompt.includes('练习题')) {
+    return mockGeneratePracticeQuestionsJson(input);
+  }
+
   const rawText = input.rawText ?? input.prompt;
   if (rawText.includes('INVALID_AI_OUTPUT')) {
     return { wrongQuestions: [{ questionText: '缺少必要字段' }] };
@@ -61,6 +69,45 @@ async function mockGenerateJson(input: GenerateJsonInput): Promise<unknown> {
         knowledgePoints: [{ title: '阅读理解-内容概括', confidence: 0.86 }],
       },
     ],
+  };
+}
+
+function mockGeneratePracticeQuestionsJson(input: GenerateJsonInput): unknown {
+  const knowledgePointTitle = input.knowledgePointTitle ?? '两位数加法进位';
+  if (knowledgePointTitle.includes('INVALID_AI_OUTPUT') || input.prompt.includes('INVALID_AI_OUTPUT')) {
+    return { questions: [{ questionText: '缺少答案', questionType: 'single_choice', options: ['A', 'B'] }] };
+  }
+
+  const count = Math.min(10, Math.max(1, input.questionCount ?? 5));
+  const difficulty = input.difficulty ?? 'medium';
+  const questionType = input.questionType ?? 'single_choice';
+  const baseNumber = difficulty === 'easy' ? 20 : difficulty === 'medium' ? 40 : 70;
+  return {
+    questions: Array.from({ length: count }, (_, index) => {
+      const left = baseNumber + index + 6;
+      const right = difficulty === 'hard' ? 28 + index : 17 + index;
+      const answer = String(left + right);
+      if (questionType === 'single_choice') {
+        return {
+          questionText: `${knowledgePointTitle}：${left} + ${right} = ?`,
+          questionType,
+          options: [String(left + right - 1), answer, String(left + right + 2), String(left + right + 10)],
+          answer,
+          explanation: `个位相加满十向十位进 1，正确答案是 ${answer}。`,
+          knowledgePointTitle,
+          difficulty,
+        };
+      }
+      return {
+        questionText: questionType === 'fill_blank' ? `${knowledgePointTitle}：${left} + ${right} = ____` : `请说明 ${left} + ${right} 的计算过程。`,
+        questionType,
+        options: [],
+        answer,
+        explanation: `拆分计算：${left} + ${right} = ${answer}，注意进位。`,
+        knowledgePointTitle,
+        difficulty,
+      };
+    }),
   };
 }
 

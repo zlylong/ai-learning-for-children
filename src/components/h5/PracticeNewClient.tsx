@@ -6,24 +6,30 @@ import { Button, ErrorBlock, List, Popup, Radio, Segmented, Selector, Stepper, T
 import { FixedActionBar } from './FixedActionBar';
 import type { PracticeDifficulty, PracticeQuestionType, PracticeSessionRecord } from '@/features/practice/schema';
 
-const knowledgePoints = ['两位数加法进位', '阅读理解-内容概括', '乘法口诀应用', '应用题数量关系', '图形周长计算'];
+const knowledgePoints = [
+  { id: 'kp-carry-addition', title: '两位数加法进位' },
+  { id: 'kp-reading-summary', title: '阅读理解-内容概括' },
+  { id: 'kp-multiplication', title: '乘法口诀应用' },
+  { id: 'kp-word-problem', title: '应用题数量关系' },
+  { id: 'kp-perimeter', title: '图形周长计算' },
+];
 const difficultyOptions = [
-  { label: '基础', value: 'EASY' },
-  { label: '标准', value: 'MEDIUM' },
-  { label: '挑战', value: 'HARD' },
+  { label: '基础', value: 'easy' },
+  { label: '标准', value: 'medium' },
+  { label: '挑战', value: 'hard' },
 ];
 const typeOptions: { label: string; value: PracticeQuestionType }[] = [
-  { label: '选择题', value: 'CHOICE' },
-  { label: '填空题', value: 'FILL_BLANK' },
-  { label: '判断题', value: 'JUDGEMENT' },
+  { label: '选择题', value: 'single_choice' },
+  { label: '填空题', value: 'fill_blank' },
+  { label: '简答题', value: 'short_answer' },
 ];
 
 export function PracticeNewClient({ childId }: { childId: string }) {
   const router = useRouter();
-  const [knowledgePoint, setKnowledgePoint] = useState(knowledgePoints[0]);
+  const [knowledgePointId, setKnowledgePointId] = useState(knowledgePoints[0].id);
   const [questionCount, setQuestionCount] = useState(5);
-  const [difficulty, setDifficulty] = useState<PracticeDifficulty>('MEDIUM');
-  const [questionType, setQuestionType] = useState<PracticeQuestionType>('CHOICE');
+  const [difficulty, setDifficulty] = useState<PracticeDifficulty>('medium');
+  const [questionType, setQuestionType] = useState<PracticeQuestionType>('single_choice');
   const [pickerVisible, setPickerVisible] = useState(false);
   const [submitting, setSubmitting] = useState(false);
 
@@ -33,12 +39,12 @@ export function PracticeNewClient({ childId }: { childId: string }) {
       const response = await fetch('/api/practice-sessions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ childId, knowledgePoint, questionCount, difficulty, questionType }),
+        body: JSON.stringify({ childId, knowledgePointId, questionCount, difficulty, questionType }),
       });
-      const data = (await response.json()) as { session?: PracticeSessionRecord; error?: string };
-      if (!response.ok || !data.session) throw new Error(data.error ?? '创建练习失败');
+      const data = (await response.json()) as { sessionId?: string; session?: PracticeSessionRecord; error?: string };
+      if (!response.ok || !data.sessionId) throw new Error(data.error ?? '创建练习失败');
       Toast.show({ icon: 'success', content: '练习已生成' });
-      router.push(`/h5/practice-sessions/${data.session.id}`);
+      router.push(`/h5/practice-sessions/${data.sessionId}`);
     } catch (error) {
       Toast.show({ icon: 'fail', content: error instanceof Error ? error.message : '创建失败' });
     } finally {
@@ -58,7 +64,7 @@ export function PracticeNewClient({ childId }: { childId: string }) {
 
       <section className="rounded-3xl bg-white shadow-sm ring-1 ring-black/5">
         <List header="练习设置">
-          <List.Item extra={knowledgePoint} clickable onClick={() => setPickerVisible(true)}>知识点</List.Item>
+          <List.Item extra={knowledgePoints.find((item) => item.id === knowledgePointId)?.title ?? '请选择'} clickable onClick={() => setPickerVisible(true)}>知识点</List.Item>
           <List.Item extra={<Stepper min={1} max={10} value={questionCount} onChange={(value) => setQuestionCount(Number(value))} />}>题目数量</List.Item>
           <List.Item description="根据孩子当前掌握情况选择难度">
             <div className="mb-3 font-medium text-slate-900">难度</div>
@@ -70,7 +76,7 @@ export function PracticeNewClient({ childId }: { childId: string }) {
               columns={3}
               options={typeOptions}
               value={[questionType]}
-              onChange={(items) => setQuestionType((items[0] as PracticeQuestionType) ?? 'CHOICE')}
+              onChange={(items) => setQuestionType((items[0] as PracticeQuestionType) ?? 'single_choice')}
             />
           </List.Item>
         </List>
@@ -79,9 +85,9 @@ export function PracticeNewClient({ childId }: { childId: string }) {
       <Popup visible={pickerVisible} onMaskClick={() => setPickerVisible(false)} bodyStyle={{ borderTopLeftRadius: 24, borderTopRightRadius: 24 }}>
         <div className="mx-auto max-w-[480px] bg-white p-4 pb-[calc(24px+env(safe-area-inset-bottom))]">
           <div className="mb-3 text-lg font-bold text-slate-900">选择知识点</div>
-          <Radio.Group value={knowledgePoint} onChange={(value) => { setKnowledgePoint(String(value)); setPickerVisible(false); }}>
+          <Radio.Group value={knowledgePointId} onChange={(value) => { setKnowledgePointId(String(value)); setPickerVisible(false); }}>
             <List>
-              {knowledgePoints.map((item) => <List.Item key={item} prefix={<Radio value={item} />}>{item}</List.Item>)}
+              {knowledgePoints.map((item) => <List.Item key={item.id} prefix={<Radio value={item.id} />}>{item.title}</List.Item>)}
             </List>
           </Radio.Group>
         </div>

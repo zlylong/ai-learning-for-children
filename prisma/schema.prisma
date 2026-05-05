@@ -27,6 +27,10 @@ enum PracticeSessionStatus {
   CANCELLED
 }
 
+enum PracticeType {
+  KNOWLEDGE_POINT
+}
+
 model User {
   id        String   @id @default(cuid())
   phone     String?  @unique
@@ -191,6 +195,7 @@ model ChildKnowledgePoint {
 model PracticeSession {
   id                 String                @id @default(cuid())
   childId            String
+  type               PracticeType          @default(KNOWLEDGE_POINT)
   title              String
   status             PracticeSessionStatus @default(ACTIVE)
   knowledgePointText String?
@@ -215,11 +220,15 @@ model PracticeSession {
 model PracticeQuestion {
   id                 String   @id @default(cuid())
   practiceSessionId  String
+  sessionId          String?
   knowledgePointId   String?
   knowledgePointText String?
   order              Int      @default(0)
   questionText       String
+  questionType       String   @default("single_choice")
   options            Json?
+  answer             String   @default("")
+  explanation        String?
   answerText         String?
   analysis           String?
   userAnswer         String?

@@ -11,8 +11,8 @@ describe('practiceService', () => {
       childId: 'demo-child-1',
       knowledgePoint: '两位数加法进位',
       questionCount: 5,
-      difficulty: 'MEDIUM',
-      questionType: 'CHOICE',
+      difficulty: 'medium',
+      questionType: 'single_choice',
     });
 
     expect(session.status).toBe('ACTIVE');
@@ -30,8 +30,8 @@ describe('practiceService', () => {
       childId: 'demo-child-1',
       knowledgePoint: '两位数加法进位',
       questionCount: 3,
-      difficulty: 'EASY',
-      questionType: 'CHOICE',
+      difficulty: 'easy',
+      questionType: 'single_choice',
     });
 
     await expect(practiceService.submitSession(session.id, {
@@ -44,8 +44,8 @@ describe('practiceService', () => {
       childId: 'demo-child-1',
       knowledgePoint: '两位数加法进位',
       questionCount: 5,
-      difficulty: 'EASY',
-      questionType: 'FILL_BLANK',
+      difficulty: 'easy',
+      questionType: 'fill_blank',
     });
 
     const submitted = await practiceService.submitSession(session.id, {
