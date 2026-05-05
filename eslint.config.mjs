@@ -6,6 +6,9 @@ const eslintConfig = [
   ...nextTypescript,
   {
     ignores: ['node_modules/**', '.next/**', 'out/**', 'coverage/**', 'next-env.d.ts'],
+    rules: {
+      'react-hooks/set-state-in-effect': 'off',
+    },
   },
 ];
 

@@ -18,7 +18,28 @@
 - 页面容器最大宽度 `480px` 并居中。
 - 使用 `src/components/h5/AppShell.tsx` 作为 H5 外壳。
 - 底部导航使用 `src/components/h5/BottomTabBar.tsx`。
+- 固定主操作按钮使用 `src/components/h5/FixedActionBar.tsx`，避让底部 Tab 与 safe-area。
 - 使用卡片、列表、移动端表单，不做 PC 风格后台和复杂表格。
+
+## H5 孩子档案模块
+
+页面：
+
+- `/h5/children`：孩子卡片列表，支持下拉刷新、加载/错误/空状态。
+- `/h5/children/new`：新增孩子档案。
+- `/h5/children/[id]`：查看孩子档案详情，支持删除。
+- `/h5/children/[id]/edit`：编辑孩子档案。
+
+API：
+
+- `GET /api/children`
+- `POST /api/children`
+- `PATCH /api/children/[id]`
+- `DELETE /api/children/[id]`
+
+字段：`name`、`age`、`grade`、`province`、`city`、`textbookVersion`。表单校验由 Zod + React Hook Form 提供。
+
+说明：未配置 `DATABASE_URL` 或设置 `CHILDREN_STORE=memory` 时，孩子档案 API 会使用开发期内存存储，方便无 PostgreSQL 环境直接启动 H5；配置 PostgreSQL 后使用 Prisma 存储。
 
 ## 快速开始
 

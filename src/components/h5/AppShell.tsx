@@ -21,7 +21,7 @@ export function AppShell({
         </div>
       </header>
 
-      <main className="space-y-4 px-4 py-4 pb-24">{children}</main>
+      <main className="space-y-4 px-4 py-4 pb-36">{children}</main>
 
       <BottomTabBar activeKey={activeKey} />
     </div>
