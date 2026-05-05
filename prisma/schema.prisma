@@ -140,30 +140,40 @@ model WrongQuestion {
 }
 
 model ChildKnowledgePoint {
-  id               String   @id @default(cuid())
-  childId          String
-  knowledgePointId String
-  masteryScore     Float    @default(0)
-  lastPracticedAt  DateTime?
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+  id                 String   @id @default(cuid())
+  childId            String
+  knowledgePointId   String?
+  knowledgePointText String?
+  masteryScore       Float    @default(0)
+  lastPracticedAt    DateTime?
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
 
-  child          Child          @relation(fields: [childId], references: [id], onDelete: Cascade)
-  knowledgePoint KnowledgePoint @relation(fields: [knowledgePointId], references: [id], onDelete: Cascade)
+  child          Child           @relation(fields: [childId], references: [id], onDelete: Cascade)
+  knowledgePoint KnowledgePoint? @relation(fields: [knowledgePointId], references: [id], onDelete: Cascade)
 
   @@unique([childId, knowledgePointId])
+  @@unique([childId, knowledgePointText])
   @@index([knowledgePointId])
 }
 
 model PracticeSession {
-  id        String                @id @default(cuid())
-  childId   String
-  title     String
-  status    PracticeSessionStatus @default(ACTIVE)
-  startedAt DateTime              @default(now())
-  endedAt   DateTime?
-  createdAt DateTime              @default(now())
-  updatedAt DateTime              @updatedAt
+  id                 String                @id @default(cuid())
+  childId            String
+  title              String
+  status             PracticeSessionStatus @default(ACTIVE)
+  knowledgePointText String?
+  questionCount      Int                   @default(0)
+  difficulty         String?
+  questionType       String?
+  correctCount       Int?
+  accuracy           Int?
+  masteryBefore      String?
+  masteryAfter       String?
+  startedAt          DateTime              @default(now())
+  endedAt            DateTime?
+  createdAt          DateTime              @default(now())
+  updatedAt          DateTime              @updatedAt
 
   child     Child              @relation(fields: [childId], references: [id], onDelete: Cascade)
   questions PracticeQuestion[]
@@ -172,15 +182,19 @@ model PracticeSession {
 }
 
 model PracticeQuestion {
-  id                String   @id @default(cuid())
-  practiceSessionId String
-  knowledgePointId  String?
-  questionText      String
-  answerText        String?
-  userAnswer        String?
-  isCorrect         Boolean?
-  createdAt         DateTime @default(now())
-  updatedAt         DateTime @updatedAt
+  id                 String   @id @default(cuid())
+  practiceSessionId  String
+  knowledgePointId   String?
+  knowledgePointText String?
+  order              Int      @default(0)
+  questionText       String
+  options            Json?
+  answerText         String?
+  analysis           String?
+  userAnswer         String?
+  isCorrect          Boolean?
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
 
   practiceSession PracticeSession @relation(fields: [practiceSessionId], references: [id], onDelete: Cascade)
   knowledgePoint  KnowledgePoint? @relation(fields: [knowledgePointId], references: [id], onDelete: SetNull)

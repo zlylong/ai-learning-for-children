@@ -31,6 +31,9 @@
 - `/h5/children/[id]/edit`：编辑孩子档案。
 - `/h5/children/[id]/uploads`：粘贴试卷结果文本或上传图片（OCR mock），点击底部固定按钮开始分析。
 - `/h5/children/[id]/wrong-questions`：用移动端卡片展示错题题干、学生答案、正确答案、错误原因和关联知识点。
+- `/h5/children/[id]/practice/new`：知识点练习创建页，使用列表/弹窗选择知识点、Stepper 选择 1-10 题、Segmented 选择难度、Selector 选择题型。
+- `/h5/practice-sessions/[id]`：答题页，一屏展示一道题，底部固定“上一题 / 下一题 / 提交”按钮。
+- `/h5/practice-sessions/[id]/result`：结果页，用移动端卡片展示正确率、掌握状态变化和错题解析。
 
 API：
 
@@ -41,12 +44,17 @@ API：
 - `POST /api/exam-uploads`
 - `GET /api/exam-uploads?childId=`
 - `GET /api/wrong-questions?childId=`
+- `POST /api/practice-sessions`
+- `GET /api/practice-sessions/[id]`
+- `POST /api/practice-sessions/[id]/submit`
 
 字段：`name`、`age`、`grade`、`province`、`city`、`textbookVersion`。表单校验由 Zod + React Hook Form 提供。
 
 试卷分析通过 `src/ai/ai-client.ts` 调用 mock AI，AI 输出必须先通过 Zod schema 校验，校验或分析失败时不会写入上传记录和错题脏数据。
 
-说明：未配置 `DATABASE_URL` 或设置 `CHILDREN_STORE=memory` 时，孩子档案 API 会使用开发期内存存储，方便无 PostgreSQL 环境直接启动 H5；配置 PostgreSQL 后使用 Prisma 存储。
+知识点练习同样通过 `src/ai/ai-client.ts` 生成 mock 题目，并在写入练习 session 前完成 Zod 校验。提交后会保存每题 `userAnswer` 与 `isCorrect`，并按以下规则更新本次掌握状态：题数 >= 5 且正确率 >= 80% 为 `MASTERED`；正确率 >= 50% 且 < 80% 为 `PRACTICING`；正确率 < 50% 为 `WEAK`。
+
+说明：未配置 `DATABASE_URL` 或设置 `CHILDREN_STORE=memory` 时，孩子档案、试卷分析和知识点练习 API 会使用开发期内存存储，方便无 PostgreSQL 环境直接启动 H5；配置 PostgreSQL 后使用 Prisma 存储。
 
 ## 快速开始
 

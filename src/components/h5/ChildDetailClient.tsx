@@ -71,6 +71,10 @@ export function ChildDetailClient({ id }: { id: string }) {
           <div className="text-2xl">📝</div>
           <p className="mt-2 text-sm font-semibold text-slate-900">错题分析</p>
         </Link>
+        <Link href={`/h5/children/${child.id}/practice/new`} className="rounded-3xl bg-white p-4 text-center shadow-sm ring-1 ring-black/5">
+          <div className="text-2xl">🎯</div>
+          <p className="mt-2 text-sm font-semibold text-slate-900">知识点练习</p>
+        </Link>
       </section>
 
       <FixedActionBar>

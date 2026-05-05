@@ -53,3 +53,73 @@ async function mockAnalyzeExam(input: ExamAnalysisInput): Promise<unknown> {
     ],
   };
 }
+
+
+export const practiceDifficultySchema = z.enum(['EASY', 'MEDIUM', 'HARD']);
+export const practiceQuestionTypeSchema = z.enum(['CHOICE', 'FILL_BLANK', 'JUDGEMENT']);
+
+export const practiceGenerationInputSchema = z.object({
+  childId: z.string().min(1),
+  knowledgePoint: z.string().trim().min(1),
+  questionCount: z.number().int().min(1).max(10),
+  difficulty: practiceDifficultySchema,
+  questionType: practiceQuestionTypeSchema,
+});
+
+export const practiceQuestionAiSchema = z.object({
+  stem: z.string().trim().min(1),
+  options: z.array(z.string().trim().min(1)).max(6).optional().default([]),
+  answerText: z.string().trim().min(1),
+  analysis: z.string().trim().min(1),
+  knowledgePoint: z.string().trim().min(1),
+});
+
+export const practiceGenerationOutputSchema = z.object({
+  questions: z.array(practiceQuestionAiSchema).min(1).max(10),
+});
+
+export type PracticeGenerationInput = z.infer<typeof practiceGenerationInputSchema>;
+export type PracticeGenerationOutput = z.infer<typeof practiceGenerationOutputSchema>;
+export type PracticeQuestionAi = z.infer<typeof practiceQuestionAiSchema>;
+
+export async function generatePracticeWithAi(input: PracticeGenerationInput): Promise<PracticeGenerationOutput> {
+  const parsedInput = practiceGenerationInputSchema.parse(input);
+  const rawOutput = await mockGeneratePractice(parsedInput);
+  return practiceGenerationOutputSchema.parse(rawOutput);
+}
+
+async function mockGeneratePractice(input: PracticeGenerationInput): Promise<unknown> {
+  const baseNumber = input.difficulty === 'EASY' ? 20 : input.difficulty === 'MEDIUM' ? 40 : 70;
+  const questions = Array.from({ length: input.questionCount }, (_, index) => {
+    const left = baseNumber + index + 6;
+    const right = input.difficulty === 'HARD' ? 28 + index : 17 + index;
+    const answer = String(left + right);
+    if (input.questionType === 'JUDGEMENT') {
+      const displayed = index % 2 === 0 ? answer : String(left + right + 1);
+      return {
+        stem: `判断：${left} + ${right} = ${displayed}`,
+        options: ['正确', '错误'],
+        answerText: displayed === answer ? '正确' : '错误',
+        analysis: `先算个位再处理进位，${left} + ${right} = ${answer}。`,
+        knowledgePoint: input.knowledgePoint,
+      };
+    }
+    if (input.questionType === 'CHOICE') {
+      return {
+        stem: `${input.knowledgePoint} 练习：${left} + ${right} = ?`,
+        options: [String(left + right - 1), answer, String(left + right + 2), String(left + right + 10)],
+        answerText: answer,
+        analysis: `个位相加满十向十位进 1，正确答案是 ${answer}。`,
+        knowledgePoint: input.knowledgePoint,
+      };
+    }
+    return {
+      stem: `${input.knowledgePoint} 填空：${left} + ${right} = ____`,
+      options: [],
+      answerText: answer,
+      analysis: `拆分计算：${left} + ${right} = ${answer}，注意进位。`,
+      knowledgePoint: input.knowledgePoint,
+    };
+  });
+  return { questions };
+}

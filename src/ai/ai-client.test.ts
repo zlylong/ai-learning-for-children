@@ -1,5 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { examAnalysisOutputSchema, analyzeExamWithAi } from './ai-client';
+import {
+  analyzeExamWithAi,
+  generatePracticeWithAi,
+  examAnalysisOutputSchema,
+  practiceGenerationOutputSchema,
+} from './ai-client';
 
 describe('examAnalysisOutputSchema', () => {
   it('rejects incomplete AI wrong question output so dirty data is not persisted', () => {
@@ -25,6 +30,34 @@ describe('examAnalysisOutputSchema', () => {
       correctAnswer: expect.any(String),
       errorReason: expect.any(String),
       knowledgePoint: expect.any(String),
+    });
+  });
+});
+
+describe('practiceGenerationOutputSchema', () => {
+  it('rejects incomplete AI practice question output', () => {
+    const parsed = practiceGenerationOutputSchema.safeParse({
+      questions: [{ stem: '36 + 27 = ?', answerText: '63' }],
+    });
+
+    expect(parsed.success).toBe(false);
+  });
+
+  it('mock AI returns the requested number of validated practice questions', async () => {
+    const result = await generatePracticeWithAi({
+      childId: 'demo-child-1',
+      knowledgePoint: '两位数加法进位',
+      questionCount: 3,
+      difficulty: 'EASY',
+      questionType: 'CHOICE',
+    });
+
+    expect(result.questions).toHaveLength(3);
+    expect(result.questions[0]).toMatchObject({
+      stem: expect.any(String),
+      answerText: expect.any(String),
+      analysis: expect.any(String),
+      options: expect.any(Array),
     });
   });
 });
