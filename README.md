@@ -29,6 +29,8 @@
 - `/h5/children/new`：新增孩子档案。
 - `/h5/children/[id]`：查看孩子档案详情，支持删除。
 - `/h5/children/[id]/edit`：编辑孩子档案。
+- `/h5/children/[id]/uploads`：粘贴试卷结果文本或上传图片（OCR mock），点击底部固定按钮开始分析。
+- `/h5/children/[id]/wrong-questions`：用移动端卡片展示错题题干、学生答案、正确答案、错误原因和关联知识点。
 
 API：
 
@@ -36,8 +38,13 @@ API：
 - `POST /api/children`
 - `PATCH /api/children/[id]`
 - `DELETE /api/children/[id]`
+- `POST /api/exam-uploads`
+- `GET /api/exam-uploads?childId=`
+- `GET /api/wrong-questions?childId=`
 
 字段：`name`、`age`、`grade`、`province`、`city`、`textbookVersion`。表单校验由 Zod + React Hook Form 提供。
+
+试卷分析通过 `src/ai/ai-client.ts` 调用 mock AI，AI 输出必须先通过 Zod schema 校验，校验或分析失败时不会写入上传记录和错题脏数据。
 
 说明：未配置 `DATABASE_URL` 或设置 `CHILDREN_STORE=memory` 时，孩子档案 API 会使用开发期内存存储，方便无 PostgreSQL 环境直接启动 H5；配置 PostgreSQL 后使用 Prisma 存储。
 

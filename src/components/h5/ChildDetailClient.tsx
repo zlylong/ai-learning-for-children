@@ -62,6 +62,17 @@ export function ChildDetailClient({ id }: { id: string }) {
         <InfoRow label="更新时间" value={new Date(child.updatedAt).toLocaleString('zh-CN')} />
       </section>
 
+      <section className="grid grid-cols-2 gap-3">
+        <Link href={`/h5/children/${child.id}/uploads`} className="rounded-3xl bg-white p-4 text-center shadow-sm ring-1 ring-black/5">
+          <div className="text-2xl">📤</div>
+          <p className="mt-2 text-sm font-semibold text-slate-900">上传试卷</p>
+        </Link>
+        <Link href={`/h5/children/${child.id}/wrong-questions`} className="rounded-3xl bg-white p-4 text-center shadow-sm ring-1 ring-black/5">
+          <div className="text-2xl">📝</div>
+          <p className="mt-2 text-sm font-semibold text-slate-900">错题分析</p>
+        </Link>
+      </section>
+
       <FixedActionBar>
         <div className="grid grid-cols-[1fr_1fr] gap-3">
           <Button block color="danger" fill="outline" size="large" loading={deleting} onClick={deleteChild} className="!rounded-2xl">删除</Button>

@@ -102,6 +102,8 @@ model ExamUpload {
   childId     String
   title       String
   fileUrl     String?
+  rawText     String?
+  imageCount  Int              @default(0)
   status      ExamUploadStatus @default(PENDING)
   uploadedAt  DateTime         @default(now())
   processedAt DateTime?
@@ -115,15 +117,19 @@ model ExamUpload {
 }
 
 model WrongQuestion {
-  id               String   @id @default(cuid())
-  childId          String
-  examUploadId     String?
-  knowledgePointId String?
-  questionText     String
-  answerText       String?
-  analysis         String?
-  createdAt        DateTime @default(now())
-  updatedAt        DateTime @updatedAt
+  id                 String   @id @default(cuid())
+  childId            String
+  examUploadId       String?
+  knowledgePointId   String?
+  questionText       String
+  studentAnswer      String?
+  correctAnswer      String?
+  errorReason        String?
+  knowledgePointText String?
+  answerText         String?
+  analysis           String?
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
 
   child          Child           @relation(fields: [childId], references: [id], onDelete: Cascade)
   examUpload     ExamUpload?     @relation(fields: [examUploadId], references: [id], onDelete: SetNull)
