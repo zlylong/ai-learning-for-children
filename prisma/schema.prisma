@@ -10,8 +10,15 @@ datasource db {
 enum ExamUploadStatus {
   PENDING
   PROCESSING
-  COMPLETED
+  DONE
   FAILED
+}
+
+enum ChildKnowledgePointStatus {
+  UNKNOWN
+  WEAK
+  PRACTICING
+  MASTERED
 }
 
 enum PracticeSessionStatus {
@@ -91,6 +98,7 @@ model KnowledgePoint {
 
   chapter              Chapter               @relation(fields: [chapterId], references: [id], onDelete: Cascade)
   wrongQuestions       WrongQuestion[]
+  wrongQuestionLinks   WrongQuestionKnowledgePoint[]
   childKnowledgePoints ChildKnowledgePoint[]
   practiceQuestions    PracticeQuestion[]
 
@@ -100,11 +108,13 @@ model KnowledgePoint {
 model ExamUpload {
   id          String           @id @default(cuid())
   childId     String
+  subject     String           @default("数学")
   title       String
   fileUrl     String?
-  rawText     String?
+  rawText     String
   imageCount  Int              @default(0)
   status      ExamUploadStatus @default(PENDING)
+  resultJson  Json?
   uploadedAt  DateTime         @default(now())
   processedAt DateTime?
   createdAt   DateTime         @default(now())
@@ -121,33 +131,54 @@ model WrongQuestion {
   childId            String
   examUploadId       String?
   knowledgePointId   String?
+  subject            String   @default("数学")
   questionText       String
   studentAnswer      String?
+  userAnswer         String?
   correctAnswer      String?
   errorReason        String?
   knowledgePointText String?
   answerText         String?
   analysis           String?
+  source             String?
   createdAt          DateTime @default(now())
   updatedAt          DateTime @updatedAt
 
-  child          Child           @relation(fields: [childId], references: [id], onDelete: Cascade)
-  examUpload     ExamUpload?     @relation(fields: [examUploadId], references: [id], onDelete: SetNull)
-  knowledgePoint KnowledgePoint? @relation(fields: [knowledgePointId], references: [id], onDelete: SetNull)
+  child           Child                         @relation(fields: [childId], references: [id], onDelete: Cascade)
+  examUpload      ExamUpload?                   @relation(fields: [examUploadId], references: [id], onDelete: SetNull)
+  knowledgePoint  KnowledgePoint?               @relation(fields: [knowledgePointId], references: [id], onDelete: SetNull)
+  knowledgePoints WrongQuestionKnowledgePoint[]
 
   @@index([childId, createdAt])
   @@index([knowledgePointId])
 }
 
+model WrongQuestionKnowledgePoint {
+  id               String @id @default(cuid())
+  wrongQuestionId  String
+  knowledgePointId String
+  confidence       Float
+
+  wrongQuestion  WrongQuestion  @relation(fields: [wrongQuestionId], references: [id], onDelete: Cascade)
+  knowledgePoint KnowledgePoint @relation(fields: [knowledgePointId], references: [id], onDelete: Cascade)
+
+  @@unique([wrongQuestionId, knowledgePointId])
+  @@index([knowledgePointId])
+}
+
 model ChildKnowledgePoint {
-  id                 String   @id @default(cuid())
+  id                 String                    @id @default(cuid())
   childId            String
   knowledgePointId   String?
   knowledgePointText String?
-  masteryScore       Float    @default(0)
+  status             ChildKnowledgePointStatus @default(UNKNOWN)
+  masteryScore       Float                     @default(0)
+  wrongCount         Int                       @default(0)
+  practiceCount      Int                       @default(0)
+  correctCount       Int                       @default(0)
   lastPracticedAt    DateTime?
-  createdAt          DateTime @default(now())
-  updatedAt          DateTime @updatedAt
+  createdAt          DateTime                  @default(now())
+  updatedAt          DateTime                  @updatedAt
 
   child          Child           @relation(fields: [childId], references: [id], onDelete: Cascade)
   knowledgePoint KnowledgePoint? @relation(fields: [knowledgePointId], references: [id], onDelete: Cascade)

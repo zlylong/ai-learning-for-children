@@ -10,7 +10,7 @@ function shouldUseMemoryStore() {
 
 function uploadToRecord(upload: {
   id: string; childId: string; title: string; rawText: string | null; imageCount: number | null;
-  status: 'PENDING' | 'PROCESSING' | 'COMPLETED' | 'FAILED'; uploadedAt: Date; processedAt: Date | null; createdAt: Date; updatedAt: Date;
+  status: 'PENDING' | 'PROCESSING' | 'DONE' | 'FAILED'; uploadedAt: Date; processedAt: Date | null; createdAt: Date; updatedAt: Date;
 }): ExamUploadRecord {
   return {
     id: upload.id,
@@ -70,7 +70,7 @@ export const examService = {
             title: input.text.split(/\n+/).find(Boolean)?.slice(0, 24) || `图片试卷分析 ${input.imageCount} 张`,
             rawText: input.text,
             imageCount: input.imageCount,
-            status: 'COMPLETED',
+            status: 'DONE',
             processedAt: now,
           },
         });

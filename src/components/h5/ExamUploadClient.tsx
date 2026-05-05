@@ -3,43 +3,71 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Button, ImageUploader, TextArea, Toast } from 'antd-mobile';
+import { Button, ImageUploader, Selector, TextArea, Toast } from 'antd-mobile';
 import type { ImageUploadItem } from 'antd-mobile/es/components/image-uploader';
 import { Controller, useForm } from 'react-hook-form';
-import { examUploadFormSchema, type ExamUploadFormValues } from '@/features/exams/schema';
+import { examUploadFormSchema, type ExamUploadFormValues } from '@/schemas/examUploadSchema';
 import { FixedActionBar } from './FixedActionBar';
+
+const subjectOptions = [
+  { label: '数学', value: '数学' },
+  { label: '语文', value: '语文' },
+  { label: '英语', value: '英语' },
+];
 
 export function ExamUploadClient({ childId }: { childId: string }) {
   const router = useRouter();
   const { control, handleSubmit, setValue, formState: { errors, isSubmitting } } = useForm<ExamUploadFormValues>({
     resolver: zodResolver(examUploadFormSchema),
-    defaultValues: { text: '', imageCount: 0 },
+    defaultValues: { subject: '数学', rawText: '', imageCount: 0 },
   });
 
   async function submit(values: ExamUploadFormValues) {
-    const response = await fetch('/api/exam-uploads', {
+    const rawText = values.rawText.trim() || `OCR mock：已收到 ${values.imageCount} 张试卷图片，请根据图片识别错题。`;
+    const createResponse = await fetch('/api/exam-uploads', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ childId, ...values }),
+      body: JSON.stringify({ childId, subject: values.subject, rawText }),
     });
-    if (!response.ok) {
-      const data = (await response.json().catch(() => null)) as { error?: string } | null;
-      throw new Error(data?.error ?? '分析失败');
-    }
+    const createData = (await createResponse.json().catch(() => null)) as { uploadId?: string; error?: string } | null;
+    if (!createResponse.ok || !createData?.uploadId) throw new Error(createData?.error ?? '上传失败');
+
+    const processResponse = await fetch(`/api/exam-uploads/${createData.uploadId}/process`, { method: 'POST' });
+    const processData = (await processResponse.json().catch(() => null)) as { error?: string } | null;
+    if (!processResponse.ok) throw new Error(processData?.error ?? '分析失败');
+
     Toast.show({ icon: 'success', content: '分析完成，已生成错题卡片' });
     router.replace(`/h5/children/${childId}/wrong-questions`);
     router.refresh();
   }
 
   return (
-    <form className="space-y-4 pb-24" onSubmit={handleSubmit((values) => submit(values).catch((error) => Toast.show({ icon: 'fail', content: error instanceof Error ? error.message : '分析失败' })))}>
+    <form className="space-y-4 pb-28" onSubmit={handleSubmit((values) => submit(values).catch((error) => Toast.show({ icon: 'fail', content: error instanceof Error ? error.message : '分析失败' })))}>
+      <section className="rounded-[28px] bg-white p-4 shadow-sm ring-1 ring-black/5">
+        <h2 className="text-lg font-bold text-slate-950">选择科目</h2>
+        <div className="mt-4">
+          <Controller
+            name="subject"
+            control={control}
+            render={({ field }) => (
+              <Selector
+                columns={3}
+                options={subjectOptions}
+                value={[field.value]}
+                onChange={(items) => field.onChange(String(items[0] ?? '数学'))}
+              />
+            )}
+          />
+        </div>
+      </section>
+
       <section className="rounded-[28px] bg-white p-4 shadow-sm ring-1 ring-black/5">
         <h2 className="text-lg font-bold text-slate-950">粘贴试卷结果文本</h2>
         <p className="mt-1 text-sm text-slate-500">支持从微信、钉钉、拍照识题等 APP 复制结果后直接粘贴。</p>
         <div className="mt-4 rounded-2xl bg-slate-50 p-3">
-          <Controller name="text" control={control} render={({ field }) => <TextArea placeholder="例如：题目：36+27=？ 学生答案：62 正确答案：63..." rows={8} maxLength={10000} showCount {...field} />} />
+          <Controller name="rawText" control={control} render={({ field }) => <TextArea placeholder="例如：题目：36+27=？ 学生答案：62 正确答案：63..." rows={8} maxLength={10000} showCount {...field} />} />
         </div>
-        {errors.text ? <p className="mt-2 text-xs text-red-500">{errors.text.message}</p> : null}
+        {errors.rawText ? <p className="mt-2 text-xs text-red-500">{errors.rawText.message}</p> : null}
       </section>
 
       <section className="rounded-[28px] bg-white p-4 shadow-sm ring-1 ring-black/5">

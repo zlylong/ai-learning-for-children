@@ -23,6 +23,47 @@ export type ExamAnalysisInput = z.infer<typeof examAnalysisInputSchema>;
 export type ExamAnalysisOutput = z.infer<typeof examAnalysisOutputSchema>;
 export type ExamWrongQuestion = z.infer<typeof examWrongQuestionSchema>;
 
+export type GenerateJsonInput = {
+  prompt: string;
+  subject?: string;
+  rawText?: string;
+};
+
+export const aiClient = {
+  generateJson,
+};
+
+export async function generateJson(input: GenerateJsonInput): Promise<unknown> {
+  return mockGenerateJson(input);
+}
+
+async function mockGenerateJson(input: GenerateJsonInput): Promise<unknown> {
+  const rawText = input.rawText ?? input.prompt;
+  if (rawText.includes('INVALID_AI_OUTPUT')) {
+    return { wrongQuestions: [{ questionText: '缺少必要字段' }] };
+  }
+
+  const firstLine = rawText.split(/\n+/).find(Boolean)?.slice(0, 80) ?? '计算：36 + 27 = ?';
+  return {
+    wrongQuestions: [
+      {
+        questionText: firstLine.includes('?') || firstLine.includes('？') ? firstLine : '计算：36 + 27 = ?',
+        userAnswer: '62',
+        correctAnswer: '63',
+        analysis: '进位计算遗漏，个位相加满十后需要向十位进 1。',
+        knowledgePoints: [{ title: '两位数加法进位', confidence: 0.92 }],
+      },
+      {
+        questionText: '阅读题：请概括短文主要内容。',
+        userAnswer: '写了小朋友去公园。',
+        correctAnswer: '应包含人物、地点、事件和结果四个要素。',
+        analysis: '概括信息不完整，缺少事件结果。',
+        knowledgePoints: [{ title: '阅读理解-内容概括', confidence: 0.86 }],
+      },
+    ],
+  };
+}
+
 export async function analyzeExamWithAi(input: ExamAnalysisInput): Promise<ExamAnalysisOutput> {
   const parsedInput = examAnalysisInputSchema.parse(input);
   const rawOutput = await mockAnalyzeExam(parsedInput);

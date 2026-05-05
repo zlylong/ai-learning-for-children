@@ -27,7 +27,7 @@ export type ExamUploadRecord = {
   title: string;
   rawText: string;
   imageCount: number;
-  status: 'PENDING' | 'PROCESSING' | 'COMPLETED' | 'FAILED';
+  status: 'PENDING' | 'PROCESSING' | 'DONE' | 'FAILED';
   uploadedAt: string;
   processedAt: string | null;
   createdAt: string;

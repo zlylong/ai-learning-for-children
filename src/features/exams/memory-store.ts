@@ -31,7 +31,7 @@ export const memoryExamStore = {
       title: input.rawText.split(/\n+/).find(Boolean)?.slice(0, 24) || `图片试卷分析 ${input.imageCount} 张`,
       rawText: input.rawText,
       imageCount: input.imageCount,
-      status: 'COMPLETED',
+      status: 'DONE',
       uploadedAt: now,
       processedAt: now,
       createdAt: now,

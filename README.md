@@ -43,6 +43,7 @@ API：
 - `DELETE /api/children/[id]`
 - `POST /api/exam-uploads`
 - `GET /api/exam-uploads?childId=`
+- `POST /api/exam-uploads/[id]/process`
 - `GET /api/wrong-questions?childId=`
 - `POST /api/practice-sessions`
 - `GET /api/practice-sessions/[id]`
@@ -50,7 +51,7 @@ API：
 
 字段：`name`、`age`、`grade`、`province`、`city`、`textbookVersion`。表单校验由 Zod + React Hook Form 提供。
 
-试卷分析通过 `src/ai/ai-client.ts` 调用 mock AI，AI 输出必须先通过 Zod schema 校验，校验或分析失败时不会写入上传记录和错题脏数据。
+试卷分析闭环：`POST /api/exam-uploads` 先创建 `PENDING` 上传记录；`POST /api/exam-uploads/[id]/process` 同步触发 mock AI 分析，输出必须通过 `src/schemas/analyzeWrongQuestionsSchema.ts` 的 Zod 校验后才会写入 `WrongQuestion`、`WrongQuestionKnowledgePoint` 并把关联 `ChildKnowledgePoint` 更新为 `WEAK`。AI 输出异常时上传记录置为 `FAILED`，不会写入错题和掌握状态脏数据。
 
 知识点练习同样通过 `src/ai/ai-client.ts` 生成 mock 题目，并在写入练习 session 前完成 Zod 校验。提交后会保存每题 `userAnswer` 与 `isCorrect`，并按以下规则更新本次掌握状态：题数 >= 5 且正确率 >= 80% 为 `MASTERED`；正确率 >= 50% 且 < 80% 为 `PRACTICING`；正确率 < 50% 为 `WEAK`。
 
@@ -85,6 +86,7 @@ Prisma schema 位于 `prisma/schema.prisma`，包含：
 - `KnowledgePoint`
 - `ExamUpload`
 - `WrongQuestion`
+- `WrongQuestionKnowledgePoint`
 - `ChildKnowledgePoint`
 - `PracticeSession`
 - `PracticeQuestion`
