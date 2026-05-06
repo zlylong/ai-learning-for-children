@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Button, Input, Selector, Switch, Toast } from 'antd-mobile';
 import type { AiSettingsPublic, AiProvider } from '@/features/settings/ai-settings-schema';
+import { DEFAULT_DEEPSEEK_MODEL, DEFAULT_OPENAI_BASE_URL } from '@/features/settings/ai-settings-schema';
 
 type FormState = {
   enabled: boolean;
@@ -10,6 +11,9 @@ type FormState = {
   baseUrl: string;
   model: string;
   models: {
+    text: string;
+    ocr: string;
+    audio: string;
     examAnalysis: string;
     practiceGeneration: string;
     monthlyExam: string;
@@ -22,9 +26,12 @@ type FormState = {
 const DEFAULT_FORM: FormState = {
   enabled: false,
   provider: 'mock',
-  baseUrl: '',
-  model: '',
+  baseUrl: DEFAULT_OPENAI_BASE_URL,
+  model: DEFAULT_DEEPSEEK_MODEL,
   models: {
+    text: DEFAULT_DEEPSEEK_MODEL,
+    ocr: '',
+    audio: '',
     examAnalysis: '',
     practiceGeneration: '',
     monthlyExam: '',
@@ -53,9 +60,12 @@ export function AiAdvancedSettingsClient() {
         setForm({
           enabled: next.enabled,
           provider: next.provider,
-          baseUrl: next.baseUrl ?? '',
-          model: next.model ?? '',
+          baseUrl: next.baseUrl ?? DEFAULT_OPENAI_BASE_URL,
+          model: next.model ?? DEFAULT_DEEPSEEK_MODEL,
           models: {
+            text: next.models?.text ?? next.model ?? DEFAULT_DEEPSEEK_MODEL,
+            ocr: next.models?.ocr ?? '',
+            audio: next.models?.audio ?? '',
             examAnalysis: next.models?.examAnalysis ?? '',
             practiceGeneration: next.models?.practiceGeneration ?? '',
             monthlyExam: next.models?.monthlyExam ?? '',
@@ -161,11 +171,11 @@ export function AiAdvancedSettingsClient() {
           />
         </div>
 
-        <Field label="Base URL" hint="例如：https://api.openai.com/v1 或兼容服务 /v1 地址">
+        <Field label="Base URL" hint="默认使用 DeepSeek 的 OpenAI-compatible base_url，也可替换为其他 /v1 兼容地址。">
           <Input
             clearable
             disabled={!isRealProvider}
-            placeholder="https://api.example.com/v1"
+            placeholder={DEFAULT_OPENAI_BASE_URL}
             value={form.baseUrl}
             onChange={(value) => setForm((current) => ({ ...current, baseUrl: value }))}
           />
@@ -175,7 +185,7 @@ export function AiAdvancedSettingsClient() {
           <Input
             clearable
             disabled={!isRealProvider}
-            placeholder="例如：gpt-4o-mini"
+            placeholder={DEFAULT_DEEPSEEK_MODEL}
             value={form.model}
             onChange={(value) => setForm((current) => ({ ...current, model: value }))}
           />
@@ -184,8 +194,35 @@ export function AiAdvancedSettingsClient() {
         <div className="space-y-3 rounded-2xl bg-indigo-50 p-3 ring-1 ring-indigo-100">
           <div>
             <h4 className="text-sm font-bold text-indigo-900">按业务需求拆分模型</h4>
-            <p className="mt-1 text-xs leading-5 text-indigo-700">可把错题分析、练习出题、月度卷分别接到不同模型；留空则回退到默认模型。</p>
+            <p className="mt-1 text-xs leading-5 text-indigo-700">可把文本、OCR、音频和具体业务分别接到不同模型；留空则回退到文本模型/默认模型。</p>
           </div>
+          <Field label="文本模型" hint="通用文本 JSON 生成兜底模型，默认 deepseek-chat。">
+            <Input
+              clearable
+              disabled={!isRealProvider}
+              placeholder={DEFAULT_DEEPSEEK_MODEL}
+              value={form.models.text}
+              onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, text: value } }))}
+            />
+          </Field>
+          <Field label="OCR 模型" hint="预留给图片试卷识别；留空时回退到文本模型。">
+            <Input
+              clearable
+              disabled={!isRealProvider}
+              placeholder="例如：gpt-4o / qwen-vl-plus"
+              value={form.models.ocr}
+              onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, ocr: value } }))}
+            />
+          </Field>
+          <Field label="音频模型" hint="预留给语音/音频输入识别或讲解；留空时回退到文本模型。">
+            <Input
+              clearable
+              disabled={!isRealProvider}
+              placeholder="例如：whisper-1 / gpt-4o-mini-transcribe"
+              value={form.models.audio}
+              onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, audio: value } }))}
+            />
+          </Field>
           <Field label="错题分析模型" hint="用于上传试卷后的错题识别、知识点匹配。">
             <Input
               clearable

@@ -121,7 +121,7 @@ npm run prisma:migrate   # 本地开发迁移
 
 - 默认使用 mock provider，保证无外部 API 时也能完成 H5 演示。
 - “我的 → 高级设置 · AI 对接”可配置 `mock` 或 `openai-compatible` provider。
-- OpenAI-compatible 支持按业务需求拆分模型：默认模型作为兜底，也可分别配置“错题分析模型”“练习出题模型”“月度卷模型”。后端通过 `GenerateJsonInput.task` 自动路由：`exam-analysis` 用于上传试卷错题分析，`practice-generation` 用于知识点练习题生成，`monthly-exam` 用于月度错题卷/复习卷生成。
+- OpenAI-compatible 支持按需求拆分模型：默认模型作为兜底，也可分别配置“文本模型”“OCR 模型”“音频模型”“错题分析模型”“练习出题模型”“月度卷模型”。后端通过 `GenerateJsonInput.task` 自动路由：`text` 为通用文本兜底，`ocr` 预留图片/OCR，`audio` 预留音频/语音，`exam-analysis` 用于上传试卷错题分析，`practice-generation` 用于知识点练习题生成，`monthly-exam` 用于月度错题卷/复习卷生成。默认模型为 `deepseek-chat`，默认 base_url 为 DeepSeek 的 OpenAI-compatible 地址 `https://api.deepseek.com/v1`。
 - OpenAI-compatible 模式调用 `{baseUrl}/chat/completions`，要求模型返回严格 JSON；后续仍由各业务 Zod schema 校验后才会写入数据。
 - AI 设置保存到服务器本地 `.data/ai-settings.json`，该目录已加入 `.gitignore`；API 只返回 `hasApiKey` 与脱敏 `apiKeyMask`，不会把完整 API Key 回传前端。
 - 生产环境建议把 API Key 迁移到 KMS/环境变量托管，避免长期明文落盘。

@@ -1,14 +1,21 @@
 import { mkdir, readFile, writeFile, chmod } from 'node:fs/promises';
 import path from 'node:path';
 import { z } from 'zod';
-import { aiSettingsSchema, aiSettingsUpdateSchema, type AiSettings, type AiSettingsPublic, type AiSettingsUpdate } from './ai-settings-schema';
+import { aiSettingsSchema, aiSettingsUpdateSchema, DEFAULT_DEEPSEEK_MODEL, DEFAULT_OPENAI_BASE_URL, type AiSettings, type AiSettingsPublic, type AiSettingsUpdate } from './ai-settings-schema';
 
 const DEFAULT_AI_SETTINGS: AiSettings = {
   enabled: false,
   provider: 'mock',
-  baseUrl: undefined,
-  model: undefined,
-  models: { examAnalysis: undefined, practiceGeneration: undefined, monthlyExam: undefined },
+  baseUrl: DEFAULT_OPENAI_BASE_URL,
+  model: DEFAULT_DEEPSEEK_MODEL,
+  models: {
+    text: DEFAULT_DEEPSEEK_MODEL,
+    ocr: undefined,
+    audio: undefined,
+    examAnalysis: undefined,
+    practiceGeneration: undefined,
+    monthlyExam: undefined,
+  },
   apiKey: undefined,
   timeoutMs: 30000,
 };
@@ -21,13 +28,24 @@ function maskApiKey(apiKey?: string): string | undefined {
   return `${apiKey.slice(0, 4)}••••${apiKey.slice(-4)}`;
 }
 
+function normalizeModels(settings: AiSettings): AiSettings['models'] {
+  return {
+    text: settings.models?.text ?? settings.model,
+    ocr: settings.models?.ocr,
+    audio: settings.models?.audio,
+    examAnalysis: settings.models?.examAnalysis,
+    practiceGeneration: settings.models?.practiceGeneration,
+    monthlyExam: settings.models?.monthlyExam,
+  };
+}
+
 function toPublicSettings(settings: AiSettings): AiSettingsPublic {
   return {
     enabled: settings.enabled,
     provider: settings.provider,
     baseUrl: settings.baseUrl,
     model: settings.model,
-    models: settings.models ?? {},
+    models: normalizeModels(settings),
     timeoutMs: settings.timeoutMs,
     hasApiKey: Boolean(settings.apiKey),
     apiKeyMask: maskApiKey(settings.apiKey),
@@ -73,7 +91,7 @@ export const aiSettingsService = {
       provider: parsed.provider,
       baseUrl: parsed.baseUrl,
       model: parsed.model,
-      models: parsed.models ?? {},
+      models: normalizeModels(parsed),
       timeoutMs: parsed.timeoutMs,
       apiKey: parsed.keepExistingApiKey ? current.apiKey : parsed.apiKey,
     };
@@ -86,8 +104,9 @@ export const aiSettingsService = {
       return { ok: true, provider: 'mock', message: 'Mock AI 可用：当前不会调用真实外部模型。' };
     }
 
-    if (!settings.baseUrl || !settings.model || !settings.apiKey) {
-      return { ok: false, provider: settings.provider, message: '请先填写 Base URL、模型名称和 API Key。' };
+    const hasAnyModel = Boolean(settings.model || settings.models.text || settings.models.ocr || settings.models.audio || settings.models.examAnalysis || settings.models.practiceGeneration || settings.models.monthlyExam);
+    if (!settings.baseUrl || !hasAnyModel || !settings.apiKey) {
+      return { ok: false, provider: settings.provider, message: '请先填写 Base URL、至少一个模型名称和 API Key。' };
     }
 
     const controller = new AbortController();
