@@ -1,10 +1,13 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Button, DotLoading, ErrorBlock, Input, Radio, Toast } from 'antd-mobile';
-import { FixedActionBar } from './FixedActionBar';
+import { Button, DotLoading, ErrorBlock, Toast, Dialog } from 'antd-mobile';
+import { LeftOutline, RightOutline, CheckOutline } from 'antd-mobile-icons';
 import type { PracticeSessionRecord } from '@/features/practice/schema';
+import { QuestionCard } from './QuestionCard';
+import { PracticeProgress } from './PracticeProgress';
+import { SafeAreaActionBar } from './SafeAreaActionBar';
 
 export function PracticeSessionClient({ sessionId }: { sessionId: string }) {
   const router = useRouter();
@@ -32,16 +35,21 @@ export function PracticeSessionClient({ sessionId }: { sessionId: string }) {
   useEffect(() => { void load(); }, [load]);
 
   const question = session?.questions[index];
-  const progressText = useMemo(() => session ? `${index + 1} / ${session.questions.length}` : '', [index, session]);
+  const total = session?.questions.length ?? 0;
 
   async function submit() {
     if (!session) return;
-    const missing = session.questions.find((item) => !answers[item.id]?.trim());
-    if (missing) {
-      Toast.show({ icon: 'fail', content: '请完成所有题目后再提交' });
-      setIndex(session.questions.findIndex((item) => item.id === missing.id));
-      return;
+    const missingCount = session.questions.filter((item) => !answers[item.id]?.trim()).length;
+    
+    if (missingCount > 0) {
+      const confirmed = await Dialog.confirm({
+        content: `还有 ${missingCount} 道题未完成，确认提交吗？`,
+        confirmText: '去完成',
+        cancelText: '直接提交',
+      });
+      if (confirmed) return;
     }
+
     setSubmitting(true);
     try {
       const response = await fetch(`/api/practice-sessions/${session.id}/submit`, {
@@ -51,7 +59,7 @@ export function PracticeSessionClient({ sessionId }: { sessionId: string }) {
       });
       const data = (await response.json()) as { session?: PracticeSessionRecord; error?: string };
       if (!response.ok || !data.session) throw new Error(data.error ?? '提交失败');
-      Toast.show({ icon: 'success', content: '已提交' });
+      Toast.show({ icon: 'success', content: '提交成功' });
       router.replace(`/h5/practice-sessions/${session.id}/result`);
     } catch (err) {
       Toast.show({ icon: 'fail', content: err instanceof Error ? err.message : '提交失败' });
@@ -60,55 +68,62 @@ export function PracticeSessionClient({ sessionId }: { sessionId: string }) {
     }
   }
 
-  if (loading) return <div className="rounded-3xl bg-white p-8 text-center text-slate-500 shadow-sm">加载练习 <DotLoading /></div>;
+  if (loading) return <div className="flex justify-center py-20"><DotLoading color="primary" /></div>;
   if (error || !session || !question) return <ErrorBlock status="empty" title="无法查看练习" description={error ?? '练习不存在'} />;
 
   return (
-    <div className="space-y-4 pb-28">
-      <section className="rounded-[28px] bg-white p-5 shadow-sm ring-1 ring-black/5">
-        <div className="flex items-center justify-between text-sm text-slate-500">
-          <span>{session.title || session.knowledgePoint}</span>
-          <span>{progressText}</span>
-        </div>
-        <div className="mt-3 h-2 overflow-hidden rounded-full bg-slate-100">
-          <div className="h-full rounded-full bg-blue-500" style={{ width: `${((index + 1) / session.questions.length) * 100}%` }} />
+    <div className="flex flex-col min-h-[calc(100vh-64px)] pb-32">
+      {/* 1. Progress Header */}
+      <section className="mb-6">
+        <PracticeProgress current={index + 1} total={total} />
+        <div className="mt-2 text-[10px] text-slate-400 font-medium">
+          {session.knowledgePoint} · {session.difficulty === 'hard' ? '困难' : session.difficulty === 'easy' ? '简单' : '中等'}
         </div>
       </section>
 
-      <section className="min-h-[360px] rounded-[32px] bg-white p-5 shadow-sm ring-1 ring-black/5">
-        <p className="text-sm font-semibold text-blue-600">第 {index + 1} 题</p>
-        <h1 className="mt-4 text-xl font-bold leading-relaxed text-slate-950">{question.stem}</h1>
-        <div className="mt-8">
-          {question.options.length > 0 ? (
-            <Radio.Group value={answers[question.id] ?? ''} onChange={(value) => setAnswers((prev) => ({ ...prev, [question.id]: String(value) }))}>
-              <div className="space-y-3">
-                {question.options.map((option) => (
-                  <label key={option} className="flex items-center gap-3 rounded-2xl border border-slate-100 bg-slate-50 p-4 text-base font-medium text-slate-900">
-                    <Radio value={option} />
-                    <span>{option}</span>
-                  </label>
-                ))}
-              </div>
-            </Radio.Group>
+      {/* 2. Question Card */}
+      <section className="flex-1">
+        <QuestionCard 
+          content={question.stem}
+          type={question.questionType === 'single_choice' ? 'choice' : question.questionType === 'fill_blank' ? 'fill' : 'essay'}
+          options={question.options.map(opt => ({ label: opt, value: opt }))}
+          value={answers[question.id]}
+          onChange={(val: string) => setAnswers(prev => ({ ...prev, [question.id]: val }))}
+        />
+      </section>
+
+      {/* 3. Navigation Bar */}
+      <SafeAreaActionBar>
+        <div className="flex gap-3">
+          <Button 
+            fill="none" 
+            className="flex-1 !h-12 !rounded-2xl !bg-slate-100 !text-slate-600 !font-bold"
+            disabled={index === 0}
+            onClick={() => setIndex(i => i - 1)}
+          >
+            <LeftOutline /> 上一题
+          </Button>
+          
+          {index < total - 1 ? (
+             <Button 
+                color="primary" 
+                className="flex-[2] !h-12 !rounded-2xl !font-bold"
+                onClick={() => setIndex(i => i + 1)}
+              >
+                下一题 <RightOutline />
+              </Button>
           ) : (
-            <Input
-              clearable
-              placeholder="请输入答案"
-              value={answers[question.id] ?? ''}
-              onChange={(value) => setAnswers((prev) => ({ ...prev, [question.id]: value }))}
-              className="rounded-2xl bg-slate-50 px-4 py-3 text-lg"
-            />
+            <Button 
+              color="primary" 
+              className="flex-[2] !h-12 !rounded-2xl !font-bold"
+              loading={submitting}
+              onClick={submit}
+            >
+              <CheckOutline /> 提交练习
+            </Button>
           )}
         </div>
-      </section>
-
-      <FixedActionBar>
-        <div className="grid grid-cols-3 gap-2">
-          <Button block size="large" fill="outline" disabled={index === 0} className="!rounded-2xl" onClick={() => setIndex((value) => Math.max(0, value - 1))}>上一题</Button>
-          <Button block size="large" fill="outline" disabled={index >= session.questions.length - 1} className="!rounded-2xl" onClick={() => setIndex((value) => Math.min(session.questions.length - 1, value + 1))}>下一题</Button>
-          <Button block size="large" color="primary" loading={submitting} className="!rounded-2xl" onClick={submit}>提交</Button>
-        </div>
-      </FixedActionBar>
+      </SafeAreaActionBar>
     </div>
   );
 }

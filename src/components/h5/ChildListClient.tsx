@@ -1,16 +1,19 @@
 'use client';
 
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { Button, DotLoading, ErrorBlock, PullToRefresh } from 'antd-mobile';
+import { Button, DotLoading, ErrorBlock, PullToRefresh, Avatar } from 'antd-mobile';
+import { UserOutline, AddOutline } from 'antd-mobile-icons';
 import type { ChildProfile } from '@/features/children/schema';
-import { FixedActionBar } from './FixedActionBar';
+import { SafeAreaActionBar } from './SafeAreaActionBar';
 
 type ChildrenResponse = {
   children: ChildProfile[];
 };
 
-export function ChildListClient() {
+export function ChildListClient({ mode = 'list' }: { mode?: 'list' | 'select' }) {
+  const router = useRouter();
   const [children, setChildren] = useState<ChildProfile[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -27,8 +30,17 @@ export function ChildListClient() {
     loadChildren().catch((err: unknown) => setError(err instanceof Error ? err.message : '加载失败')).finally(() => setLoading(false));
   }, []);
 
+  const handleSelect = (id: string) => {
+    localStorage.setItem('selectedChildId', id);
+    if (mode === 'select') {
+      router.push('/h5');
+    } else {
+      router.push(`/h5/children/${id}`);
+    }
+  };
+
   if (loading) {
-    return <div className="rounded-3xl bg-white p-8 text-center text-slate-500 shadow-sm">加载孩子档案 <DotLoading /></div>;
+    return <div className="rounded-2xl bg-white p-8 text-center text-slate-500 shadow-sm">加载孩子档案 <DotLoading /></div>;
   }
 
   if (error) {
@@ -38,42 +50,50 @@ export function ChildListClient() {
   return (
     <>
       <PullToRefresh onRefresh={loadChildren}>
-        <div className="space-y-3 pb-24">
+        <div className="space-y-4 pb-24">
           {children.length === 0 ? (
-            <div className="rounded-3xl bg-white p-8 text-center shadow-sm ring-1 ring-black/5">
-              <div className="text-4xl">🧒</div>
-              <h2 className="mt-3 text-lg font-bold text-slate-950">还没有孩子档案</h2>
-              <p className="mt-2 text-sm text-slate-500">先创建一个孩子档案，再开始学习诊断。</p>
+            <div className="rounded-[32px] bg-white p-12 text-center shadow-sm ring-1 ring-black/[0.04]">
+              <div className="text-6xl mb-4">🧸</div>
+              <h2 className="text-xl font-bold text-slate-900">还没有孩子档案</h2>
+              <p className="mt-2 text-sm text-slate-500 leading-relaxed">
+                创建一个孩子档案，<br />开启 AI 学习成长之旅。
+              </p>
+              <Link href="/h5/children/new" className="mt-8 block">
+                <Button color="primary" shape="rounded" className="px-8">去创建</Button>
+              </Link>
             </div>
           ) : (
-            children.map((child) => <ChildCard key={child.id} child={child} />)
+            children.map((child) => (
+               <div 
+                key={child.id} 
+                onClick={() => handleSelect(child.id)}
+                className="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/[0.04] active:bg-slate-50 transition-all"
+              >
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-indigo-50 text-indigo-500">
+                   <UserOutline fontSize={28} />
+                </div>
+                <div className="flex-1">
+                  <div className="text-lg font-bold text-slate-900">{child.name}</div>
+                  <div className="text-xs text-slate-500 mt-0.5">{child.grade} · {child.age}岁</div>
+                </div>
+                {mode === 'select' && (
+                  <div className="rounded-full bg-indigo-600 px-3 py-1 text-[10px] font-bold text-white uppercase tracking-wider">
+                    选择
+                  </div>
+                )}
+              </div>
+            ))
           )}
         </div>
       </PullToRefresh>
 
-      <FixedActionBar>
-        <Link href="/h5/children/new">
-          <Button block color="primary" size="large" className="!rounded-2xl">新增孩子档案</Button>
+      <SafeAreaActionBar>
+        <Link href="/h5/children/new" className="block">
+          <Button block color="primary" shape="rounded" size="large" className="!font-bold">
+            <AddOutline /> 新增孩子档案
+          </Button>
         </Link>
-      </FixedActionBar>
+      </SafeAreaActionBar>
     </>
-  );
-}
-
-function ChildCard({ child }: { child: ChildProfile }) {
-  return (
-    <Link href={`/h5/children/${child.id}`} className="block rounded-3xl bg-white p-4 shadow-sm ring-1 ring-black/5 active:scale-[0.99]">
-      <div className="flex items-start gap-3">
-        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-2xl">🧒</div>
-        <div className="min-w-0 flex-1">
-          <div className="flex items-center justify-between gap-2">
-            <h2 className="truncate text-lg font-bold text-slate-950">{child.name}</h2>
-            <span className="rounded-full bg-sky-50 px-2.5 py-1 text-xs font-medium text-sky-600">{child.grade}</span>
-          </div>
-          <p className="mt-2 text-sm text-slate-500">{child.age} 岁 · {child.province}{child.city}</p>
-          <p className="mt-1 text-sm text-slate-500">教材：{child.textbookVersion}</p>
-        </div>
-      </div>
-    </Link>
   );
 }

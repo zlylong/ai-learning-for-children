@@ -1,29 +1,43 @@
 import { BottomTabBar, type BottomTabKey } from './BottomTabBar';
+import { clsx } from 'clsx';
 
 export function AppShell({
   children,
   title,
-  activeKey = 'home',
+  activeKey,
+  headerExtras,
+  noPadding = false,
+  noHeader = false,
 }: Readonly<{
   children: React.ReactNode;
   title?: string;
   activeKey?: BottomTabKey;
+  headerExtras?: React.ReactNode;
+  noPadding?: boolean;
+  noHeader?: boolean;
 }>) {
   return (
-    <div className="mx-auto min-h-dvh w-full max-w-[480px] bg-[#f6f8fb] shadow-sm">
-      <header className="sticky top-0 z-20 border-b border-black/5 bg-[#f6f8fb]/90 px-4 pb-3 pt-[calc(env(safe-area-inset-top)+12px)] backdrop-blur">
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="text-xs font-medium uppercase tracking-[0.18em] text-indigo-500">AI Learning</p>
-            <h1 className="mt-1 text-lg font-bold text-slate-950">{title ?? 'AI 学习诊断'}</h1>
+    <div className="mx-auto min-h-dvh w-full max-w-[480px] bg-[#f8fafc] shadow-sm flex flex-col">
+      {!noHeader && (
+        <header className="sticky top-0 z-20 border-b border-slate-100 bg-white/80 px-4 pb-3 pt-[calc(env(safe-area-inset-top)+12px)] backdrop-blur">
+          <div className="flex items-center justify-between">
+            <div>
+              {title && <h1 className="text-lg font-bold text-slate-900">{title}</h1>}
+            </div>
+            {headerExtras}
           </div>
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-xl shadow-sm">✨</div>
-        </div>
-      </header>
+        </header>
+      )}
 
-      <main className="space-y-4 px-4 py-4 pb-36">{children}</main>
+      <main className={clsx(
+        "flex-1",
+        !noPadding && "px-4 py-4",
+        activeKey && "pb-32" // Space for tab bar
+      )}>
+        {children}
+      </main>
 
-      <BottomTabBar activeKey={activeKey} />
+      {activeKey && <BottomTabBar activeKey={activeKey} />}
     </div>
   );
 }

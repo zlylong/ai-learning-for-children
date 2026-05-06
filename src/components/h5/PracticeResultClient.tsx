@@ -1,18 +1,16 @@
 'use client';
 
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
-import { Button, DotLoading, ErrorBlock } from 'antd-mobile';
-import { FixedActionBar } from './FixedActionBar';
-import type { MasteryStatus, PracticeSessionRecord } from '@/features/practice/schema';
-
-const masteryText: Record<MasteryStatus, string> = {
-  WEAK: '薄弱',
-  PRACTICING: '练习中',
-  MASTERED: '已掌握',
-};
+import { Button, DotLoading, ErrorBlock, Space } from 'antd-mobile';
+import { LeftOutline, RedoOutline, SearchOutline } from 'antd-mobile-icons';
+import type { PracticeSessionRecord } from '@/features/practice/schema';
+import { ResultSummaryCard } from './ResultSummaryCard';
+import { WrongQuestionCard } from './WrongQuestionCard';
+import { SafeAreaActionBar } from './SafeAreaActionBar';
 
 export function PracticeResultClient({ sessionId }: { sessionId: string }) {
+  const router = useRouter();
   const [session, setSession] = useState<PracticeSessionRecord | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -32,54 +30,83 @@ export function PracticeResultClient({ sessionId }: { sessionId: string }) {
 
   useEffect(() => { void load(); }, [load]);
 
-  if (loading) return <div className="rounded-3xl bg-white p-8 text-center text-slate-500 shadow-sm">加载结果 <DotLoading /></div>;
+  if (loading) return <div className="flex justify-center py-20"><DotLoading color="primary" /></div>;
   if (error || !session) return <ErrorBlock status="empty" title="无法查看结果" description={error ?? '结果不存在'} />;
   if (!session.result) return <ErrorBlock status="empty" title="还没有提交" description="完成答题后再查看结果" />;
 
   const wrongQuestions = session.questions.filter((item) => item.isCorrect === false);
+  const accuracy = session.result.accuracy;
+
+  const getEncouragement = () => {
+    if (accuracy >= 80) return "太棒了！这个知识点基本掌握了";
+    if (accuracy >= 60) return "表现不错，还需要再练几题巩固下";
+    return "基础还不牢固，建议回顾后再练习";
+  };
 
   return (
-    <div className="space-y-4 pb-28">
-      <section className="rounded-[32px] bg-gradient-to-br from-violet-600 to-indigo-500 p-5 text-white shadow-lg">
-        <p className="text-sm opacity-85">练习结果</p>
-        <div className="mt-4 flex items-end gap-2">
-          <span className="text-5xl font-black">{session.result.accuracy}%</span>
-          <span className="pb-2 text-sm opacity-90">正确率</span>
-        </div>
-        <p className="mt-3 text-sm opacity-90">答对 {session.result.correctCount} / {session.result.totalCount} 题</p>
-      </section>
+    <div className="space-y-8 pb-32">
+      {/* 1. Summary */}
+      <ResultSummaryCard 
+        score={accuracy}
+        count={session.result.totalCount}
+        correctCount={session.result.correctCount}
+        message={getEncouragement()}
+      />
 
-      <section className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-black/5">
-        <h2 className="text-base font-bold text-slate-900">掌握状态变化</h2>
-        <div className="mt-4 flex items-center justify-between rounded-2xl bg-slate-50 p-4">
-          <span className="text-sm text-slate-500">{masteryText[session.result.masteryBefore]}</span>
-          <span className="text-xl">→</span>
-          <span className="text-base font-bold text-blue-600">{masteryText[session.result.masteryAfter]}</span>
+      {/* 2. Wrong Analysis */}
+      <section>
+        <div className="mb-4 px-1">
+           <h2 className="text-base font-bold text-slate-900">错题解析</h2>
         </div>
-      </section>
-
-      <section className="space-y-3">
-        <h2 className="px-1 text-base font-bold text-slate-900">错题解析</h2>
         {wrongQuestions.length === 0 ? (
-          <div className="rounded-3xl bg-white p-5 text-center text-slate-500 shadow-sm">本次没有错题，继续保持！</div>
-        ) : wrongQuestions.map((question) => (
-          <article key={question.id} className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-black/5">
-            <p className="text-sm font-semibold text-slate-500">{question.knowledgePoint}</p>
-            <h3 className="mt-2 text-base font-bold leading-relaxed text-slate-950">{question.stem}</h3>
-            <div className="mt-3 grid gap-2 text-sm">
-              <p className="rounded-2xl bg-rose-50 p-3 text-rose-700">你的答案：{question.userAnswer}</p>
-              <p className="rounded-2xl bg-emerald-50 p-3 text-emerald-700">正确答案：{question.answerText}</p>
-              <p className="rounded-2xl bg-slate-50 p-3 text-slate-700">解析：{question.analysis}</p>
-            </div>
-          </article>
-        ))}
+           <div className="rounded-2xl bg-white p-8 text-center shadow-sm ring-1 ring-black/[0.04]">
+              <div className="text-3xl mb-2">🌟</div>
+              <div className="text-sm text-slate-500 font-medium">本次练习全对，真了不起！</div>
+           </div>
+        ) : (
+          <div className="space-y-4">
+            {wrongQuestions.map((q) => (
+              <WrongQuestionCard 
+                key={q.id}
+                content={q.stem}
+                analysis={q.analysis || ''}
+                knowledgePoints={[q.knowledgePoint]}
+                reason="需要加强练习"
+              />
+            ))}
+          </div>
+        )}
       </section>
 
-      <FixedActionBar>
-        <Link href={`/h5/children/${session.childId}/practice/new`}>
-          <Button block color="primary" size="large" className="!rounded-2xl">再练一次</Button>
-        </Link>
-      </FixedActionBar>
+      {/* 3. Actions */}
+      <SafeAreaActionBar>
+        <Space block direction="vertical">
+          <Button 
+            block 
+            color="primary" 
+            className="!h-12 !rounded-2xl !font-bold"
+            onClick={() => router.push(`/h5/practice`)}
+          >
+            <RedoOutline /> 再练 5 题
+          </Button>
+          <div className="flex gap-3">
+             <Button 
+                fill="none" 
+                className="flex-1 !h-12 !rounded-2xl !bg-slate-100 !text-slate-600 !font-bold"
+                onClick={() => router.push(`/h5`)}
+              >
+                返回首页
+              </Button>
+              <Button 
+                fill="none" 
+                className="flex-1 !h-12 !rounded-2xl !bg-indigo-50 !text-indigo-600 !font-bold"
+                onClick={() => router.push(`/h5/children/${session.childId}/wrong-questions`)}
+              >
+                查看错题库
+              </Button>
+          </div>
+        </Space>
+      </SafeAreaActionBar>
     </div>
   );
 }

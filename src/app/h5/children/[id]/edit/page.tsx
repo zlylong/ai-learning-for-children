@@ -8,7 +8,7 @@ type PageProps = {
 export default async function EditChildPage({ params }: PageProps) {
   const { id } = await params;
   return (
-    <AppShell title="编辑孩子" activeKey="children">
+    <AppShell title="编辑孩子" activeKey="profile">
       <ChildEditClient id={id} />
     </AppShell>
   );

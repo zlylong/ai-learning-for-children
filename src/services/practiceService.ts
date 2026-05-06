@@ -477,6 +477,20 @@ export const practiceService = {
   getMemoryChildKnowledgePoint(childId: string, knowledgePointId: string) {
     return memoryState().mastery.get(`${childId}:${knowledgePointId}`) ?? null;
   },
+
+  async listPracticeSessions(childId: string): Promise<PracticeSessionRecord[]> {
+    if (shouldUseMemoryStore()) {
+      return Array.from(memoryState().sessions.values())
+        .filter(s => s.childId === childId)
+        .sort((a, b) => b.startedAt.localeCompare(a.startedAt));
+    }
+    const sessions = await prisma.practiceSession.findMany({
+      where: { childId },
+      orderBy: { startedAt: 'desc' },
+      include: { questions: true }
+    });
+    return sessions.map(sessionFromDb);
+  },
 };
 
 export function resetPracticeStoreForTest() {

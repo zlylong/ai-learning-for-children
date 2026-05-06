@@ -8,7 +8,7 @@ type PageProps = {
 export default async function ChildDetailPage({ params }: PageProps) {
   const { id } = await params;
   return (
-    <AppShell title="档案详情" activeKey="children">
+    <AppShell title="档案详情" activeKey="profile">
       <ChildDetailClient id={id} />
     </AppShell>
   );

@@ -12,31 +12,33 @@
 - Zod + React Hook Form
 - AI Provider 抽象层（当前仅 `mock` provider）
 
-## H5 设计约定
+## H5 设计约定 (v2.0)
 
-- Mobile-first，适配 iPhone 与 Android 手机浏览器。
-- 页面容器最大宽度 `480px` 并居中。
-- 使用 `src/components/h5/AppShell.tsx` 作为 H5 外壳。
-- 底部导航使用 `src/components/h5/BottomTabBar.tsx`。
-- 固定主操作按钮使用 `src/components/h5/FixedActionBar.tsx`，避让底部 Tab 与 safe-area。
-- 使用卡片、列表、移动端表单，不做 PC 风格后台和复杂表格。
+- **Mobile-first**：专为 375px 手机宽度设计，最大宽度 480px 并居中显示。
+- **任务导向**：每个页面服务一个核心任务，底部主按钮清晰，减少认知负担。
+- **视觉风格**：简洁、干净、高留白，使用卡片圆角（24px-32px）与明亮配色，不幼稚化。
+- **导航架构**：主导航为 4 个 Tab：首页、练习、错题、我的。
+- **当前孩子**：系统自动跟踪当前选择的孩子，所有功能围绕该孩子展开。
 
-## H5 孩子档案模块
+## H5 核心模块与路由
 
-页面：
+### 1. 首页与导航
+- `/h5`：**首页**。展示当前孩子卡片、今日练习建议、学习状态摘要（薄弱点、本月错题、正确率）及快捷入口。
+- `/h5/children/select`：**切换孩子**。选择或创建孩子档案。
+- `/h5/profile`：**我的**。个人信息、档案管理、AI 模型高级设置。
 
-- `/`：H5 首页，提供可点击的核心功能卡片与快捷入口，可直达孩子档案、试卷上传、知识点练习、练习中心、月度错题卷、错题本和 AI 高级设置。
-- `/h5/children`：孩子卡片列表，支持下拉刷新、加载/错误/空状态。
-- `/h5/children/new`：新增孩子档案。
-- `/h5/children/[id]`：查看孩子档案详情，支持删除。
-- `/h5/children/[id]/edit`：编辑孩子档案。
-- `/h5/children/[id]/uploads`：粘贴试卷结果文本或上传图片（OCR mock），点击底部固定按钮开始分析。
-- `/h5/children/[id]/wrong-questions`：用移动端卡片展示错题题干、学生答案、正确答案、错误原因和关联知识点。
-- `/h5/children/[id]/practice/new`：知识点练习创建页，使用列表/弹窗选择知识点、Stepper 选择 1-10 题、Segmented 选择难度、Selector 选择题型。
-- `/h5/practice-sessions/[id]`：答题页，一屏展示一道题，底部固定“上一题 / 下一题 / 提交”按钮。
-- `/h5/practice-sessions/[id]/result`：结果页，用移动端卡片展示正确率、掌握状态变化和错题解析。
-- `/h5/children/[id]/exams/monthly`：月度错题卷配置页，展示本月错题概览、高频知识点，并支持 AI 生成复习卷。
-- `/h5/profile/advanced-settings`：高级设置页，用移动端表单配置 AI 对接 Provider、Base URL、模型、API Key 与连接测试。
+### 2. 练习中心
+- `/h5/practice`：**练习入口**。推荐最需练习的 1-3 个知识点，支持手动选择所有知识点，提供月度错题卷与专项训练入口。
+- `/h5/practice-sessions/[id]`：**答题页**。沉浸式答题体验，一屏一题，大号输入/选项，进度追踪。
+- `/h5/practice-sessions/[id]/result`：**练习反馈**。展示正确率、鼓励语、错题解析及后续建议。
+
+### 3. 错题与分析
+- `/h5/wrong-questions`：**错题库**。高频薄弱知识点摘要，支持按学科筛选，折叠式题目卡片突出知识点与解析。
+- `/h5/children/[id]/upload`：**上传试卷**。极简上传流程，支持文本粘贴与图片上传，分阶段显示分析进度。
+
+### 4. 专项训练
+- `/h5/children/[id]/exams/monthly`：**月度卷**。基于本月错题库自动生成的巩固试卷。
+- `/h5/children/[id]/exams/weakness`：**专项训练**。针对长期薄弱点的强化练习计划。
 
 API：
 

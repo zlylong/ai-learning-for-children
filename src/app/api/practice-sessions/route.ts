@@ -22,3 +22,15 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: '创建练习失败' }, { status: 500 });
   }
 }
+
+export async function GET(request: Request) {
+  try {
+    const childId = new URL(request.url).searchParams.get('childId');
+    if (!childId) return NextResponse.json({ error: '请提供 childId' }, { status: 400 });
+    const sessions = await practiceService.listPracticeSessions(childId);
+    return NextResponse.json({ sessions });
+  } catch (error) {
+    console.error('[practice-sessions:get]', error);
+    return NextResponse.json({ error: '练习列表加载失败' }, { status: 500 });
+  }
+}
