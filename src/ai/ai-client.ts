@@ -51,13 +51,9 @@ export async function generateJson(input: GenerateJsonInput): Promise<unknown> {
 }
 
 function resolveModelForTask(settings: AiSettings, task?: AiTask): string | undefined {
-  if (task === 'ocr') return settings.models?.ocr || settings.models?.text || settings.model;
-  if (task === 'audio') return settings.models?.audio || settings.models?.text || settings.model;
-  if (task === 'text') return settings.models?.text || settings.model;
-  if (task === 'exam-analysis') return settings.models?.examAnalysis || settings.models?.text || settings.model;
-  if (task === 'practice-generation') return settings.models?.practiceGeneration || settings.models?.text || settings.model;
-  if (task === 'monthly-exam') return settings.models?.monthlyExam || settings.models?.text || settings.model;
-  return settings.model || settings.models?.text || settings.models?.examAnalysis || settings.models?.practiceGeneration || settings.models?.monthlyExam || settings.models?.ocr || settings.models?.audio;
+  if (task === 'ocr') return settings.models?.ocr;
+  if (task === 'audio') return settings.models?.audio;
+  return settings.models?.text || settings.model;
 }
 
 async function generateJsonWithOpenAiCompatible(input: GenerateJsonInput, settings: AiSettings): Promise<unknown> {

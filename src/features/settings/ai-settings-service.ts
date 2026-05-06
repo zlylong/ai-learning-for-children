@@ -12,9 +12,6 @@ const DEFAULT_AI_SETTINGS: AiSettings = {
     text: DEFAULT_DEEPSEEK_MODEL,
     ocr: undefined,
     audio: undefined,
-    examAnalysis: undefined,
-    practiceGeneration: undefined,
-    monthlyExam: undefined,
   },
   apiKey: undefined,
   timeoutMs: 30000,
@@ -33,9 +30,6 @@ function normalizeModels(settings: AiSettings): AiSettings['models'] {
     text: settings.models?.text ?? settings.model,
     ocr: settings.models?.ocr,
     audio: settings.models?.audio,
-    examAnalysis: settings.models?.examAnalysis,
-    practiceGeneration: settings.models?.practiceGeneration,
-    monthlyExam: settings.models?.monthlyExam,
   };
 }
 
@@ -104,9 +98,9 @@ export const aiSettingsService = {
       return { ok: true, provider: 'mock', message: 'Mock AI 可用：当前不会调用真实外部模型。' };
     }
 
-    const hasAnyModel = Boolean(settings.model || settings.models.text || settings.models.ocr || settings.models.audio || settings.models.examAnalysis || settings.models.practiceGeneration || settings.models.monthlyExam);
-    if (!settings.baseUrl || !hasAnyModel || !settings.apiKey) {
-      return { ok: false, provider: settings.provider, message: '请先填写 Base URL、至少一个模型名称和 API Key。' };
+    const hasTextModel = Boolean(settings.model || settings.models.text);
+    if (!settings.baseUrl || !hasTextModel || !settings.apiKey) {
+      return { ok: false, provider: settings.provider, message: '请先填写 Base URL、文本模型和 API Key。OCR/音频模型可按需单独填写。' };
     }
 
     const controller = new AbortController();

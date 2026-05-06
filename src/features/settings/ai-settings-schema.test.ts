@@ -10,11 +10,8 @@ const validOpenAiConfig = {
     text: 'deepseek-chat',
     ocr: 'gpt-ocr',
     audio: 'gpt-audio',
-    examAnalysis: 'gpt-analysis',
-    practiceGeneration: 'gpt-practice',
-    monthlyExam: 'gpt-monthly',
   },
-  apiKey: 'sk-test-not-real',
+  apiKey: 'test-key-not-real',
   timeoutMs: 30000,
 };
 

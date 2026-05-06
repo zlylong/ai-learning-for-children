@@ -14,9 +14,6 @@ type FormState = {
     text: string;
     ocr: string;
     audio: string;
-    examAnalysis: string;
-    practiceGeneration: string;
-    monthlyExam: string;
   };
   apiKey: string;
   keepExistingApiKey: boolean;
@@ -32,9 +29,6 @@ const DEFAULT_FORM: FormState = {
     text: DEFAULT_DEEPSEEK_MODEL,
     ocr: '',
     audio: '',
-    examAnalysis: '',
-    practiceGeneration: '',
-    monthlyExam: '',
   },
   apiKey: '',
   keepExistingApiKey: true,
@@ -66,9 +60,6 @@ export function AiAdvancedSettingsClient() {
             text: next.models?.text ?? next.model ?? DEFAULT_DEEPSEEK_MODEL,
             ocr: next.models?.ocr ?? '',
             audio: next.models?.audio ?? '',
-            examAnalysis: next.models?.examAnalysis ?? '',
-            practiceGeneration: next.models?.practiceGeneration ?? '',
-            monthlyExam: next.models?.monthlyExam ?? '',
           },
           apiKey: '',
           keepExistingApiKey: next.hasApiKey,
@@ -181,7 +172,7 @@ export function AiAdvancedSettingsClient() {
           />
         </Field>
 
-        <Field label="默认模型" hint="兜底模型。下方业务模型留空时，会使用默认模型。">
+        <Field label="默认模型" hint="兼容旧配置的兜底字段；新配置请优先填写下方文本模型。">
           <Input
             clearable
             disabled={!isRealProvider}
@@ -193,10 +184,10 @@ export function AiAdvancedSettingsClient() {
 
         <div className="space-y-3 rounded-2xl bg-indigo-50 p-3 ring-1 ring-indigo-100">
           <div>
-            <h4 className="text-sm font-bold text-indigo-900">按业务需求拆分模型</h4>
-            <p className="mt-1 text-xs leading-5 text-indigo-700">可把文本、OCR、音频和具体业务分别接到不同模型；留空则回退到文本模型/默认模型。</p>
+            <h4 className="text-sm font-bold text-indigo-900">模型用途拆分</h4>
+            <p className="mt-1 text-xs leading-5 text-indigo-700">Provider 仍从上方选择 Mock 或 OpenAI 兼容；模型按能力分为文本、OCR、音频三类。DeepSeek 只作为默认文本模型，不会自动用于 OCR 或音频。</p>
           </div>
-          <Field label="文本模型" hint="通用文本 JSON 生成兜底模型，默认 deepseek-chat。">
+          <Field label="文本模型" hint="用于所有文字类任务：错题分析、知识点匹配、练习出题、月度错题卷和长期薄弱点训练。默认 deepseek-chat。">
             <Input
               clearable
               disabled={!isRealProvider}
@@ -205,7 +196,7 @@ export function AiAdvancedSettingsClient() {
               onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, text: value } }))}
             />
           </Field>
-          <Field label="OCR 模型" hint="预留给图片试卷识别；留空时回退到文本模型。">
+          <Field label="OCR 模型" hint="用于图片试卷识别、拍照题目转文字。需要配置支持视觉/OCR 的模型；留空表示暂不启用图片识别真实模型。">
             <Input
               clearable
               disabled={!isRealProvider}
@@ -214,40 +205,13 @@ export function AiAdvancedSettingsClient() {
               onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, ocr: value } }))}
             />
           </Field>
-          <Field label="音频模型" hint="预留给语音/音频输入识别或讲解；留空时回退到文本模型。">
+          <Field label="音频模型" hint="用于语音输入转文字、音频题目识别或语音讲解。需要配置支持音频/转写的模型；留空表示暂不启用音频真实模型。">
             <Input
               clearable
               disabled={!isRealProvider}
               placeholder="例如：whisper-1 / gpt-4o-mini-transcribe"
               value={form.models.audio}
               onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, audio: value } }))}
-            />
-          </Field>
-          <Field label="错题分析模型" hint="用于上传试卷后的错题识别、知识点匹配。">
-            <Input
-              clearable
-              disabled={!isRealProvider}
-              placeholder="例如：qwen-plus / gpt-4o"
-              value={form.models.examAnalysis}
-              onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, examAnalysis: value } }))}
-            />
-          </Field>
-          <Field label="练习出题模型" hint="用于根据知识点生成 5 题练习。">
-            <Input
-              clearable
-              disabled={!isRealProvider}
-              placeholder="例如：deepseek-chat / gpt-4o-mini"
-              value={form.models.practiceGeneration}
-              onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, practiceGeneration: value } }))}
-            />
-          </Field>
-          <Field label="月度卷模型" hint="用于月度错题卷、长期薄弱点专项等复习卷生成。">
-            <Input
-              clearable
-              disabled={!isRealProvider}
-              placeholder="例如：gpt-4o / qwen-max"
-              value={form.models.monthlyExam}
-              onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, monthlyExam: value } }))}
             />
           </Field>
         </div>

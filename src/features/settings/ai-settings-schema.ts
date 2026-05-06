@@ -12,16 +12,10 @@ export const aiTaskModelsSchema = z.object({
   text: optionalModelSchema,
   ocr: optionalModelSchema,
   audio: optionalModelSchema,
-  examAnalysis: optionalModelSchema,
-  practiceGeneration: optionalModelSchema,
-  monthlyExam: optionalModelSchema,
 }).optional().default({
   text: DEFAULT_DEEPSEEK_MODEL,
   ocr: undefined,
   audio: undefined,
-  examAnalysis: undefined,
-  practiceGeneration: undefined,
-  monthlyExam: undefined,
 });
 
 export const aiSettingsSchema = z.object({
@@ -37,9 +31,9 @@ export const aiSettingsSchema = z.object({
     if (!value.baseUrl) {
       ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['baseUrl'], message: '启用真实 AI 时必须填写 Base URL' });
     }
-    const hasAnyModel = Boolean(value.model || value.models.text || value.models.ocr || value.models.audio || value.models.examAnalysis || value.models.practiceGeneration || value.models.monthlyExam);
-    if (!hasAnyModel) {
-      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['model'], message: '启用真实 AI 时至少填写默认模型或一个业务模型' });
+    const hasTextModel = Boolean(value.model || value.models.text);
+    if (!hasTextModel) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['models', 'text'], message: '启用真实 AI 时必须填写文本模型' });
     }
   }
 });
@@ -57,9 +51,6 @@ export const aiSettingsPublicSchema = z.object({
     text: z.string().optional(),
     ocr: z.string().optional(),
     audio: z.string().optional(),
-    examAnalysis: z.string().optional(),
-    practiceGeneration: z.string().optional(),
-    monthlyExam: z.string().optional(),
   }),
   timeoutMs: z.number().int(),
   hasApiKey: z.boolean(),
