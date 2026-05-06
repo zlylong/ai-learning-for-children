@@ -8,6 +8,7 @@ const DEFAULT_AI_SETTINGS: AiSettings = {
   provider: 'mock',
   baseUrl: undefined,
   model: undefined,
+  models: { examAnalysis: undefined, practiceGeneration: undefined, monthlyExam: undefined },
   apiKey: undefined,
   timeoutMs: 30000,
 };
@@ -26,6 +27,7 @@ function toPublicSettings(settings: AiSettings): AiSettingsPublic {
     provider: settings.provider,
     baseUrl: settings.baseUrl,
     model: settings.model,
+    models: settings.models ?? {},
     timeoutMs: settings.timeoutMs,
     hasApiKey: Boolean(settings.apiKey),
     apiKeyMask: maskApiKey(settings.apiKey),
@@ -71,6 +73,7 @@ export const aiSettingsService = {
       provider: parsed.provider,
       baseUrl: parsed.baseUrl,
       model: parsed.model,
+      models: parsed.models ?? {},
       timeoutMs: parsed.timeoutMs,
       apiKey: parsed.keepExistingApiKey ? current.apiKey : parsed.apiKey,
     };

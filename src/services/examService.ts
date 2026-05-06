@@ -119,6 +119,7 @@ export const examService = {
     });
 
     const aiResponse = await aiClient.generateJson({
+      task: 'monthly-exam',
       prompt,
       // Metadata for tracking
       childId: input.childId,

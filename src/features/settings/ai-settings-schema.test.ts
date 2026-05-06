@@ -6,6 +6,11 @@ const validOpenAiConfig = {
   provider: 'openai-compatible' as const,
   baseUrl: 'https://api.example.com/v1',
   model: 'gpt-test',
+  models: {
+    examAnalysis: 'gpt-analysis',
+    practiceGeneration: 'gpt-practice',
+    monthlyExam: 'gpt-monthly',
+  },
   apiKey: 'sk-test-not-real',
   timeoutMs: 30000,
 };
@@ -26,5 +31,17 @@ describe('aiSettingsSchema', () => {
     const parsed = aiSettingsUpdateSchema.parse({ ...validOpenAiConfig, apiKey: '' });
     expect(parsed.apiKey).toBeUndefined();
     expect(parsed.baseUrl).toBe('https://api.example.com/v1');
+  });
+
+  it('allows per-task models without a default model', () => {
+    const parsed = aiSettingsSchema.parse({
+      enabled: true,
+      provider: 'openai-compatible',
+      baseUrl: 'https://api.example.com/v1',
+      models: { examAnalysis: 'gpt-analysis' },
+      timeoutMs: 30000,
+    });
+    expect(parsed.model).toBeUndefined();
+    expect(parsed.models.examAnalysis).toBe('gpt-analysis');
   });
 });

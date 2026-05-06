@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { aiSettingsService } from '@/features/settings/ai-settings-service';
+import type { AiSettings, AiTask } from '@/features/settings/ai-settings-schema';
 
 export const examAnalysisInputSchema = z.object({
   childId: z.string().min(1),
@@ -26,6 +27,7 @@ export type ExamWrongQuestion = z.infer<typeof examWrongQuestionSchema>;
 
 export type GenerateJsonInput = {
   prompt: string;
+  task?: AiTask;
   subject?: string;
   rawText?: string;
   knowledgePointTitle?: string;
@@ -48,9 +50,17 @@ export async function generateJson(input: GenerateJsonInput): Promise<unknown> {
   return mockGenerateJson(input);
 }
 
-async function generateJsonWithOpenAiCompatible(input: GenerateJsonInput, settings: { baseUrl?: string; model?: string; apiKey?: string; timeoutMs: number }): Promise<unknown> {
-  if (!settings.baseUrl || !settings.model || !settings.apiKey) {
-    throw new Error('真实 AI 已启用，但 Base URL、模型或 API Key 未配置完整');
+function resolveModelForTask(settings: AiSettings, task?: AiTask): string | undefined {
+  if (task === 'exam-analysis') return settings.models?.examAnalysis || settings.model;
+  if (task === 'practice-generation') return settings.models?.practiceGeneration || settings.model;
+  if (task === 'monthly-exam') return settings.models?.monthlyExam || settings.model;
+  return settings.model || settings.models?.examAnalysis || settings.models?.practiceGeneration || settings.models?.monthlyExam;
+}
+
+async function generateJsonWithOpenAiCompatible(input: GenerateJsonInput, settings: AiSettings): Promise<unknown> {
+  const model = resolveModelForTask(settings, input.task);
+  if (!settings.baseUrl || !model || !settings.apiKey) {
+    throw new Error(`真实 AI 已启用，但 ${input.task ? '当前业务模型' : '模型'}、Base URL 或 API Key 未配置完整`);
   }
 
   const controller = new AbortController();
@@ -63,7 +73,7 @@ async function generateJsonWithOpenAiCompatible(input: GenerateJsonInput, settin
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: settings.model,
+        model,
         temperature: 0.2,
         response_format: { type: 'json_object' },
         messages: [
@@ -96,11 +106,11 @@ async function generateJsonWithOpenAiCompatible(input: GenerateJsonInput, settin
 }
 
 async function mockGenerateJson(input: GenerateJsonInput): Promise<unknown> {
-  if (input.prompt.includes('错题复习卷') || input.month) {
+  if (input.task === 'monthly-exam' || input.prompt.includes('错题复习卷') || input.month) {
     return mockGenerateMonthlyExamJson(input);
   }
 
-  if (input.knowledgePointTitle || input.prompt.includes('练习题')) {
+  if (input.task === 'practice-generation' || input.knowledgePointTitle || input.prompt.includes('练习题')) {
     return mockGeneratePracticeQuestionsJson(input);
   }
 

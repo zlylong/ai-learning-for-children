@@ -9,6 +9,11 @@ type FormState = {
   provider: AiProvider;
   baseUrl: string;
   model: string;
+  models: {
+    examAnalysis: string;
+    practiceGeneration: string;
+    monthlyExam: string;
+  };
   apiKey: string;
   keepExistingApiKey: boolean;
   timeoutMs: number;
@@ -19,6 +24,11 @@ const DEFAULT_FORM: FormState = {
   provider: 'mock',
   baseUrl: '',
   model: '',
+  models: {
+    examAnalysis: '',
+    practiceGeneration: '',
+    monthlyExam: '',
+  },
   apiKey: '',
   keepExistingApiKey: true,
   timeoutMs: 30000,
@@ -45,6 +55,11 @@ export function AiAdvancedSettingsClient() {
           provider: next.provider,
           baseUrl: next.baseUrl ?? '',
           model: next.model ?? '',
+          models: {
+            examAnalysis: next.models?.examAnalysis ?? '',
+            practiceGeneration: next.models?.practiceGeneration ?? '',
+            monthlyExam: next.models?.monthlyExam ?? '',
+          },
           apiKey: '',
           keepExistingApiKey: next.hasApiKey,
           timeoutMs: next.timeoutMs,
@@ -61,6 +76,7 @@ export function AiAdvancedSettingsClient() {
     provider: form.provider,
     baseUrl: form.baseUrl,
     model: form.model,
+    models: form.models,
     apiKey: form.apiKey,
     keepExistingApiKey: canUseExistingKey,
     timeoutMs: form.timeoutMs,
@@ -155,15 +171,49 @@ export function AiAdvancedSettingsClient() {
           />
         </Field>
 
-        <Field label="模型名称" hint="例如：gpt-4o-mini、qwen-plus、deepseek-chat">
+        <Field label="默认模型" hint="兜底模型。下方业务模型留空时，会使用默认模型。">
           <Input
             clearable
             disabled={!isRealProvider}
-            placeholder="请输入模型名称"
+            placeholder="例如：gpt-4o-mini"
             value={form.model}
             onChange={(value) => setForm((current) => ({ ...current, model: value }))}
           />
         </Field>
+
+        <div className="space-y-3 rounded-2xl bg-indigo-50 p-3 ring-1 ring-indigo-100">
+          <div>
+            <h4 className="text-sm font-bold text-indigo-900">按业务需求拆分模型</h4>
+            <p className="mt-1 text-xs leading-5 text-indigo-700">可把错题分析、练习出题、月度卷分别接到不同模型；留空则回退到默认模型。</p>
+          </div>
+          <Field label="错题分析模型" hint="用于上传试卷后的错题识别、知识点匹配。">
+            <Input
+              clearable
+              disabled={!isRealProvider}
+              placeholder="例如：qwen-plus / gpt-4o"
+              value={form.models.examAnalysis}
+              onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, examAnalysis: value } }))}
+            />
+          </Field>
+          <Field label="练习出题模型" hint="用于根据知识点生成 5 题练习。">
+            <Input
+              clearable
+              disabled={!isRealProvider}
+              placeholder="例如：deepseek-chat / gpt-4o-mini"
+              value={form.models.practiceGeneration}
+              onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, practiceGeneration: value } }))}
+            />
+          </Field>
+          <Field label="月度卷模型" hint="用于月度错题卷、长期薄弱点专项等复习卷生成。">
+            <Input
+              clearable
+              disabled={!isRealProvider}
+              placeholder="例如：gpt-4o / qwen-max"
+              value={form.models.monthlyExam}
+              onChange={(value) => setForm((current) => ({ ...current, models: { ...current.models, monthlyExam: value } }))}
+            />
+          </Field>
+        </div>
 
         <Field label="API Key" hint={settings?.hasApiKey ? `已保存：${settings.apiKeyMask}。留空将沿用已有密钥。` : '仅保存在服务器本地 .data 文件，不会返回给前端。'}>
           <Input

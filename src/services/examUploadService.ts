@@ -272,7 +272,7 @@ async function processWithMemory(uploadId: string) {
 
   upload.status = 'PROCESSING';
   const prompt = analyzeWrongQuestionsPrompt({ subject: upload.subject, rawText: upload.rawText });
-  const rawResult = await aiClient.generateJson({ prompt, subject: upload.subject, rawText: upload.rawText });
+  const rawResult = await aiClient.generateJson({ task: 'exam-analysis', prompt, subject: upload.subject, rawText: upload.rawText });
   const parsed = analyzeWrongQuestionsSchema.safeParse(rawResult);
   if (!parsed.success) {
     upload.status = 'FAILED';
@@ -368,7 +368,7 @@ export const examUploadService = {
 
       try {
         const prompt = analyzeWrongQuestionsPrompt({ subject: upload.subject, rawText: upload.rawText });
-        const rawResult = await aiClient.generateJson({ prompt, subject: upload.subject, rawText: upload.rawText });
+        const rawResult = await aiClient.generateJson({ task: 'exam-analysis', prompt, subject: upload.subject, rawText: upload.rawText });
         const parsed = analyzeWrongQuestionsSchema.safeParse(rawResult);
         if (!parsed.success) {
           await prisma.examUpload.update({ where: { id: uploadId }, data: { status: 'FAILED' } });

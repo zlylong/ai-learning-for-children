@@ -108,6 +108,7 @@ async function generateQuestions(input: PracticeSessionCreateInput, knowledgePoi
     questionType: input.questionType,
   });
   const raw = await aiClient.generateJson({
+    task: 'practice-generation',
     prompt,
     knowledgePointTitle,
     questionCount: input.questionCount,
