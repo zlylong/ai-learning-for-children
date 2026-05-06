@@ -8,3 +8,4 @@ coverage
 *.log
 *.tsbuildinfo
 prisma/dev.db
+.data

@@ -175,6 +175,10 @@ function updateMemoryMastery(childId: string, knowledgePointId: string, knowledg
 function sessionFromDb(session: {
   id: string;
   childId: string;
+  type: 'KNOWLEDGE_POINT' | 'MONTHLY_WRONG_SET';
+  subject: string | null;
+  sourceMonth: string | null;
+  summaryJson: Prisma.JsonValue | null;
   status: 'ACTIVE' | 'COMPLETED' | 'CANCELLED';
   title: string;
   knowledgePointText: string | null;
@@ -210,6 +214,10 @@ function sessionFromDb(session: {
     id: session.id,
     childId: session.childId,
     title: session.title,
+    type: session.type,
+    subject: session.subject,
+    sourceMonth: session.sourceMonth,
+    summaryJson: session.summaryJson,
     status: session.status,
     knowledgePoint: session.knowledgePointText ?? '',
     questionCount: session.questionCount,
@@ -364,7 +372,24 @@ export const practiceService = {
       session.status = 'COMPLETED';
       session.endedAt = now();
       session.result = { correctCount, totalCount, accuracy: accuracyPercent, masteryBefore: before, masteryAfter };
-      updateMemoryMastery(session.childId, masteryKey, session.knowledgePoint, totalCount, correctCount, masteryAfter);
+
+      // Update memory mastery for each knowledge point involved
+      const kpResults = new Map<string, { id: string | null; text: string; total: number; correct: number }>();
+      for (const q of session.questions) {
+        const key = q.knowledgePointId || q.knowledgePoint || '';
+        if (!key) continue;
+        const entry = kpResults.get(key) || { id: q.knowledgePointId, text: q.knowledgePoint, total: 0, correct: 0 };
+        entry.total += 1;
+        if (q.isCorrect) entry.correct += 1;
+        kpResults.set(key, entry);
+      }
+
+      for (const res of kpResults.values()) {
+        const kpAccuracy = Math.round((res.correct / res.total) * 100);
+        const kpMastery = masteryFromAccuracy(res.total, kpAccuracy);
+        updateMemoryMastery(session.childId, res.id || '', res.text, res.total, res.correct, kpMastery);
+      }
+
       memoryState().sessions.set(session.id, session);
       return {
         session: structuredClone(session),
@@ -389,7 +414,6 @@ export const practiceService = {
       return { id: question.id, userAnswer, isCorrect };
     });
     const totalCount = existing.questions.length;
-    const wrongCount = totalCount - correctCount;
     const accuracyPercent = Math.round((correctCount / totalCount) * 100);
     const masteryAfter = masteryFromAccuracy(totalCount, accuracyPercent);
     const masteryBefore = (existing.masteryBefore ?? 'WEAK') as MasteryStatus;
@@ -397,21 +421,42 @@ export const practiceService = {
       for (const question of questionUpdates) {
         await tx.practiceQuestion.update({ where: { id: question.id }, data: { userAnswer: question.userAnswer, isCorrect: question.isCorrect } });
       }
-      const knowledgePointId = existing.questions[0]?.knowledgePointId;
-      const knowledgePointText = existing.knowledgePointText ?? existing.questions[0]?.knowledgePointText ?? '';
-      if (knowledgePointId) {
-        await tx.childKnowledgePoint.upsert({
-          where: { childId_knowledgePointId: { childId: existing.childId, knowledgePointId } },
-          create: { childId: existing.childId, knowledgePointId, knowledgePointText, status: masteryAfter, masteryScore: masteryScore(masteryAfter, accuracyPercent), practiceCount: totalCount, correctCount, wrongCount, lastPracticedAt: new Date() },
-          update: { status: masteryAfter, masteryScore: masteryScore(masteryAfter, accuracyPercent), practiceCount: { increment: totalCount }, correctCount: { increment: correctCount }, wrongCount: { increment: wrongCount }, lastPracticedAt: new Date() },
-        });
-      } else if (knowledgePointText) {
-        await tx.childKnowledgePoint.upsert({
-          where: { childId_knowledgePointText: { childId: existing.childId, knowledgePointText } },
-          create: { childId: existing.childId, knowledgePointText, status: masteryAfter, masteryScore: masteryScore(masteryAfter, accuracyPercent), practiceCount: totalCount, correctCount, wrongCount, lastPracticedAt: new Date() },
-          update: { status: masteryAfter, masteryScore: masteryScore(masteryAfter, accuracyPercent), practiceCount: { increment: totalCount }, correctCount: { increment: correctCount }, wrongCount: { increment: wrongCount }, lastPracticedAt: new Date() },
-        });
+
+      // Aggregate results by knowledge point for updating mastery
+      const kpResults = new Map<string, { id: string | null; text: string; total: number; correct: number }>();
+      for (const q of existing.questions) {
+        const update = questionUpdates.find(u => u.id === q.id);
+        const kpId = q.knowledgePointId;
+        const kpText = q.knowledgePointText || '';
+        const key = kpId || kpText;
+        if (!key) continue;
+
+        const entry = kpResults.get(key) || { id: kpId, text: kpText, total: 0, correct: 0 };
+        entry.total += 1;
+        if (update?.isCorrect) entry.correct += 1;
+        kpResults.set(key, entry);
       }
+
+      for (const res of kpResults.values()) {
+        const kpAccuracy = Math.round((res.correct / res.total) * 100);
+        const kpMastery = masteryFromAccuracy(res.total, kpAccuracy);
+        const kpWrong = res.total - res.correct;
+
+        if (res.id) {
+          await tx.childKnowledgePoint.upsert({
+            where: { childId_knowledgePointId: { childId: existing.childId, knowledgePointId: res.id } },
+            create: { childId: existing.childId, knowledgePointId: res.id, knowledgePointText: res.text, status: kpMastery, masteryScore: masteryScore(kpMastery, kpAccuracy), practiceCount: res.total, correctCount: res.correct, wrongCount: kpWrong, lastPracticedAt: new Date() },
+            update: { status: kpMastery, masteryScore: masteryScore(kpMastery, kpAccuracy), practiceCount: { increment: res.total }, correctCount: { increment: res.correct }, wrongCount: { increment: kpWrong }, lastPracticedAt: new Date() },
+          });
+        } else if (res.text) {
+          await tx.childKnowledgePoint.upsert({
+            where: { childId_knowledgePointText: { childId: existing.childId, knowledgePointText: res.text } },
+            create: { childId: existing.childId, knowledgePointText: res.text, status: kpMastery, masteryScore: masteryScore(kpMastery, kpAccuracy), practiceCount: res.total, correctCount: res.correct, wrongCount: kpWrong, lastPracticedAt: new Date() },
+            update: { status: kpMastery, masteryScore: masteryScore(kpMastery, kpAccuracy), practiceCount: { increment: res.total }, correctCount: { increment: res.correct }, wrongCount: { increment: kpWrong }, lastPracticedAt: new Date() },
+          });
+        }
+      }
+
       return tx.practiceSession.update({
         where: { id: sessionId },
         data: { status: 'COMPLETED', endedAt: new Date(), correctCount, accuracy: accuracyPercent, masteryBefore, masteryAfter },

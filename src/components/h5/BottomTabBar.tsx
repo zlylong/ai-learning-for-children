@@ -8,8 +8,8 @@ export type BottomTabKey = 'home' | 'children' | 'practice' | 'profile';
 const tabs: Array<{ key: BottomTabKey; title: string; icon: string; href: string }> = [
   { key: 'home', title: '首页', icon: '🏠', href: '/' },
   { key: 'children', title: '孩子', icon: '🧒', href: '/h5/children' },
-  { key: 'practice', title: '练习', icon: '✍️', href: '/' },
-  { key: 'profile', title: '我的', icon: '👤', href: '/' },
+  { key: 'practice', title: '练习', icon: '✍️', href: '/h5/practice' },
+  { key: 'profile', title: '我的', icon: '👤', href: '/h5/profile' },
 ];
 
 export function BottomTabBar({ activeKey }: { activeKey: BottomTabKey }) {

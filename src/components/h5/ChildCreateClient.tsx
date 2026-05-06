@@ -1,12 +1,18 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { Toast } from 'antd-mobile';
 import { ChildForm } from './ChildForm';
 import type { ChildFormValues, ChildProfile } from '@/features/children/schema';
 
 export function ChildCreateClient() {
   const router = useRouter();
+  const searchParams = useSearchParams();
+
+  const initialValues = {
+    name: searchParams.get('name') ?? '',
+    grade: searchParams.get('grade') ?? '',
+  };
 
   async function createChild(values: ChildFormValues) {
     const response = await fetch('/api/children', {
@@ -22,5 +28,5 @@ export function ChildCreateClient() {
     router.refresh();
   }
 
-  return <ChildForm submitText="保存孩子档案" onSubmit={createChild} />;
+  return <ChildForm submitText="保存孩子档案" initialValues={initialValues} onSubmit={createChild} />;
 }

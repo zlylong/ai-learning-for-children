@@ -67,7 +67,7 @@ export function PracticeSessionClient({ sessionId }: { sessionId: string }) {
     <div className="space-y-4 pb-28">
       <section className="rounded-[28px] bg-white p-5 shadow-sm ring-1 ring-black/5">
         <div className="flex items-center justify-between text-sm text-slate-500">
-          <span>{session.knowledgePoint}</span>
+          <span>{session.title || session.knowledgePoint}</span>
           <span>{progressText}</span>
         </div>
         <div className="mt-3 h-2 overflow-hidden rounded-full bg-slate-100">

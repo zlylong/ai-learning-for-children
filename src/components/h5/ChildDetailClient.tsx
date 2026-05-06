@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { Button, Dialog, DotLoading, ErrorBlock, Toast } from 'antd-mobile';
 import type { ChildProfile } from '@/features/children/schema';
-import { FixedActionBar } from './FixedActionBar';
 
 export function ChildDetailClient({ id }: { id: string }) {
   const router = useRouter();
@@ -49,11 +48,27 @@ export function ChildDetailClient({ id }: { id: string }) {
   if (error || !child) return <ErrorBlock status="empty" title="无法查看档案" description={error ?? '孩子档案不存在'} />;
 
   return (
-    <div className="space-y-4 pb-24">
-      <section className="rounded-[28px] bg-gradient-to-br from-indigo-600 to-sky-500 p-5 text-white shadow-lg">
-        <p className="text-sm opacity-80">孩子档案</p>
-        <h1 className="mt-2 text-3xl font-bold">{child.name}</h1>
-        <p className="mt-3 text-sm opacity-90">{child.age} 岁 · {child.grade} · {child.province}{child.city}</p>
+    <div className="space-y-4 pb-10">
+      <section className="rounded-[24px] bg-gradient-to-br from-indigo-600 to-sky-500 p-4 text-white shadow-lg">
+        <p className="text-xs opacity-80">孩子档案</p>
+        <h1 className="mt-1 text-2xl font-bold">{child.name}</h1>
+        <p className="mt-2 text-xs opacity-90">{child.age} 岁 · {child.grade} · {child.province}{child.city}</p>
+      </section>
+
+      <section className="grid grid-cols-2 gap-3">
+        <ActionLink href={`/h5/children/${child.id}/uploads`} icon="📤" label="上传试卷" />
+        <ActionLink href={`/h5/children/${child.id}/wrong-questions`} icon="📝" label="错题分析" />
+        <ActionLink href={`/h5/children/${child.id}/practice/new`} icon="🎯" label="知识点练习" />
+        <ActionLink href={`/h5/children/${child.id}/exams/monthly`} icon="📊" label="月度错题卷" />
+      </section>
+
+      <section className="rounded-3xl bg-white p-3 shadow-sm ring-1 ring-black/5">
+        <div className="grid grid-cols-[1fr_1fr] gap-3">
+          <Button block color="danger" fill="outline" size="middle" loading={deleting} onClick={deleteChild} className="!rounded-2xl">删除</Button>
+          <Link href={`/h5/children/${child.id}/edit`} className="block">
+            <Button block color="primary" size="middle" className="!rounded-2xl">编辑</Button>
+          </Link>
+        </div>
       </section>
 
       <section className="rounded-3xl bg-white p-4 shadow-sm ring-1 ring-black/5">
@@ -62,30 +77,19 @@ export function ChildDetailClient({ id }: { id: string }) {
         <InfoRow label="更新时间" value={new Date(child.updatedAt).toLocaleString('zh-CN')} />
       </section>
 
-      <section className="grid grid-cols-2 gap-3">
-        <Link href={`/h5/children/${child.id}/uploads`} className="rounded-3xl bg-white p-4 text-center shadow-sm ring-1 ring-black/5">
-          <div className="text-2xl">📤</div>
-          <p className="mt-2 text-sm font-semibold text-slate-900">上传试卷</p>
-        </Link>
-        <Link href={`/h5/children/${child.id}/wrong-questions`} className="rounded-3xl bg-white p-4 text-center shadow-sm ring-1 ring-black/5">
-          <div className="text-2xl">📝</div>
-          <p className="mt-2 text-sm font-semibold text-slate-900">错题分析</p>
-        </Link>
-        <Link href={`/h5/children/${child.id}/practice/new`} className="rounded-3xl bg-white p-4 text-center shadow-sm ring-1 ring-black/5">
-          <div className="text-2xl">🎯</div>
-          <p className="mt-2 text-sm font-semibold text-slate-900">知识点练习</p>
-        </Link>
-      </section>
-
-      <FixedActionBar>
-        <div className="grid grid-cols-[1fr_1fr] gap-3">
-          <Button block color="danger" fill="outline" size="large" loading={deleting} onClick={deleteChild} className="!rounded-2xl">删除</Button>
-          <Link href={`/h5/children/${child.id}/edit`}>
-            <Button block color="primary" size="large" className="!rounded-2xl">编辑</Button>
-          </Link>
-        </div>
-      </FixedActionBar>
     </div>
+  );
+}
+
+function ActionLink({ href, icon, label }: { href: string; icon: string; label: string }) {
+  return (
+    <Link
+      href={href}
+      className="flex min-h-14 items-center gap-2 rounded-2xl bg-white px-3 py-3 text-left shadow-sm ring-1 ring-black/5 active:bg-slate-50"
+    >
+      <span className="text-xl">{icon}</span>
+      <span className="text-sm font-semibold text-slate-900">{label}</span>
+    </Link>
   );
 }
 

@@ -29,6 +29,7 @@ enum PracticeSessionStatus {
 
 enum PracticeType {
   KNOWLEDGE_POINT
+  MONTHLY_WRONG_SET
 }
 
 model User {
@@ -197,6 +198,9 @@ model PracticeSession {
   childId            String
   type               PracticeType          @default(KNOWLEDGE_POINT)
   title              String
+  subject            String?
+  sourceMonth        String?
+  summaryJson        Json?
   status             PracticeSessionStatus @default(ACTIVE)
   knowledgePointText String?
   questionCount      Int                   @default(0)

@@ -55,6 +55,10 @@ export type PracticeSessionRecord = {
   id: string;
   childId: string;
   title: string;
+  type?: 'KNOWLEDGE_POINT' | 'MONTHLY_WRONG_SET';
+  subject?: string | null;
+  sourceMonth?: string | null;
+  summaryJson?: unknown;
   status: 'ACTIVE' | 'COMPLETED' | 'CANCELLED';
   knowledgePoint: string;
   questionCount: number;

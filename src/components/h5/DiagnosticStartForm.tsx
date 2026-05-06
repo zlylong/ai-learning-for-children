@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Button, Input, Selector, Toast } from 'antd-mobile';
 import { Controller, useForm } from 'react-hook-form';
@@ -15,16 +16,19 @@ type DiagnosticFormValues = z.infer<typeof diagnosticSchema>;
 const gradeOptions = ['一年级', '二年级', '三年级', '四年级', '五年级', '六年级'].map((grade) => ({ label: grade, value: grade }));
 
 export function DiagnosticStartForm() {
+  const router = useRouter();
   const { control, handleSubmit, formState: { errors, isSubmitting } } = useForm<DiagnosticFormValues>({
     resolver: zodResolver(diagnosticSchema),
     defaultValues: { childName: '', grade: '' },
   });
 
-  const onSubmit = (values: DiagnosticFormValues) => {
-    Toast.show({
-      icon: 'success',
-      content: `${values.childName} 的${values.grade}诊断入口已就绪`,
-    });
+  const onSubmit = async (values: DiagnosticFormValues) => {
+    try {
+      // 检查孩子是否已存在，如果不存在则跳转到创建页并携带数据
+      router.push(`/h5/children/new?name=${encodeURIComponent(values.childName)}&grade=${encodeURIComponent(values.grade)}`);
+    } catch (e) {
+      Toast.show({ icon: 'fail', content: '操作失败' });
+    }
   };
 
   return (
