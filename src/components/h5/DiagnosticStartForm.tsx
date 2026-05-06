@@ -26,7 +26,7 @@ export function DiagnosticStartForm() {
     try {
       // 检查孩子是否已存在，如果不存在则跳转到创建页并携带数据
       router.push(`/h5/children/new?name=${encodeURIComponent(values.childName)}&grade=${encodeURIComponent(values.grade)}`);
-    } catch (e) {
+    } catch {
       Toast.show({ icon: 'fail', content: '操作失败' });
     }
   };
