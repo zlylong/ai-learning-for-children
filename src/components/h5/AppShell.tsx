@@ -17,7 +17,7 @@ export function AppShell({
   noHeader?: boolean;
 }>) {
   return (
-    <div className="mx-auto min-h-dvh w-full max-w-[480px] bg-[#f8fafc] shadow-sm flex flex-col">
+    <div className="mx-auto flex h-dvh w-full max-w-[480px] flex-col bg-[#f8fafc] shadow-sm">
       {!noHeader && (
         <header className="sticky top-0 z-20 border-b border-slate-100 bg-white/80 px-4 pb-3 pt-[calc(env(safe-area-inset-top)+12px)] backdrop-blur">
           <div className="flex items-center justify-between">
@@ -30,9 +30,9 @@ export function AppShell({
       )}
 
       <main className={clsx(
-        "flex-1",
+        "flex-1 overflow-y-auto overscroll-contain",
         !noPadding && "px-4 py-4",
-        activeKey && "pb-32" // Space for tab bar
+        activeKey && "pb-6"
       )}>
         {children}
       </main>

@@ -1,6 +1,6 @@
 'use client';
 
-import { useRouter, usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { TabBar } from 'antd-mobile';
 import { 
   AppOutline, 
@@ -20,13 +20,9 @@ const tabs = [
 
 export function BottomTabBar({ activeKey }: { activeKey: BottomTabKey }) {
   const router = useRouter();
-  const pathname = usePathname();
-
-  // If we are on a subpage of one of these, we might want to highlight it.
-  // But for now, we just use the activeKey prop passed down.
 
   return (
-    <nav className="safe-bottom fixed inset-x-0 bottom-0 z-30 mx-auto w-full max-w-[480px] border-t border-black/5 bg-white/95 backdrop-blur">
+    <nav className="safe-bottom z-30 w-full border-t border-black/5 bg-white/95 backdrop-blur">
       <TabBar 
         activeKey={activeKey} 
         onChange={(key) => {

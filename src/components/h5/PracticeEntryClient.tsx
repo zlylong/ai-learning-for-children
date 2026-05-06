@@ -2,8 +2,7 @@
 
 import { useEffect, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
-import Link from 'next/link';
-import { DotLoading, Button, Toast } from 'antd-mobile';
+import { DotLoading, Toast } from 'antd-mobile';
 import { 
   CalendarOutline, 
   PieOutline,
@@ -13,17 +12,24 @@ import { WeakPointCard } from './WeakPointCard';
 import { ActionCardSmall } from './ActionCardSmall';
 import { EmptyState } from './EmptyState';
 
+type KnowledgePointSummary = {
+  id: string;
+  knowledgePointId: string;
+  knowledgePointText: string;
+  status: 'WEAK' | 'PRACTICING' | 'MASTERED' | string;
+};
+
 export function PracticeEntryClient() {
   const router = useRouter();
   const [childId, setChildId] = useState<string | null>(null);
-  const [points, setPoints] = useState<Record<string, any>[]>([]);
+  const [points, setPoints] = useState<KnowledgePointSummary[]>([]);
   const [loading, setLoading] = useState(true);
 
   const loadData = useCallback(async (id: string) => {
     try {
       setLoading(true);
       const res = await fetch(`/api/children/${id}/knowledge-points`, { cache: 'no-store' });
-      const data = await res.json();
+      const data = (await res.json()) as { points?: KnowledgePointSummary[] };
       setPoints(data.points || []);
     } catch (err) {
       console.error(err);
@@ -42,7 +48,7 @@ export function PracticeEntryClient() {
     }
   }, [loadData]);
 
-  const startPractice = async (point: Record<string, any>) => {
+  const startPractice = async (point: KnowledgePointSummary) => {
     if (!childId) return;
     Toast.show({ icon: 'loading', content: '正在生成练习...', duration: 0 });
     try {

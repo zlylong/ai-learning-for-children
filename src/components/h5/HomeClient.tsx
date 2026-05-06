@@ -18,6 +18,11 @@ import { StatCard } from './StatCard';
 import { ActionCard } from './ActionCard';
 import { EmptyState } from './EmptyState';
 
+type PracticeSessionSummary = {
+  status: string;
+  result?: { accuracy?: number } | null;
+};
+
 export function HomeClient() {
   const router = useRouter();
   const [childId, setChildId] = useState<string | null>(null);
@@ -34,8 +39,8 @@ export function HomeClient() {
     try {
       setLoading(true);
       const childRes = await fetch('/api/children', { cache: 'no-store' });
-      const childData = await childRes.json();
-      const currentChild = childData.children.find((c: Record<string, any>) => c.id === id);
+      const childData = (await childRes.json()) as { children: ChildProfile[] };
+      const currentChild = childData.children.find((c) => c.id === id);
       
       if (!currentChild) {
         localStorage.removeItem('selectedChildId');
@@ -61,11 +66,11 @@ export function HomeClient() {
       });
 
       const practiceRes = await fetch(`/api/practice-sessions?childId=${encodeURIComponent(id)}`, { cache: 'no-store' });
-      const practiceData = await practiceRes.json();
+      const practiceData = (await practiceRes.json()) as { sessions?: PracticeSessionSummary[] };
       const sessions = practiceData.sessions || [];
-      const completedSessions = sessions.filter((s: Record<string, any>) => s.status === 'COMPLETED');
+      const completedSessions = sessions.filter((s) => s.status === 'COMPLETED');
       const avgAccuracy = completedSessions.length > 0 
-        ? Math.round(completedSessions.reduce((acc: number, s: Record<string, any>) => acc + (s.result?.accuracy || 0), 0) / completedSessions.length)
+        ? Math.round(completedSessions.reduce((acc: number, s) => acc + (s.result?.accuracy || 0), 0) / completedSessions.length)
         : 0;
 
       setStats({
