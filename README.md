@@ -38,7 +38,7 @@
 
 ### 4. 专项训练
 - `/h5/children/[id]/exams/monthly`：**月度卷**。基于本月错题库自动生成的巩固试卷。
-- `/h5/children/[id]/exams/weakness`：**专项训练**。针对长期薄弱点的强化练习计划。
+- `/h5/children/[id]/exams/weakness`：**薄弱点专项训练**。读取孩子的 `ChildKnowledgePoint`，按 `WEAK/PRACTICING`、错题数和掌握分排序，选择最需要强化的知识点，调用 `practice-generation` 功能路由生成专项练习；无薄弱点时展示空态并禁用生成。
 
 API：
 
