@@ -1,6 +1,7 @@
 import { Prisma } from '@prisma/client';
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
+import { examUploadService } from '@/services/examUploadService';
 
 function shouldUseMemoryStore() {
   return !process.env.DATABASE_URL || process.env.CHILDREN_STORE === 'memory';
@@ -9,7 +10,7 @@ function shouldUseMemoryStore() {
 export async function GET(request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   if (shouldUseMemoryStore()) {
-    return NextResponse.json({ points: [] });
+    return NextResponse.json({ points: examUploadService.listMemoryChildKnowledgePoints(id) });
   }
 
   try {
@@ -24,8 +25,8 @@ export async function GET(request: Request, { params }: { params: Promise<{ id: 
     return NextResponse.json({ points });
   } catch (error) {
     if (error instanceof Prisma.PrismaClientKnownRequestError || error instanceof Prisma.PrismaClientInitializationError) {
-      console.warn('[knowledge-points:get] Prisma unavailable, returning empty points:', error.message);
-      return NextResponse.json({ points: [] });
+      console.warn('[knowledge-points:get] Prisma unavailable, returning memory points:', error.message);
+      return NextResponse.json({ points: examUploadService.listMemoryChildKnowledgePoints(id) });
     }
     console.error('[knowledge-points:get]', error);
     return NextResponse.json({ error: '知识点加载失败' }, { status: 500 });

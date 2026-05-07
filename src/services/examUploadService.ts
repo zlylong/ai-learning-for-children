@@ -463,6 +463,28 @@ export const examUploadService = {
   getMemoryChildKnowledgePoint(childId: string, knowledgePointId: string) {
     return memoryState().childKnowledgePoints.find((item) => item.childId === childId && item.knowledgePointId === knowledgePointId) ?? null;
   },
+
+  listMemoryChildKnowledgePoints(childId: string) {
+    const state = memoryState();
+    return state.childKnowledgePoints
+      .filter((item) => item.childId === childId)
+      .map((item) => {
+        const point = state.knowledgePoints.find((kp) => kp.id === item.knowledgePointId);
+        return {
+          id: `${item.childId}:${item.knowledgePointId}`,
+          childId: item.childId,
+          knowledgePointId: item.knowledgePointId,
+          knowledgePointText: point?.title ?? item.knowledgePointId,
+          status: item.status,
+          masteryScore: item.status === 'WEAK' ? 0 : item.status === 'PRACTICING' ? 60 : item.status === 'MASTERED' ? 90 : 0,
+          wrongCount: item.wrongCount,
+          practiceCount: item.practiceCount,
+          correctCount: item.correctCount,
+          lastPracticedAt: item.lastPracticedAt,
+        };
+      })
+      .sort((a, b) => b.wrongCount - a.wrongCount || a.knowledgePointText.localeCompare(b.knowledgePointText, 'zh-Hans-CN'));
+  },
 };
 
 export function resetExamUploadServiceForTest() {

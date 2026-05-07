@@ -34,6 +34,13 @@ describe('examUploadService', () => {
 
     const mastery = examUploadService.getMemoryChildKnowledgePoint('demo-child-1', result.wrongQuestions[0].knowledgePoints[0].knowledgePointId);
     expect(mastery).toMatchObject({ status: 'WEAK', wrongCount: 1 });
+    expect(examUploadService.listMemoryChildKnowledgePoints('demo-child-1')[0]).toMatchObject({
+      childId: 'demo-child-1',
+      knowledgePointId: result.wrongQuestions[0].knowledgePoints[0].knowledgePointId,
+      knowledgePointText: result.wrongQuestions[0].knowledgePoints[0].title,
+      status: 'WEAK',
+      wrongCount: 1,
+    });
   });
 
   it('is idempotent when processing an already completed upload', async () => {

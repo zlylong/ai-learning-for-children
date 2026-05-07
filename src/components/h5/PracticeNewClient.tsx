@@ -35,8 +35,14 @@ export function PracticeNewClient({ childId }: { childId: string }) {
       const response = await fetch(`/api/children/${childId}/knowledge-points`, { cache: 'no-store' });
       const data = (await response.json()) as { points?: PracticeKnowledgePointInput[] };
       const nextPoints = normalizePracticeKnowledgePoints(data.points ?? []);
-      setKnowledgePoints(nextPoints);
-      setKnowledgePointId((current) => current || nextPoints[0]?.id || '');
+      const params = new URLSearchParams(window.location.search);
+      const requestedId = params.get('knowledgePointId')?.trim() ?? '';
+      const requestedTitle = params.get('knowledgePoint')?.trim() ?? '';
+      const pointsWithRequested = requestedId && requestedTitle && !nextPoints.some((item) => item.id === requestedId)
+        ? [{ id: requestedId, title: requestedTitle, status: 'WEAK', wrongCount: 1 }, ...nextPoints]
+        : nextPoints;
+      setKnowledgePoints(pointsWithRequested);
+      setKnowledgePointId((current) => current || (requestedId && pointsWithRequested.some((item) => item.id === requestedId) ? requestedId : pointsWithRequested[0]?.id || ''));
     } catch (error) {
       Toast.show({ icon: 'fail', content: error instanceof Error ? error.message : '读取知识点失败' });
       setKnowledgePoints([]);
