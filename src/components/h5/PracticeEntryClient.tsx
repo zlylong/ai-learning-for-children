@@ -3,14 +3,16 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { DotLoading, Toast } from 'antd-mobile';
-import { 
-  CalendarOutline, 
+import {
+  CalendarOutline,
   PieOutline,
-  RightOutline
+  RightOutline,
+  AppOutline,
 } from 'antd-mobile-icons';
 import { WeakPointCard } from './WeakPointCard';
 import { ActionCardSmall } from './ActionCardSmall';
 import { EmptyState } from './EmptyState';
+import { getPracticeCenterActions } from './practice-entry-actions';
 
 type KnowledgePointSummary = {
   id: string;
@@ -115,18 +117,15 @@ export function PracticeEntryClient() {
       </section>
 
       <section className="grid grid-cols-2 gap-3">
-         <ActionCardSmall 
-            title="月度错题卷" 
-            icon={<CalendarOutline />} 
-            href={`/h5/children/${childId}/exams/monthly`}
-            color="indigo"
+        {getPracticeCenterActions(childId).map((action) => (
+          <ActionCardSmall
+            key={action.href}
+            title={action.title}
+            icon={action.title === '知识点练习' ? <AppOutline /> : action.title === '月度错题卷' ? <CalendarOutline /> : <PieOutline />}
+            href={action.href}
+            color={action.color}
           />
-          <ActionCardSmall 
-            title="长期薄弱项" 
-            icon={<PieOutline />} 
-            href={`/h5/children/${childId}/exams/weakness`}
-            color="rose"
-          />
+        ))}
       </section>
 
       <section>
