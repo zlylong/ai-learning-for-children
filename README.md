@@ -120,12 +120,16 @@ npm run prisma:migrate   # 本地开发迁移
 入口位于 `src/ai/ai-client.ts`：
 
 - 默认使用 mock provider，保证无外部 API 时也能完成 H5 演示。
-- “我的 → 高级设置 · AI 对接”可配置 `mock` 或 `openai-compatible` provider。
-- OpenAI-compatible 支持按能力拆分为 3 类模型：
-  - 文本模型：用于错题分析、知识点匹配、练习出题、月度错题卷和长期薄弱点训练；默认 `deepseek-chat`。
-  - OCR 模型：用于图片试卷识别、拍照题目转文字；需要配置支持视觉/OCR 的模型，留空表示暂不启用真实 OCR 模型。
-  - 音频模型：用于语音输入转文字、音频题目识别或语音讲解；需要配置支持音频/转写的模型，留空表示暂不启用真实音频模型。
-- 后端通过 `GenerateJsonInput.task` 自动路由：`ocr` 只使用 OCR 模型，`audio` 只使用音频模型；`text`、`exam-analysis`、`practice-generation`、`monthly-exam` 都使用文本模型/默认模型。DeepSeek 只是语言模型，不会自动回退承接 OCR 或音频任务。默认 base_url 为 DeepSeek 的 OpenAI-compatible 地址 `https://api.deepseek.com/v1`。
-- OpenAI-compatible 模式调用 `{baseUrl}/chat/completions`，要求模型返回严格 JSON；后续仍由各业务 Zod schema 校验后才会写入数据。
-- AI 设置保存到服务器本地 `.data/ai-settings.json`，该目录已加入 `.gitignore`；API 只返回 `hasApiKey` 与脱敏 `apiKeyMask`，不会把完整 API Key 回传前端。
+- “我的 → 高级设置 · AI 对接”不再是单个全局模型，也不再只是 `text/ocr/audio` 能力拆分；正确结构是 **多个模型档案 + 功能路由**。
+- 一个模型档案包含独立的供应商、Base URL、模型名、API Key、启用状态和超时时间；当前支持 `mock` 与 `openai-compatible`。
+- 功能路由 `taskRoutes` 将业务功能绑定到模型档案：
+  - `exam-analysis`：试卷错题分析。
+  - `practice-generation`：知识点练习出题。
+  - `monthly-exam`：月度错题卷生成。
+  - `ocr`：图片/OCR 识别。
+  - `audio`：语音/音频处理。
+  - `text`：通用文本兜底。
+- 因此可以配置：错题分析走 DeepSeek，OCR 走 Qwen-VL，音频走 Whisper，月度卷走另一个 OpenAI-compatible 或 mock 兜底。
+- OpenAI-compatible 档案调用 `{baseUrl}/chat/completions`，要求模型返回严格 JSON；后续仍由各业务 Zod schema 校验后才会写入数据。
+- AI 设置保存到服务器本地 `.data/ai-settings.json`，该目录已加入 `.gitignore`；API 只返回每个档案的 `hasApiKey` 与脱敏 `apiKeyMask`，不会把完整 API Key 回传前端。
 - 生产环境建议把 API Key 迁移到 KMS/环境变量托管，避免长期明文落盘。

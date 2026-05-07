@@ -1,52 +1,73 @@
 import { describe, expect, it } from 'vitest';
 import { aiSettingsSchema, aiSettingsUpdateSchema, DEFAULT_DEEPSEEK_MODEL, DEFAULT_OPENAI_BASE_URL } from './ai-settings-schema';
 
-const validOpenAiConfig = {
+const deepseekProfile = {
+  id: 'deepseek-text',
+  name: 'DeepSeek 文本',
   enabled: true,
   provider: 'openai-compatible' as const,
-  baseUrl: 'https://api.example.com/v1',
-  model: 'gpt-test',
-  models: {
-    text: 'deepseek-chat',
-    ocr: 'gpt-ocr',
-    audio: 'gpt-audio',
-  },
-  apiKey: 'test-key-not-real',
+  baseUrl: 'https://api.deepseek.com/v1',
+  model: 'deepseek-chat',
+  apiKey: 'x',
+  timeoutMs: 30000,
+};
+
+const mockProfile = {
+  id: 'mock-fallback',
+  name: 'Mock 兜底',
+  enabled: true,
+  provider: 'mock' as const,
+  baseUrl: '',
+  model: 'mock',
+  apiKey: '',
   timeoutMs: 30000,
 };
 
 describe('aiSettingsSchema', () => {
-  it('allows disabled mock settings without secrets', () => {
+  it('keeps disabled mock settings usable without secrets', () => {
     const parsed = aiSettingsSchema.parse({ enabled: false, provider: 'mock', timeoutMs: 30000 });
     expect(parsed).toMatchObject({ enabled: false, provider: 'mock' });
-    expect(parsed.apiKey).toBeUndefined();
+    expect(parsed.profiles.length).toBeGreaterThan(0);
+    expect(parsed.taskRoutes['exam-analysis']).toBeTruthy();
   });
 
-  it('uses DeepSeek OpenAI-compatible defaults when real provider is enabled', () => {
-    const parsed = aiSettingsSchema.parse({ enabled: true, provider: 'openai-compatible', timeoutMs: 30000 });
-    expect(parsed.baseUrl).toBe(DEFAULT_OPENAI_BASE_URL);
-    expect(parsed.model).toBe(DEFAULT_DEEPSEEK_MODEL);
-    expect(parsed.models.text).toBe(DEFAULT_DEEPSEEK_MODEL);
+  it('migrates legacy provider/model settings into a default text profile', () => {
+    const parsed = aiSettingsSchema.parse({ enabled: true, provider: 'openai-compatible', baseUrl: DEFAULT_OPENAI_BASE_URL, model: DEFAULT_DEEPSEEK_MODEL, timeoutMs: 30000 });
+    expect(parsed.profiles[0]).toMatchObject({ provider: 'openai-compatible', baseUrl: DEFAULT_OPENAI_BASE_URL, model: DEFAULT_DEEPSEEK_MODEL });
+    expect(parsed.taskRoutes['exam-analysis']).toBe(parsed.profiles[0].id);
+    expect(parsed.taskRoutes['practice-generation']).toBe(parsed.profiles[0].id);
+    expect(parsed.taskRoutes['monthly-exam']).toBe(parsed.profiles[0].id);
   });
 
-  it('accepts OpenAI-compatible settings and trims blank apiKey to undefined', () => {
-    const parsed = aiSettingsUpdateSchema.parse({ ...validOpenAiConfig, apiKey: '' });
-    expect(parsed.apiKey).toBeUndefined();
-    expect(parsed.baseUrl).toBe('https://api.example.com/v1');
-  });
-
-  it('allows ocr/audio/text models to be configured independently', () => {
-    const parsed = aiSettingsSchema.parse({
+  it('allows each product function to choose a different provider/model profile', () => {
+    const parsed = aiSettingsUpdateSchema.parse({
       enabled: true,
-      provider: 'openai-compatible',
-      baseUrl: 'https://api.example.com/v1',
+      provider: 'mock',
+      baseUrl: '',
       model: '',
-      models: { text: 'deepseek-chat', ocr: 'gpt-ocr', audio: 'gpt-audio' },
+      profiles: [deepseekProfile, { ...deepseekProfile, id: 'qwen-ocr', name: 'Qwen OCR', baseUrl: 'https://dashscope.aliyuncs.com/compatible-mode/v1', model: 'qwen-vl-plus' }, mockProfile],
+      taskRoutes: {
+        'exam-analysis': 'deepseek-text',
+        'practice-generation': 'deepseek-text',
+        'monthly-exam': 'mock-fallback',
+        ocr: 'qwen-ocr',
+        audio: 'mock-fallback',
+        text: 'deepseek-text',
+      },
       timeoutMs: 30000,
     });
-    expect(parsed.model).toBe(DEFAULT_DEEPSEEK_MODEL);
-    expect(parsed.models.text).toBe('deepseek-chat');
-    expect(parsed.models.ocr).toBe('gpt-ocr');
-    expect(parsed.models.audio).toBe('gpt-audio');
+    expect(parsed.profiles.map((item) => item.id)).toEqual(['deepseek-text', 'qwen-ocr', 'mock-fallback']);
+    expect(parsed.taskRoutes.ocr).toBe('qwen-ocr');
+    expect(parsed.taskRoutes['monthly-exam']).toBe('mock-fallback');
+  });
+
+  it('rejects routes pointing to unknown profiles', () => {
+    const parsed = aiSettingsUpdateSchema.safeParse({
+      enabled: true,
+      profiles: [deepseekProfile],
+      taskRoutes: { 'exam-analysis': 'missing-profile' },
+      timeoutMs: 30000,
+    });
+    expect(parsed.success).toBe(false);
   });
 });

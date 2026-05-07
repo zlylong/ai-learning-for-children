@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { aiSettingsService } from '@/features/settings/ai-settings-service';
-import type { AiSettings, AiTask } from '@/features/settings/ai-settings-schema';
+import type { AiProfile, AiSettings, AiTask } from '@/features/settings/ai-settings-schema';
 
 export const examAnalysisInputSchema = z.object({
   childId: z.string().min(1),
@@ -44,35 +44,34 @@ export const aiClient = {
 
 export async function generateJson(input: GenerateJsonInput): Promise<unknown> {
   const settings = await aiSettingsService.getRuntimeSettings().catch(() => undefined);
-  if (settings?.enabled && settings.provider === 'openai-compatible') {
-    return generateJsonWithOpenAiCompatible(input, settings);
+  const profile = settings?.enabled ? resolveProfileForTask(settings, input.task) : undefined;
+  if (profile?.enabled && profile.provider === 'openai-compatible') {
+    return generateJsonWithOpenAiCompatible(input, profile);
   }
   return mockGenerateJson(input);
 }
 
-function resolveModelForTask(settings: AiSettings, task?: AiTask): string | undefined {
-  if (task === 'ocr') return settings.models?.ocr;
-  if (task === 'audio') return settings.models?.audio;
-  return settings.models?.text || settings.model;
+function resolveProfileForTask(settings: AiSettings, task?: AiTask): AiProfile | undefined {
+  const profileId = settings.taskRoutes[task ?? 'text'] ?? settings.taskRoutes.text ?? settings.profiles[0]?.id;
+  return settings.profiles.find((profile) => profile.id === profileId) ?? settings.profiles[0];
 }
 
-async function generateJsonWithOpenAiCompatible(input: GenerateJsonInput, settings: AiSettings): Promise<unknown> {
-  const model = resolveModelForTask(settings, input.task);
-  if (!settings.baseUrl || !model || !settings.apiKey) {
-    throw new Error(`真实 AI 已启用，但 ${input.task ? '当前业务模型' : '模型'}、Base URL 或 API Key 未配置完整`);
+async function generateJsonWithOpenAiCompatible(input: GenerateJsonInput, profile: AiProfile): Promise<unknown> {
+  if (!profile.baseUrl || !profile.model || !profile.apiKey) {
+    throw new Error(`真实 AI 已启用，但功能「${input.task ?? 'text'}」绑定的模型档案「${profile.name}」配置不完整`);
   }
 
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), settings.timeoutMs);
+  const timeout = setTimeout(() => controller.abort(), profile.timeoutMs);
   try {
-    const response = await fetch(`${settings.baseUrl.replace(/\/$/, '')}/chat/completions`, {
+    const response = await fetch(`${profile.baseUrl.replace(/\/$/, '')}/chat/completions`, {
       method: 'POST',
       headers: {
-        Authorization: `Bearer ${settings.apiKey}`,
+        Authorization: `Bearer ${profile.apiKey}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model,
+        model: profile.model,
         temperature: 0.2,
         response_format: { type: 'json_object' },
         messages: [
