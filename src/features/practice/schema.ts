@@ -15,6 +15,7 @@ export const practiceSessionCreateSchema = z.object({
   childId: z.string().min(1, '缺少孩子 ID'),
   knowledgePointId: z.string().trim().min(1, '请选择知识点').optional(),
   knowledgePoint: z.string().trim().min(1, '请选择知识点').optional(),
+  subject: z.enum(['chinese', 'math', 'english']).optional(),
   questionCount: z.number().int().min(1).max(10),
   difficulty: practiceDifficultySchema,
   questionType: practiceQuestionTypeSchema,

@@ -94,8 +94,9 @@ async function resolveKnowledgePoint(input: PracticeSessionCreateInput): Promise
 
   if (input.knowledgePointId) {
     const knowledgePoint = await prisma.knowledgePoint.findUnique({ where: { id: input.knowledgePointId } });
-    if (!knowledgePoint) throw new Error('知识点不存在');
-    return { id: knowledgePoint.id, title: knowledgePoint.name };
+    if (knowledgePoint) return { id: knowledgePoint.id, title: knowledgePoint.name };
+    if (input.knowledgePoint) return { id: null, title: input.knowledgePoint };
+    throw new Error('知识点不存在');
   }
   return { id: null, title: input.knowledgePoint ?? '' };
 }
@@ -268,6 +269,7 @@ export const practiceService = {
         childId: input.childId,
         title: `${knowledgePoint.title} · ${input.questionCount}题练习`,
         status: 'ACTIVE',
+        subject: input.subject ?? null,
         knowledgePoint: knowledgePoint.title,
         questionCount: input.questionCount,
         difficulty: input.difficulty,
@@ -302,6 +304,7 @@ export const practiceService = {
         childId: input.childId,
         type: 'KNOWLEDGE_POINT',
         title: `${knowledgePoint.title} · ${input.questionCount}题练习`,
+        subject: input.subject,
         knowledgePointText: knowledgePoint.title,
         questionCount: input.questionCount,
         difficulty: input.difficulty,

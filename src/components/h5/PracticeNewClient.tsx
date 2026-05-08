@@ -18,8 +18,16 @@ const typeOptions: { label: string; value: PracticeQuestionType }[] = [
   { label: '简答题', value: 'short_answer' },
 ];
 
+const subjectOptions = [
+  { label: '语文', value: 'chinese' },
+  { label: '数学', value: 'math' },
+  { label: '英语', value: 'english' },
+];
+type PracticeSubject = 'chinese' | 'math' | 'english';
+
 export function PracticeNewClient({ childId }: { childId: string }) {
   const router = useRouter();
+  const [subject, setSubject] = useState<PracticeSubject>('math');
   const [knowledgePoints, setKnowledgePoints] = useState<PracticeKnowledgePointOption[]>([]);
   const [knowledgePointId, setKnowledgePointId] = useState('');
   const [loading, setLoading] = useState(true);
@@ -32,10 +40,13 @@ export function PracticeNewClient({ childId }: { childId: string }) {
   const loadKnowledgePoints = useCallback(async () => {
     try {
       setLoading(true);
-      const response = await fetch(`/api/children/${childId}/knowledge-points`, { cache: 'no-store' });
+      const params = new URLSearchParams(window.location.search);
+      const requestedSubject = params.get('subject') as PracticeSubject | null;
+      const effectiveSubject = requestedSubject && subjectOptions.some((item) => item.value === requestedSubject) ? requestedSubject : subject;
+      if (effectiveSubject !== subject) setSubject(effectiveSubject);
+      const response = await fetch(`/api/children/${childId}/knowledge-points?subject=${encodeURIComponent(effectiveSubject)}`, { cache: 'no-store' });
       const data = (await response.json()) as { points?: PracticeKnowledgePointInput[] };
       const nextPoints = normalizePracticeKnowledgePoints(data.points ?? []);
-      const params = new URLSearchParams(window.location.search);
       const requestedId = params.get('knowledgePointId')?.trim() ?? '';
       const requestedTitle = params.get('knowledgePoint')?.trim() ?? '';
       const pointsWithRequested = requestedId && requestedTitle && !nextPoints.some((item) => item.id === requestedId)
@@ -49,7 +60,15 @@ export function PracticeNewClient({ childId }: { childId: string }) {
     } finally {
       setLoading(false);
     }
-  }, [childId]);
+  }, [childId, subject]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const requestedSubject = params.get('subject') as PracticeSubject | null;
+    if (requestedSubject && subjectOptions.some((item) => item.value === requestedSubject)) {
+      setSubject(requestedSubject);
+    }
+  }, []);
 
   useEffect(() => {
     if (childId) void loadKnowledgePoints();
@@ -65,7 +84,7 @@ export function PracticeNewClient({ childId }: { childId: string }) {
       const response = await fetch('/api/practice-sessions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ childId, knowledgePointId, knowledgePoint: knowledgePoints.find((item) => item.id === knowledgePointId)?.title, questionCount, difficulty, questionType }),
+        body: JSON.stringify({ childId, subject, knowledgePointId, knowledgePoint: knowledgePoints.find((item) => item.id === knowledgePointId)?.title, questionCount, difficulty, questionType }),
       });
       const data = (await response.json()) as { sessionId?: string; session?: PracticeSessionRecord; error?: string };
       if (!response.ok || !data.sessionId) throw new Error(data.error ?? '创建练习失败');
@@ -91,6 +110,19 @@ export function PracticeNewClient({ childId }: { childId: string }) {
 
       <section className="rounded-3xl bg-white shadow-sm ring-1 ring-black/5">
         <List header="练习设置">
+          <List.Item>
+            <div className="mb-3 font-medium text-slate-900">学科</div>
+            <Selector
+              columns={3}
+              options={subjectOptions}
+              value={[subject]}
+              onChange={(items) => {
+                const nextSubject = (items[0] as PracticeSubject) ?? 'math';
+                setSubject(nextSubject);
+                setKnowledgePointId('');
+              }}
+            />
+          </List.Item>
           <List.Item extra={knowledgePoints.find((item) => item.id === knowledgePointId)?.title ?? '暂无知识点'} clickable={knowledgePoints.length > 0} onClick={() => knowledgePoints.length > 0 && setPickerVisible(true)}>知识点</List.Item>
           <List.Item extra={<Stepper min={1} max={10} value={questionCount} onChange={(value) => setQuestionCount(Number(value))} />}>题目数量</List.Item>
           <List.Item description="根据孩子当前掌握情况选择难度">
@@ -111,7 +143,7 @@ export function PracticeNewClient({ childId }: { childId: string }) {
 
       {knowledgePoints.length === 0 ? (
         <section className="rounded-3xl bg-white p-6 text-center text-sm text-slate-500 shadow-sm ring-1 ring-black/5">
-          还没有可练习的知识点。请先上传试卷或处理错题，系统会自动沉淀孩子的知识点。
+当前学科还没有可练习的知识点。可切换语文/数学/英语，或先上传试卷，系统会自动沉淀孩子的知识点。
         </section>
       ) : null}
 

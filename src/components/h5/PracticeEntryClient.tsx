@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
-import { DotLoading, Toast } from 'antd-mobile';
+import { DotLoading, Selector, Toast } from 'antd-mobile';
 import {
   CalendarOutline,
   PieOutline,
@@ -14,6 +14,13 @@ import { ActionCardSmall } from './ActionCardSmall';
 import { EmptyState } from './EmptyState';
 import { getPracticeCenterActions } from './practice-entry-actions';
 
+const subjectOptions = [
+  { label: '语文', value: 'chinese' },
+  { label: '数学', value: 'math' },
+  { label: '英语', value: 'english' },
+];
+type PracticeSubject = 'chinese' | 'math' | 'english';
+
 type KnowledgePointSummary = {
   id: string;
   knowledgePointId: string;
@@ -24,13 +31,14 @@ type KnowledgePointSummary = {
 export function PracticeEntryClient() {
   const router = useRouter();
   const [childId, setChildId] = useState<string | null>(null);
+  const [subject, setSubject] = useState<PracticeSubject>('math');
   const [points, setPoints] = useState<KnowledgePointSummary[]>([]);
   const [loading, setLoading] = useState(true);
 
-  const loadData = useCallback(async (id: string) => {
+  const loadData = useCallback(async (id: string, nextSubject: PracticeSubject) => {
     try {
       setLoading(true);
-      const res = await fetch(`/api/children/${id}/knowledge-points`, { cache: 'no-store' });
+      const res = await fetch(`/api/children/${id}/knowledge-points?subject=${encodeURIComponent(nextSubject)}`, { cache: 'no-store' });
       const data = (await res.json()) as { points?: KnowledgePointSummary[] };
       setPoints(data.points || []);
     } catch (err) {
@@ -44,11 +52,11 @@ export function PracticeEntryClient() {
     const savedId = localStorage.getItem('selectedChildId');
     if (savedId) {
       setChildId(savedId);
-      loadData(savedId);
+      loadData(savedId, subject);
     } else {
       setLoading(false);
     }
-  }, [loadData]);
+  }, [loadData, subject]);
 
   const startPractice = async (point: KnowledgePointSummary) => {
     if (!childId) return;
@@ -59,6 +67,7 @@ export function PracticeEntryClient() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           childId,
+          subject,
           knowledgePoint: point.knowledgePointText,
           knowledgePointId: point.knowledgePointId,
           questionCount: 5,
@@ -90,8 +99,23 @@ export function PracticeEntryClient() {
 
   const weakPoints = points.filter(p => p.status === 'WEAK' || p.status === 'PRACTICING').slice(0, 3);
 
+  const changeSubject = (value: PracticeSubject) => {
+    setSubject(value);
+    if (childId) void loadData(childId, value);
+  };
+
   return (
     <div className="space-y-6 pb-10">
+      <section className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/[0.04]">
+        <div className="mb-3 text-sm font-bold text-slate-900">选择学科</div>
+        <Selector
+          columns={3}
+          options={subjectOptions}
+          value={[subject]}
+          onChange={(items) => changeSubject((items[0] as PracticeSubject) ?? 'math')}
+        />
+      </section>
+
       <section>
         <div className="mb-3 px-1">
            <h2 className="text-sm font-bold text-slate-900">推荐练习</h2>
@@ -122,7 +146,7 @@ export function PracticeEntryClient() {
             key={action.href}
             title={action.title}
             icon={action.title === '知识点练习' ? <AppOutline /> : action.title === '月度错题卷' ? <CalendarOutline /> : <PieOutline />}
-            href={action.href}
+            href={action.title === '知识点练习' ? `${action.href}?subject=${subject}` : action.href}
             color={action.color}
           />
         ))}
@@ -131,7 +155,7 @@ export function PracticeEntryClient() {
       <section>
         <div className="mb-3 px-1 flex items-center justify-between">
            <h2 className="text-sm font-bold text-slate-900">所有知识点</h2>
-           <span className="text-[10px] text-slate-400">弱项优先</span>
+           <span className="text-[10px] text-slate-400">当前学科 · 弱项优先</span>
         </div>
         <div className="rounded-2xl bg-white shadow-sm ring-1 ring-black/[0.04] divide-y divide-slate-50 overflow-hidden">
           {points.length > 0 ? points.map(p => (
