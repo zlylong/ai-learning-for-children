@@ -41,10 +41,7 @@ export function PracticeNewClient({ childId }: { childId: string }) {
     try {
       setLoading(true);
       const params = new URLSearchParams(window.location.search);
-      const requestedSubject = params.get('subject') as PracticeSubject | null;
-      const effectiveSubject = requestedSubject && subjectOptions.some((item) => item.value === requestedSubject) ? requestedSubject : subject;
-      if (effectiveSubject !== subject) setSubject(effectiveSubject);
-      const response = await fetch(`/api/children/${childId}/knowledge-points?subject=${encodeURIComponent(effectiveSubject)}`, { cache: 'no-store' });
+      const response = await fetch(`/api/children/${childId}/knowledge-points?subject=${encodeURIComponent(subject)}`, { cache: 'no-store' });
       const data = (await response.json()) as { points?: PracticeKnowledgePointInput[] };
       const nextPoints = normalizePracticeKnowledgePoints(data.points ?? []);
       const requestedId = params.get('knowledgePointId')?.trim() ?? '';
@@ -147,14 +144,20 @@ export function PracticeNewClient({ childId }: { childId: string }) {
         </section>
       ) : null}
 
-      <Popup visible={pickerVisible} onMaskClick={() => setPickerVisible(false)} bodyStyle={{ borderTopLeftRadius: 24, borderTopRightRadius: 24 }}>
-        <div className="mx-auto max-w-[480px] bg-white p-4 pb-[calc(24px+env(safe-area-inset-bottom))]">
-          <div className="mb-3 text-lg font-bold text-slate-900">选择知识点</div>
-          <Radio.Group value={knowledgePointId} onChange={(value) => { setKnowledgePointId(String(value)); setPickerVisible(false); }}>
-            <List>
-              {knowledgePoints.map((item) => <List.Item key={item.id} prefix={<Radio value={item.id} />}>{item.title}</List.Item>)}
-            </List>
-          </Radio.Group>
+      <Popup
+        visible={pickerVisible}
+        onMaskClick={() => setPickerVisible(false)}
+        bodyStyle={{ borderTopLeftRadius: 24, borderTopRightRadius: 24, maxHeight: '82vh', overflow: 'hidden' }}
+      >
+        <div className="mx-auto flex h-[82vh] max-w-[480px] flex-col bg-white p-4 pb-[calc(24px+env(safe-area-inset-bottom))]">
+          <div className="mb-3 shrink-0 text-lg font-bold text-slate-900">选择知识点</div>
+          <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain rounded-2xl">
+            <Radio.Group value={knowledgePointId} onChange={(value) => { setKnowledgePointId(String(value)); setPickerVisible(false); }}>
+              <List>
+                {knowledgePoints.map((item) => <List.Item key={item.id} prefix={<Radio value={item.id} />}>{item.title}</List.Item>)}
+              </List>
+            </Radio.Group>
+          </div>
         </div>
       </Popup>
 
