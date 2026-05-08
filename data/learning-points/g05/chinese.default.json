@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.08",
+  "subject": {
+    "code": "chinese",
+    "name": "语文"
+  },
+  "grade": {
+    "code": "G05",
+    "name": "五年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-school-cn-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_chinese_g05_001",
+      "title": "识字写字与积累",
+      "order": 1,
+      "description": "五年级语文识字写字与积累学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g05_001_001",
+          "title": "说明方法识别",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握说明方法识别的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "说明方法识别"
+          ],
+          "objectives": {
+            "remember": [
+              "记住说明方法识别的核心规则"
+            ],
+            "understand": [
+              "理解说明方法识别在题目中的含义"
+            ],
+            "apply": [
+              "能运用说明方法识别完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "理解",
+            "表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对说明方法识别的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清说明方法识别的基本方法",
+            "能独立完成说明方法识别基础题",
+            "能发现并订正说明方法识别常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_001_002",
+          "title": "古诗文重点词句理解",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握古诗文重点词句理解的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "古诗文重点词句理解"
+          ],
+          "objectives": {
+            "remember": [
+              "记住古诗文重点词句理解的核心规则"
+            ],
+            "understand": [
+              "理解古诗文重点词句理解在题目中的含义"
+            ],
+            "apply": [
+              "能运用古诗文重点词句理解完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "理解",
+            "表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对古诗文重点词句理解的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清古诗文重点词句理解的基本方法",
+            "能独立完成古诗文重点词句理解基础题",
+            "能发现并订正古诗文重点词句理解常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g05_002",
+      "title": "阅读与表达",
+      "order": 2,
+      "description": "五年级语文阅读与表达学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g05_002_001",
+          "title": "缩写与扩写",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握缩写与扩写的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "缩写与扩写"
+          ],
+          "objectives": {
+            "remember": [
+              "记住缩写与扩写的核心规则"
+            ],
+            "understand": [
+              "理解缩写与扩写在题目中的含义"
+            ],
+            "apply": [
+              "能运用缩写与扩写完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "理解",
+            "表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对缩写与扩写的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清缩写与扩写的基本方法",
+            "能独立完成缩写与扩写基础题",
+            "能发现并订正缩写与扩写常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-08T00:00:00.000Z"
+}

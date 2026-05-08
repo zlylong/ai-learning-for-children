@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.08",
+  "subject": {
+    "code": "math",
+    "name": "数学"
+  },
+  "grade": {
+    "code": "G05",
+    "name": "五年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-school-cn-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_math_g05_001",
+      "title": "数与运算",
+      "order": 1,
+      "description": "五年级数学数与运算学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g05_001_001",
+          "title": "小数乘除法",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握小数乘除法的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "小数乘除法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住小数乘除法的核心规则"
+            ],
+            "understand": [
+              "理解小数乘除法在题目中的含义"
+            ],
+            "apply": [
+              "能运用小数乘除法完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "方法",
+            "计算"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对小数乘除法的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清小数乘除法的基本方法",
+            "能独立完成小数乘除法基础题",
+            "能发现并订正小数乘除法常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        },
+        {
+          "id": "kp_math_g05_001_002",
+          "title": "分数的意义",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握分数的意义的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "分数的意义"
+          ],
+          "objectives": {
+            "remember": [
+              "记住分数的意义的核心规则"
+            ],
+            "understand": [
+              "理解分数的意义在题目中的含义"
+            ],
+            "apply": [
+              "能运用分数的意义完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "方法",
+            "计算"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对分数的意义的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清分数的意义的基本方法",
+            "能独立完成分数的意义基础题",
+            "能发现并订正分数的意义常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g05_002",
+      "title": "图形与位置",
+      "order": 2,
+      "description": "五年级数学图形与位置学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g05_002_001",
+          "title": "多边形面积",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握多边形面积的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "多边形面积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住多边形面积的核心规则"
+            ],
+            "understand": [
+              "理解多边形面积在题目中的含义"
+            ],
+            "apply": [
+              "能运用多边形面积完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "方法",
+            "计算"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对多边形面积的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清多边形面积的基本方法",
+            "能独立完成多边形面积基础题",
+            "能发现并订正多边形面积常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-08T00:00:00.000Z"
+}

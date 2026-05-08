@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.08",
+  "subject": {
+    "code": "english",
+    "name": "英语"
+  },
+  "grade": {
+    "code": "G03",
+    "name": "三年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-school-cn-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_english_g03_001",
+      "title": "词汇与听说",
+      "order": 1,
+      "description": "三年级英语词汇与听说学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g03_001_001",
+          "title": "be 动词 am/is/are",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握be 动词 am/is/are的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "be 动词 am/is/are"
+          ],
+          "objectives": {
+            "remember": [
+              "记住be 动词 am/is/are的核心规则"
+            ],
+            "understand": [
+              "理解be 动词 am/is/are在题目中的含义"
+            ],
+            "apply": [
+              "能运用be 动词 am/is/are完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对be 动词 am/is/are的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清be 动词 am/is/are的基本方法",
+            "能独立完成be 动词 am/is/are基础题",
+            "能发现并订正be 动词 am/is/are常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        },
+        {
+          "id": "kp_english_g03_001_002",
+          "title": "名词单复数初步",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握名词单复数初步的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "名词单复数初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住名词单复数初步的核心规则"
+            ],
+            "understand": [
+              "理解名词单复数初步在题目中的含义"
+            ],
+            "apply": [
+              "能运用名词单复数初步完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对名词单复数初步的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清名词单复数初步的基本方法",
+            "能独立完成名词单复数初步基础题",
+            "能发现并订正名词单复数初步常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g03_002",
+      "title": "基础句型与表达",
+      "order": 2,
+      "description": "三年级英语基础句型与表达学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g03_002_001",
+          "title": "What is this? 句型",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握What is this? 句型的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "What is this? 句型"
+          ],
+          "objectives": {
+            "remember": [
+              "记住What is this? 句型的核心规则"
+            ],
+            "understand": [
+              "理解What is this? 句型在题目中的含义"
+            ],
+            "apply": [
+              "能运用What is this? 句型完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对What is this? 句型的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清What is this? 句型的基本方法",
+            "能独立完成What is this? 句型基础题",
+            "能发现并订正What is this? 句型常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-08T00:00:00.000Z"
+}

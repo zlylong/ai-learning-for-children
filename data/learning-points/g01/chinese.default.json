@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.08",
+  "subject": {
+    "code": "chinese",
+    "name": "语文"
+  },
+  "grade": {
+    "code": "G01",
+    "name": "一年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-school-cn-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_chinese_g01_001",
+      "title": "识字写字与积累",
+      "order": 1,
+      "description": "一年级语文识字写字与积累学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g01_001_001",
+          "title": "声母韵母整体认读",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握声母韵母整体认读的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "声母韵母整体认读"
+          ],
+          "objectives": {
+            "remember": [
+              "记住声母韵母整体认读的核心规则"
+            ],
+            "understand": [
+              "理解声母韵母整体认读在题目中的含义"
+            ],
+            "apply": [
+              "能运用声母韵母整体认读完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "理解",
+            "表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对声母韵母整体认读的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清声母韵母整体认读的基本方法",
+            "能独立完成声母韵母整体认读基础题",
+            "能发现并订正声母韵母整体认读常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        },
+        {
+          "id": "kp_chinese_g01_001_002",
+          "title": "常用汉字认读与书写",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握常用汉字认读与书写的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "常用汉字认读与书写"
+          ],
+          "objectives": {
+            "remember": [
+              "记住常用汉字认读与书写的核心规则"
+            ],
+            "understand": [
+              "理解常用汉字认读与书写在题目中的含义"
+            ],
+            "apply": [
+              "能运用常用汉字认读与书写完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "理解",
+            "表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对常用汉字认读与书写的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清常用汉字认读与书写的基本方法",
+            "能独立完成常用汉字认读与书写基础题",
+            "能发现并订正常用汉字认读与书写常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g01_002",
+      "title": "阅读与表达",
+      "order": 2,
+      "description": "一年级语文阅读与表达学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g01_002_001",
+          "title": "看图说完整句",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握看图说完整句的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "看图说完整句"
+          ],
+          "objectives": {
+            "remember": [
+              "记住看图说完整句的核心规则"
+            ],
+            "understand": [
+              "理解看图说完整句在题目中的含义"
+            ],
+            "apply": [
+              "能运用看图说完整句完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "理解",
+            "表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对看图说完整句的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清看图说完整句的基本方法",
+            "能独立完成看图说完整句基础题",
+            "能发现并订正看图说完整句常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-08T00:00:00.000Z"
+}

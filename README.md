@@ -69,6 +69,21 @@ API：
 
 说明：未配置 `DATABASE_URL` 或设置 `CHILDREN_STORE=memory` 时，孩子档案、试卷分析和知识点练习 API 会使用开发期内存存储，方便无 PostgreSQL 环境直接启动 H5；配置 PostgreSQL 后使用 Prisma 存储。
 
+
+## 标准学习要点文件：LearningPointCatalog v1
+
+系统现在支持直接读取 `data/learning-points` 下的标准学习要点 JSON 文件，供 `agent: learning` 后续批量生成小学语文、数学、英语知识点。
+
+- `data/learning-points/manifest.json`：索引所有年级/学科/教材版本文件。
+- `data/learning-points/g01` 到 `g06`：小学一至六年级语文、数学、英语默认学习要点数据。
+- `src/features/learning-points/schema.ts`：LearningPointCatalog v1 的 Zod 校验边界。
+- `src/features/learning-points/loader.ts`：运行时读取、年级/学科别名归一化和扁平知识点转换。
+- `GET /api/learning-points?grade=G01&subject=math&version=default`：读取完整标准学习要点文件。
+- `GET /api/learning-points?grade=一年级&subject=数学&view=points`：读取扁平知识点列表。
+- `GET /api/children/[id]/knowledge-points?subject=math`：优先返回孩子已有掌握状态；暂无错题/掌握记录时，自动回退该孩子年级和教材版本对应的标准学习要点。
+
+详细生成规范见 `docs/learning-point-catalog-v1.md`。后续细化教材版本时，只需新增 `{subject}.{version}.json` 并更新 manifest。
+
 ## 快速开始
 
 ```bash

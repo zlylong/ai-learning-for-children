@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.08",
+  "subject": {
+    "code": "english",
+    "name": "英语"
+  },
+  "grade": {
+    "code": "G05",
+    "name": "五年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-school-cn-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_english_g05_001",
+      "title": "词汇与听说",
+      "order": 1,
+      "description": "五年级英语词汇与听说学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g05_001_001",
+          "title": "第三人称单数",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握第三人称单数的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "第三人称单数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住第三人称单数的核心规则"
+            ],
+            "understand": [
+              "理解第三人称单数在题目中的含义"
+            ],
+            "apply": [
+              "能运用第三人称单数完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对第三人称单数的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清第三人称单数的基本方法",
+            "能独立完成第三人称单数基础题",
+            "能发现并订正第三人称单数常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        },
+        {
+          "id": "kp_english_g05_001_002",
+          "title": "方位介词",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握方位介词的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "方位介词"
+          ],
+          "objectives": {
+            "remember": [
+              "记住方位介词的核心规则"
+            ],
+            "understand": [
+              "理解方位介词在题目中的含义"
+            ],
+            "apply": [
+              "能运用方位介词完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对方位介词的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清方位介词的基本方法",
+            "能独立完成方位介词基础题",
+            "能发现并订正方位介词常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g05_002",
+      "title": "基础句型与表达",
+      "order": 2,
+      "description": "五年级英语基础句型与表达学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g05_002_001",
+          "title": "There be 句型",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握There be 句型的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "There be 句型"
+          ],
+          "objectives": {
+            "remember": [
+              "记住There be 句型的核心规则"
+            ],
+            "understand": [
+              "理解There be 句型在题目中的含义"
+            ],
+            "apply": [
+              "能运用There be 句型完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对There be 句型的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清There be 句型的基本方法",
+            "能独立完成There be 句型基础题",
+            "能发现并订正There be 句型常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-08T00:00:00.000Z"
+}

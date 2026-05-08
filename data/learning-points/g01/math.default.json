@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.08",
+  "subject": {
+    "code": "math",
+    "name": "数学"
+  },
+  "grade": {
+    "code": "G01",
+    "name": "一年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-school-cn-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_math_g01_001",
+      "title": "数与运算",
+      "order": 1,
+      "description": "一年级数学数与运算学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g01_001_001",
+          "title": "20以内数的认识",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握20以内数的认识的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "20以内数的认识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住20以内数的认识的核心规则"
+            ],
+            "understand": [
+              "理解20以内数的认识在题目中的含义"
+            ],
+            "apply": [
+              "能运用20以内数的认识完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "方法",
+            "计算"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对20以内数的认识的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清20以内数的认识的基本方法",
+            "能独立完成20以内数的认识基础题",
+            "能发现并订正20以内数的认识常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        },
+        {
+          "id": "kp_math_g01_001_002",
+          "title": "20以内加减法",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握20以内加减法的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "20以内加减法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住20以内加减法的核心规则"
+            ],
+            "understand": [
+              "理解20以内加减法在题目中的含义"
+            ],
+            "apply": [
+              "能运用20以内加减法完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "方法",
+            "计算"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对20以内加减法的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清20以内加减法的基本方法",
+            "能独立完成20以内加减法基础题",
+            "能发现并订正20以内加减法常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g01_002",
+      "title": "图形与位置",
+      "order": 2,
+      "description": "一年级数学图形与位置学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g01_002_001",
+          "title": "认识基础图形",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握认识基础图形的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "认识基础图形"
+          ],
+          "objectives": {
+            "remember": [
+              "记住认识基础图形的核心规则"
+            ],
+            "understand": [
+              "理解认识基础图形在题目中的含义"
+            ],
+            "apply": [
+              "能运用认识基础图形完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "方法",
+            "计算"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对认识基础图形的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清认识基础图形的基本方法",
+            "能独立完成认识基础图形基础题",
+            "能发现并订正认识基础图形常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-08T00:00:00.000Z"
+}

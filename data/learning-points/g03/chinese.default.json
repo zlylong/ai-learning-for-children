@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.08",
+  "subject": {
+    "code": "chinese",
+    "name": "语文"
+  },
+  "grade": {
+    "code": "G03",
+    "name": "三年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-school-cn-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_chinese_g03_001",
+      "title": "识字写字与积累",
+      "order": 1,
+      "description": "三年级语文识字写字与积累学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g03_001_001",
+          "title": "关键语句理解",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握关键语句理解的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "关键语句理解"
+          ],
+          "objectives": {
+            "remember": [
+              "记住关键语句理解的核心规则"
+            ],
+            "understand": [
+              "理解关键语句理解在题目中的含义"
+            ],
+            "apply": [
+              "能运用关键语句理解完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "理解",
+            "表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对关键语句理解的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清关键语句理解的基本方法",
+            "能独立完成关键语句理解基础题",
+            "能发现并订正关键语句理解常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_001_002",
+          "title": "段落主要意思概括",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握段落主要意思概括的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "段落主要意思概括"
+          ],
+          "objectives": {
+            "remember": [
+              "记住段落主要意思概括的核心规则"
+            ],
+            "understand": [
+              "理解段落主要意思概括在题目中的含义"
+            ],
+            "apply": [
+              "能运用段落主要意思概括完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "理解",
+            "表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对段落主要意思概括的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清段落主要意思概括的基本方法",
+            "能独立完成段落主要意思概括基础题",
+            "能发现并订正段落主要意思概括常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g03_002",
+      "title": "阅读与表达",
+      "order": 2,
+      "description": "三年级语文阅读与表达学习模块。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g03_002_001",
+          "title": "习作按顺序写清楚",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握习作按顺序写清楚的基础概念、常见题型和应用方法。",
+          "aliases": [
+            "习作按顺序写清楚"
+          ],
+          "objectives": {
+            "remember": [
+              "记住习作按顺序写清楚的核心规则"
+            ],
+            "understand": [
+              "理解习作按顺序写清楚在题目中的含义"
+            ],
+            "apply": [
+              "能运用习作按顺序写清楚完成对应练习"
+            ]
+          },
+          "keyConcepts": [
+            "理解",
+            "表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "common_error",
+              "description": "对习作按顺序写清楚的关键步骤或使用场景判断不清。",
+              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清习作按顺序写清楚的基本方法",
+            "能独立完成习作按顺序写清楚基础题",
+            "能发现并订正习作按顺序写清楚常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "基础",
+            "核心"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-08T00:00:00.000Z"
+}
