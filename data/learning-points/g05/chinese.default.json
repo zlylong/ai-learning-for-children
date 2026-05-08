@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "chinese",
     "name": "语文"
@@ -17,53 +17,54 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_chinese_g05_001",
-      "title": "识字写字与积累",
+      "title": "字词句综合",
       "order": 1,
-      "description": "五年级语文识字写字与积累学习模块。",
+      "description": "五年级语文「字词句综合」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_chinese_g05_001_001",
-          "title": "说明方法识别",
+          "title": "词语语境义辨析",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握说明方法识别的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用五年级语文「词语语境义辨析」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "说明方法识别"
+            "词语语境义辨析"
           ],
           "objectives": {
             "remember": [
-              "记住说明方法识别的核心规则"
+              "记住「词语语境义辨析」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解说明方法识别在题目中的含义"
+              "理解「词语语境义辨析」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用说明方法识别完成对应练习"
+              "能够运用「词语语境义辨析」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对说明方法识别的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「词语语境义辨析」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清说明方法识别的基本方法",
-            "能独立完成说明方法识别基础题",
-            "能发现并订正说明方法识别常见错误"
+            "能准确识别「词语语境义辨析」对应的语言现象或阅读任务",
+            "能结合文本说明「词语语境义辨析」的理解依据",
+            "能在表达或习作中正确运用「词语语境义辨析」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -72,54 +73,55 @@
               "short_answer"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_chinese_g05_001_002",
-          "title": "古诗文重点词句理解",
+          "title": "句子含义深层理解",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握古诗文重点词句理解的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用五年级语文「句子含义深层理解」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "古诗文重点词句理解"
+            "句子含义深层理解"
           ],
           "objectives": {
             "remember": [
-              "记住古诗文重点词句理解的核心规则"
+              "记住「句子含义深层理解」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解古诗文重点词句理解在题目中的含义"
+              "理解「句子含义深层理解」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用古诗文重点词句理解完成对应练习"
+              "能够运用「句子含义深层理解」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对古诗文重点词句理解的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「句子含义深层理解」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清古诗文重点词句理解的基本方法",
-            "能独立完成古诗文重点词句理解基础题",
-            "能发现并订正古诗文重点词句理解常见错误"
+            "能准确识别「句子含义深层理解」对应的语言现象或阅读任务",
+            "能结合文本说明「句子含义深层理解」的理解依据",
+            "能在表达或习作中正确运用「句子含义深层理解」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -128,62 +130,292 @@
               "short_answer"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_001_003",
+          "title": "关联词综合运用",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「关联词综合运用」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "关联词综合运用"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「关联词综合运用」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「关联词综合运用」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「关联词综合运用」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「关联词综合运用」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「关联词综合运用」对应的语言现象或阅读任务",
+            "能结合文本说明「关联词综合运用」的理解依据",
+            "能在表达或习作中正确运用「关联词综合运用」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_001_004",
+          "title": "修改病句综合",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「修改病句综合」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "修改病句综合"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「修改病句综合」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「修改病句综合」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「修改病句综合」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「修改病句综合」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「修改病句综合」对应的语言现象或阅读任务",
+            "能结合文本说明「修改病句综合」的理解依据",
+            "能在表达或习作中正确运用「修改病句综合」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_001_005",
+          "title": "标点冒号引号分号",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「标点冒号引号分号」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "标点冒号引号分号"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「标点冒号引号分号」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「标点冒号引号分号」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「标点冒号引号分号」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「标点冒号引号分号」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「标点冒号引号分号」对应的语言现象或阅读任务",
+            "能结合文本说明「标点冒号引号分号」的理解依据",
+            "能在表达或习作中正确运用「标点冒号引号分号」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_001_006",
+          "title": "修辞手法综合",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「修辞手法综合」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "修辞手法综合"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「修辞手法综合」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「修辞手法综合」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「修辞手法综合」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「修辞手法综合」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「修辞手法综合」对应的语言现象或阅读任务",
+            "能结合文本说明「修辞手法综合」的理解依据",
+            "能在表达或习作中正确运用「修辞手法综合」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_chinese_g05_002",
-      "title": "阅读与表达",
+      "title": "阅读策略",
       "order": 2,
-      "description": "五年级语文阅读与表达学习模块。",
+      "description": "五年级语文「阅读策略」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_chinese_g05_002_001",
-          "title": "缩写与扩写",
+          "title": "把握文章中心",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握缩写与扩写的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用五年级语文「把握文章中心」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "缩写与扩写"
+            "把握文章中心"
           ],
           "objectives": {
             "remember": [
-              "记住缩写与扩写的核心规则"
+              "记住「把握文章中心」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解缩写与扩写在题目中的含义"
+              "理解「把握文章中心」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用缩写与扩写完成对应练习"
+              "能够运用「把握文章中心」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对缩写与扩写的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「把握文章中心」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清缩写与扩写的基本方法",
-            "能独立完成缩写与扩写基础题",
-            "能发现并订正缩写与扩写常见错误"
+            "能准确识别「把握文章中心」对应的语言现象或阅读任务",
+            "能结合文本说明「把握文章中心」的理解依据",
+            "能在表达或习作中正确运用「把握文章中心」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -192,14 +424,886 @@
               "short_answer"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_002_002",
+          "title": "分析人物形象",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「分析人物形象」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "分析人物形象"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「分析人物形象」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「分析人物形象」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「分析人物形象」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「分析人物形象」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「分析人物形象」对应的语言现象或阅读任务",
+            "能结合文本说明「分析人物形象」的理解依据",
+            "能在表达或习作中正确运用「分析人物形象」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_002_003",
+          "title": "说明方法列数字举例子作比较",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「说明方法列数字举例子作比较」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "说明方法列数字举例子作比较"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「说明方法列数字举例子作比较」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「说明方法列数字举例子作比较」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「说明方法列数字举例子作比较」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「说明方法列数字举例子作比较」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「说明方法列数字举例子作比较」对应的语言现象或阅读任务",
+            "能结合文本说明「说明方法列数字举例子作比较」的理解依据",
+            "能在表达或习作中正确运用「说明方法列数字举例子作比较」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_002_004",
+          "title": "非连续性文本阅读",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「非连续性文本阅读」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "非连续性文本阅读"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「非连续性文本阅读」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「非连续性文本阅读」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「非连续性文本阅读」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「非连续性文本阅读」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「非连续性文本阅读」对应的语言现象或阅读任务",
+            "能结合文本说明「非连续性文本阅读」的理解依据",
+            "能在表达或习作中正确运用「非连续性文本阅读」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_002_005",
+          "title": "快速默读提取信息",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「快速默读提取信息」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "快速默读提取信息"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「快速默读提取信息」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「快速默读提取信息」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「快速默读提取信息」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「快速默读提取信息」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「快速默读提取信息」对应的语言现象或阅读任务",
+            "能结合文本说明「快速默读提取信息」的理解依据",
+            "能在表达或习作中正确运用「快速默读提取信息」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_002_006",
+          "title": "体会表达顺序和写法",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「体会表达顺序和写法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "体会表达顺序和写法",
+            "体会表达顺序与写法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「体会表达顺序和写法」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「体会表达顺序和写法」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「体会表达顺序和写法」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「体会表达顺序和写法」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「体会表达顺序和写法」对应的语言现象或阅读任务",
+            "能结合文本说明「体会表达顺序和写法」的理解依据",
+            "能在表达或习作中正确运用「体会表达顺序和写法」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g05_003",
+      "title": "古诗文与名著",
+      "order": 3,
+      "description": "五年级语文「古诗文与名著」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g05_003_001",
+          "title": "古诗词意象理解",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「古诗词意象理解」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "古诗词意象理解"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「古诗词意象理解」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「古诗词意象理解」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「古诗词意象理解」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「古诗词意象理解」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「古诗词意象理解」对应的语言现象或阅读任务",
+            "能结合文本说明「古诗词意象理解」的理解依据",
+            "能在表达或习作中正确运用「古诗词意象理解」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_003_002",
+          "title": "文言文重点字词",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「文言文重点字词」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "文言文重点字词"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「文言文重点字词」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「文言文重点字词」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「文言文重点字词」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「文言文重点字词」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「文言文重点字词」对应的语言现象或阅读任务",
+            "能结合文本说明「文言文重点字词」的理解依据",
+            "能在表达或习作中正确运用「文言文重点字词」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_003_003",
+          "title": "名著人物与情节",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「名著人物与情节」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "名著人物与情节"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「名著人物与情节」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「名著人物与情节」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「名著人物与情节」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「名著人物与情节」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「名著人物与情节」对应的语言现象或阅读任务",
+            "能结合文本说明「名著人物与情节」的理解依据",
+            "能在表达或习作中正确运用「名著人物与情节」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_003_004",
+          "title": "传统文化主题积累",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「传统文化主题积累」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "传统文化主题积累"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「传统文化主题积累」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「传统文化主题积累」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「传统文化主题积累」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「传统文化主题积累」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「传统文化主题积累」对应的语言现象或阅读任务",
+            "能结合文本说明「传统文化主题积累」的理解依据",
+            "能在表达或习作中正确运用「传统文化主题积累」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g05_004",
+      "title": "习作表达",
+      "order": 4,
+      "description": "五年级语文「习作表达」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g05_004_001",
+          "title": "写读后感",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「写读后感」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "写读后感"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「写读后感」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「写读后感」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「写读后感」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「写读后感」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「写读后感」对应的语言现象或阅读任务",
+            "能结合文本说明「写读后感」的理解依据",
+            "能在表达或习作中正确运用「写读后感」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_004_002",
+          "title": "说明文写作",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「说明文写作」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "说明文写作"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「说明文写作」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「说明文写作」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「说明文写作」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「说明文写作」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「说明文写作」对应的语言现象或阅读任务",
+            "能结合文本说明「说明文写作」的理解依据",
+            "能在表达或习作中正确运用「说明文写作」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_004_003",
+          "title": "缩写故事",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「缩写故事」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "缩写故事"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「缩写故事」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「缩写故事」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「缩写故事」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「缩写故事」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「缩写故事」对应的语言现象或阅读任务",
+            "能结合文本说明「缩写故事」的理解依据",
+            "能在表达或习作中正确运用「缩写故事」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_004_004",
+          "title": "漫画启示作文",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「漫画启示作文」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "漫画启示作文"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「漫画启示作文」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「漫画启示作文」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「漫画启示作文」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「漫画启示作文」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「漫画启示作文」对应的语言现象或阅读任务",
+            "能结合文本说明「漫画启示作文」的理解依据",
+            "能在表达或习作中正确运用「漫画启示作文」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_004_005",
+          "title": "围绕中心选择材料",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「围绕中心选择材料」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "围绕中心选择材料"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「围绕中心选择材料」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「围绕中心选择材料」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「围绕中心选择材料」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「围绕中心选择材料」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「围绕中心选择材料」对应的语言现象或阅读任务",
+            "能结合文本说明「围绕中心选择材料」的理解依据",
+            "能在表达或习作中正确运用「围绕中心选择材料」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g05_004_006",
+          "title": "习作开头结尾设计",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用五年级语文「习作开头结尾设计」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "习作开头结尾设计"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「习作开头结尾设计」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「习作开头结尾设计」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「习作开头结尾设计」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「习作开头结尾设计」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「习作开头结尾设计」对应的语言现象或阅读任务",
+            "能结合文本说明「习作开头结尾设计」的理解依据",
+            "能在表达或习作中正确运用「习作开头结尾设计」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

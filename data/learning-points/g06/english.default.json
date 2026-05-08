@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "english",
     "name": "英语"
@@ -17,53 +17,55 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_english_g06_001",
-      "title": "词汇与听说",
+      "title": "词汇主题",
       "order": 1,
-      "description": "六年级英语词汇与听说学习模块。",
+      "description": "六年级英语「词汇主题」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g06_001_001",
-          "title": "一般过去时基础",
+          "title": "假期和旅行",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握一般过去时基础的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用六年级英语「假期和旅行」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "一般过去时基础"
+            "假期和旅行",
+            "假期与旅行"
           ],
           "objectives": {
             "remember": [
-              "记住一般过去时基础的核心规则"
+              "记住「假期和旅行」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解一般过去时基础在题目中的含义"
+              "理解「假期和旅行」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用一般过去时基础完成对应练习"
+              "能够运用「假期和旅行」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对一般过去时基础的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「假期和旅行」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清一般过去时基础的基本方法",
-            "能独立完成一般过去时基础基础题",
-            "能发现并订正一般过去时基础常见错误"
+            "能听懂并认读「假期和旅行」相关词句",
+            "能在正确场景中使用「假期和旅行」进行表达",
+            "能完成「假期和旅行」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -72,54 +74,55 @@
               "sentence_making"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_english_g06_001_002",
-          "title": "比较级初步",
+          "title": "过去活动词汇",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握比较级初步的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用六年级英语「过去活动词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "比较级初步"
+            "过去活动词汇"
           ],
           "objectives": {
             "remember": [
-              "记住比较级初步的核心规则"
+              "记住「过去活动词汇」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解比较级初步在题目中的含义"
+              "理解「过去活动词汇」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用比较级初步完成对应练习"
+              "能够运用「过去活动词汇」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对比较级初步的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「过去活动词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清比较级初步的基本方法",
-            "能独立完成比较级初步基础题",
-            "能发现并订正比较级初步常见错误"
+            "能听懂并认读「过去活动词汇」相关词句",
+            "能在正确场景中使用「过去活动词汇」进行表达",
+            "能完成「过去活动词汇」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -128,62 +131,235 @@
               "sentence_making"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g06_001_003",
+          "title": "健康和习惯",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「健康和习惯」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "健康和习惯",
+            "健康与习惯"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「健康和习惯」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「健康和习惯」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「健康和习惯」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「健康和习惯」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「健康和习惯」相关词句",
+            "能在正确场景中使用「健康和习惯」进行表达",
+            "能完成「健康和习惯」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g06_001_004",
+          "title": "比较描述词汇",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「比较描述词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "比较描述词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「比较描述词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「比较描述词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「比较描述词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「比较描述词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「比较描述词汇」相关词句",
+            "能在正确场景中使用「比较描述词汇」进行表达",
+            "能完成「比较描述词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g06_001_005",
+          "title": "校园生活复习",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「校园生活复习」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "校园生活复习"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「校园生活复习」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「校园生活复习」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「校园生活复习」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「校园生活复习」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「校园生活复习」相关词句",
+            "能在正确场景中使用「校园生活复习」进行表达",
+            "能完成「校园生活复习」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_english_g06_002",
-      "title": "基础句型与表达",
+      "title": "语法句型",
       "order": 2,
-      "description": "六年级英语基础句型与表达学习模块。",
+      "description": "六年级英语「语法句型」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g06_002_001",
-          "title": "阅读短文获取关键信息",
+          "title": "一般过去时be动词",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握阅读短文获取关键信息的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用六年级英语「一般过去时be动词」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "阅读短文获取关键信息"
+            "一般过去时be动词"
           ],
           "objectives": {
             "remember": [
-              "记住阅读短文获取关键信息的核心规则"
+              "记住「一般过去时be动词」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解阅读短文获取关键信息在题目中的含义"
+              "理解「一般过去时be动词」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用阅读短文获取关键信息完成对应练习"
+              "能够运用「一般过去时be动词」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对阅读短文获取关键信息的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「一般过去时be动词」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清阅读短文获取关键信息的基本方法",
-            "能独立完成阅读短文获取关键信息基础题",
-            "能发现并订正阅读短文获取关键信息常见错误"
+            "能听懂并认读「一般过去时be动词」相关词句",
+            "能在正确场景中使用「一般过去时be动词」进行表达",
+            "能完成「一般过去时be动词」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -192,14 +368,595 @@
               "sentence_making"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g06_002_002",
+          "title": "一般过去时实义动词",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「一般过去时实义动词」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "一般过去时实义动词"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「一般过去时实义动词」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「一般过去时实义动词」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「一般过去时实义动词」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「一般过去时实义动词」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「一般过去时实义动词」相关词句",
+            "能在正确场景中使用「一般过去时实义动词」进行表达",
+            "能完成「一般过去时实义动词」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g06_002_003",
+          "title": "规则动词过去式",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「规则动词过去式」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "规则动词过去式"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「规则动词过去式」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「规则动词过去式」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「规则动词过去式」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「规则动词过去式」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「规则动词过去式」相关词句",
+            "能在正确场景中使用「规则动词过去式」进行表达",
+            "能完成「规则动词过去式」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_english_g06_002_004",
+          "title": "不规则动词过去式常见词",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「不规则动词过去式常见词」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "不规则动词过去式常见词"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「不规则动词过去式常见词」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「不规则动词过去式常见词」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「不规则动词过去式常见词」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「不规则动词过去式常见词」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「不规则动词过去式常见词」相关词句",
+            "能在正确场景中使用「不规则动词过去式常见词」进行表达",
+            "能完成「不规则动词过去式常见词」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_english_g06_002_005",
+          "title": "比较级初步",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「比较级初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "比较级初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「比较级初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「比较级初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「比较级初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「比较级初步」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「比较级初步」相关词句",
+            "能在正确场景中使用「比较级初步」进行表达",
+            "能完成「比较级初步」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g06_002_006",
+          "title": "将来计划be going to",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「将来计划be going to」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "将来计划be going to"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「将来计划be going to」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「将来计划be going to」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「将来计划be going to」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「将来计划be going to」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「将来计划be going to」相关词句",
+            "能在正确场景中使用「将来计划be going to」进行表达",
+            "能完成「将来计划be going to」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g06_003",
+      "title": "阅读写作",
+      "order": 3,
+      "description": "六年级英语「阅读写作」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g06_003_001",
+          "title": "阅读短文获取关键信息",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「阅读短文获取关键信息」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "阅读短文获取关键信息"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「阅读短文获取关键信息」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「阅读短文获取关键信息」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「阅读短文获取关键信息」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「阅读短文获取关键信息」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「阅读短文获取关键信息」相关词句",
+            "能在正确场景中使用「阅读短文获取关键信息」进行表达",
+            "能完成「阅读短文获取关键信息」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g06_003_002",
+          "title": "根据上下文猜词",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「根据上下文猜词」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "根据上下文猜词"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「根据上下文猜词」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「根据上下文猜词」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「根据上下文猜词」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「根据上下文猜词」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「根据上下文猜词」相关词句",
+            "能在正确场景中使用「根据上下文猜词」进行表达",
+            "能完成「根据上下文猜词」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g06_003_003",
+          "title": "写过去经历",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「写过去经历」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "写过去经历"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「写过去经历」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「写过去经历」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「写过去经历」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「写过去经历」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「写过去经历」相关词句",
+            "能在正确场景中使用「写过去经历」进行表达",
+            "能完成「写过去经历」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g06_003_004",
+          "title": "写计划和建议",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「写计划和建议」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "写计划和建议",
+            "写计划与建议"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「写计划和建议」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「写计划和建议」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「写计划和建议」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「写计划和建议」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「写计划和建议」相关词句",
+            "能在正确场景中使用「写计划和建议」进行表达",
+            "能完成「写计划和建议」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g06_003_005",
+          "title": "小学英语综合复习",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用六年级英语「小学英语综合复习」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "小学英语综合复习"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「小学英语综合复习」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「小学英语综合复习」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「小学英语综合复习」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「小学英语综合复习」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「小学英语综合复习」相关词句",
+            "能在正确场景中使用「小学英语综合复习」进行表达",
+            "能完成「小学英语综合复习」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

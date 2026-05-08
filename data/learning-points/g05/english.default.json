@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "english",
     "name": "英语"
@@ -17,53 +17,55 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_english_g05_001",
-      "title": "词汇与听说",
+      "title": "词汇主题",
       "order": 1,
-      "description": "五年级英语词汇与听说学习模块。",
+      "description": "五年级英语「词汇主题」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g05_001_001",
-          "title": "第三人称单数",
+          "title": "月份和日期",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握第三人称单数的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用五年级英语「月份和日期」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "第三人称单数"
+            "月份和日期",
+            "月份与日期"
           ],
           "objectives": {
             "remember": [
-              "记住第三人称单数的核心规则"
+              "记住「月份和日期」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解第三人称单数在题目中的含义"
+              "理解「月份和日期」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用第三人称单数完成对应练习"
+              "能够运用「月份和日期」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对第三人称单数的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「月份和日期」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清第三人称单数的基本方法",
-            "能独立完成第三人称单数基础题",
-            "能发现并订正第三人称单数常见错误"
+            "能听懂并认读「月份和日期」相关词句",
+            "能在正确场景中使用「月份和日期」进行表达",
+            "能完成「月份和日期」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -72,54 +74,56 @@
               "sentence_making"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_english_g05_001_002",
-          "title": "方位介词",
+          "title": "季节和天气",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握方位介词的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用五年级英语「季节和天气」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "方位介词"
+            "季节和天气",
+            "季节与天气"
           ],
           "objectives": {
             "remember": [
-              "记住方位介词的核心规则"
+              "记住「季节和天气」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解方位介词在题目中的含义"
+              "理解「季节和天气」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用方位介词完成对应练习"
+              "能够运用「季节和天气」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对方位介词的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「季节和天气」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清方位介词的基本方法",
-            "能独立完成方位介词基础题",
-            "能发现并订正方位介词常见错误"
+            "能听懂并认读「季节和天气」相关词句",
+            "能在正确场景中使用「季节和天气」进行表达",
+            "能完成「季节和天气」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -128,62 +132,234 @@
               "sentence_making"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_001_003",
+          "title": "职业词汇",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「职业词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "职业词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「职业词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「职业词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「职业词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「职业词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「职业词汇」相关词句",
+            "能在正确场景中使用「职业词汇」进行表达",
+            "能完成「职业词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_001_004",
+          "title": "日常活动频率",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「日常活动频率」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "日常活动频率"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「日常活动频率」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「日常活动频率」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「日常活动频率」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「日常活动频率」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「日常活动频率」相关词句",
+            "能在正确场景中使用「日常活动频率」进行表达",
+            "能完成「日常活动频率」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_001_005",
+          "title": "地点建筑词汇",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「地点建筑词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "地点建筑词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「地点建筑词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「地点建筑词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「地点建筑词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「地点建筑词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「地点建筑词汇」相关词句",
+            "能在正确场景中使用「地点建筑词汇」进行表达",
+            "能完成「地点建筑词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_english_g05_002",
-      "title": "基础句型与表达",
+      "title": "语法句型",
       "order": 2,
-      "description": "五年级英语基础句型与表达学习模块。",
+      "description": "五年级英语「语法句型」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g05_002_001",
-          "title": "There be 句型",
+          "title": "第三人称单数",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握There be 句型的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用五年级英语「第三人称单数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "There be 句型"
+            "第三人称单数"
           ],
           "objectives": {
             "remember": [
-              "记住There be 句型的核心规则"
+              "记住「第三人称单数」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解There be 句型在题目中的含义"
+              "理解「第三人称单数」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用There be 句型完成对应练习"
+              "能够运用「第三人称单数」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对There be 句型的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「第三人称单数」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清There be 句型的基本方法",
-            "能独立完成There be 句型基础题",
-            "能发现并订正There be 句型常见错误"
+            "能听懂并认读「第三人称单数」相关词句",
+            "能在正确场景中使用「第三人称单数」进行表达",
+            "能完成「第三人称单数」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -192,14 +368,536 @@
               "sentence_making"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_002_002",
+          "title": "频度副词always usually often",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「频度副词always usually often」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "频度副词always usually often"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「频度副词always usually often」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「频度副词always usually often」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「频度副词always usually often」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「频度副词always usually often」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「频度副词always usually often」相关词句",
+            "能在正确场景中使用「频度副词always usually often」进行表达",
+            "能完成「频度副词always usually often」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_002_003",
+          "title": "一般疑问句和否定句",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「一般疑问句和否定句」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "一般疑问句和否定句",
+            "一般疑问句与否定句"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「一般疑问句和否定句」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「一般疑问句和否定句」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「一般疑问句和否定句」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「一般疑问句和否定句」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「一般疑问句和否定句」相关词句",
+            "能在正确场景中使用「一般疑问句和否定句」进行表达",
+            "能完成「一般疑问句和否定句」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_002_004",
+          "title": "there be句型巩固",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「there be句型巩固」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "there be句型巩固"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「there be句型巩固」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「there be句型巩固」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「there be句型巩固」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「there be句型巩固」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「there be句型巩固」相关词句",
+            "能在正确场景中使用「there be句型巩固」进行表达",
+            "能完成「there be句型巩固」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_002_005",
+          "title": "物主代词my your his her",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「物主代词my your his her」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "物主代词my your his her"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「物主代词my your his her」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「物主代词my your his her」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「物主代词my your his her」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「物主代词my your his her」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「物主代词my your his her」相关词句",
+            "能在正确场景中使用「物主代词my your his her」进行表达",
+            "能完成「物主代词my your his her」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_002_006",
+          "title": "祈使句",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「祈使句」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "祈使句"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「祈使句」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「祈使句」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「祈使句」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「祈使句」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「祈使句」相关词句",
+            "能在正确场景中使用「祈使句」进行表达",
+            "能完成「祈使句」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g05_003",
+      "title": "阅读写作",
+      "order": 3,
+      "description": "五年级英语「阅读写作」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g05_003_001",
+          "title": "阅读短文判断信息",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「阅读短文判断信息」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "阅读短文判断信息"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「阅读短文判断信息」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「阅读短文判断信息」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「阅读短文判断信息」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「阅读短文判断信息」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「阅读短文判断信息」相关词句",
+            "能在正确场景中使用「阅读短文判断信息」进行表达",
+            "能完成「阅读短文判断信息」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_003_002",
+          "title": "写个人日程",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「写个人日程」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "写个人日程"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「写个人日程」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「写个人日程」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「写个人日程」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「写个人日程」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「写个人日程」相关词句",
+            "能在正确场景中使用「写个人日程」进行表达",
+            "能完成「写个人日程」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_003_003",
+          "title": "描述家庭成员职业",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「描述家庭成员职业」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "描述家庭成员职业"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「描述家庭成员职业」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「描述家庭成员职业」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「描述家庭成员职业」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「描述家庭成员职业」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「描述家庭成员职业」相关词句",
+            "能在正确场景中使用「描述家庭成员职业」进行表达",
+            "能完成「描述家庭成员职业」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g05_003_004",
+          "title": "根据提示写小短文",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用五年级英语「根据提示写小短文」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "根据提示写小短文"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「根据提示写小短文」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「根据提示写小短文」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「根据提示写小短文」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「根据提示写小短文」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「根据提示写小短文」相关词句",
+            "能在正确场景中使用「根据提示写小短文」进行表达",
+            "能完成「根据提示写小短文」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

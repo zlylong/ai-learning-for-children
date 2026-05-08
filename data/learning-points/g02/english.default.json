@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "english",
     "name": "英语"
@@ -17,53 +17,54 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_english_g02_001",
-      "title": "词汇与听说",
+      "title": "语音与词汇",
       "order": 1,
-      "description": "二年级英语词汇与听说学习模块。",
+      "description": "二年级英语「语音与词汇」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g02_001_001",
-          "title": "家庭成员词汇",
+          "title": "字母自然拼读初步",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握家庭成员词汇的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用二年级英语「字母自然拼读初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "家庭成员词汇"
+            "字母自然拼读初步"
           ],
           "objectives": {
             "remember": [
-              "记住家庭成员词汇的核心规则"
+              "记住「字母自然拼读初步」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解家庭成员词汇在题目中的含义"
+              "理解「字母自然拼读初步」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用家庭成员词汇完成对应练习"
+              "能够运用「字母自然拼读初步」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对家庭成员词汇的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「字母自然拼读初步」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清家庭成员词汇的基本方法",
-            "能独立完成家庭成员词汇基础题",
-            "能发现并订正家庭成员词汇常见错误"
+            "能听懂并认读「字母自然拼读初步」相关词句",
+            "能在正确场景中使用「字母自然拼读初步」进行表达",
+            "能完成「字母自然拼读初步」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -78,48 +79,49 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_english_g02_001_002",
-          "title": "动物与食物词汇",
+          "title": "身体部位词汇",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握动物与食物词汇的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用二年级英语「身体部位词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "动物与食物词汇"
+            "身体部位词汇"
           ],
           "objectives": {
             "remember": [
-              "记住动物与食物词汇的核心规则"
+              "记住「身体部位词汇」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解动物与食物词汇在题目中的含义"
+              "理解「身体部位词汇」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用动物与食物词汇完成对应练习"
+              "能够运用「身体部位词汇」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对动物与食物词汇的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「身体部位词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清动物与食物词汇的基本方法",
-            "能独立完成动物与食物词汇基础题",
-            "能发现并订正动物与食物词汇常见错误"
+            "能听懂并认读「身体部位词汇」相关词句",
+            "能在正确场景中使用「身体部位词汇」进行表达",
+            "能完成「身体部位词汇」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -134,56 +136,286 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_001_003",
+          "title": "食物饮料词汇",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「食物饮料词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "食物饮料词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「食物饮料词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「食物饮料词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「食物饮料词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「食物饮料词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「食物饮料词汇」相关词句",
+            "能在正确场景中使用「食物饮料词汇」进行表达",
+            "能完成「食物饮料词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_001_004",
+          "title": "服装词汇",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「服装词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "服装词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「服装词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「服装词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「服装词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「服装词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「服装词汇」相关词句",
+            "能在正确场景中使用「服装词汇」进行表达",
+            "能完成「服装词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_001_005",
+          "title": "天气词汇",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「天气词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "天气词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「天气词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「天气词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「天气词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「天气词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「天气词汇」相关词句",
+            "能在正确场景中使用「天气词汇」进行表达",
+            "能完成「天气词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_001_006",
+          "title": "玩具和活动词汇",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「玩具和活动词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "玩具和活动词汇",
+            "玩具与活动词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「玩具和活动词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「玩具和活动词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「玩具和活动词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「玩具和活动词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「玩具和活动词汇」相关词句",
+            "能在正确场景中使用「玩具和活动词汇」进行表达",
+            "能完成「玩具和活动词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_english_g02_002",
-      "title": "基础句型与表达",
+      "title": "基础句型",
       "order": 2,
-      "description": "二年级英语基础句型与表达学习模块。",
+      "description": "二年级英语「基础句型」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g02_002_001",
-          "title": "This is ... 句型",
+          "title": "This is句型",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握This is ... 句型的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用二年级英语「This is句型」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "This is ... 句型"
+            "This is句型"
           ],
           "objectives": {
             "remember": [
-              "记住This is ... 句型的核心规则"
+              "记住「This is句型」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解This is ... 句型在题目中的含义"
+              "理解「This is句型」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用This is ... 句型完成对应练习"
+              "能够运用「This is句型」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对This is ... 句型的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「This is句型」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清This is ... 句型的基本方法",
-            "能独立完成This is ... 句型基础题",
-            "能发现并订正This is ... 句型常见错误"
+            "能听懂并认读「This is句型」相关词句",
+            "能在正确场景中使用「This is句型」进行表达",
+            "能完成「This is句型」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -198,8 +430,472 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_002_002",
+          "title": "I have句型",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「I have句型」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "I have句型"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「I have句型」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「I have句型」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「I have句型」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「I have句型」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「I have句型」相关词句",
+            "能在正确场景中使用「I have句型」进行表达",
+            "能完成「I have句型」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_002_003",
+          "title": "Do you like问答",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「Do you like问答」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "Do you like问答"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「Do you like问答」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「Do you like问答」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「Do you like问答」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「Do you like问答」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「Do you like问答」相关词句",
+            "能在正确场景中使用「Do you like问答」进行表达",
+            "能完成「Do you like问答」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_002_004",
+          "title": "What color问答",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「What color问答」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "What color问答"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「What color问答」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「What color问答」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「What color问答」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「What color问答」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「What color问答」相关词句",
+            "能在正确场景中使用「What color问答」进行表达",
+            "能完成「What color问答」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_002_005",
+          "title": "How many问答",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「How many问答」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "How many问答"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「How many问答」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「How many问答」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「How many问答」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「How many问答」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「How many问答」相关词句",
+            "能在正确场景中使用「How many问答」进行表达",
+            "能完成「How many问答」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g02_003",
+      "title": "听说读写",
+      "order": 3,
+      "description": "二年级英语「听说读写」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g02_003_001",
+          "title": "听懂课堂活动指令",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「听懂课堂活动指令」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "听懂课堂活动指令"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「听懂课堂活动指令」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「听懂课堂活动指令」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「听懂课堂活动指令」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「听懂课堂活动指令」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「听懂课堂活动指令」相关词句",
+            "能在正确场景中使用「听懂课堂活动指令」进行表达",
+            "能完成「听懂课堂活动指令」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_003_002",
+          "title": "看图说单词短句",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「看图说单词短句」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "看图说单词短句"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「看图说单词短句」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「看图说单词短句」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「看图说单词短句」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「看图说单词短句」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「看图说单词短句」相关词句",
+            "能在正确场景中使用「看图说单词短句」进行表达",
+            "能完成「看图说单词短句」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_003_003",
+          "title": "抄写简单句",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「抄写简单句」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "抄写简单句"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「抄写简单句」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「抄写简单句」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「抄写简单句」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「抄写简单句」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「抄写简单句」相关词句",
+            "能在正确场景中使用「抄写简单句」进行表达",
+            "能完成「抄写简单句」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g02_003_004",
+          "title": "角色对话",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用二年级英语「角色对话」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "角色对话"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「角色对话」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「角色对话」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「角色对话」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「角色对话」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「角色对话」相关词句",
+            "能在正确场景中使用「角色对话」进行表达",
+            "能完成「角色对话」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "chinese",
     "name": "语文"
@@ -17,53 +17,55 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_chinese_g06_001",
-      "title": "识字写字与积累",
+      "title": "语言综合运用",
       "order": 1,
-      "description": "六年级语文识字写字与积累学习模块。",
+      "description": "六年级语文「语言综合运用」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_chinese_g06_001_001",
-          "title": "文章中心思想概括",
+          "title": "词语辨析和语体色彩",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握文章中心思想概括的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用六年级语文「词语辨析和语体色彩」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "文章中心思想概括"
+            "词语辨析和语体色彩",
+            "词语辨析与语体色彩"
           ],
           "objectives": {
             "remember": [
-              "记住文章中心思想概括的核心规则"
+              "记住「词语辨析和语体色彩」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解文章中心思想概括在题目中的含义"
+              "理解「词语辨析和语体色彩」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用文章中心思想概括完成对应练习"
+              "能够运用「词语辨析和语体色彩」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对文章中心思想概括的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「词语辨析和语体色彩」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清文章中心思想概括的基本方法",
-            "能独立完成文章中心思想概括基础题",
-            "能发现并订正文章中心思想概括常见错误"
+            "能准确识别「词语辨析和语体色彩」对应的语言现象或阅读任务",
+            "能结合文本说明「词语辨析和语体色彩」的理解依据",
+            "能在表达或习作中正确运用「词语辨析和语体色彩」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -72,54 +74,56 @@
               "short_answer"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_chinese_g06_001_002",
-          "title": "综合性阅读信息提取",
+          "title": "句群关系和衔接",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握综合性阅读信息提取的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用六年级语文「句群关系和衔接」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "综合性阅读信息提取"
+            "句群关系和衔接",
+            "句群关系与衔接"
           ],
           "objectives": {
             "remember": [
-              "记住综合性阅读信息提取的核心规则"
+              "记住「句群关系和衔接」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解综合性阅读信息提取在题目中的含义"
+              "理解「句群关系和衔接」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用综合性阅读信息提取完成对应练习"
+              "能够运用「句群关系和衔接」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对综合性阅读信息提取的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「句群关系和衔接」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清综合性阅读信息提取的基本方法",
-            "能独立完成综合性阅读信息提取基础题",
-            "能发现并订正综合性阅读信息提取常见错误"
+            "能准确识别「句群关系和衔接」对应的语言现象或阅读任务",
+            "能结合文本说明「句群关系和衔接」的理解依据",
+            "能在表达或习作中正确运用「句群关系和衔接」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -128,62 +132,292 @@
               "short_answer"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_001_003",
+          "title": "病句类型综合修改",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「病句类型综合修改」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "病句类型综合修改"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「病句类型综合修改」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「病句类型综合修改」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「病句类型综合修改」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「病句类型综合修改」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「病句类型综合修改」对应的语言现象或阅读任务",
+            "能结合文本说明「病句类型综合修改」的理解依据",
+            "能在表达或习作中正确运用「病句类型综合修改」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_001_004",
+          "title": "标点综合运用",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「标点综合运用」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "标点综合运用"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「标点综合运用」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「标点综合运用」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「标点综合运用」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「标点综合运用」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「标点综合运用」对应的语言现象或阅读任务",
+            "能结合文本说明「标点综合运用」的理解依据",
+            "能在表达或习作中正确运用「标点综合运用」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_001_005",
+          "title": "修辞与表达效果",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「修辞与表达效果」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "修辞与表达效果"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「修辞与表达效果」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「修辞与表达效果」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「修辞与表达效果」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「修辞与表达效果」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「修辞与表达效果」对应的语言现象或阅读任务",
+            "能结合文本说明「修辞与表达效果」的理解依据",
+            "能在表达或习作中正确运用「修辞与表达效果」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_001_006",
+          "title": "综合性学习资料整理",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「综合性学习资料整理」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "综合性学习资料整理"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「综合性学习资料整理」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「综合性学习资料整理」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「综合性学习资料整理」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「综合性学习资料整理」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「综合性学习资料整理」对应的语言现象或阅读任务",
+            "能结合文本说明「综合性学习资料整理」的理解依据",
+            "能在表达或习作中正确运用「综合性学习资料整理」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_chinese_g06_002",
-      "title": "阅读与表达",
+      "title": "现代文阅读",
       "order": 2,
-      "description": "六年级语文阅读与表达学习模块。",
+      "description": "六年级语文「现代文阅读」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_chinese_g06_002_001",
-          "title": "习作选材与立意",
+          "title": "概括文章主要内容",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握习作选材与立意的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用六年级语文「概括文章主要内容」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "习作选材与立意"
+            "概括文章主要内容"
           ],
           "objectives": {
             "remember": [
-              "记住习作选材与立意的核心规则"
+              "记住「概括文章主要内容」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解习作选材与立意在题目中的含义"
+              "理解「概括文章主要内容」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用习作选材与立意完成对应练习"
+              "能够运用「概括文章主要内容」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对习作选材与立意的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「概括文章主要内容」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清习作选材与立意的基本方法",
-            "能独立完成习作选材与立意基础题",
-            "能发现并订正习作选材与立意常见错误"
+            "能准确识别「概括文章主要内容」对应的语言现象或阅读任务",
+            "能结合文本说明「概括文章主要内容」的理解依据",
+            "能在表达或习作中正确运用「概括文章主要内容」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -192,14 +426,887 @@
               "short_answer"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_002_002",
+          "title": "把握中心思想",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「把握中心思想」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "把握中心思想"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「把握中心思想」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「把握中心思想」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「把握中心思想」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「把握中心思想」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「把握中心思想」对应的语言现象或阅读任务",
+            "能结合文本说明「把握中心思想」的理解依据",
+            "能在表达或习作中正确运用「把握中心思想」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_002_003",
+          "title": "理解含义深刻句子",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「理解含义深刻句子」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "理解含义深刻句子"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「理解含义深刻句子」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「理解含义深刻句子」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「理解含义深刻句子」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「理解含义深刻句子」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「理解含义深刻句子」对应的语言现象或阅读任务",
+            "能结合文本说明「理解含义深刻句子」的理解依据",
+            "能在表达或习作中正确运用「理解含义深刻句子」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_002_004",
+          "title": "分析写作方法",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「分析写作方法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "分析写作方法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「分析写作方法」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「分析写作方法」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「分析写作方法」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「分析写作方法」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「分析写作方法」对应的语言现象或阅读任务",
+            "能结合文本说明「分析写作方法」的理解依据",
+            "能在表达或习作中正确运用「分析写作方法」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_002_005",
+          "title": "评价人物和观点",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「评价人物和观点」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "评价人物和观点",
+            "评价人物与观点"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「评价人物和观点」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「评价人物和观点」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「评价人物和观点」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「评价人物和观点」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「评价人物和观点」对应的语言现象或阅读任务",
+            "能结合文本说明「评价人物和观点」的理解依据",
+            "能在表达或习作中正确运用「评价人物和观点」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_002_006",
+          "title": "非连续性文本综合阅读",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「非连续性文本综合阅读」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "非连续性文本综合阅读"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「非连续性文本综合阅读」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「非连续性文本综合阅读」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「非连续性文本综合阅读」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「非连续性文本综合阅读」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「非连续性文本综合阅读」对应的语言现象或阅读任务",
+            "能结合文本说明「非连续性文本综合阅读」的理解依据",
+            "能在表达或习作中正确运用「非连续性文本综合阅读」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g06_003",
+      "title": "古诗文和文学积累",
+      "order": 3,
+      "description": "六年级语文「古诗文和文学积累」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g06_003_001",
+          "title": "古诗词主题归类",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「古诗词主题归类」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "古诗词主题归类"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「古诗词主题归类」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「古诗词主题归类」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「古诗词主题归类」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「古诗词主题归类」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「古诗词主题归类」对应的语言现象或阅读任务",
+            "能结合文本说明「古诗词主题归类」的理解依据",
+            "能在表达或习作中正确运用「古诗词主题归类」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_003_002",
+          "title": "文言文翻译初步",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「文言文翻译初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "文言文翻译初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「文言文翻译初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「文言文翻译初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「文言文翻译初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「文言文翻译初步」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「文言文翻译初步」对应的语言现象或阅读任务",
+            "能结合文本说明「文言文翻译初步」的理解依据",
+            "能在表达或习作中正确运用「文言文翻译初步」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_003_003",
+          "title": "名著阅读方法",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「名著阅读方法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "名著阅读方法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「名著阅读方法」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「名著阅读方法」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「名著阅读方法」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「名著阅读方法」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「名著阅读方法」对应的语言现象或阅读任务",
+            "能结合文本说明「名著阅读方法」的理解依据",
+            "能在表达或习作中正确运用「名著阅读方法」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_003_004",
+          "title": "文学常识和文化常识",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「文学常识和文化常识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "文学常识和文化常识",
+            "文学常识与文化常识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「文学常识和文化常识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「文学常识和文化常识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「文学常识和文化常识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「文学常识和文化常识」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「文学常识和文化常识」对应的语言现象或阅读任务",
+            "能结合文本说明「文学常识和文化常识」的理解依据",
+            "能在表达或习作中正确运用「文学常识和文化常识」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g06_004",
+      "title": "毕业习作",
+      "order": 4,
+      "description": "六年级语文「毕业习作」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g06_004_001",
+          "title": "审题立意",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「审题立意」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "审题立意"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「审题立意」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「审题立意」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「审题立意」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「审题立意」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「审题立意」对应的语言现象或阅读任务",
+            "能结合文本说明「审题立意」的理解依据",
+            "能在表达或习作中正确运用「审题立意」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_004_002",
+          "title": "选材详略",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「选材详略」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "选材详略"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「选材详略」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「选材详略」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「选材详略」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「选材详略」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「选材详略」对应的语言现象或阅读任务",
+            "能结合文本说明「选材详略」的理解依据",
+            "能在表达或习作中正确运用「选材详略」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_004_003",
+          "title": "记叙文结构",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「记叙文结构」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "记叙文结构"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「记叙文结构」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「记叙文结构」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「记叙文结构」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「记叙文结构」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「记叙文结构」对应的语言现象或阅读任务",
+            "能结合文本说明「记叙文结构」的理解依据",
+            "能在表达或习作中正确运用「记叙文结构」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_004_004",
+          "title": "议论表达初步",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「议论表达初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "议论表达初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「议论表达初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「议论表达初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「议论表达初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「议论表达初步」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「议论表达初步」对应的语言现象或阅读任务",
+            "能结合文本说明「议论表达初步」的理解依据",
+            "能在表达或习作中正确运用「议论表达初步」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_004_005",
+          "title": "应用文书信倡议书",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「应用文书信倡议书」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "应用文书信倡议书"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「应用文书信倡议书」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「应用文书信倡议书」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「应用文书信倡议书」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「应用文书信倡议书」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「应用文书信倡议书」对应的语言现象或阅读任务",
+            "能结合文本说明「应用文书信倡议书」的理解依据",
+            "能在表达或习作中正确运用「应用文书信倡议书」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g06_004_006",
+          "title": "习作修改润色",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用六年级语文「习作修改润色」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "习作修改润色"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「习作修改润色」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「习作修改润色」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「习作修改润色」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「习作修改润色」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「习作修改润色」对应的语言现象或阅读任务",
+            "能结合文本说明「习作修改润色」的理解依据",
+            "能在表达或习作中正确运用「习作修改润色」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

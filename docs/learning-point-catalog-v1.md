@@ -36,3 +36,26 @@ data/learning-points/
 ## 数据库映射建议
 
 当前 `KnowledgePoint.id` 是数据库 cuid。批量导入时建议后续新增 `KnowledgePoint.externalId` 唯一字段，用来保存 catalog 中的稳定 `kp_*` ID，避免重复导入或同名知识点冲突。
+
+## 当前覆盖范围
+
+本仓库已内置 `agent: learning` 生成的小学一至六年级默认学习要点，共计 364 个：
+
+- G01 math: 19 个知识点
+- G01 chinese: 22 个知识点
+- G01 english: 14 个知识点
+- G02 math: 22 个知识点
+- G02 chinese: 22 个知识点
+- G02 english: 15 个知识点
+- G03 math: 21 个知识点
+- G03 chinese: 21 个知识点
+- G03 english: 15 个知识点
+- G04 math: 23 个知识点
+- G04 chinese: 21 个知识点
+- G04 english: 15 个知识点
+- G05 math: 30 个知识点
+- G05 chinese: 22 个知识点
+- G05 english: 15 个知识点
+- G06 math: 29 个知识点
+- G06 chinese: 22 个知识点
+- G06 english: 16 个知识点

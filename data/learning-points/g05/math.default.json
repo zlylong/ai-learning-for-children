@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "math",
     "name": "数学"
@@ -17,53 +17,54 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_math_g05_001",
-      "title": "数与运算",
+      "title": "小数乘除法",
       "order": 1,
-      "description": "五年级数学数与运算学习模块。",
+      "description": "五年级数学「小数乘除法」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g05_001_001",
-          "title": "小数乘除法",
+          "title": "小数乘整数",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握小数乘除法的基础概念、常见题型和应用方法。",
+          "summary": "掌握五年级数学「小数乘整数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "小数乘除法"
+            "小数乘整数"
           ],
           "objectives": {
             "remember": [
-              "记住小数乘除法的核心规则"
+              "记住「小数乘整数」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解小数乘除法在题目中的含义"
+              "理解「小数乘整数」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用小数乘除法完成对应练习"
+              "能够运用「小数乘整数」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对小数乘除法的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "小数乘整数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清小数乘除法的基本方法",
-            "能独立完成小数乘除法基础题",
-            "能发现并订正小数乘除法常见错误"
+            "能说清「小数乘整数」的概念或数量关系",
+            "能独立完成「小数乘整数」基础题和变式题",
+            "能检查并订正「小数乘整数」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -72,54 +73,55 @@
               "calculation"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_math_g05_001_002",
-          "title": "分数的意义",
+          "title": "小数乘小数",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握分数的意义的基础概念、常见题型和应用方法。",
+          "summary": "掌握五年级数学「小数乘小数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "分数的意义"
+            "小数乘小数"
           ],
           "objectives": {
             "remember": [
-              "记住分数的意义的核心规则"
+              "记住「小数乘小数」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解分数的意义在题目中的含义"
+              "理解「小数乘小数」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用分数的意义完成对应练习"
+              "能够运用「小数乘小数」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对分数的意义的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "小数乘小数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清分数的意义的基本方法",
-            "能独立完成分数的意义基础题",
-            "能发现并订正分数的意义常见错误"
+            "能说清「小数乘小数」的概念或数量关系",
+            "能独立完成「小数乘小数」基础题和变式题",
+            "能检查并订正「小数乘小数」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -128,62 +130,349 @@
               "calculation"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_001_003",
+          "title": "积的近似数",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「积的近似数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "积的近似数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「积的近似数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「积的近似数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「积的近似数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "积的近似数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「积的近似数」的概念或数量关系",
+            "能独立完成「积的近似数」基础题和变式题",
+            "能检查并订正「积的近似数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_001_004",
+          "title": "小数除以整数",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「小数除以整数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "小数除以整数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「小数除以整数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「小数除以整数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「小数除以整数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "小数除以整数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「小数除以整数」的概念或数量关系",
+            "能独立完成「小数除以整数」基础题和变式题",
+            "能检查并订正「小数除以整数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_001_005",
+          "title": "一个数除以小数",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「一个数除以小数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "一个数除以小数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「一个数除以小数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「一个数除以小数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「一个数除以小数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "一个数除以小数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「一个数除以小数」的概念或数量关系",
+            "能独立完成「一个数除以小数」基础题和变式题",
+            "能检查并订正「一个数除以小数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_001_006",
+          "title": "商的近似数",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「商的近似数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "商的近似数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「商的近似数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「商的近似数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「商的近似数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "商的近似数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「商的近似数」的概念或数量关系",
+            "能独立完成「商的近似数」基础题和变式题",
+            "能检查并订正「商的近似数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_001_007",
+          "title": "循环小数",
+          "order": 7,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「循环小数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "循环小数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「循环小数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「循环小数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「循环小数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "循环小数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「循环小数」的概念或数量关系",
+            "能独立完成「循环小数」基础题和变式题",
+            "能检查并订正「循环小数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_math_g05_002",
-      "title": "图形与位置",
+      "title": "因数倍数和分数",
       "order": 2,
-      "description": "五年级数学图形与位置学习模块。",
+      "description": "五年级数学「因数倍数和分数」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g05_002_001",
-          "title": "多边形面积",
+          "title": "因数和倍数",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握多边形面积的基础概念、常见题型和应用方法。",
+          "summary": "掌握五年级数学「因数和倍数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "多边形面积"
+            "因数和倍数",
+            "因数与倍数"
           ],
           "objectives": {
             "remember": [
-              "记住多边形面积的核心规则"
+              "记住「因数和倍数」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解多边形面积在题目中的含义"
+              "理解「因数和倍数」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用多边形面积完成对应练习"
+              "能够运用「因数和倍数」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对多边形面积的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "因数和倍数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清多边形面积的基本方法",
-            "能独立完成多边形面积基础题",
-            "能发现并订正多边形面积常见错误"
+            "能说清「因数和倍数」的概念或数量关系",
+            "能独立完成「因数和倍数」基础题和变式题",
+            "能检查并订正「因数和倍数」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -192,14 +481,1286 @@
               "calculation"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_002_002",
+          "title": "2 3 5倍数特征",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「2 3 5倍数特征」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "2 3 5倍数特征"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「2 3 5倍数特征」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「2 3 5倍数特征」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「2 3 5倍数特征」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "2 3 5倍数特征的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「2 3 5倍数特征」的概念或数量关系",
+            "能独立完成「2 3 5倍数特征」基础题和变式题",
+            "能检查并订正「2 3 5倍数特征」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_002_003",
+          "title": "质数合数",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「质数合数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "质数合数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「质数合数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「质数合数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「质数合数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "质数合数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「质数合数」的概念或数量关系",
+            "能独立完成「质数合数」基础题和变式题",
+            "能检查并订正「质数合数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_002_004",
+          "title": "最大公因数",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「最大公因数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "最大公因数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「最大公因数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「最大公因数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「最大公因数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "最大公因数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「最大公因数」的概念或数量关系",
+            "能独立完成「最大公因数」基础题和变式题",
+            "能检查并订正「最大公因数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_002_005",
+          "title": "最小公倍数",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「最小公倍数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "最小公倍数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「最小公倍数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「最小公倍数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「最小公倍数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "最小公倍数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「最小公倍数」的概念或数量关系",
+            "能独立完成「最小公倍数」基础题和变式题",
+            "能检查并订正「最小公倍数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_002_006",
+          "title": "分数的意义",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「分数的意义」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "分数的意义"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「分数的意义」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「分数的意义」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「分数的意义」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "分数的意义的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「分数的意义」的概念或数量关系",
+            "能独立完成「分数的意义」基础题和变式题",
+            "能检查并订正「分数的意义」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_002_007",
+          "title": "真分数假分数带分数",
+          "order": 7,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「真分数假分数带分数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "真分数假分数带分数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「真分数假分数带分数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「真分数假分数带分数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「真分数假分数带分数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "真分数假分数带分数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「真分数假分数带分数」的概念或数量关系",
+            "能独立完成「真分数假分数带分数」基础题和变式题",
+            "能检查并订正「真分数假分数带分数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_002_008",
+          "title": "分数基本性质",
+          "order": 8,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「分数基本性质」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "分数基本性质"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「分数基本性质」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「分数基本性质」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「分数基本性质」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "分数基本性质的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「分数基本性质」的概念或数量关系",
+            "能独立完成「分数基本性质」基础题和变式题",
+            "能检查并订正「分数基本性质」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_002_009",
+          "title": "约分和通分",
+          "order": 9,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「约分和通分」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "约分和通分",
+            "约分与通分"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「约分和通分」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「约分和通分」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「约分和通分」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "约分和通分的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「约分和通分」的概念或数量关系",
+            "能独立完成「约分和通分」基础题和变式题",
+            "能检查并订正「约分和通分」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g05_003",
+      "title": "图形面积体积",
+      "order": 3,
+      "description": "五年级数学「图形面积体积」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g05_003_001",
+          "title": "平行四边形面积",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「平行四边形面积」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "平行四边形面积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「平行四边形面积」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「平行四边形面积」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「平行四边形面积」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "平行四边形面积的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「平行四边形面积」的概念或数量关系",
+            "能独立完成「平行四边形面积」基础题和变式题",
+            "能检查并订正「平行四边形面积」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_003_002",
+          "title": "三角形面积",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「三角形面积」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "三角形面积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「三角形面积」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「三角形面积」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「三角形面积」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "三角形面积的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「三角形面积」的概念或数量关系",
+            "能独立完成「三角形面积」基础题和变式题",
+            "能检查并订正「三角形面积」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_003_003",
+          "title": "梯形面积",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「梯形面积」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "梯形面积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「梯形面积」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「梯形面积」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「梯形面积」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "梯形面积的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「梯形面积」的概念或数量关系",
+            "能独立完成「梯形面积」基础题和变式题",
+            "能检查并订正「梯形面积」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_003_004",
+          "title": "组合图形面积",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「组合图形面积」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "组合图形面积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「组合图形面积」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「组合图形面积」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「组合图形面积」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "组合图形面积的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「组合图形面积」的概念或数量关系",
+            "能独立完成「组合图形面积」基础题和变式题",
+            "能检查并订正「组合图形面积」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_003_005",
+          "title": "长方体正方体认识",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「长方体正方体认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "长方体正方体认识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「长方体正方体认识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「长方体正方体认识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「长方体正方体认识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "长方体正方体认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「长方体正方体认识」的概念或数量关系",
+            "能独立完成「长方体正方体认识」基础题和变式题",
+            "能检查并订正「长方体正方体认识」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_003_006",
+          "title": "长方体正方体表面积",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「长方体正方体表面积」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "长方体正方体表面积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「长方体正方体表面积」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「长方体正方体表面积」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「长方体正方体表面积」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "长方体正方体表面积的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「长方体正方体表面积」的概念或数量关系",
+            "能独立完成「长方体正方体表面积」基础题和变式题",
+            "能检查并订正「长方体正方体表面积」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_003_007",
+          "title": "体积和容积单位",
+          "order": 7,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「体积和容积单位」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "体积和容积单位",
+            "体积与容积单位"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「体积和容积单位」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「体积和容积单位」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「体积和容积单位」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "体积和容积单位的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「体积和容积单位」的概念或数量关系",
+            "能独立完成「体积和容积单位」基础题和变式题",
+            "能检查并订正「体积和容积单位」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_003_008",
+          "title": "长方体正方体体积",
+          "order": 8,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「长方体正方体体积」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "长方体正方体体积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「长方体正方体体积」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「长方体正方体体积」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「长方体正方体体积」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "长方体正方体体积的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「长方体正方体体积」的概念或数量关系",
+            "能独立完成「长方体正方体体积」基础题和变式题",
+            "能检查并订正「长方体正方体体积」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g05_004",
+      "title": "方程与统计",
+      "order": 4,
+      "description": "五年级数学「方程与统计」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g05_004_001",
+          "title": "用字母表示数",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「用字母表示数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "用字母表示数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「用字母表示数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「用字母表示数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「用字母表示数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "用字母表示数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「用字母表示数」的概念或数量关系",
+            "能独立完成「用字母表示数」基础题和变式题",
+            "能检查并订正「用字母表示数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_004_002",
+          "title": "等式性质",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「等式性质」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "等式性质"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「等式性质」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「等式性质」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「等式性质」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "等式性质的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「等式性质」的概念或数量关系",
+            "能独立完成「等式性质」基础题和变式题",
+            "能检查并订正「等式性质」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_004_003",
+          "title": "简易方程",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「简易方程」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "简易方程"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「简易方程」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「简易方程」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「简易方程」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "简易方程的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「简易方程」的概念或数量关系",
+            "能独立完成「简易方程」基础题和变式题",
+            "能检查并订正「简易方程」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_004_004",
+          "title": "列方程解决问题",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「列方程解决问题」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "列方程解决问题"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「列方程解决问题」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「列方程解决问题」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「列方程解决问题」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "列方程解决问题的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「列方程解决问题」的概念或数量关系",
+            "能独立完成「列方程解决问题」基础题和变式题",
+            "能检查并订正「列方程解决问题」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_004_005",
+          "title": "折线统计图",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「折线统计图」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "折线统计图"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「折线统计图」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「折线统计图」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「折线统计图」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "折线统计图的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「折线统计图」的概念或数量关系",
+            "能独立完成「折线统计图」基础题和变式题",
+            "能检查并订正「折线统计图」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g05_004_006",
+          "title": "可能性初步",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握五年级数学「可能性初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "可能性初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「可能性初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「可能性初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「可能性初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "可能性初步的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「可能性初步」的概念或数量关系",
+            "能独立完成「可能性初步」基础题和变式题",
+            "能检查并订正「可能性初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

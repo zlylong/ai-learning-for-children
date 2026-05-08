@@ -75,7 +75,7 @@ API：
 系统现在支持直接读取 `data/learning-points` 下的标准学习要点 JSON 文件，供 `agent: learning` 后续批量生成小学语文、数学、英语知识点。
 
 - `data/learning-points/manifest.json`：索引所有年级/学科/教材版本文件。
-- `data/learning-points/g01` 到 `g06`：小学一至六年级语文、数学、英语默认学习要点数据。
+- `data/learning-points/g01` 到 `g06`：小学一至六年级语文、数学、英语默认学习要点数据，当前共 364 个知识点。
 - `src/features/learning-points/schema.ts`：LearningPointCatalog v1 的 Zod 校验边界。
 - `src/features/learning-points/loader.ts`：运行时读取、年级/学科别名归一化和扁平知识点转换。
 - `GET /api/learning-points?grade=G01&subject=math&version=default`：读取完整标准学习要点文件。

@@ -1,9 +1,9 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "locale": "zh-CN",
   "gradeRange": [
@@ -16,12 +16,12 @@
   ],
   "subjects": [
     {
-      "code": "chinese",
-      "name": "语文"
-    },
-    {
       "code": "math",
       "name": "数学"
+    },
+    {
+      "code": "chinese",
+      "name": "语文"
     },
     {
       "code": "english",
@@ -31,15 +31,15 @@
   "files": [
     {
       "grade": "G01",
-      "subject": "chinese",
-      "version": "default",
-      "path": "g01/chinese.default.json"
-    },
-    {
-      "grade": "G01",
       "subject": "math",
       "version": "default",
       "path": "g01/math.default.json"
+    },
+    {
+      "grade": "G01",
+      "subject": "chinese",
+      "version": "default",
+      "path": "g01/chinese.default.json"
     },
     {
       "grade": "G01",
@@ -49,15 +49,15 @@
     },
     {
       "grade": "G02",
-      "subject": "chinese",
-      "version": "default",
-      "path": "g02/chinese.default.json"
-    },
-    {
-      "grade": "G02",
       "subject": "math",
       "version": "default",
       "path": "g02/math.default.json"
+    },
+    {
+      "grade": "G02",
+      "subject": "chinese",
+      "version": "default",
+      "path": "g02/chinese.default.json"
     },
     {
       "grade": "G02",
@@ -67,15 +67,15 @@
     },
     {
       "grade": "G03",
-      "subject": "chinese",
-      "version": "default",
-      "path": "g03/chinese.default.json"
-    },
-    {
-      "grade": "G03",
       "subject": "math",
       "version": "default",
       "path": "g03/math.default.json"
+    },
+    {
+      "grade": "G03",
+      "subject": "chinese",
+      "version": "default",
+      "path": "g03/chinese.default.json"
     },
     {
       "grade": "G03",
@@ -85,15 +85,15 @@
     },
     {
       "grade": "G04",
-      "subject": "chinese",
-      "version": "default",
-      "path": "g04/chinese.default.json"
-    },
-    {
-      "grade": "G04",
       "subject": "math",
       "version": "default",
       "path": "g04/math.default.json"
+    },
+    {
+      "grade": "G04",
+      "subject": "chinese",
+      "version": "default",
+      "path": "g04/chinese.default.json"
     },
     {
       "grade": "G04",
@@ -103,15 +103,15 @@
     },
     {
       "grade": "G05",
-      "subject": "chinese",
-      "version": "default",
-      "path": "g05/chinese.default.json"
-    },
-    {
-      "grade": "G05",
       "subject": "math",
       "version": "default",
       "path": "g05/math.default.json"
+    },
+    {
+      "grade": "G05",
+      "subject": "chinese",
+      "version": "default",
+      "path": "g05/chinese.default.json"
     },
     {
       "grade": "G05",
@@ -121,15 +121,15 @@
     },
     {
       "grade": "G06",
-      "subject": "chinese",
-      "version": "default",
-      "path": "g06/chinese.default.json"
-    },
-    {
-      "grade": "G06",
       "subject": "math",
       "version": "default",
       "path": "g06/math.default.json"
+    },
+    {
+      "grade": "G06",
+      "subject": "chinese",
+      "version": "default",
+      "path": "g06/chinese.default.json"
     },
     {
       "grade": "G06",

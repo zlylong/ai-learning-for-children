@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "chinese",
     "name": "语文"
@@ -17,53 +17,54 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_chinese_g04_001",
-      "title": "识字写字与积累",
+      "title": "语言积累与运用",
       "order": 1,
-      "description": "四年级语文识字写字与积累学习模块。",
+      "description": "四年级语文「语言积累与运用」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_chinese_g04_001_001",
-          "title": "中心句与过渡句",
+          "title": "词语感情色彩",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握中心句与过渡句的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用四年级语文「词语感情色彩」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "中心句与过渡句"
+            "词语感情色彩"
           ],
           "objectives": {
             "remember": [
-              "记住中心句与过渡句的核心规则"
+              "记住「词语感情色彩」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解中心句与过渡句在题目中的含义"
+              "理解「词语感情色彩」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用中心句与过渡句完成对应练习"
+              "能够运用「词语感情色彩」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对中心句与过渡句的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「词语感情色彩」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清中心句与过渡句的基本方法",
-            "能独立完成中心句与过渡句基础题",
-            "能发现并订正中心句与过渡句常见错误"
+            "能准确识别「词语感情色彩」对应的语言现象或阅读任务",
+            "能结合文本说明「词语感情色彩」的理解依据",
+            "能在表达或习作中正确运用「词语感情色彩」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -72,54 +73,56 @@
               "short_answer"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_chinese_g04_001_002",
-          "title": "人物描写方法",
+          "title": "成语积累和运用",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握人物描写方法的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用四年级语文「成语积累和运用」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "人物描写方法"
+            "成语积累和运用",
+            "成语积累与运用"
           ],
           "objectives": {
             "remember": [
-              "记住人物描写方法的核心规则"
+              "记住「成语积累和运用」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解人物描写方法在题目中的含义"
+              "理解「成语积累和运用」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用人物描写方法完成对应练习"
+              "能够运用「成语积累和运用」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对人物描写方法的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「成语积累和运用」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清人物描写方法的基本方法",
-            "能独立完成人物描写方法基础题",
-            "能发现并订正人物描写方法常见错误"
+            "能准确识别「成语积累和运用」对应的语言现象或阅读任务",
+            "能结合文本说明「成语积累和运用」的理解依据",
+            "能在表达或习作中正确运用「成语积累和运用」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -128,62 +131,293 @@
               "short_answer"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_001_003",
+          "title": "关联词递进转折条件",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「关联词递进转折条件」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "关联词递进转折条件"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「关联词递进转折条件」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「关联词递进转折条件」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「关联词递进转折条件」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「关联词递进转折条件」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「关联词递进转折条件」对应的语言现象或阅读任务",
+            "能结合文本说明「关联词递进转折条件」的理解依据",
+            "能在表达或习作中正确运用「关联词递进转折条件」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_001_004",
+          "title": "修改病句成分残缺重复",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「修改病句成分残缺重复」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "修改病句成分残缺重复"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「修改病句成分残缺重复」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「修改病句成分残缺重复」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「修改病句成分残缺重复」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「修改病句成分残缺重复」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「修改病句成分残缺重复」对应的语言现象或阅读任务",
+            "能结合文本说明「修改病句成分残缺重复」的理解依据",
+            "能在表达或习作中正确运用「修改病句成分残缺重复」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_001_005",
+          "title": "句子表达效果比较",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「句子表达效果比较」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "句子表达效果比较"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「句子表达效果比较」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「句子表达效果比较」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「句子表达效果比较」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「句子表达效果比较」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「句子表达效果比较」对应的语言现象或阅读任务",
+            "能结合文本说明「句子表达效果比较」的理解依据",
+            "能在表达或习作中正确运用「句子表达效果比较」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_001_006",
+          "title": "排比设问反问",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「排比设问反问」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "排比设问反问"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「排比设问反问」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「排比设问反问」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「排比设问反问」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「排比设问反问」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「排比设问反问」对应的语言现象或阅读任务",
+            "能结合文本说明「排比设问反问」的理解依据",
+            "能在表达或习作中正确运用「排比设问反问」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_chinese_g04_002",
-      "title": "阅读与表达",
+      "title": "阅读理解",
       "order": 2,
-      "description": "四年级语文阅读与表达学习模块。",
+      "description": "四年级语文「阅读理解」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_chinese_g04_002_001",
-          "title": "围绕中心写一件事",
+          "title": "中心句和过渡句",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握围绕中心写一件事的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用四年级语文「中心句和过渡句」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "围绕中心写一件事"
+            "中心句和过渡句",
+            "中心句与过渡句"
           ],
           "objectives": {
             "remember": [
-              "记住围绕中心写一件事的核心规则"
+              "记住「中心句和过渡句」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解围绕中心写一件事在题目中的含义"
+              "理解「中心句和过渡句」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用围绕中心写一件事完成对应练习"
+              "能够运用「中心句和过渡句」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对围绕中心写一件事的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「中心句和过渡句」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清围绕中心写一件事的基本方法",
-            "能独立完成围绕中心写一件事基础题",
-            "能发现并订正围绕中心写一件事常见错误"
+            "能准确识别「中心句和过渡句」对应的语言现象或阅读任务",
+            "能结合文本说明「中心句和过渡句」的理解依据",
+            "能在表达或习作中正确运用「中心句和过渡句」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -192,14 +426,829 @@
               "short_answer"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_002_002",
+          "title": "概括段落和文章主要内容",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「概括段落和文章主要内容」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "概括段落和文章主要内容",
+            "概括段落与文章主要内容"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「概括段落和文章主要内容」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「概括段落和文章主要内容」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「概括段落和文章主要内容」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「概括段落和文章主要内容」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「概括段落和文章主要内容」对应的语言现象或阅读任务",
+            "能结合文本说明「概括段落和文章主要内容」的理解依据",
+            "能在表达或习作中正确运用「概括段落和文章主要内容」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_002_003",
+          "title": "体会人物品质",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「体会人物品质」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "体会人物品质"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「体会人物品质」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「体会人物品质」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「体会人物品质」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「体会人物品质」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「体会人物品质」对应的语言现象或阅读任务",
+            "能结合文本说明「体会人物品质」的理解依据",
+            "能在表达或习作中正确运用「体会人物品质」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_002_004",
+          "title": "环境描写作用",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「环境描写作用」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "环境描写作用"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「环境描写作用」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「环境描写作用」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「环境描写作用」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「环境描写作用」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「环境描写作用」对应的语言现象或阅读任务",
+            "能结合文本说明「环境描写作用」的理解依据",
+            "能在表达或习作中正确运用「环境描写作用」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_002_005",
+          "title": "说明性文本信息提取",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「说明性文本信息提取」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "说明性文本信息提取"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「说明性文本信息提取」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「说明性文本信息提取」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「说明性文本信息提取」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「说明性文本信息提取」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「说明性文本信息提取」对应的语言现象或阅读任务",
+            "能结合文本说明「说明性文本信息提取」的理解依据",
+            "能在表达或习作中正确运用「说明性文本信息提取」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_002_006",
+          "title": "提问策略阅读",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「提问策略阅读」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "提问策略阅读"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「提问策略阅读」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「提问策略阅读」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「提问策略阅读」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「提问策略阅读」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「提问策略阅读」对应的语言现象或阅读任务",
+            "能结合文本说明「提问策略阅读」的理解依据",
+            "能在表达或习作中正确运用「提问策略阅读」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g04_003",
+      "title": "古诗文阅读",
+      "order": 3,
+      "description": "四年级语文「古诗文阅读」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g04_003_001",
+          "title": "借助注释理解古诗文",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「借助注释理解古诗文」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "借助注释理解古诗文"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「借助注释理解古诗文」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「借助注释理解古诗文」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「借助注释理解古诗文」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「借助注释理解古诗文」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「借助注释理解古诗文」对应的语言现象或阅读任务",
+            "能结合文本说明「借助注释理解古诗文」的理解依据",
+            "能在表达或习作中正确运用「借助注释理解古诗文」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_003_002",
+          "title": "体会诗人情感",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「体会诗人情感」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "体会诗人情感"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「体会诗人情感」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「体会诗人情感」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「体会诗人情感」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「体会诗人情感」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「体会诗人情感」对应的语言现象或阅读任务",
+            "能结合文本说明「体会诗人情感」的理解依据",
+            "能在表达或习作中正确运用「体会诗人情感」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_003_003",
+          "title": "文言词语初步",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「文言词语初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "文言词语初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「文言词语初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「文言词语初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「文言词语初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「文言词语初步」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「文言词语初步」对应的语言现象或阅读任务",
+            "能结合文本说明「文言词语初步」的理解依据",
+            "能在表达或习作中正确运用「文言词语初步」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_003_004",
+          "title": "传统节日文化阅读",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「传统节日文化阅读」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "传统节日文化阅读"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「传统节日文化阅读」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「传统节日文化阅读」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「传统节日文化阅读」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「传统节日文化阅读」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「传统节日文化阅读」对应的语言现象或阅读任务",
+            "能结合文本说明「传统节日文化阅读」的理解依据",
+            "能在表达或习作中正确运用「传统节日文化阅读」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g04_004",
+      "title": "习作表达",
+      "order": 4,
+      "description": "四年级语文「习作表达」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g04_004_001",
+          "title": "按游览顺序写景",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「按游览顺序写景」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "按游览顺序写景"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「按游览顺序写景」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「按游览顺序写景」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「按游览顺序写景」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「按游览顺序写景」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「按游览顺序写景」对应的语言现象或阅读任务",
+            "能结合文本说明「按游览顺序写景」的理解依据",
+            "能在表达或习作中正确运用「按游览顺序写景」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_004_002",
+          "title": "写观察日记",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「写观察日记」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "写观察日记"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「写观察日记」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「写观察日记」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「写观察日记」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「写观察日记」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「写观察日记」对应的语言现象或阅读任务",
+            "能结合文本说明「写观察日记」的理解依据",
+            "能在表达或习作中正确运用「写观察日记」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_004_003",
+          "title": "写一件成长的事",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「写一件成长的事」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "写一件成长的事"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「写一件成长的事」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「写一件成长的事」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「写一件成长的事」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「写一件成长的事」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「写一件成长的事」对应的语言现象或阅读任务",
+            "能结合文本说明「写一件成长的事」的理解依据",
+            "能在表达或习作中正确运用「写一件成长的事」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_004_004",
+          "title": "把人物特点写具体",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「把人物特点写具体」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "把人物特点写具体"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「把人物特点写具体」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「把人物特点写具体」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「把人物特点写具体」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「把人物特点写具体」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「把人物特点写具体」对应的语言现象或阅读任务",
+            "能结合文本说明「把人物特点写具体」的理解依据",
+            "能在表达或习作中正确运用「把人物特点写具体」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g04_004_005",
+          "title": "习作详略安排初步",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用四年级语文「习作详略安排初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "习作详略安排初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「习作详略安排初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「习作详略安排初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「习作详略安排初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「习作详略安排初步」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「习作详略安排初步」对应的语言现象或阅读任务",
+            "能结合文本说明「习作详略安排初步」的理解依据",
+            "能在表达或习作中正确运用「习作详略安排初步」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

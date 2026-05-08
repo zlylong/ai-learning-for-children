@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "math",
     "name": "数学"
@@ -17,53 +17,55 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_math_g04_001",
-      "title": "数与运算",
+      "title": "大数和整数运算",
       "order": 1,
-      "description": "四年级数学数与运算学习模块。",
+      "description": "四年级数学「大数和整数运算」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g04_001_001",
-          "title": "大数的认识",
+          "title": "大数的认识和读写",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握大数的认识的基础概念、常见题型和应用方法。",
+          "summary": "掌握四年级数学「大数的认识和读写」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "大数的认识"
+            "大数的认识和读写",
+            "大数的认识与读写"
           ],
           "objectives": {
             "remember": [
-              "记住大数的认识的核心规则"
+              "记住「大数的认识和读写」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解大数的认识在题目中的含义"
+              "理解「大数的认识和读写」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用大数的认识完成对应练习"
+              "能够运用「大数的认识和读写」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对大数的认识的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "大数的认识和读写的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清大数的认识的基本方法",
-            "能独立完成大数的认识基础题",
-            "能发现并订正大数的认识常见错误"
+            "能说清「大数的认识和读写」的概念或数量关系",
+            "能独立完成「大数的认识和读写」基础题和变式题",
+            "能检查并订正「大数的认识和读写」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -72,54 +74,169 @@
               "calculation"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_math_g04_001_002",
-          "title": "三位数乘两位数",
+          "title": "大数比较与改写",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握三位数乘两位数的基础概念、常见题型和应用方法。",
+          "summary": "掌握四年级数学「大数比较与改写」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "大数比较与改写"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「大数比较与改写」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「大数比较与改写」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「大数比较与改写」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "大数比较与改写的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「大数比较与改写」的概念或数量关系",
+            "能独立完成「大数比较与改写」基础题和变式题",
+            "能检查并订正「大数比较与改写」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_001_003",
+          "title": "亿以内数的近似数",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「亿以内数的近似数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "亿以内数的近似数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「亿以内数的近似数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「亿以内数的近似数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「亿以内数的近似数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "亿以内数的近似数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「亿以内数的近似数」的概念或数量关系",
+            "能独立完成「亿以内数的近似数」基础题和变式题",
+            "能检查并订正「亿以内数的近似数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_001_004",
+          "title": "三位数乘两位数",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「三位数乘两位数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
             "三位数乘两位数"
           ],
           "objectives": {
             "remember": [
-              "记住三位数乘两位数的核心规则"
+              "记住「三位数乘两位数」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解三位数乘两位数在题目中的含义"
+              "理解「三位数乘两位数」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用三位数乘两位数完成对应练习"
+              "能够运用「三位数乘两位数」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对三位数乘两位数的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "三位数乘两位数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清三位数乘两位数的基本方法",
-            "能独立完成三位数乘两位数基础题",
-            "能发现并订正三位数乘两位数常见错误"
+            "能说清「三位数乘两位数」的概念或数量关系",
+            "能独立完成「三位数乘两位数」基础题和变式题",
+            "能检查并订正「三位数乘两位数」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -128,62 +245,234 @@
               "calculation"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_001_005",
+          "title": "除数是两位数的除法",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「除数是两位数的除法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "除数是两位数的除法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「除数是两位数的除法」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「除数是两位数的除法」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「除数是两位数的除法」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "除数是两位数的除法的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「除数是两位数的除法」的概念或数量关系",
+            "能独立完成「除数是两位数的除法」基础题和变式题",
+            "能检查并订正「除数是两位数的除法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_001_006",
+          "title": "商不变性质",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「商不变性质」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "商不变性质"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「商不变性质」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「商不变性质」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「商不变性质」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "商不变性质的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「商不变性质」的概念或数量关系",
+            "能独立完成「商不变性质」基础题和变式题",
+            "能检查并订正「商不变性质」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_001_007",
+          "title": "整数四则混合运算",
+          "order": 7,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「整数四则混合运算」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "整数四则混合运算"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「整数四则混合运算」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「整数四则混合运算」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「整数四则混合运算」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "整数四则混合运算的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「整数四则混合运算」的概念或数量关系",
+            "能独立完成「整数四则混合运算」基础题和变式题",
+            "能检查并订正「整数四则混合运算」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_math_g04_002",
-      "title": "图形与位置",
+      "title": "运算定律与简便计算",
       "order": 2,
-      "description": "四年级数学图形与位置学习模块。",
+      "description": "四年级数学「运算定律与简便计算」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g04_002_001",
-          "title": "角的度量",
+          "title": "加法交换律结合律",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握角的度量的基础概念、常见题型和应用方法。",
+          "summary": "掌握四年级数学「加法交换律结合律」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "角的度量"
+            "加法交换律结合律"
           ],
           "objectives": {
             "remember": [
-              "记住角的度量的核心规则"
+              "记住「加法交换律结合律」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解角的度量在题目中的含义"
+              "理解「加法交换律结合律」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用角的度量完成对应练习"
+              "能够运用「加法交换律结合律」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对角的度量的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "加法交换律结合律的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清角的度量的基本方法",
-            "能独立完成角的度量基础题",
-            "能发现并订正角的度量常见错误"
+            "能说清「加法交换律结合律」的概念或数量关系",
+            "能独立完成「加法交换律结合律」基础题和变式题",
+            "能检查并订正「加法交换律结合律」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -192,14 +481,887 @@
               "calculation"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_002_002",
+          "title": "乘法交换律结合律",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「乘法交换律结合律」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "乘法交换律结合律"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「乘法交换律结合律」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「乘法交换律结合律」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「乘法交换律结合律」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "乘法交换律结合律的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「乘法交换律结合律」的概念或数量关系",
+            "能独立完成「乘法交换律结合律」基础题和变式题",
+            "能检查并订正「乘法交换律结合律」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_002_003",
+          "title": "乘法分配律",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「乘法分配律」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "乘法分配律"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「乘法分配律」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「乘法分配律」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「乘法分配律」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "乘法分配律的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「乘法分配律」的概念或数量关系",
+            "能独立完成「乘法分配律」基础题和变式题",
+            "能检查并订正「乘法分配律」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_002_004",
+          "title": "减法性质",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「减法性质」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "减法性质"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「减法性质」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「减法性质」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「减法性质」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "减法性质的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「减法性质」的概念或数量关系",
+            "能独立完成「减法性质」基础题和变式题",
+            "能检查并订正「减法性质」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_002_005",
+          "title": "除法性质",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「除法性质」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "除法性质"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「除法性质」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「除法性质」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「除法性质」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "除法性质的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「除法性质」的概念或数量关系",
+            "能独立完成「除法性质」基础题和变式题",
+            "能检查并订正「除法性质」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_002_006",
+          "title": "简便计算策略",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「简便计算策略」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "简便计算策略"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「简便计算策略」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「简便计算策略」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「简便计算策略」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "简便计算策略的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「简便计算策略」的概念或数量关系",
+            "能独立完成「简便计算策略」基础题和变式题",
+            "能检查并订正「简便计算策略」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g04_003",
+      "title": "角线面与图形",
+      "order": 3,
+      "description": "四年级数学「角线面与图形」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g04_003_001",
+          "title": "直线射线线段",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「直线射线线段」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "直线射线线段"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「直线射线线段」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「直线射线线段」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「直线射线线段」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "直线射线线段的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「直线射线线段」的概念或数量关系",
+            "能独立完成「直线射线线段」基础题和变式题",
+            "能检查并订正「直线射线线段」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_003_002",
+          "title": "角的度量和分类",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「角的度量和分类」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "角的度量和分类",
+            "角的度量与分类"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「角的度量和分类」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「角的度量和分类」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「角的度量和分类」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "角的度量和分类的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「角的度量和分类」的概念或数量关系",
+            "能独立完成「角的度量和分类」基础题和变式题",
+            "能检查并订正「角的度量和分类」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_003_003",
+          "title": "垂直与平行",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「垂直与平行」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "垂直与平行"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「垂直与平行」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「垂直与平行」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「垂直与平行」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "垂直与平行的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「垂直与平行」的概念或数量关系",
+            "能独立完成「垂直与平行」基础题和变式题",
+            "能检查并订正「垂直与平行」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_003_004",
+          "title": "平行四边形和梯形",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「平行四边形和梯形」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "平行四边形和梯形",
+            "平行四边形与梯形"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「平行四边形和梯形」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「平行四边形和梯形」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「平行四边形和梯形」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "平行四边形和梯形的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「平行四边形和梯形」的概念或数量关系",
+            "能独立完成「平行四边形和梯形」基础题和变式题",
+            "能检查并订正「平行四边形和梯形」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_003_005",
+          "title": "观察物体",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「观察物体」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "观察物体"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「观察物体」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「观察物体」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「观察物体」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "观察物体的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「观察物体」的概念或数量关系",
+            "能独立完成「观察物体」基础题和变式题",
+            "能检查并订正「观察物体」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g04_004",
+      "title": "统计与应用",
+      "order": 4,
+      "description": "四年级数学「统计与应用」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g04_004_001",
+          "title": "条形统计图",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「条形统计图」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "条形统计图"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「条形统计图」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「条形统计图」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「条形统计图」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "条形统计图的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「条形统计图」的概念或数量关系",
+            "能独立完成「条形统计图」基础题和变式题",
+            "能检查并订正「条形统计图」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_004_002",
+          "title": "平均数应用",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「平均数应用」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "平均数应用"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「平均数应用」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「平均数应用」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「平均数应用」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "平均数应用的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「平均数应用」的概念或数量关系",
+            "能独立完成「平均数应用」基础题和变式题",
+            "能检查并订正「平均数应用」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_004_003",
+          "title": "路程速度时间关系",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「路程速度时间关系」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "路程速度时间关系"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「路程速度时间关系」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「路程速度时间关系」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「路程速度时间关系」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "路程速度时间关系的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「路程速度时间关系」的概念或数量关系",
+            "能独立完成「路程速度时间关系」基础题和变式题",
+            "能检查并订正「路程速度时间关系」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_004_004",
+          "title": "单价数量总价关系",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「单价数量总价关系」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "单价数量总价关系"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「单价数量总价关系」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「单价数量总价关系」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「单价数量总价关系」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "单价数量总价关系的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「单价数量总价关系」的概念或数量关系",
+            "能独立完成「单价数量总价关系」基础题和变式题",
+            "能检查并订正「单价数量总价关系」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g04_004_005",
+          "title": "优化问题初步",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握四年级数学「优化问题初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "优化问题初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「优化问题初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「优化问题初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「优化问题初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "优化问题初步的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「优化问题初步」的概念或数量关系",
+            "能独立完成「优化问题初步」基础题和变式题",
+            "能检查并订正「优化问题初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

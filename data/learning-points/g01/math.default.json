@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "math",
     "name": "数学"
@@ -17,14 +17,14 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_math_g01_001",
-      "title": "数与运算",
+      "title": "数的认识与比较",
       "order": 1,
-      "description": "一年级数学数与运算学习模块。",
+      "description": "一年级数学「数的认识与比较」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g01_001_001",
@@ -32,38 +32,39 @@
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握20以内数的认识的基础概念、常见题型和应用方法。",
+          "summary": "掌握一年级数学「20以内数的认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
             "20以内数的认识"
           ],
           "objectives": {
             "remember": [
-              "记住20以内数的认识的核心规则"
+              "记住「20以内数的认识」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解20以内数的认识在题目中的含义"
+              "理解「20以内数的认识」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用20以内数的认识完成对应练习"
+              "能够运用「20以内数的认识」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对20以内数的认识的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "20以内数的认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清20以内数的认识的基本方法",
-            "能独立完成20以内数的认识基础题",
-            "能发现并订正20以内数的认识常见错误"
+            "能说清「20以内数的认识」的概念或数量关系",
+            "能独立完成「20以内数的认识」基础题和变式题",
+            "能检查并订正「20以内数的认识」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -78,48 +79,49 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_math_g01_001_002",
-          "title": "20以内加减法",
+          "title": "数位与数序初步",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握20以内加减法的基础概念、常见题型和应用方法。",
+          "summary": "掌握一年级数学「数位与数序初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "20以内加减法"
+            "数位与数序初步"
           ],
           "objectives": {
             "remember": [
-              "记住20以内加减法的核心规则"
+              "记住「数位与数序初步」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解20以内加减法在题目中的含义"
+              "理解「数位与数序初步」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用20以内加减法完成对应练习"
+              "能够运用「数位与数序初步」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对20以内加减法的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "数位与数序初步的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清20以内加减法的基本方法",
-            "能独立完成20以内加减法基础题",
-            "能发现并订正20以内加减法常见错误"
+            "能说清「数位与数序初步」的概念或数量关系",
+            "能独立完成「数位与数序初步」基础题和变式题",
+            "能检查并订正「数位与数序初步」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -134,56 +136,229 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g01_001_003",
+          "title": "比较20以内数的大小",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「比较20以内数的大小」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "比较20以内数的大小"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「比较20以内数的大小」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「比较20以内数的大小」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「比较20以内数的大小」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "比较20以内数的大小的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「比较20以内数的大小」的概念或数量关系",
+            "能独立完成「比较20以内数的大小」基础题和变式题",
+            "能检查并订正「比较20以内数的大小」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g01_001_004",
+          "title": "第几和几个",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「第几和几个」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "第几和几个",
+            "第几与几个"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「第几和几个」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「第几和几个」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「第几和几个」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "第几和几个的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「第几和几个」的概念或数量关系",
+            "能独立完成「第几和几个」基础题和变式题",
+            "能检查并订正「第几和几个」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g01_001_005",
+          "title": "单数双数初步",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「单数双数初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "单数双数初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「单数双数初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「单数双数初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「单数双数初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "单数双数初步的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「单数双数初步」的概念或数量关系",
+            "能独立完成「单数双数初步」基础题和变式题",
+            "能检查并订正「单数双数初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_math_g01_002",
-      "title": "图形与位置",
+      "title": "加减法基础",
       "order": 2,
-      "description": "一年级数学图形与位置学习模块。",
+      "description": "一年级数学「加减法基础」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g01_002_001",
-          "title": "认识基础图形",
+          "title": "10以内加减法",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握认识基础图形的基础概念、常见题型和应用方法。",
+          "summary": "掌握一年级数学「10以内加减法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "认识基础图形"
+            "10以内加减法"
           ],
           "objectives": {
             "remember": [
-              "记住认识基础图形的核心规则"
+              "记住「10以内加减法」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解认识基础图形在题目中的含义"
+              "理解「10以内加减法」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用认识基础图形完成对应练习"
+              "能够运用「10以内加减法」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对认识基础图形的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "10以内加减法的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清认识基础图形的基本方法",
-            "能独立完成认识基础图形基础题",
-            "能发现并订正认识基础图形常见错误"
+            "能说清「10以内加减法」的概念或数量关系",
+            "能独立完成「10以内加减法」基础题和变式题",
+            "能检查并订正「10以内加减法」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -198,8 +373,771 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g01_002_002",
+          "title": "20以内不进位加法",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「20以内不进位加法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "20以内不进位加法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「20以内不进位加法」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「20以内不进位加法」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「20以内不进位加法」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "20以内不进位加法的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「20以内不进位加法」的概念或数量关系",
+            "能独立完成「20以内不进位加法」基础题和变式题",
+            "能检查并订正「20以内不进位加法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g01_002_003",
+          "title": "20以内不退位减法",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「20以内不退位减法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "20以内不退位减法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「20以内不退位减法」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「20以内不退位减法」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「20以内不退位减法」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "20以内不退位减法的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「20以内不退位减法」的概念或数量关系",
+            "能独立完成「20以内不退位减法」基础题和变式题",
+            "能检查并订正「20以内不退位减法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g01_002_004",
+          "title": "20以内进位加法",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「20以内进位加法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "20以内进位加法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「20以内进位加法」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「20以内进位加法」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「20以内进位加法」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "20以内进位加法的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「20以内进位加法」的概念或数量关系",
+            "能独立完成「20以内进位加法」基础题和变式题",
+            "能检查并订正「20以内进位加法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g01_002_005",
+          "title": "20以内退位减法",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「20以内退位减法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "20以内退位减法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「20以内退位减法」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「20以内退位减法」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「20以内退位减法」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "20以内退位减法的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「20以内退位减法」的概念或数量关系",
+            "能独立完成「20以内退位减法」基础题和变式题",
+            "能检查并订正「20以内退位减法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g01_002_006",
+          "title": "连加连减和加减混合",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「连加连减和加减混合」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "连加连减和加减混合",
+            "连加连减与加减混合"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「连加连减和加减混合」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「连加连减和加减混合」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「连加连减和加减混合」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "连加连减和加减混合的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「连加连减和加减混合」的概念或数量关系",
+            "能独立完成「连加连减和加减混合」基础题和变式题",
+            "能检查并订正「连加连减和加减混合」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g01_003",
+      "title": "图形与位置",
+      "order": 3,
+      "description": "一年级数学「图形与位置」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g01_003_001",
+          "title": "认识长方形正方形三角形圆",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「认识长方形正方形三角形圆」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "认识长方形正方形三角形圆"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「认识长方形正方形三角形圆」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「认识长方形正方形三角形圆」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「认识长方形正方形三角形圆」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "认识长方形正方形三角形圆的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「认识长方形正方形三角形圆」的概念或数量关系",
+            "能独立完成「认识长方形正方形三角形圆」基础题和变式题",
+            "能检查并订正「认识长方形正方形三角形圆」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g01_003_002",
+          "title": "认识立体图形长方体正方体圆柱球",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「认识立体图形长方体正方体圆柱球」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "认识立体图形长方体正方体圆柱球"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「认识立体图形长方体正方体圆柱球」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「认识立体图形长方体正方体圆柱球」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「认识立体图形长方体正方体圆柱球」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "认识立体图形长方体正方体圆柱球的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「认识立体图形长方体正方体圆柱球」的概念或数量关系",
+            "能独立完成「认识立体图形长方体正方体圆柱球」基础题和变式题",
+            "能检查并订正「认识立体图形长方体正方体圆柱球」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g01_003_003",
+          "title": "上下前后左右位置",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「上下前后左右位置」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "上下前后左右位置"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「上下前后左右位置」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「上下前后左右位置」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「上下前后左右位置」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "上下前后左右位置的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「上下前后左右位置」的概念或数量关系",
+            "能独立完成「上下前后左右位置」基础题和变式题",
+            "能检查并订正「上下前后左右位置」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g01_003_004",
+          "title": "图形分类与拼组",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「图形分类与拼组」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "图形分类与拼组"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「图形分类与拼组」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「图形分类与拼组」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「图形分类与拼组」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "图形分类与拼组的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「图形分类与拼组」的概念或数量关系",
+            "能独立完成「图形分类与拼组」基础题和变式题",
+            "能检查并订正「图形分类与拼组」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g01_004",
+      "title": "人民币与时间",
+      "order": 4,
+      "description": "一年级数学「人民币与时间」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g01_004_001",
+          "title": "认识人民币元角分",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「认识人民币元角分」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "认识人民币元角分"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「认识人民币元角分」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「认识人民币元角分」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「认识人民币元角分」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "认识人民币元角分的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「认识人民币元角分」的概念或数量关系",
+            "能独立完成「认识人民币元角分」基础题和变式题",
+            "能检查并订正「认识人民币元角分」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g01_004_002",
+          "title": "简单人民币换算",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「简单人民币换算」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "简单人民币换算"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「简单人民币换算」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「简单人民币换算」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「简单人民币换算」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "简单人民币换算的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「简单人民币换算」的概念或数量关系",
+            "能独立完成「简单人民币换算」基础题和变式题",
+            "能检查并订正「简单人民币换算」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g01_004_003",
+          "title": "认识整时和半时",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「认识整时和半时」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "认识整时和半时",
+            "认识整时与半时"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「认识整时和半时」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「认识整时和半时」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「认识整时和半时」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "认识整时和半时的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「认识整时和半时」的概念或数量关系",
+            "能独立完成「认识整时和半时」基础题和变式题",
+            "能检查并订正「认识整时和半时」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g01_004_004",
+          "title": "用数学解决生活问题",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握一年级数学「用数学解决生活问题」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "用数学解决生活问题"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「用数学解决生活问题」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「用数学解决生活问题」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「用数学解决生活问题」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "用数学解决生活问题的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「用数学解决生活问题」的概念或数量关系",
+            "能独立完成「用数学解决生活问题」基础题和变式题",
+            "能检查并订正「用数学解决生活问题」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

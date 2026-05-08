@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "english",
     "name": "英语"
@@ -17,53 +17,54 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_english_g01_001",
-      "title": "词汇与听说",
+      "title": "字母与发音",
       "order": 1,
-      "description": "一年级英语词汇与听说学习模块。",
+      "description": "一年级英语「字母与发音」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g01_001_001",
-          "title": "日常问候语",
+          "title": "26个字母认读",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握日常问候语的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用一年级英语「26个字母认读」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "日常问候语"
+            "26个字母认读"
           ],
           "objectives": {
             "remember": [
-              "记住日常问候语的核心规则"
+              "记住「26个字母认读」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解日常问候语在题目中的含义"
+              "理解「26个字母认读」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用日常问候语完成对应练习"
+              "能够运用「26个字母认读」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对日常问候语的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「26个字母认读」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清日常问候语的基本方法",
-            "能独立完成日常问候语基础题",
-            "能发现并订正日常问候语常见错误"
+            "能听懂并认读「26个字母认读」相关词句",
+            "能在正确场景中使用「26个字母认读」进行表达",
+            "能完成「26个字母认读」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -78,48 +79,49 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_english_g01_001_002",
-          "title": "颜色与数字词汇",
+          "title": "字母大小写书写",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握颜色与数字词汇的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用一年级英语「字母大小写书写」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "颜色与数字词汇"
+            "字母大小写书写"
           ],
           "objectives": {
             "remember": [
-              "记住颜色与数字词汇的核心规则"
+              "记住「字母大小写书写」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解颜色与数字词汇在题目中的含义"
+              "理解「字母大小写书写」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用颜色与数字词汇完成对应练习"
+              "能够运用「字母大小写书写」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对颜色与数字词汇的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「字母大小写书写」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清颜色与数字词汇的基本方法",
-            "能独立完成颜色与数字词汇基础题",
-            "能发现并订正颜色与数字词汇常见错误"
+            "能听懂并认读「字母大小写书写」相关词句",
+            "能在正确场景中使用「字母大小写书写」进行表达",
+            "能完成「字母大小写书写」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -134,56 +136,171 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g01_001_003",
+          "title": "元音字母初步",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「元音字母初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "元音字母初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「元音字母初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「元音字母初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「元音字母初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「元音字母初步」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「元音字母初步」相关词句",
+            "能在正确场景中使用「元音字母初步」进行表达",
+            "能完成「元音字母初步」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g01_001_004",
+          "title": "常见课堂指令",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「常见课堂指令」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "常见课堂指令"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「常见课堂指令」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「常见课堂指令」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「常见课堂指令」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「常见课堂指令」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「常见课堂指令」相关词句",
+            "能在正确场景中使用「常见课堂指令」进行表达",
+            "能完成「常见课堂指令」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_english_g01_002",
-      "title": "基础句型与表达",
+      "title": "词汇主题",
       "order": 2,
-      "description": "一年级英语基础句型与表达学习模块。",
+      "description": "一年级英语「词汇主题」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g01_002_001",
-          "title": "I am / I like 句型",
+          "title": "颜色词汇",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握I am / I like 句型的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用一年级英语「颜色词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "I am / I like 句型"
+            "颜色词汇"
           ],
           "objectives": {
             "remember": [
-              "记住I am / I like 句型的核心规则"
+              "记住「颜色词汇」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解I am / I like 句型在题目中的含义"
+              "理解「颜色词汇」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用I am / I like 句型完成对应练习"
+              "能够运用「颜色词汇」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对I am / I like 句型的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「颜色词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清I am / I like 句型的基本方法",
-            "能独立完成I am / I like 句型基础题",
-            "能发现并订正I am / I like 句型常见错误"
+            "能听懂并认读「颜色词汇」相关词句",
+            "能在正确场景中使用「颜色词汇」进行表达",
+            "能完成「颜色词汇」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -198,8 +315,531 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g01_002_002",
+          "title": "数字1到20",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「数字1到20」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "数字1到20"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「数字1到20」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「数字1到20」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「数字1到20」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「数字1到20」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「数字1到20」相关词句",
+            "能在正确场景中使用「数字1到20」进行表达",
+            "能完成「数字1到20」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g01_002_003",
+          "title": "动物词汇",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「动物词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "动物词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「动物词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「动物词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「动物词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「动物词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「动物词汇」相关词句",
+            "能在正确场景中使用「动物词汇」进行表达",
+            "能完成「动物词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g01_002_004",
+          "title": "家庭成员词汇",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「家庭成员词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "家庭成员词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「家庭成员词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「家庭成员词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「家庭成员词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「家庭成员词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「家庭成员词汇」相关词句",
+            "能在正确场景中使用「家庭成员词汇」进行表达",
+            "能完成「家庭成员词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g01_002_005",
+          "title": "文具词汇",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「文具词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "文具词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「文具词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「文具词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「文具词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「文具词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「文具词汇」相关词句",
+            "能在正确场景中使用「文具词汇」进行表达",
+            "能完成「文具词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g01_003",
+      "title": "日常表达",
+      "order": 3,
+      "description": "一年级英语「日常表达」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g01_003_001",
+          "title": "问候和告别",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「问候和告别」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "问候和告别",
+            "问候与告别"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「问候和告别」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「问候和告别」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「问候和告别」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「问候和告别」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「问候和告别」相关词句",
+            "能在正确场景中使用「问候和告别」进行表达",
+            "能完成「问候和告别」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g01_003_002",
+          "title": "自我介绍I am",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「自我介绍I am」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "自我介绍I am"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「自我介绍I am」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「自我介绍I am」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「自我介绍I am」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「自我介绍I am」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「自我介绍I am」相关词句",
+            "能在正确场景中使用「自我介绍I am」进行表达",
+            "能完成「自我介绍I am」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g01_003_003",
+          "title": "表达喜好I like",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「表达喜好I like」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "表达喜好I like"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「表达喜好I like」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「表达喜好I like」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「表达喜好I like」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「表达喜好I like」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「表达喜好I like」相关词句",
+            "能在正确场景中使用「表达喜好I like」进行表达",
+            "能完成「表达喜好I like」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g01_003_004",
+          "title": "感谢和道歉",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「感谢和道歉」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "感谢和道歉",
+            "感谢与道歉"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「感谢和道歉」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「感谢和道歉」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「感谢和道歉」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「感谢和道歉」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「感谢和道歉」相关词句",
+            "能在正确场景中使用「感谢和道歉」进行表达",
+            "能完成「感谢和道歉」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g01_003_005",
+          "title": "简单指令听说",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用一年级英语「简单指令听说」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "简单指令听说"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「简单指令听说」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「简单指令听说」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「简单指令听说」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「简单指令听说」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「简单指令听说」相关词句",
+            "能在正确场景中使用「简单指令听说」进行表达",
+            "能完成「简单指令听说」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

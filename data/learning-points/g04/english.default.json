@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "english",
     "name": "英语"
@@ -17,53 +17,55 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_english_g04_001",
-      "title": "词汇与听说",
+      "title": "词汇主题",
       "order": 1,
-      "description": "四年级英语词汇与听说学习模块。",
+      "description": "四年级英语「词汇主题」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g04_001_001",
-          "title": "一般现在时基础",
+          "title": "时间和星期",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握一般现在时基础的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用四年级英语「时间和星期」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "一般现在时基础"
+            "时间和星期",
+            "时间与星期"
           ],
           "objectives": {
             "remember": [
-              "记住一般现在时基础的核心规则"
+              "记住「时间和星期」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解一般现在时基础在题目中的含义"
+              "理解「时间和星期」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用一般现在时基础完成对应练习"
+              "能够运用「时间和星期」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对一般现在时基础的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「时间和星期」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清一般现在时基础的基本方法",
-            "能独立完成一般现在时基础基础题",
-            "能发现并订正一般现在时基础常见错误"
+            "能听懂并认读「时间和星期」相关词句",
+            "能在正确场景中使用「时间和星期」进行表达",
+            "能完成「时间和星期」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -72,54 +74,56 @@
               "sentence_making"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_english_g04_001_002",
-          "title": "时间与星期表达",
+          "title": "课程和学科",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握时间与星期表达的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用四年级英语「课程和学科」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "时间与星期表达"
+            "课程和学科",
+            "课程与学科"
           ],
           "objectives": {
             "remember": [
-              "记住时间与星期表达的核心规则"
+              "记住「课程和学科」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解时间与星期表达在题目中的含义"
+              "理解「课程和学科」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用时间与星期表达完成对应练习"
+              "能够运用「课程和学科」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对时间与星期表达的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「课程和学科」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清时间与星期表达的基本方法",
-            "能独立完成时间与星期表达基础题",
-            "能发现并订正时间与星期表达常见错误"
+            "能听懂并认读「课程和学科」相关词句",
+            "能在正确场景中使用「课程和学科」进行表达",
+            "能完成「课程和学科」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -128,62 +132,236 @@
               "sentence_making"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_001_003",
+          "title": "房间和家具",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「房间和家具」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "房间和家具",
+            "房间与家具"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「房间和家具」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「房间和家具」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「房间和家具」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「房间和家具」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「房间和家具」相关词句",
+            "能在正确场景中使用「房间和家具」进行表达",
+            "能完成「房间和家具」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_001_004",
+          "title": "服装与价格",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「服装与价格」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "服装与价格"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「服装与价格」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「服装与价格」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「服装与价格」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「服装与价格」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「服装与价格」相关词句",
+            "能在正确场景中使用「服装与价格」进行表达",
+            "能完成「服装与价格」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_001_005",
+          "title": "地点和方位",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「地点和方位」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "地点和方位",
+            "地点与方位"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「地点和方位」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「地点和方位」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「地点和方位」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「地点和方位」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「地点和方位」相关词句",
+            "能在正确场景中使用「地点和方位」进行表达",
+            "能完成「地点和方位」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_english_g04_002",
-      "title": "基础句型与表达",
+      "title": "语法句型",
       "order": 2,
-      "description": "四年级英语基础句型与表达学习模块。",
+      "description": "四年级英语「语法句型」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g04_002_001",
-          "title": "Can you ...? 句型",
+          "title": "一般现在时基础",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握Can you ...? 句型的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用四年级英语「一般现在时基础」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "Can you ...? 句型"
+            "一般现在时基础"
           ],
           "objectives": {
             "remember": [
-              "记住Can you ...? 句型的核心规则"
+              "记住「一般现在时基础」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解Can you ...? 句型在题目中的含义"
+              "理解「一般现在时基础」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用Can you ...? 句型完成对应练习"
+              "能够运用「一般现在时基础」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对Can you ...? 句型的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「一般现在时基础」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清Can you ...? 句型的基本方法",
-            "能独立完成Can you ...? 句型基础题",
-            "能发现并订正Can you ...? 句型常见错误"
+            "能听懂并认读「一般现在时基础」相关词句",
+            "能在正确场景中使用「一般现在时基础」进行表达",
+            "能完成「一般现在时基础」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -192,14 +370,536 @@
               "sentence_making"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_002_002",
+          "title": "can表示能力",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「can表示能力」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "can表示能力"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「can表示能力」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「can表示能力」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「can表示能力」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「can表示能力」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「can表示能力」相关词句",
+            "能在正确场景中使用「can表示能力」进行表达",
+            "能完成「can表示能力」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_002_003",
+          "title": "there be句型初步",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「there be句型初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "there be句型初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「there be句型初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「there be句型初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「there be句型初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「there be句型初步」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「there be句型初步」相关词句",
+            "能在正确场景中使用「there be句型初步」进行表达",
+            "能完成「there be句型初步」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_002_004",
+          "title": "方位介词in on under near",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「方位介词in on under near」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "方位介词in on under near"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「方位介词in on under near」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「方位介词in on under near」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「方位介词in on under near」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「方位介词in on under near」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「方位介词in on under near」相关词句",
+            "能在正确场景中使用「方位介词in on under near」进行表达",
+            "能完成「方位介词in on under near」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_002_005",
+          "title": "现在进行时初步",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「现在进行时初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "现在进行时初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「现在进行时初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「现在进行时初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「现在进行时初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「现在进行时初步」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「现在进行时初步」相关词句",
+            "能在正确场景中使用「现在进行时初步」进行表达",
+            "能完成「现在进行时初步」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_002_006",
+          "title": "特殊疑问词what where when",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「特殊疑问词what where when」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "特殊疑问词what where when"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「特殊疑问词what where when」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「特殊疑问词what where when」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「特殊疑问词what where when」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「特殊疑问词what where when」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「特殊疑问词what where when」相关词句",
+            "能在正确场景中使用「特殊疑问词what where when」进行表达",
+            "能完成「特殊疑问词what where when」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g04_003",
+      "title": "阅读表达",
+      "order": 3,
+      "description": "四年级英语「阅读表达」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g04_003_001",
+          "title": "阅读短篇对话",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「阅读短篇对话」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "阅读短篇对话"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「阅读短篇对话」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「阅读短篇对话」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「阅读短篇对话」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「阅读短篇对话」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「阅读短篇对话」相关词句",
+            "能在正确场景中使用「阅读短篇对话」进行表达",
+            "能完成「阅读短篇对话」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_003_002",
+          "title": "根据表格获取信息",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「根据表格获取信息」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "根据表格获取信息"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「根据表格获取信息」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「根据表格获取信息」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「根据表格获取信息」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「根据表格获取信息」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「根据表格获取信息」相关词句",
+            "能在正确场景中使用「根据表格获取信息」进行表达",
+            "能完成「根据表格获取信息」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_003_003",
+          "title": "描述一天活动",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「描述一天活动」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "描述一天活动"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「描述一天活动」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「描述一天活动」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「描述一天活动」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「描述一天活动」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「描述一天活动」相关词句",
+            "能在正确场景中使用「描述一天活动」进行表达",
+            "能完成「描述一天活动」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g04_003_004",
+          "title": "购物和问路对话",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用四年级英语「购物和问路对话」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "购物和问路对话",
+            "购物与问路对话"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「购物和问路对话」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「购物和问路对话」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「购物和问路对话」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「购物和问路对话」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「购物和问路对话」相关词句",
+            "能在正确场景中使用「购物和问路对话」进行表达",
+            "能完成「购物和问路对话」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "english",
     "name": "英语"
@@ -17,53 +17,54 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_english_g03_001",
-      "title": "词汇与听说",
+      "title": "核心词汇",
       "order": 1,
-      "description": "三年级英语词汇与听说学习模块。",
+      "description": "三年级英语「核心词汇」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g03_001_001",
-          "title": "be 动词 am/is/are",
+          "title": "学校用品词汇",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握be 动词 am/is/are的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用三年级英语「学校用品词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "be 动词 am/is/are"
+            "学校用品词汇"
           ],
           "objectives": {
             "remember": [
-              "记住be 动词 am/is/are的核心规则"
+              "记住「学校用品词汇」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解be 动词 am/is/are在题目中的含义"
+              "理解「学校用品词汇」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用be 动词 am/is/are完成对应练习"
+              "能够运用「学校用品词汇」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对be 动词 am/is/are的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「学校用品词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清be 动词 am/is/are的基本方法",
-            "能独立完成be 动词 am/is/are基础题",
-            "能发现并订正be 动词 am/is/are常见错误"
+            "能听懂并认读「学校用品词汇」相关词句",
+            "能在正确场景中使用「学校用品词汇」进行表达",
+            "能完成「学校用品词汇」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -78,48 +79,50 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_english_g03_001_002",
-          "title": "名词单复数初步",
+          "title": "数字和年龄表达",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握名词单复数初步的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用三年级英语「数字和年龄表达」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "名词单复数初步"
+            "数字和年龄表达",
+            "数字与年龄表达"
           ],
           "objectives": {
             "remember": [
-              "记住名词单复数初步的核心规则"
+              "记住「数字和年龄表达」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解名词单复数初步在题目中的含义"
+              "理解「数字和年龄表达」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用名词单复数初步完成对应练习"
+              "能够运用「数字和年龄表达」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对名词单复数初步的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「数字和年龄表达」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清名词单复数初步的基本方法",
-            "能独立完成名词单复数初步基础题",
-            "能发现并订正名词单复数初步常见错误"
+            "能听懂并认读「数字和年龄表达」相关词句",
+            "能在正确场景中使用「数字和年龄表达」进行表达",
+            "能完成「数字和年龄表达」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -134,56 +137,231 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_001_003",
+          "title": "家庭和朋友词汇",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「家庭和朋友词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "家庭和朋友词汇",
+            "家庭与朋友词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「家庭和朋友词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「家庭和朋友词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「家庭和朋友词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「家庭和朋友词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「家庭和朋友词汇」相关词句",
+            "能在正确场景中使用「家庭和朋友词汇」进行表达",
+            "能完成「家庭和朋友词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_001_004",
+          "title": "动物和外貌词汇",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「动物和外貌词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "动物和外貌词汇",
+            "动物与外貌词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「动物和外貌词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「动物和外貌词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「动物和外貌词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「动物和外貌词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「动物和外貌词汇」相关词句",
+            "能在正确场景中使用「动物和外貌词汇」进行表达",
+            "能完成「动物和外貌词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_001_005",
+          "title": "食物和水果词汇",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「食物和水果词汇」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "食物和水果词汇",
+            "食物与水果词汇"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「食物和水果词汇」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「食物和水果词汇」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「食物和水果词汇」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「食物和水果词汇」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「食物和水果词汇」相关词句",
+            "能在正确场景中使用「食物和水果词汇」进行表达",
+            "能完成「食物和水果词汇」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_english_g03_002",
-      "title": "基础句型与表达",
+      "title": "语法句型",
       "order": 2,
-      "description": "三年级英语基础句型与表达学习模块。",
+      "description": "三年级英语「语法句型」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_english_g03_002_001",
-          "title": "What is this? 句型",
+          "title": "be动词am is are",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握What is this? 句型的基础概念、常见题型和应用方法。",
+          "summary": "听懂、认读并运用三年级英语「be动词am is are」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "What is this? 句型"
+            "be动词am is are"
           ],
           "objectives": {
             "remember": [
-              "记住What is this? 句型的核心规则"
+              "记住「be动词am is are」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解What is this? 句型在题目中的含义"
+              "理解「be动词am is are」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用What is this? 句型完成对应练习"
+              "能够运用「be动词am is are」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
             "词汇",
-            "句型"
+            "句型",
+            "听说读写"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对What is this? 句型的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "把「be动词am is are」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
             }
           ],
           "masteryCriteria": [
-            "能说清What is this? 句型的基本方法",
-            "能独立完成What is this? 句型基础题",
-            "能发现并订正What is this? 句型常见错误"
+            "能听懂并认读「be动词am is are」相关词句",
+            "能在正确场景中使用「be动词am is are」进行表达",
+            "能完成「be动词am is are」相关填空、选择或造句练习"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -198,8 +376,531 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_002_002",
+          "title": "名词单复数初步",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「名词单复数初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "名词单复数初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「名词单复数初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「名词单复数初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「名词单复数初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「名词单复数初步」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「名词单复数初步」相关词句",
+            "能在正确场景中使用「名词单复数初步」进行表达",
+            "能完成「名词单复数初步」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_002_003",
+          "title": "冠词a和an",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「冠词a和an」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "冠词a和an",
+            "冠词a与an"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「冠词a和an」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「冠词a和an」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「冠词a和an」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「冠词a和an」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「冠词a和an」相关词句",
+            "能在正确场景中使用「冠词a和an」进行表达",
+            "能完成「冠词a和an」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_002_004",
+          "title": "What is this问答",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「What is this问答」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "What is this问答"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「What is this问答」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「What is this问答」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「What is this问答」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「What is this问答」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「What is this问答」相关词句",
+            "能在正确场景中使用「What is this问答」进行表达",
+            "能完成「What is this问答」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_002_005",
+          "title": "Who is he she问答",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「Who is he she问答」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "Who is he she问答"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「Who is he she问答」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「Who is he she问答」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「Who is he she问答」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「Who is he she问答」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「Who is he she问答」相关词句",
+            "能在正确场景中使用「Who is he she问答」进行表达",
+            "能完成「Who is he she问答」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_002_006",
+          "title": "I have和He has初步",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「I have和He has初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "I have和He has初步",
+            "I have与He has初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「I have和He has初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「I have和He has初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「I have和He has初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「I have和He has初步」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「I have和He has初步」相关词句",
+            "能在正确场景中使用「I have和He has初步」进行表达",
+            "能完成「I have和He has初步」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g03_003",
+      "title": "阅读写作",
+      "order": 3,
+      "description": "三年级英语「阅读写作」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g03_003_001",
+          "title": "读懂简单对话",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「读懂简单对话」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "读懂简单对话"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「读懂简单对话」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「读懂简单对话」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「读懂简单对话」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「读懂简单对话」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「读懂简单对话」相关词句",
+            "能在正确场景中使用「读懂简单对话」进行表达",
+            "能完成「读懂简单对话」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_003_002",
+          "title": "根据图片补全句子",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「根据图片补全句子」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "根据图片补全句子"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「根据图片补全句子」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「根据图片补全句子」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「根据图片补全句子」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「根据图片补全句子」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「根据图片补全句子」相关词句",
+            "能在正确场景中使用「根据图片补全句子」进行表达",
+            "能完成「根据图片补全句子」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_003_003",
+          "title": "简单自我介绍",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「简单自我介绍」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "简单自我介绍"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「简单自我介绍」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「简单自我介绍」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「简单自我介绍」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「简单自我介绍」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「简单自我介绍」相关词句",
+            "能在正确场景中使用「简单自我介绍」进行表达",
+            "能完成「简单自我介绍」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_english_g03_003_004",
+          "title": "常用问候交际",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "听懂、认读并运用三年级英语「常用问候交际」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "常用问候交际"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「常用问候交际」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「常用问候交际」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「常用问候交际」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词汇",
+            "句型",
+            "听说读写"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "把「常用问候交际」中的词汇、句型或使用场景混淆，造成听说读写错误。",
+              "remediation": "用情景对话、替换练习和朗读背诵建立语感。"
+            }
+          ],
+          "masteryCriteria": [
+            "能听懂并认读「常用问候交际」相关词句",
+            "能在正确场景中使用「常用问候交际」进行表达",
+            "能完成「常用问候交际」相关填空、选择或造句练习"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

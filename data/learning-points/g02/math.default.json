@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "math",
     "name": "数学"
@@ -17,53 +17,54 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_math_g02_001",
-      "title": "数与运算",
+      "title": "100以内数与加减法",
       "order": 1,
-      "description": "二年级数学数与运算学习模块。",
+      "description": "二年级数学「100以内数与加减法」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g02_001_001",
-          "title": "100以内加减法",
+          "title": "100以内数的认识",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握100以内加减法的基础概念、常见题型和应用方法。",
+          "summary": "掌握二年级数学「100以内数的认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "100以内加减法"
+            "100以内数的认识"
           ],
           "objectives": {
             "remember": [
-              "记住100以内加减法的核心规则"
+              "记住「100以内数的认识」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解100以内加减法在题目中的含义"
+              "理解「100以内数的认识」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用100以内加减法完成对应练习"
+              "能够运用「100以内数的认识」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对100以内加减法的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "100以内数的认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清100以内加减法的基本方法",
-            "能独立完成100以内加减法基础题",
-            "能发现并订正100以内加减法常见错误"
+            "能说清「100以内数的认识」的概念或数量关系",
+            "能独立完成「100以内数的认识」基础题和变式题",
+            "能检查并订正「100以内数的认识」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -78,48 +79,49 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_math_g02_001_002",
-          "title": "表内乘法口诀",
+          "title": "100以内数的大小比较",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握表内乘法口诀的基础概念、常见题型和应用方法。",
+          "summary": "掌握二年级数学「100以内数的大小比较」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "表内乘法口诀"
+            "100以内数的大小比较"
           ],
           "objectives": {
             "remember": [
-              "记住表内乘法口诀的核心规则"
+              "记住「100以内数的大小比较」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解表内乘法口诀在题目中的含义"
+              "理解「100以内数的大小比较」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用表内乘法口诀完成对应练习"
+              "能够运用「100以内数的大小比较」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对表内乘法口诀的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "100以内数的大小比较的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清表内乘法口诀的基本方法",
-            "能独立完成表内乘法口诀基础题",
-            "能发现并订正表内乘法口诀常见错误"
+            "能说清「100以内数的大小比较」的概念或数量关系",
+            "能独立完成「100以内数的大小比较」基础题和变式题",
+            "能检查并订正「100以内数的大小比较」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -134,56 +136,346 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_001_003",
+          "title": "两位数加两位数不进位",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「两位数加两位数不进位」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "两位数加两位数不进位"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「两位数加两位数不进位」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「两位数加两位数不进位」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「两位数加两位数不进位」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "两位数加两位数不进位的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「两位数加两位数不进位」的概念或数量关系",
+            "能独立完成「两位数加两位数不进位」基础题和变式题",
+            "能检查并订正「两位数加两位数不进位」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g02_001_004",
+          "title": "两位数加两位数进位",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「两位数加两位数进位」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "两位数加两位数进位"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「两位数加两位数进位」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「两位数加两位数进位」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「两位数加两位数进位」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "两位数加两位数进位的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「两位数加两位数进位」的概念或数量关系",
+            "能独立完成「两位数加两位数进位」基础题和变式题",
+            "能检查并订正「两位数加两位数进位」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g02_001_005",
+          "title": "两位数减两位数不退位",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「两位数减两位数不退位」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "两位数减两位数不退位"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「两位数减两位数不退位」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「两位数减两位数不退位」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「两位数减两位数不退位」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "两位数减两位数不退位的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「两位数减两位数不退位」的概念或数量关系",
+            "能独立完成「两位数减两位数不退位」基础题和变式题",
+            "能检查并订正「两位数减两位数不退位」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g02_001_006",
+          "title": "两位数减两位数退位",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「两位数减两位数退位」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "两位数减两位数退位"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「两位数减两位数退位」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「两位数减两位数退位」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「两位数减两位数退位」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "两位数减两位数退位的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「两位数减两位数退位」的概念或数量关系",
+            "能独立完成「两位数减两位数退位」基础题和变式题",
+            "能检查并订正「两位数减两位数退位」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g02_001_007",
+          "title": "加减法估算",
+          "order": 7,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「加减法估算」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "加减法估算"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「加减法估算」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「加减法估算」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「加减法估算」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "加减法估算的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「加减法估算」的概念或数量关系",
+            "能独立完成「加减法估算」基础题和变式题",
+            "能检查并订正「加减法估算」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_math_g02_002",
-      "title": "图形与位置",
+      "title": "表内乘除法",
       "order": 2,
-      "description": "二年级数学图形与位置学习模块。",
+      "description": "二年级数学「表内乘除法」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g02_002_001",
-          "title": "长度单位厘米和米",
+          "title": "乘法意义",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握长度单位厘米和米的基础概念、常见题型和应用方法。",
+          "summary": "掌握二年级数学「乘法意义」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "长度单位厘米和米"
+            "乘法意义"
           ],
           "objectives": {
             "remember": [
-              "记住长度单位厘米和米的核心规则"
+              "记住「乘法意义」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解长度单位厘米和米在题目中的含义"
+              "理解「乘法意义」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用长度单位厘米和米完成对应练习"
+              "能够运用「乘法意义」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对长度单位厘米和米的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "乘法意义的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清长度单位厘米和米的基本方法",
-            "能独立完成长度单位厘米和米基础题",
-            "能发现并订正长度单位厘米和米常见错误"
+            "能说清「乘法意义」的概念或数量关系",
+            "能独立完成「乘法意义」基础题和变式题",
+            "能检查并订正「乘法意义」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -198,8 +490,823 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_002_002",
+          "title": "2到6的乘法口诀",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「2到6的乘法口诀」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "2到6的乘法口诀"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「2到6的乘法口诀」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「2到6的乘法口诀」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「2到6的乘法口诀」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "2到6的乘法口诀的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「2到6的乘法口诀」的概念或数量关系",
+            "能独立完成「2到6的乘法口诀」基础题和变式题",
+            "能检查并订正「2到6的乘法口诀」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_002_003",
+          "title": "7到9的乘法口诀",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「7到9的乘法口诀」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "7到9的乘法口诀"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「7到9的乘法口诀」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「7到9的乘法口诀」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「7到9的乘法口诀」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "7到9的乘法口诀的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「7到9的乘法口诀」的概念或数量关系",
+            "能独立完成「7到9的乘法口诀」基础题和变式题",
+            "能检查并订正「7到9的乘法口诀」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_002_004",
+          "title": "表内除法意义",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「表内除法意义」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "表内除法意义"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「表内除法意义」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「表内除法意义」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「表内除法意义」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "表内除法意义的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「表内除法意义」的概念或数量关系",
+            "能独立完成「表内除法意义」基础题和变式题",
+            "能检查并订正「表内除法意义」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_002_005",
+          "title": "用乘法口诀求商",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「用乘法口诀求商」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "用乘法口诀求商"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「用乘法口诀求商」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「用乘法口诀求商」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「用乘法口诀求商」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "用乘法口诀求商的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「用乘法口诀求商」的概念或数量关系",
+            "能独立完成「用乘法口诀求商」基础题和变式题",
+            "能检查并订正「用乘法口诀求商」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_002_006",
+          "title": "乘除法应用题",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「乘除法应用题」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "乘除法应用题"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「乘除法应用题」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「乘除法应用题」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「乘除法应用题」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "乘除法应用题的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「乘除法应用题」的概念或数量关系",
+            "能独立完成「乘除法应用题」基础题和变式题",
+            "能检查并订正「乘除法应用题」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g02_003",
+      "title": "长度角和方向",
+      "order": 3,
+      "description": "二年级数学「长度角和方向」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g02_003_001",
+          "title": "厘米和米的认识",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「厘米和米的认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "厘米和米的认识",
+            "厘米与米的认识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「厘米和米的认识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「厘米和米的认识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「厘米和米的认识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "厘米和米的认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「厘米和米的认识」的概念或数量关系",
+            "能独立完成「厘米和米的认识」基础题和变式题",
+            "能检查并订正「厘米和米的认识」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_003_002",
+          "title": "长度测量与估计",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「长度测量与估计」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "长度测量与估计"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「长度测量与估计」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「长度测量与估计」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「长度测量与估计」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "长度测量与估计的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「长度测量与估计」的概念或数量关系",
+            "能独立完成「长度测量与估计」基础题和变式题",
+            "能检查并订正「长度测量与估计」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_003_003",
+          "title": "线段的认识",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「线段的认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "线段的认识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「线段的认识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「线段的认识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「线段的认识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "线段的认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「线段的认识」的概念或数量关系",
+            "能独立完成「线段的认识」基础题和变式题",
+            "能检查并订正「线段的认识」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_003_004",
+          "title": "角的初步认识",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「角的初步认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "角的初步认识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「角的初步认识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「角的初步认识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「角的初步认识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "角的初步认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「角的初步认识」的概念或数量关系",
+            "能独立完成「角的初步认识」基础题和变式题",
+            "能检查并订正「角的初步认识」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_003_005",
+          "title": "东南西北方向初步",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「东南西北方向初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "东南西北方向初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「东南西北方向初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「东南西北方向初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「东南西北方向初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "东南西北方向初步的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「东南西北方向初步」的概念或数量关系",
+            "能独立完成「东南西北方向初步」基础题和变式题",
+            "能检查并订正「东南西北方向初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g02_004",
+      "title": "统计与规律",
+      "order": 4,
+      "description": "二年级数学「统计与规律」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g02_004_001",
+          "title": "简单数据收集整理",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「简单数据收集整理」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "简单数据收集整理"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「简单数据收集整理」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「简单数据收集整理」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「简单数据收集整理」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "简单数据收集整理的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「简单数据收集整理」的概念或数量关系",
+            "能独立完成「简单数据收集整理」基础题和变式题",
+            "能检查并订正「简单数据收集整理」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_004_002",
+          "title": "条形统计图雏形",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「条形统计图雏形」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "条形统计图雏形"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「条形统计图雏形」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「条形统计图雏形」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「条形统计图雏形」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "条形统计图雏形的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「条形统计图雏形」的概念或数量关系",
+            "能独立完成「条形统计图雏形」基础题和变式题",
+            "能检查并订正「条形统计图雏形」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_004_003",
+          "title": "找规律填数",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「找规律填数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "找规律填数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「找规律填数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「找规律填数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「找规律填数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "找规律填数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「找规律填数」的概念或数量关系",
+            "能独立完成「找规律填数」基础题和变式题",
+            "能检查并订正「找规律填数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g02_004_004",
+          "title": "搭配问题初步",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握二年级数学「搭配问题初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "搭配问题初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「搭配问题初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「搭配问题初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「搭配问题初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "搭配问题初步的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「搭配问题初步」的概念或数量关系",
+            "能独立完成「搭配问题初步」基础题和变式题",
+            "能检查并订正「搭配问题初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

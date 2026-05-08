@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "chinese",
     "name": "语文"
@@ -17,53 +17,54 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_chinese_g03_001",
-      "title": "识字写字与积累",
+      "title": "字词句运用",
       "order": 1,
-      "description": "三年级语文识字写字与积累学习模块。",
+      "description": "三年级语文「字词句运用」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_chinese_g03_001_001",
-          "title": "关键语句理解",
+          "title": "查字典选择义项",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握关键语句理解的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用三年级语文「查字典选择义项」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "关键语句理解"
+            "查字典选择义项"
           ],
           "objectives": {
             "remember": [
-              "记住关键语句理解的核心规则"
+              "记住「查字典选择义项」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解关键语句理解在题目中的含义"
+              "理解「查字典选择义项」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用关键语句理解完成对应练习"
+              "能够运用「查字典选择义项」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对关键语句理解的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「查字典选择义项」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清关键语句理解的基本方法",
-            "能独立完成关键语句理解基础题",
-            "能发现并订正关键语句理解常见错误"
+            "能准确识别「查字典选择义项」对应的语言现象或阅读任务",
+            "能结合文本说明「查字典选择义项」的理解依据",
+            "能在表达或习作中正确运用「查字典选择义项」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -78,48 +79,49 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_chinese_g03_001_002",
-          "title": "段落主要意思概括",
+          "title": "多音字辨析",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握段落主要意思概括的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用三年级语文「多音字辨析」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "段落主要意思概括"
+            "多音字辨析"
           ],
           "objectives": {
             "remember": [
-              "记住段落主要意思概括的核心规则"
+              "记住「多音字辨析」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解段落主要意思概括在题目中的含义"
+              "理解「多音字辨析」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用段落主要意思概括完成对应练习"
+              "能够运用「多音字辨析」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对段落主要意思概括的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「多音字辨析」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清段落主要意思概括的基本方法",
-            "能独立完成段落主要意思概括基础题",
-            "能发现并订正段落主要意思概括常见错误"
+            "能准确识别「多音字辨析」对应的语言现象或阅读任务",
+            "能结合文本说明「多音字辨析」的理解依据",
+            "能在表达或习作中正确运用「多音字辨析」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -134,56 +136,286 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_001_003",
+          "title": "关联词语初步",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「关联词语初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "关联词语初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「关联词语初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「关联词语初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「关联词语初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「关联词语初步」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「关联词语初步」对应的语言现象或阅读任务",
+            "能结合文本说明「关联词语初步」的理解依据",
+            "能在表达或习作中正确运用「关联词语初步」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_001_004",
+          "title": "修改病句初步",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「修改病句初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "修改病句初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「修改病句初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「修改病句初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「修改病句初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「修改病句初步」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「修改病句初步」对应的语言现象或阅读任务",
+            "能结合文本说明「修改病句初步」的理解依据",
+            "能在表达或习作中正确运用「修改病句初步」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_001_005",
+          "title": "句式转换陈述反问",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「句式转换陈述反问」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "句式转换陈述反问"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「句式转换陈述反问」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「句式转换陈述反问」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「句式转换陈述反问」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「句式转换陈述反问」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「句式转换陈述反问」对应的语言现象或阅读任务",
+            "能结合文本说明「句式转换陈述反问」的理解依据",
+            "能在表达或习作中正确运用「句式转换陈述反问」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_001_006",
+          "title": "修辞比喻拟人",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「修辞比喻拟人」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "修辞比喻拟人"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「修辞比喻拟人」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「修辞比喻拟人」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「修辞比喻拟人」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「修辞比喻拟人」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「修辞比喻拟人」对应的语言现象或阅读任务",
+            "能结合文本说明「修辞比喻拟人」的理解依据",
+            "能在表达或习作中正确运用「修辞比喻拟人」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_chinese_g03_002",
-      "title": "阅读与表达",
+      "title": "阅读方法",
       "order": 2,
-      "description": "三年级语文阅读与表达学习模块。",
+      "description": "三年级语文「阅读方法」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_chinese_g03_002_001",
-          "title": "习作按顺序写清楚",
+          "title": "段落主要意思概括",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握习作按顺序写清楚的基础概念、常见题型和应用方法。",
+          "summary": "理解并运用三年级语文「段落主要意思概括」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "习作按顺序写清楚"
+            "段落主要意思概括"
           ],
           "objectives": {
             "remember": [
-              "记住习作按顺序写清楚的核心规则"
+              "记住「段落主要意思概括」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解习作按顺序写清楚在题目中的含义"
+              "理解「段落主要意思概括」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用习作按顺序写清楚完成对应练习"
+              "能够运用「段落主要意思概括」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "理解",
-            "表达"
+            "语言积累",
+            "阅读理解",
+            "表达运用"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对习作按顺序写清楚的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「段落主要意思概括」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
             }
           ],
           "masteryCriteria": [
-            "能说清习作按顺序写清楚的基本方法",
-            "能独立完成习作按顺序写清楚基础题",
-            "能发现并订正习作按顺序写清楚常见错误"
+            "能准确识别「段落主要意思概括」对应的语言现象或阅读任务",
+            "能结合文本说明「段落主要意思概括」的理解依据",
+            "能在表达或习作中正确运用「段落主要意思概括」"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -198,8 +430,822 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_002_002",
+          "title": "关键语句理解",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「关键语句理解」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "关键语句理解"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「关键语句理解」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「关键语句理解」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「关键语句理解」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「关键语句理解」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「关键语句理解」对应的语言现象或阅读任务",
+            "能结合文本说明「关键语句理解」的理解依据",
+            "能在表达或习作中正确运用「关键语句理解」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_002_003",
+          "title": "联系上下文理解词语",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「联系上下文理解词语」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "联系上下文理解词语"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「联系上下文理解词语」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「联系上下文理解词语」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「联系上下文理解词语」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「联系上下文理解词语」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「联系上下文理解词语」对应的语言现象或阅读任务",
+            "能结合文本说明「联系上下文理解词语」的理解依据",
+            "能在表达或习作中正确运用「联系上下文理解词语」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_002_004",
+          "title": "人物心情变化",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「人物心情变化」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "人物心情变化"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「人物心情变化」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「人物心情变化」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「人物心情变化」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「人物心情变化」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「人物心情变化」对应的语言现象或阅读任务",
+            "能结合文本说明「人物心情变化」的理解依据",
+            "能在表达或习作中正确运用「人物心情变化」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_002_005",
+          "title": "文章顺序时间地点事情发展",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「文章顺序时间地点事情发展」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "文章顺序时间地点事情发展"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「文章顺序时间地点事情发展」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「文章顺序时间地点事情发展」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「文章顺序时间地点事情发展」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「文章顺序时间地点事情发展」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「文章顺序时间地点事情发展」对应的语言现象或阅读任务",
+            "能结合文本说明「文章顺序时间地点事情发展」的理解依据",
+            "能在表达或习作中正确运用「文章顺序时间地点事情发展」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_002_006",
+          "title": "童话寓言神话阅读",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「童话寓言神话阅读」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "童话寓言神话阅读"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「童话寓言神话阅读」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「童话寓言神话阅读」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「童话寓言神话阅读」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「童话寓言神话阅读」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「童话寓言神话阅读」对应的语言现象或阅读任务",
+            "能结合文本说明「童话寓言神话阅读」的理解依据",
+            "能在表达或习作中正确运用「童话寓言神话阅读」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g03_003",
+      "title": "古诗文积累",
+      "order": 3,
+      "description": "三年级语文「古诗文积累」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g03_003_001",
+          "title": "古诗朗读节奏",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「古诗朗读节奏」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "古诗朗读节奏"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「古诗朗读节奏」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「古诗朗读节奏」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「古诗朗读节奏」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「古诗朗读节奏」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「古诗朗读节奏」对应的语言现象或阅读任务",
+            "能结合文本说明「古诗朗读节奏」的理解依据",
+            "能在表达或习作中正确运用「古诗朗读节奏」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_003_002",
+          "title": "重点字词解释",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「重点字词解释」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "重点字词解释"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「重点字词解释」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「重点字词解释」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「重点字词解释」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「重点字词解释」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「重点字词解释」对应的语言现象或阅读任务",
+            "能结合文本说明「重点字词解释」的理解依据",
+            "能在表达或习作中正确运用「重点字词解释」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_003_003",
+          "title": "诗句画面想象",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「诗句画面想象」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "诗句画面想象"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「诗句画面想象」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「诗句画面想象」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「诗句画面想象」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「诗句画面想象」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「诗句画面想象」对应的语言现象或阅读任务",
+            "能结合文本说明「诗句画面想象」的理解依据",
+            "能在表达或习作中正确运用「诗句画面想象」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_003_004",
+          "title": "传统文化常识",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「传统文化常识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "传统文化常识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「传统文化常识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「传统文化常识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「传统文化常识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「传统文化常识」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「传统文化常识」对应的语言现象或阅读任务",
+            "能结合文本说明「传统文化常识」的理解依据",
+            "能在表达或习作中正确运用「传统文化常识」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g03_004",
+      "title": "习作表达",
+      "order": 4,
+      "description": "三年级语文「习作表达」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g03_004_001",
+          "title": "围绕一个意思写一段话",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「围绕一个意思写一段话」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "围绕一个意思写一段话"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「围绕一个意思写一段话」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「围绕一个意思写一段话」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「围绕一个意思写一段话」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「围绕一个意思写一段话」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「围绕一个意思写一段话」对应的语言现象或阅读任务",
+            "能结合文本说明「围绕一个意思写一段话」的理解依据",
+            "能在表达或习作中正确运用「围绕一个意思写一段话」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_004_002",
+          "title": "按顺序写观察",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「按顺序写观察」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "按顺序写观察"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「按顺序写观察」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「按顺序写观察」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「按顺序写观察」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「按顺序写观察」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「按顺序写观察」对应的语言现象或阅读任务",
+            "能结合文本说明「按顺序写观察」的理解依据",
+            "能在表达或习作中正确运用「按顺序写观察」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_004_003",
+          "title": "写清一件事起因经过结果",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「写清一件事起因经过结果」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "写清一件事起因经过结果"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「写清一件事起因经过结果」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「写清一件事起因经过结果」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「写清一件事起因经过结果」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「写清一件事起因经过结果」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「写清一件事起因经过结果」对应的语言现象或阅读任务",
+            "能结合文本说明「写清一件事起因经过结果」的理解依据",
+            "能在表达或习作中正确运用「写清一件事起因经过结果」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_004_004",
+          "title": "人物外貌动作语言描写",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「人物外貌动作语言描写」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "人物外貌动作语言描写"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「人物外貌动作语言描写」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「人物外貌动作语言描写」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「人物外貌动作语言描写」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「人物外貌动作语言描写」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「人物外貌动作语言描写」对应的语言现象或阅读任务",
+            "能结合文本说明「人物外貌动作语言描写」的理解依据",
+            "能在表达或习作中正确运用「人物外貌动作语言描写」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_chinese_g03_004_005",
+          "title": "习作修改标点错别字",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "理解并运用三年级语文「习作修改标点错别字」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "习作修改标点错别字"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「习作修改标点错别字」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「习作修改标点错别字」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「习作修改标点错别字」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语言积累",
+            "阅读理解",
+            "表达运用"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "只停留在字面意思，不能结合语境理解「习作修改标点错别字」的表达作用。",
+              "remediation": "通过圈画关键词、联系上下文和复述表达过程来巩固。"
+            }
+          ],
+          "masteryCriteria": [
+            "能准确识别「习作修改标点错别字」对应的语言现象或阅读任务",
+            "能结合文本说明「习作修改标点错别字」的理解依据",
+            "能在表达或习作中正确运用「习作修改标点错别字」"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

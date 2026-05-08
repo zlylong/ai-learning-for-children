@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "math",
     "name": "数学"
@@ -17,53 +17,54 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_math_g06_001",
-      "title": "数与运算",
+      "title": "分数百分数运算",
       "order": 1,
-      "description": "六年级数学数与运算学习模块。",
+      "description": "六年级数学「分数百分数运算」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g06_001_001",
-          "title": "分数百分数应用",
+          "title": "分数乘法",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握分数百分数应用的基础概念、常见题型和应用方法。",
+          "summary": "掌握六年级数学「分数乘法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "分数百分数应用"
+            "分数乘法"
           ],
           "objectives": {
             "remember": [
-              "记住分数百分数应用的核心规则"
+              "记住「分数乘法」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解分数百分数应用在题目中的含义"
+              "理解「分数乘法」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用分数百分数应用完成对应练习"
+              "能够运用「分数乘法」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对分数百分数应用的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "分数乘法的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清分数百分数应用的基本方法",
-            "能独立完成分数百分数应用基础题",
-            "能发现并订正分数百分数应用常见错误"
+            "能说清「分数乘法」的概念或数量关系",
+            "能独立完成「分数乘法」基础题和变式题",
+            "能检查并订正「分数乘法」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -72,54 +73,55 @@
               "calculation"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_math_g06_001_002",
-          "title": "比例的意义和应用",
+          "title": "分数除法",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握比例的意义和应用的基础概念、常见题型和应用方法。",
+          "summary": "掌握六年级数学「分数除法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "比例的意义和应用"
+            "分数除法"
           ],
           "objectives": {
             "remember": [
-              "记住比例的意义和应用的核心规则"
+              "记住「分数除法」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解比例的意义和应用在题目中的含义"
+              "理解「分数除法」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用比例的意义和应用完成对应练习"
+              "能够运用「分数除法」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对比例的意义和应用的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "分数除法的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清比例的意义和应用的基本方法",
-            "能独立完成比例的意义和应用基础题",
-            "能发现并订正比例的意义和应用常见错误"
+            "能说清「分数除法」的概念或数量关系",
+            "能独立完成「分数除法」基础题和变式题",
+            "能检查并订正「分数除法」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -128,62 +130,352 @@
               "calculation"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_001_003",
+          "title": "分数四则混合运算",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「分数四则混合运算」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "分数四则混合运算"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「分数四则混合运算」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「分数四则混合运算」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「分数四则混合运算」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "分数四则混合运算的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「分数四则混合运算」的概念或数量关系",
+            "能独立完成「分数四则混合运算」基础题和变式题",
+            "能检查并订正「分数四则混合运算」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_001_004",
+          "title": "百分数意义",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「百分数意义」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "百分数意义"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「百分数意义」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「百分数意义」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「百分数意义」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "百分数意义的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「百分数意义」的概念或数量关系",
+            "能独立完成「百分数意义」基础题和变式题",
+            "能检查并订正「百分数意义」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g06_001_005",
+          "title": "百分数和小数分数互化",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「百分数和小数分数互化」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "百分数和小数分数互化",
+            "百分数与小数分数互化"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「百分数和小数分数互化」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「百分数和小数分数互化」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「百分数和小数分数互化」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "百分数和小数分数互化的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「百分数和小数分数互化」的概念或数量关系",
+            "能独立完成「百分数和小数分数互化」基础题和变式题",
+            "能检查并订正「百分数和小数分数互化」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g06_001_006",
+          "title": "折扣税率利率",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「折扣税率利率」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "折扣税率利率"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「折扣税率利率」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「折扣税率利率」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「折扣税率利率」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "折扣税率利率的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「折扣税率利率」的概念或数量关系",
+            "能独立完成「折扣税率利率」基础题和变式题",
+            "能检查并订正「折扣税率利率」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_001_007",
+          "title": "百分数应用题",
+          "order": 7,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「百分数应用题」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "百分数应用题"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「百分数应用题」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「百分数应用题」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「百分数应用题」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "百分数应用题的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「百分数应用题」的概念或数量关系",
+            "能独立完成「百分数应用题」基础题和变式题",
+            "能检查并订正「百分数应用题」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
           ]
         }
       ]
     },
     {
       "id": "ch_math_g06_002",
-      "title": "图形与位置",
+      "title": "比和比例",
       "order": 2,
-      "description": "六年级数学图形与位置学习模块。",
+      "description": "六年级数学「比和比例」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g06_002_001",
-          "title": "圆的周长和面积",
+          "title": "比的意义",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握圆的周长和面积的基础概念、常见题型和应用方法。",
+          "summary": "掌握六年级数学「比的意义」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "圆的周长和面积"
+            "比的意义"
           ],
           "objectives": {
             "remember": [
-              "记住圆的周长和面积的核心规则"
+              "记住「比的意义」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解圆的周长和面积在题目中的含义"
+              "理解「比的意义」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用圆的周长和面积完成对应练习"
+              "能够运用「比的意义」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对圆的周长和面积的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "比的意义的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清圆的周长和面积的基本方法",
-            "能独立完成圆的周长和面积基础题",
-            "能发现并订正圆的周长和面积常见错误"
+            "能说清「比的意义」的概念或数量关系",
+            "能独立完成「比的意义」基础题和变式题",
+            "能检查并订正「比的意义」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -192,14 +484,1234 @@
               "calculation"
             ],
             "difficultyRange": [
-              "easy",
-              "medium"
+              "medium",
+              "hard"
             ],
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_002_002",
+          "title": "比的基本性质",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「比的基本性质」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "比的基本性质"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「比的基本性质」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「比的基本性质」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「比的基本性质」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "比的基本性质的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「比的基本性质」的概念或数量关系",
+            "能独立完成「比的基本性质」基础题和变式题",
+            "能检查并订正「比的基本性质」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_002_003",
+          "title": "按比例分配",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「按比例分配」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "按比例分配"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「按比例分配」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「按比例分配」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「按比例分配」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "按比例分配的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「按比例分配」的概念或数量关系",
+            "能独立完成「按比例分配」基础题和变式题",
+            "能检查并订正「按比例分配」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g06_002_004",
+          "title": "比例的意义和基本性质",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「比例的意义和基本性质」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "比例的意义和基本性质",
+            "比例的意义与基本性质"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「比例的意义和基本性质」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「比例的意义和基本性质」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「比例的意义和基本性质」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "比例的意义和基本性质的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「比例的意义和基本性质」的概念或数量关系",
+            "能独立完成「比例的意义和基本性质」基础题和变式题",
+            "能检查并订正「比例的意义和基本性质」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g06_002_005",
+          "title": "解比例",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「解比例」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "解比例"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「解比例」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「解比例」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「解比例」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "解比例的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「解比例」的概念或数量关系",
+            "能独立完成「解比例」基础题和变式题",
+            "能检查并订正「解比例」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g06_002_006",
+          "title": "正比例",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「正比例」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "正比例"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「正比例」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「正比例」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「正比例」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "正比例的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「正比例」的概念或数量关系",
+            "能独立完成「正比例」基础题和变式题",
+            "能检查并订正「正比例」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g06_002_007",
+          "title": "反比例",
+          "order": 7,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「反比例」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "反比例"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「反比例」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「反比例」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「反比例」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "反比例的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「反比例」的概念或数量关系",
+            "能独立完成「反比例」基础题和变式题",
+            "能检查并订正「反比例」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        },
+        {
+          "id": "kp_math_g06_002_008",
+          "title": "比例尺",
+          "order": 8,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「比例尺」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "比例尺"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「比例尺」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「比例尺」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「比例尺」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "比例尺的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「比例尺」的概念或数量关系",
+            "能独立完成「比例尺」基础题和变式题",
+            "能检查并订正「比例尺」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频",
+            "易错"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g06_003",
+      "title": "圆柱圆锥和几何",
+      "order": 3,
+      "description": "六年级数学「圆柱圆锥和几何」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g06_003_001",
+          "title": "圆的认识",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「圆的认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "圆的认识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「圆的认识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「圆的认识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「圆的认识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "圆的认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「圆的认识」的概念或数量关系",
+            "能独立完成「圆的认识」基础题和变式题",
+            "能检查并订正「圆的认识」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_003_002",
+          "title": "圆的周长",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「圆的周长」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "圆的周长"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「圆的周长」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「圆的周长」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「圆的周长」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "圆的周长的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「圆的周长」的概念或数量关系",
+            "能独立完成「圆的周长」基础题和变式题",
+            "能检查并订正「圆的周长」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_003_003",
+          "title": "圆的面积",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「圆的面积」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "圆的面积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「圆的面积」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「圆的面积」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「圆的面积」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "圆的面积的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「圆的面积」的概念或数量关系",
+            "能独立完成「圆的面积」基础题和变式题",
+            "能检查并订正「圆的面积」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_003_004",
+          "title": "扇形认识",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「扇形认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "扇形认识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「扇形认识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「扇形认识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「扇形认识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "扇形认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「扇形认识」的概念或数量关系",
+            "能独立完成「扇形认识」基础题和变式题",
+            "能检查并订正「扇形认识」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_003_005",
+          "title": "圆柱表面积",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「圆柱表面积」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "圆柱表面积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「圆柱表面积」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「圆柱表面积」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「圆柱表面积」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "圆柱表面积的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「圆柱表面积」的概念或数量关系",
+            "能独立完成「圆柱表面积」基础题和变式题",
+            "能检查并订正「圆柱表面积」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_003_006",
+          "title": "圆柱体积",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「圆柱体积」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "圆柱体积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「圆柱体积」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「圆柱体积」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「圆柱体积」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "圆柱体积的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「圆柱体积」的概念或数量关系",
+            "能独立完成「圆柱体积」基础题和变式题",
+            "能检查并订正「圆柱体积」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_003_007",
+          "title": "圆锥体积",
+          "order": 7,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「圆锥体积」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "圆锥体积"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「圆锥体积」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「圆锥体积」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「圆锥体积」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "圆锥体积的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「圆锥体积」的概念或数量关系",
+            "能独立完成「圆锥体积」基础题和变式题",
+            "能检查并订正「圆锥体积」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g06_004",
+      "title": "数学广角与总复习",
+      "order": 4,
+      "description": "六年级数学「数学广角与总复习」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g06_004_001",
+          "title": "负数认识",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「负数认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "负数认识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「负数认识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「负数认识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「负数认识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "负数认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「负数认识」的概念或数量关系",
+            "能独立完成「负数认识」基础题和变式题",
+            "能检查并订正「负数认识」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_004_002",
+          "title": "位置与方向",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「位置与方向」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "位置与方向"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「位置与方向」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「位置与方向」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「位置与方向」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "位置与方向的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「位置与方向」的概念或数量关系",
+            "能独立完成「位置与方向」基础题和变式题",
+            "能检查并订正「位置与方向」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_004_003",
+          "title": "统计图选择",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「统计图选择」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "统计图选择"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「统计图选择」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「统计图选择」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「统计图选择」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "统计图选择的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「统计图选择」的概念或数量关系",
+            "能独立完成「统计图选择」基础题和变式题",
+            "能检查并订正「统计图选择」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_004_004",
+          "title": "鸽巢问题",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「鸽巢问题」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "鸽巢问题"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「鸽巢问题」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「鸽巢问题」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「鸽巢问题」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "鸽巢问题的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「鸽巢问题」的概念或数量关系",
+            "能独立完成「鸽巢问题」基础题和变式题",
+            "能检查并订正「鸽巢问题」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_004_005",
+          "title": "数与代数综合",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「数与代数综合」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "数与代数综合"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「数与代数综合」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「数与代数综合」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「数与代数综合」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "数与代数综合的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「数与代数综合」的概念或数量关系",
+            "能独立完成「数与代数综合」基础题和变式题",
+            "能检查并订正「数与代数综合」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_004_006",
+          "title": "图形与几何综合",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「图形与几何综合」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "图形与几何综合"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「图形与几何综合」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「图形与几何综合」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「图形与几何综合」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "图形与几何综合的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「图形与几何综合」的概念或数量关系",
+            "能独立完成「图形与几何综合」基础题和变式题",
+            "能检查并订正「图形与几何综合」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g06_004_007",
+          "title": "解决问题策略综合",
+          "order": 7,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握六年级数学「解决问题策略综合」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "解决问题策略综合"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「解决问题策略综合」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「解决问题策略综合」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「解决问题策略综合」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "解决问题策略综合的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「解决问题策略综合」的概念或数量关系",
+            "能独立完成「解决问题策略综合」基础题和变式题",
+            "能检查并订正「解决问题策略综合」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]

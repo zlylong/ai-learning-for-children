@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08",
+  "catalogVersion": "2026.05.08-full",
   "subject": {
     "code": "math",
     "name": "数学"
@@ -17,14 +17,14 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-v1"
+    "promptVersion": "primary-school-cn-full-v1"
   },
   "chapters": [
     {
       "id": "ch_math_g03_001",
-      "title": "数与运算",
+      "title": "万以内数与四则运算",
       "order": 1,
-      "description": "三年级数学数与运算学习模块。",
+      "description": "三年级数学「万以内数与四则运算」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g03_001_001",
@@ -32,38 +32,39 @@
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握万以内数的认识的基础概念、常见题型和应用方法。",
+          "summary": "掌握三年级数学「万以内数的认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
             "万以内数的认识"
           ],
           "objectives": {
             "remember": [
-              "记住万以内数的认识的核心规则"
+              "记住「万以内数的认识」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解万以内数的认识在题目中的含义"
+              "理解「万以内数的认识」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用万以内数的认识完成对应练习"
+              "能够运用「万以内数的认识」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对万以内数的认识的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "万以内数的认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清万以内数的认识的基本方法",
-            "能独立完成万以内数的认识基础题",
-            "能发现并订正万以内数的认识常见错误"
+            "能说清「万以内数的认识」的概念或数量关系",
+            "能独立完成「万以内数的认识」基础题和变式题",
+            "能检查并订正「万以内数的认识」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -78,48 +79,49 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
           ]
         },
         {
           "id": "kp_math_g03_001_002",
-          "title": "两位数乘一位数",
+          "title": "万以内数读写",
           "order": 2,
           "level": "core",
           "status": "active",
-          "summary": "掌握两位数乘一位数的基础概念、常见题型和应用方法。",
+          "summary": "掌握三年级数学「万以内数读写」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "两位数乘一位数"
+            "万以内数读写"
           ],
           "objectives": {
             "remember": [
-              "记住两位数乘一位数的核心规则"
+              "记住「万以内数读写」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解两位数乘一位数在题目中的含义"
+              "理解「万以内数读写」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用两位数乘一位数完成对应练习"
+              "能够运用「万以内数读写」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对两位数乘一位数的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "万以内数读写的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清两位数乘一位数的基本方法",
-            "能独立完成两位数乘一位数基础题",
-            "能发现并订正两位数乘一位数常见错误"
+            "能说清「万以内数读写」的概念或数量关系",
+            "能独立完成「万以内数读写」基础题和变式题",
+            "能检查并订正「万以内数读写」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -134,56 +136,342 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_001_003",
+          "title": "万以内数比较与近似数",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「万以内数比较与近似数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "万以内数比较与近似数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「万以内数比较与近似数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「万以内数比较与近似数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「万以内数比较与近似数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "万以内数比较与近似数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「万以内数比较与近似数」的概念或数量关系",
+            "能独立完成「万以内数比较与近似数」基础题和变式题",
+            "能检查并订正「万以内数比较与近似数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_001_004",
+          "title": "三位数加减法",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「三位数加减法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "三位数加减法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「三位数加减法」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「三位数加减法」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「三位数加减法」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "三位数加减法的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「三位数加减法」的概念或数量关系",
+            "能独立完成「三位数加减法」基础题和变式题",
+            "能检查并订正「三位数加减法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_001_005",
+          "title": "多位数乘一位数",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「多位数乘一位数」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "多位数乘一位数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「多位数乘一位数」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「多位数乘一位数」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「多位数乘一位数」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "多位数乘一位数的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「多位数乘一位数」的概念或数量关系",
+            "能独立完成「多位数乘一位数」基础题和变式题",
+            "能检查并订正「多位数乘一位数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_001_006",
+          "title": "有余数除法",
+          "order": 6,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「有余数除法」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "有余数除法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「有余数除法」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「有余数除法」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「有余数除法」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "有余数除法的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「有余数除法」的概念或数量关系",
+            "能独立完成「有余数除法」基础题和变式题",
+            "能检查并订正「有余数除法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_001_007",
+          "title": "混合运算顺序",
+          "order": 7,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「混合运算顺序」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "混合运算顺序"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「混合运算顺序」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「混合运算顺序」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「混合运算顺序」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "混合运算顺序的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「混合运算顺序」的概念或数量关系",
+            "能独立完成「混合运算顺序」基础题和变式题",
+            "能检查并订正「混合运算顺序」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
     },
     {
       "id": "ch_math_g03_002",
-      "title": "图形与位置",
+      "title": "小数分数初步",
       "order": 2,
-      "description": "三年级数学图形与位置学习模块。",
+      "description": "三年级数学「小数分数初步」模块，包含本年级核心学习要点。",
       "knowledgePoints": [
         {
           "id": "kp_math_g03_002_001",
-          "title": "长方形和正方形周长",
+          "title": "小数的初步认识",
           "order": 1,
           "level": "core",
           "status": "active",
-          "summary": "掌握长方形和正方形周长的基础概念、常见题型和应用方法。",
+          "summary": "掌握三年级数学「小数的初步认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
           "aliases": [
-            "长方形和正方形周长"
+            "小数的初步认识"
           ],
           "objectives": {
             "remember": [
-              "记住长方形和正方形周长的核心规则"
+              "记住「小数的初步认识」的关键概念、规则或表达形式"
             ],
             "understand": [
-              "理解长方形和正方形周长在题目中的含义"
+              "理解「小数的初步认识」在具体题目、文本或情境中的作用"
             ],
             "apply": [
-              "能运用长方形和正方形周长完成对应练习"
+              "能够运用「小数的初步认识」独立完成对应练习和生活化任务"
             ]
           },
           "keyConcepts": [
-            "方法",
-            "计算"
+            "概念理解",
+            "方法应用",
+            "计算表达"
           ],
           "prerequisites": [],
           "relatedPoints": [],
           "commonMistakes": [
             {
-              "type": "common_error",
-              "description": "对长方形和正方形周长的关键步骤或使用场景判断不清。",
-              "remediation": "用例题拆解、错因标注和同类变式练习逐步巩固。"
+              "type": "concept_or_context_confusion",
+              "description": "小数的初步认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
             }
           ],
           "masteryCriteria": [
-            "能说清长方形和正方形周长的基本方法",
-            "能独立完成长方形和正方形周长基础题",
-            "能发现并订正长方形和正方形周长常见错误"
+            "能说清「小数的初步认识」的概念或数量关系",
+            "能独立完成「小数的初步认识」基础题和变式题",
+            "能检查并订正「小数的初步认识」中的常见错误"
           ],
           "practiceProfile": {
             "recommendedQuestionTypes": [
@@ -198,8 +486,766 @@
             "minCorrectRateForMastery": 0.85
           },
           "tags": [
-            "基础",
-            "核心"
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_002_002",
+          "title": "一位小数大小比较",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「一位小数大小比较」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "一位小数大小比较"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「一位小数大小比较」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「一位小数大小比较」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「一位小数大小比较」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "一位小数大小比较的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「一位小数大小比较」的概念或数量关系",
+            "能独立完成「一位小数大小比较」基础题和变式题",
+            "能检查并订正「一位小数大小比较」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_002_003",
+          "title": "分数的初步认识",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「分数的初步认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "分数的初步认识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「分数的初步认识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「分数的初步认识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「分数的初步认识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "分数的初步认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「分数的初步认识」的概念或数量关系",
+            "能独立完成「分数的初步认识」基础题和变式题",
+            "能检查并订正「分数的初步认识」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_002_004",
+          "title": "同分母分数简单加减",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「同分母分数简单加减」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "同分母分数简单加减"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「同分母分数简单加减」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「同分母分数简单加减」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「同分母分数简单加减」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "同分母分数简单加减的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「同分母分数简单加减」的概念或数量关系",
+            "能独立完成「同分母分数简单加减」基础题和变式题",
+            "能检查并订正「同分母分数简单加减」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g03_003",
+      "title": "图形周长与面积初步",
+      "order": 3,
+      "description": "三年级数学「图形周长与面积初步」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g03_003_001",
+          "title": "长方形和正方形特征",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「长方形和正方形特征」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "长方形和正方形特征",
+            "长方形与正方形特征"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「长方形和正方形特征」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「长方形和正方形特征」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「长方形和正方形特征」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "长方形和正方形特征的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「长方形和正方形特征」的概念或数量关系",
+            "能独立完成「长方形和正方形特征」基础题和变式题",
+            "能检查并订正「长方形和正方形特征」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_003_002",
+          "title": "周长的意义",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「周长的意义」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "周长的意义"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「周长的意义」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「周长的意义」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「周长的意义」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "周长的意义的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「周长的意义」的概念或数量关系",
+            "能独立完成「周长的意义」基础题和变式题",
+            "能检查并订正「周长的意义」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_003_003",
+          "title": "长方形正方形周长计算",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「长方形正方形周长计算」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "长方形正方形周长计算"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「长方形正方形周长计算」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「长方形正方形周长计算」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「长方形正方形周长计算」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "长方形正方形周长计算的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「长方形正方形周长计算」的概念或数量关系",
+            "能独立完成「长方形正方形周长计算」基础题和变式题",
+            "能检查并订正「长方形正方形周长计算」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_003_004",
+          "title": "面积的意义",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「面积的意义」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "面积的意义"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「面积的意义」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「面积的意义」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「面积的意义」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "面积的意义的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「面积的意义」的概念或数量关系",
+            "能独立完成「面积的意义」基础题和变式题",
+            "能检查并订正「面积的意义」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_003_005",
+          "title": "面积单位平方厘米平方分米平方米",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「面积单位平方厘米平方分米平方米」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "面积单位平方厘米平方分米平方米"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「面积单位平方厘米平方分米平方米」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「面积单位平方厘米平方分米平方米」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「面积单位平方厘米平方分米平方米」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "面积单位平方厘米平方分米平方米的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「面积单位平方厘米平方分米平方米」的概念或数量关系",
+            "能独立完成「面积单位平方厘米平方分米平方米」基础题和变式题",
+            "能检查并订正「面积单位平方厘米平方分米平方米」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g03_004",
+      "title": "时间质量与统计",
+      "order": 4,
+      "description": "三年级数学「时间质量与统计」模块，包含本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g03_004_001",
+          "title": "时分秒换算",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「时分秒换算」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "时分秒换算"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「时分秒换算」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「时分秒换算」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「时分秒换算」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "时分秒换算的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「时分秒换算」的概念或数量关系",
+            "能独立完成「时分秒换算」基础题和变式题",
+            "能检查并订正「时分秒换算」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_004_002",
+          "title": "经过时间计算",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「经过时间计算」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "经过时间计算"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「经过时间计算」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「经过时间计算」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「经过时间计算」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "经过时间计算的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「经过时间计算」的概念或数量关系",
+            "能独立完成「经过时间计算」基础题和变式题",
+            "能检查并订正「经过时间计算」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_004_003",
+          "title": "克千克吨的认识",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「克千克吨的认识」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "克千克吨的认识"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「克千克吨的认识」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「克千克吨的认识」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「克千克吨的认识」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "克千克吨的认识的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「克千克吨的认识」的概念或数量关系",
+            "能独立完成「克千克吨的认识」基础题和变式题",
+            "能检查并订正「克千克吨的认识」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_004_004",
+          "title": "复式统计表初步",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「复式统计表初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "复式统计表初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「复式统计表初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「复式统计表初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「复式统计表初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "复式统计表初步的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「复式统计表初步」的概念或数量关系",
+            "能独立完成「复式统计表初步」基础题和变式题",
+            "能检查并订正「复式统计表初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
+          ]
+        },
+        {
+          "id": "kp_math_g03_004_005",
+          "title": "平均数初步",
+          "order": 5,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握三年级数学「平均数初步」相关的核心概念、方法和常见题型，为后续学习建立稳定基础。",
+          "aliases": [
+            "平均数初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「平均数初步」的关键概念、规则或表达形式"
+            ],
+            "understand": [
+              "理解「平均数初步」在具体题目、文本或情境中的作用"
+            ],
+            "apply": [
+              "能够运用「平均数初步」独立完成对应练习和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "方法应用",
+            "计算表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "平均数初步的计算步骤、数量关系或单位含义混淆，导致列式和结果错误。",
+              "remediation": "先画图或列数量关系，再按步骤计算，并用估算或逆运算检查。"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「平均数初步」的概念或数量关系",
+            "能独立完成「平均数初步」基础题和变式题",
+            "能检查并订正「平均数初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "calculation"
+            ],
+            "difficultyRange": [
+              "easy",
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "核心",
+            "高频"
           ]
         }
       ]
