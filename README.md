@@ -25,7 +25,9 @@
 ### 1. 首页与导航
 - `/h5`：**首页**。展示当前孩子卡片、今日练习建议、学习状态摘要（薄弱点、本月错题、正确率）及快捷入口。
 - `/h5/children/select`：**切换孩子**。选择或创建孩子档案。
-- `/h5/profile`：**我的**。个人信息、档案管理、AI 模型高级设置。
+- `/h5/profile`：**我的**。个人信息、档案管理；管理员额外显示 AI 模型高级设置和用户管理。
+- `/h5/login`：**登录页**。支持管理员和普通用户登录。
+- `/h5/profile/users`：**用户管理**。仅管理员可访问，用于新增和删除普通用户。
 
 ### 2. 练习中心
 - `/h5/practice`：**练习入口**。支持一年级到六年级与语文/数学/英语切换，推荐最需练习的 1-3 个知识点，并支持按当前年级/学科直接从所有知识点列表开始练习。月度错题卷与长期薄弱项保留在首页入口，避免重复。
@@ -55,9 +57,15 @@ API：
 - `POST /api/practice-sessions/[id]/submit`
 - `GET /api/exams/monthly/preview`：获取月度错题统计与建议生成题数。
 - `POST /api/exams/monthly`：调用 AI 生成月度复习试卷。
-- `GET /api/settings/ai`：读取 AI 对接配置的脱敏信息。
-- `PUT /api/settings/ai`：保存 AI 对接配置，API Key 不会在响应中回显。
-- `POST /api/settings/ai/test`：测试 mock 或 OpenAI-compatible 模型服务连通性。
+- `POST /api/auth/login`：账号登录并写入 HttpOnly 会话 Cookie。
+- `GET /api/auth/me`：读取当前登录用户。
+- `POST /api/auth/logout`：退出登录并清除会话。
+- `GET /api/users`：管理员读取用户列表。
+- `POST /api/users`：管理员新增普通用户。
+- `DELETE /api/users/[id]`：管理员删除普通用户；管理员账户不能在此删除。
+- `GET /api/settings/ai`：管理员读取 AI 对接配置的脱敏信息。
+- `PUT /api/settings/ai`：管理员保存 AI 对接配置，API Key 不会在响应中回显。
+- `POST /api/settings/ai/test`：管理员测试 mock 或 OpenAI-compatible 模型服务连通性。
 
 字段：`name`、`age`、`grade`、`province`、`city`、`textbookVersion`。表单校验由 Zod + React Hook Form 提供。
 
@@ -67,7 +75,7 @@ API：
 
 月度错题卷闭环：基于 `WrongQuestion` 表中的 `createdAt` 按月筛选，聚合各知识点的错题频率。AI Prompt (`src/ai/prompts/generateMonthlyWrongSetExamPrompt.ts`) 引导模型按 7:2:1 的比例改编错题知识点、相关知识点和综合题。生成的 `PracticeSession` 类型为 `MONTHLY_WRONG_SET`，答题提交后会根据试卷中的题目来源，**分知识点并行更新** 孩子的掌握度状态。
 
-说明：未配置 `DATABASE_URL` 或设置 `CHILDREN_STORE=memory` 时，孩子档案、试卷分析和知识点练习 API 会使用开发期内存存储，方便无 PostgreSQL 环境直接启动 H5；配置 PostgreSQL 后使用 Prisma 存储。
+说明：未配置 `DATABASE_URL` 或设置 `CHILDREN_STORE=memory` 时，孩子档案、试卷分析和知识点练习 API 会使用开发期内存存储，方便无 PostgreSQL 环境直接启动 H5；配置 PostgreSQL 后使用 Prisma 存储。账号与会话当前保存到服务器本地 `.data/users.json`，该目录已加入 `.gitignore`；首次启动会自动创建默认管理员 `admin / admin123456`，生产使用前应替换默认密码或改接正式身份系统。
 
 
 ## 标准学习要点文件：LearningPointCatalog v1
@@ -102,12 +110,22 @@ npm run dev
 
 - `DATABASE_URL`: PostgreSQL 连接串。
 - `AI_PROVIDER`: 当前仅支持 `mock`。
+- `AUTH_COOKIE_SECURE`: 仅在 H5 站点通过 HTTPS 提供服务时设置为 `true`；HTTP 测试环境保持为空，避免浏览器拒收登录 Cookie。
+
+## 多用户与权限
+
+- 支持两类账号：`ADMIN` 管理员、`USER` 普通用户。
+- 普通用户可以登录并使用学习、练习、错题等 H5 功能，但不会看到“AI 模型设置”和“用户管理”入口。
+- 只有管理员可以访问 `/h5/profile/advanced-settings` 与 `/h5/profile/users`。
+- AI 设置相关 API 与用户管理 API 均做服务端管理员校验，不能只依赖前端隐藏入口。
+- 管理员只能新增/删除普通用户；管理员账户不会通过用户管理页删除，避免误删导致锁死。
+- 账户密码使用 PBKDF2-SHA256 哈希保存，会话使用 HttpOnly Cookie，用户数据文件 `.data/users.json` 权限写为 `0600`。
 
 ## 数据模型
 
 Prisma schema 位于 `prisma/schema.prisma`，包含：
 
-- `User`
+- `User`：包含可选 `username`/`passwordHash`/`role` 字段，用于正式数据库账号扩展；当前 H5 登录状态使用 `.data/users.json`。
 - `Child`
 - `Textbook`
 - `Chapter`

@@ -32,12 +32,20 @@ enum PracticeType {
   MONTHLY_WRONG_SET
 }
 
+enum UserRole {
+  ADMIN
+  USER
+}
+
 model User {
-  id        String   @id @default(cuid())
-  phone     String?  @unique
-  name      String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id           String   @id @default(cuid())
+  username     String?  @unique
+  passwordHash String?
+  role         UserRole @default(USER)
+  phone        String?  @unique
+  name         String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
 
   children Child[]
 }

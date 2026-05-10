@@ -2,9 +2,12 @@ import { NextResponse } from 'next/server';
 import { ZodError } from 'zod';
 import { aiSettingsService } from '@/features/settings/ai-settings-service';
 import { aiSettingsUpdateSchema } from '@/features/settings/ai-settings-schema';
+import { authService } from '@/features/auth/auth-service';
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
+    const admin = await authService.requireAdminFromRequest(request);
+    if (!admin) return NextResponse.json({ error: '仅管理员可查看 AI 设置' }, { status: 403 });
     return NextResponse.json({ settings: await aiSettingsService.getPublicSettings() });
   } catch (error) {
     console.error('[AISettings] GET failed:', error);
@@ -14,6 +17,8 @@ export async function GET() {
 
 export async function PUT(request: Request) {
   try {
+    const admin = await authService.requireAdminFromRequest(request);
+    if (!admin) return NextResponse.json({ error: '仅管理员可保存 AI 设置' }, { status: 403 });
     const body = await request.json();
     const input = aiSettingsUpdateSchema.parse(body);
     const settings = await aiSettingsService.updateSettings(input);
