@@ -20,6 +20,7 @@ data/learning-points/
 - `GET /api/learning-points?grade=G01&subject=math&version=default`：返回完整 catalog。
 - `GET /api/learning-points?grade=一年级&subject=数学&view=points`：返回扁平知识点列表。
 - `GET /api/children/[id]/knowledge-points?subject=math`：优先返回孩子的学习状态；如果孩子暂无 `ChildKnowledgePoint`，回退读取该孩子年级/教材版本对应的标准学习要点。
+- `GET /api/children/[id]/knowledge-points?grade=三年级&subject=math`：H5 知识点练习使用的年级覆盖模式，按指定年级读取标准学习要点，并尽量按 `knowledgePointId`/`knowledgePointText` 合并孩子已有掌握状态。
 
 ## agent: learning 输出要求
 

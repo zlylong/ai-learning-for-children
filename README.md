@@ -28,7 +28,7 @@
 - `/h5/profile`：**我的**。个人信息、档案管理、AI 模型高级设置。
 
 ### 2. 练习中心
-- `/h5/practice`：**练习入口**。支持语文/数学/英语学科切换，推荐最需练习的 1-3 个知识点，支持手动选择所有知识点，提供月度错题卷与专项训练入口。
+- `/h5/practice`：**练习入口**。支持一年级到六年级与语文/数学/英语切换，推荐最需练习的 1-3 个知识点，支持按当前年级/学科手动选择所有知识点，提供月度错题卷与专项训练入口。
 - `/h5/practice-sessions/[id]`：**答题页**。沉浸式答题体验，一屏一题，大号输入/选项，进度追踪。
 - `/h5/practice-sessions/[id]/result`：**练习反馈**。展示正确率、鼓励语、错题解析及后续建议。
 
@@ -63,7 +63,7 @@ API：
 
 试卷分析闭环：`POST /api/exam-uploads` 先创建 `PENDING` 上传记录；`POST /api/exam-uploads/[id]/process` 同步触发 mock AI 分析，输出必须通过 `src/schemas/analyzeWrongQuestionsSchema.ts` 的 Zod 校验后才会写入 `WrongQuestion`、`WrongQuestionKnowledgePoint` 并把关联 `ChildKnowledgePoint` 更新为 `WEAK`。AI 输出异常时上传记录置为 `FAILED`，不会写入错题和掌握状态脏数据。
 
-知识点练习闭环：练习中心和新建练习页均支持语文/数学/英语选择，并将 `subject` 传入练习 session；`src/ai/prompts/generatePracticeQuestionsPrompt.ts` 生成严格 JSON Prompt，并通过 `src/ai/ai-client.ts` 统一调用 mock AI。AI 输出必须先经过 `src/schemas/generatedPracticeQuestionsSchema.ts` 校验：题目数量 1-10；`single_choice` 必须 4 个选项；`answer` 与 `explanation` 必填；校验失败不会创建练习 session。`src/services/practiceService.ts` 负责创建 `PracticeSession`/`PracticeQuestion`、答题提交、简单 equals 判分、返回每题结果和 `masteryStatus`。提交后会保存每题 `userAnswer` 与 `isCorrect`，并更新 `ChildKnowledgePoint.practiceCount`、`correctCount`、`lastPracticedAt`；掌握状态规则：题数 >= 5 且正确率 >= 80% 为 `MASTERED`；正确率 >= 50% 且 < 80% 为 `PRACTICING`；正确率 < 50% 为 `WEAK`。
+知识点练习闭环：练习中心和新建练习页均支持一年级到六年级与语文/数学/英语选择；知识点列表请求会携带 `grade`/`subject`，允许跨年级预习或回顾，并将 `subject` 传入练习 session；`src/ai/prompts/generatePracticeQuestionsPrompt.ts` 生成严格 JSON Prompt，并通过 `src/ai/ai-client.ts` 统一调用 mock AI。AI 输出必须先经过 `src/schemas/generatedPracticeQuestionsSchema.ts` 校验：题目数量 1-10；`single_choice` 必须 4 个选项；`answer` 与 `explanation` 必填；校验失败不会创建练习 session。`src/services/practiceService.ts` 负责创建 `PracticeSession`/`PracticeQuestion`、答题提交、简单 equals 判分、返回每题结果和 `masteryStatus`。提交后会保存每题 `userAnswer` 与 `isCorrect`，并更新 `ChildKnowledgePoint.practiceCount`、`correctCount`、`lastPracticedAt`；掌握状态规则：题数 >= 5 且正确率 >= 80% 为 `MASTERED`；正确率 >= 50% 且 < 80% 为 `PRACTICING`；正确率 < 50% 为 `WEAK`。
 
 月度错题卷闭环：基于 `WrongQuestion` 表中的 `createdAt` 按月筛选，聚合各知识点的错题频率。AI Prompt (`src/ai/prompts/generateMonthlyWrongSetExamPrompt.ts`) 引导模型按 7:2:1 的比例改编错题知识点、相关知识点和综合题。生成的 `PracticeSession` 类型为 `MONTHLY_WRONG_SET`，答题提交后会根据试卷中的题目来源，**分知识点并行更新** 孩子的掌握度状态。
 
@@ -81,6 +81,7 @@ API：
 - `GET /api/learning-points?grade=G01&subject=math&version=default`：读取完整标准学习要点文件。
 - `GET /api/learning-points?grade=一年级&subject=数学&view=points`：读取扁平知识点列表。
 - `GET /api/children/[id]/knowledge-points?subject=math`：优先返回孩子已有掌握状态；暂无错题/掌握记录时，自动回退该孩子年级和教材版本对应的标准学习要点。
+- `GET /api/children/[id]/knowledge-points?grade=三年级&subject=math`：按指定年级读取标准学习要点，并尽量把孩子已有同 ID/同名知识点掌握状态合并回列表。
 
 详细生成规范见 `docs/learning-point-catalog-v1.md`。后续细化教材版本时，只需新增 `{subject}.{version}.json` 并更新 manifest。
 

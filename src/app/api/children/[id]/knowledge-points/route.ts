@@ -9,22 +9,63 @@ function shouldUseMemoryStore() {
   return !process.env.DATABASE_URL || process.env.CHILDREN_STORE === 'memory';
 }
 
-async function getCatalogFallbackPoints(request: Request, childId: string) {
-  const { searchParams } = new URL(request.url);
-  const subject = searchParams.get('subject') ?? 'math';
-  const child = await childService.get(childId);
-  if (!child?.grade) return [];
-  return listCatalogKnowledgePoints({
-    grade: child.grade,
-    subject,
-    version: child.textbookVersion || 'default',
+type KnowledgePointLike = {
+  id?: string | null;
+  knowledgePointId?: string | null;
+  knowledgePointText?: string | null;
+  status?: string | null;
+  masteryScore?: number | null;
+  wrongCount?: number | null;
+  practiceCount?: number | null;
+  correctCount?: number | null;
+};
+
+function mergeProgressIntoCatalog(catalogPoints: KnowledgePointLike[], progressPoints: KnowledgePointLike[]) {
+  const byId = new Map<string, KnowledgePointLike>();
+  const byTitle = new Map<string, KnowledgePointLike>();
+  for (const point of progressPoints) {
+    const id = point.knowledgePointId?.trim();
+    const title = point.knowledgePointText?.trim();
+    if (id) byId.set(id, point);
+    if (title) byTitle.set(title, point);
+  }
+
+  return catalogPoints.map((point) => {
+    const progress = byId.get(point.knowledgePointId ?? '') ?? byTitle.get(point.knowledgePointText ?? '');
+    if (!progress) return point;
+    return {
+      ...point,
+      id: point.id ?? progress.id,
+      status: progress.status ?? point.status,
+      masteryScore: progress.masteryScore ?? point.masteryScore,
+      wrongCount: progress.wrongCount ?? point.wrongCount,
+      practiceCount: progress.practiceCount ?? point.practiceCount,
+      correctCount: progress.correctCount ?? point.correctCount,
+    };
   });
 }
 
-async function withCatalogFallback(request: Request, childId: string, points: unknown[]) {
-  if (points.length > 0) return NextResponse.json({ points, source: 'child-progress' });
-  const fallbackPoints = await getCatalogFallbackPoints(request, childId);
-  return NextResponse.json({ points: fallbackPoints, source: fallbackPoints.length > 0 ? 'learning-point-catalog' : 'empty' });
+async function getCatalogFallbackPoints(request: Request, childId: string, progressPoints: KnowledgePointLike[] = []) {
+  const { searchParams } = new URL(request.url);
+  const subject = searchParams.get('subject') ?? 'math';
+  const gradeOverride = searchParams.get('grade');
+  const child = await childService.get(childId);
+  const grade = gradeOverride || child?.grade;
+  if (!grade) return [];
+  const catalogPoints = await listCatalogKnowledgePoints({
+    grade,
+    subject,
+    version: child?.textbookVersion || 'default',
+  });
+  return mergeProgressIntoCatalog(catalogPoints, progressPoints);
+}
+
+async function withCatalogFallback(request: Request, childId: string, points: KnowledgePointLike[]) {
+  const { searchParams } = new URL(request.url);
+  const gradeOverride = searchParams.get('grade');
+  if (!gradeOverride && points.length > 0) return NextResponse.json({ points, source: 'child-progress' });
+  const fallbackPoints = await getCatalogFallbackPoints(request, childId, points);
+  return NextResponse.json({ points: fallbackPoints, source: fallbackPoints.length > 0 ? (gradeOverride ? 'learning-point-catalog-grade' : 'learning-point-catalog') : 'empty' });
 }
 
 export async function GET(request: Request, { params }: { params: Promise<{ id: string }> }) {
