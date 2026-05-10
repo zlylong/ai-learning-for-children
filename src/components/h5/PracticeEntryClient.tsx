@@ -3,16 +3,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { DotLoading, Selector, Toast } from 'antd-mobile';
-import {
-  CalendarOutline,
-  PieOutline,
-  RightOutline,
-  AppOutline,
-} from 'antd-mobile-icons';
+import { RightOutline } from 'antd-mobile-icons';
 import { WeakPointCard } from './WeakPointCard';
-import { ActionCardSmall } from './ActionCardSmall';
 import { EmptyState } from './EmptyState';
-import { getPracticeCenterActions } from './practice-entry-actions';
 
 const subjectOptions = [
   { label: '语文', value: 'chinese' },
@@ -180,18 +173,6 @@ export function PracticeEntryClient() {
             </div>
           )}
         </div>
-      </section>
-
-      <section className="grid grid-cols-2 gap-3">
-        {getPracticeCenterActions(childId).map((action) => (
-          <ActionCardSmall
-            key={action.href}
-            title={action.title}
-            icon={action.title === '知识点练习' ? <AppOutline /> : action.title === '月度错题卷' ? <CalendarOutline /> : <PieOutline />}
-            href={action.title === '知识点练习' ? `${action.href}?subject=${subject}&grade=${encodeURIComponent(grade)}` : action.href}
-            color={action.color}
-          />
-        ))}
       </section>
 
       <section>
