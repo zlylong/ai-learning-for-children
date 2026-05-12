@@ -131,6 +131,8 @@ export function PracticeNewClient({ childId }: { childId: string }) {
   if (!childId) return <ErrorBlock status="empty" title="缺少孩子 ID" />;
   if (loading) return <div className="flex justify-center py-12"><DotLoading /></div>;
 
+  const selectedKnowledgePoint = knowledgePoints.find((item) => item.id === knowledgePointId);
+
   return (
     <div className="space-y-4 pb-28">
       <section className="rounded-[28px] bg-gradient-to-br from-emerald-500 to-cyan-500 p-5 text-white shadow-lg">
@@ -191,6 +193,56 @@ export function PracticeNewClient({ childId }: { childId: string }) {
         </section>
       ) : null}
 
+      {selectedKnowledgePoint ? (
+        <section className="space-y-3 rounded-3xl bg-white p-5 shadow-sm ring-1 ring-black/5">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <p className="text-xs font-semibold text-emerald-600">知识点解释</p>
+              <h2 className="mt-1 text-lg font-bold text-slate-900">{selectedKnowledgePoint.title}</h2>
+            </div>
+            <button type="button" className="shrink-0 rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700" onClick={() => setPickerVisible(true)}>切换</button>
+          </div>
+          {selectedKnowledgePoint.summary ? <p className="text-sm leading-6 text-slate-600">{selectedKnowledgePoint.summary}</p> : null}
+          {selectedKnowledgePoint.explanation ? (
+            <div className="space-y-3 rounded-2xl bg-slate-50 p-4 text-sm leading-6 text-slate-700">
+              <div>
+                <div className="font-semibold text-slate-900">为什么学</div>
+                <p>{selectedKnowledgePoint.explanation.why}</p>
+              </div>
+              <div>
+                <div className="font-semibold text-slate-900">怎么学</div>
+                <p>{selectedKnowledgePoint.explanation.howToLearn}</p>
+              </div>
+              <ol className="list-decimal space-y-1 pl-5">
+                {selectedKnowledgePoint.explanation.steps.map((step) => <li key={step}>{step}</li>)}
+              </ol>
+            </div>
+          ) : null}
+          {selectedKnowledgePoint.keyConcepts?.length ? (
+            <div className="flex flex-wrap gap-2">
+              {selectedKnowledgePoint.keyConcepts.map((concept) => <span key={concept} className="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">{concept}</span>)}
+            </div>
+          ) : null}
+          {selectedKnowledgePoint.examples?.length ? (
+            <div className="space-y-3">
+              <div className="text-sm font-semibold text-slate-900">例题与解析</div>
+              {selectedKnowledgePoint.examples.slice(0, 2).map((example, index) => (
+                <article key={`${example.question}-${index}`} className="rounded-2xl border border-amber-100 bg-amber-50/60 p-4 text-sm leading-6">
+                  <div className="font-semibold text-amber-900">例题 {index + 1}</div>
+                  <p className="mt-1 text-slate-800">{example.question}</p>
+                  <div className="mt-3 rounded-xl bg-white/80 p-3">
+                    <div className="font-medium text-slate-900">参考答案</div>
+                    <p className="text-slate-700">{example.answer}</p>
+                    <div className="mt-2 font-medium text-slate-900">解析</div>
+                    <p className="text-slate-700">{example.analysis}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          ) : null}
+        </section>
+      ) : null}
+
       <Popup
         visible={pickerVisible}
         onMaskClick={() => setPickerVisible(false)}
@@ -201,7 +253,11 @@ export function PracticeNewClient({ childId }: { childId: string }) {
           <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain rounded-2xl">
             <Radio.Group value={knowledgePointId} onChange={(value) => { setKnowledgePointId(String(value)); setPickerVisible(false); }}>
               <List>
-                {knowledgePoints.map((item) => <List.Item key={item.id} prefix={<Radio value={item.id} />}>{item.title}</List.Item>)}
+                {knowledgePoints.map((item) => (
+                  <List.Item key={item.id} prefix={<Radio value={item.id} />} description={item.summary ?? item.explanation?.why}>
+                    {item.title}
+                  </List.Item>
+                ))}
               </List>
             </Radio.Group>
           </div>

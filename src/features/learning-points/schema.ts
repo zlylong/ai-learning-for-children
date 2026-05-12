@@ -20,6 +20,20 @@ export const learningPointMistakeSchema = z.object({
   remediation: z.string().trim().min(1),
 });
 
+export const learningPointExplanationSchema = z.object({
+  why: z.string().trim().min(1),
+  howToLearn: z.string().trim().min(1),
+  steps: z.array(z.string().trim().min(1)).min(2),
+});
+
+export const learningPointExampleSchema = z.object({
+  question: z.string().trim().min(1),
+  answer: z.string().trim().min(1),
+  analysis: z.string().trim().min(1),
+  difficulty: z.enum(['easy', 'medium', 'hard']).default('easy'),
+  type: z.enum(['single_choice', 'fill_blank', 'short_answer', 'calculation', 'word_problem', 'reading_comprehension', 'sentence_making']).default('short_answer'),
+});
+
 export const learningKnowledgePointSchema = z.object({
   id: z.string().trim().regex(/^kp_(chinese|math|english)_g0[1-6]_\d{3}_\d{3}$/),
   title: z.string().trim().min(1),
@@ -37,6 +51,8 @@ export const learningKnowledgePointSchema = z.object({
   prerequisites: z.array(z.string().trim().min(1)).default([]),
   relatedPoints: z.array(z.string().trim().min(1)).default([]),
   commonMistakes: z.array(learningPointMistakeSchema).min(1),
+  explanation: learningPointExplanationSchema,
+  examples: z.array(learningPointExampleSchema).min(1),
   masteryCriteria: z.array(z.string().trim().min(1)).min(3),
   practiceProfile: z.object({
     recommendedQuestionTypes: z.array(z.enum(['single_choice', 'fill_blank', 'short_answer', 'calculation', 'word_problem', 'reading_comprehension', 'sentence_making'])).min(1),

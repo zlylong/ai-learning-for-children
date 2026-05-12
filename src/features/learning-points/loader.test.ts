@@ -27,6 +27,18 @@ const sampleCatalog = {
       prerequisites: [],
       relatedPoints: [],
       commonMistakes: [{ type: 'counting_skip', description: '漏数。', remediation: '借助实物点数。' }],
+      explanation: {
+        why: '20以内数是后续加减法的基础。',
+        howToLearn: '先数实物，再读写数字，最后比较大小。',
+        steps: ['点数实物并说出数量', '写出对应数字', '比较两个数量的大小'],
+      },
+      examples: [{
+        question: '数一数：桌上有 12 根小棒，再添 3 根，一共有几根？',
+        answer: '15 根。',
+        analysis: '从 12 往后数 3 个数：13、14、15。',
+        difficulty: 'easy',
+        type: 'calculation',
+      }],
       masteryCriteria: ['会读数', '会写数', '会比较'],
       practiceProfile: { recommendedQuestionTypes: ['single_choice'], difficultyRange: ['easy'], minCorrectRateForMastery: 0.85 },
       tags: ['基础'],
@@ -53,6 +65,11 @@ describe('LearningPointCatalog v1', () => {
     expect(catalog?.chapters.length).toBeGreaterThan(0);
 
     const points = await listCatalogKnowledgePoints({ grade: 'G01', subject: 'math' });
-    expect(points[0]).toMatchObject({ knowledgePointId: expect.stringMatching(/^kp_math_g01_/), status: 'UNKNOWN' });
+    expect(points[0]).toMatchObject({
+      knowledgePointId: expect.stringMatching(/^kp_math_g01_/),
+      status: 'UNKNOWN',
+      explanation: expect.objectContaining({ why: expect.any(String), howToLearn: expect.any(String) }),
+      examples: expect.arrayContaining([expect.objectContaining({ question: expect.any(String), answer: expect.any(String), analysis: expect.any(String) })]),
+    });
   });
 });

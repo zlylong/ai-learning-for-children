@@ -12,12 +12,34 @@ export type PracticeKnowledgePointInput = {
   knowledgePointId?: string | null;
   knowledgePointText?: string | null;
   status?: string | null;
+  summary?: string | null;
+  explanation?: {
+    why: string;
+    howToLearn: string;
+    steps: string[];
+  } | null;
+  examples?: Array<{
+    question: string;
+    answer: string;
+    analysis: string;
+    difficulty?: string | null;
+    type?: string | null;
+  }> | null;
+  keyConcepts?: string[] | null;
+  commonMistakes?: Array<{ type: string; description: string; remediation: string }> | null;
+  masteryCriteria?: string[] | null;
 };
 
 export type PracticeKnowledgePointOption = {
   id: string;
   title: string;
   status?: string | null;
+  summary?: string | null;
+  explanation?: PracticeKnowledgePointInput['explanation'];
+  examples?: NonNullable<PracticeKnowledgePointInput['examples']>;
+  keyConcepts?: string[];
+  commonMistakes?: NonNullable<PracticeKnowledgePointInput['commonMistakes']>;
+  masteryCriteria?: string[];
 };
 
 export function getPracticeCenterActions(childId: string): PracticeCenterAction[] {
@@ -35,6 +57,12 @@ export function normalizePracticeKnowledgePoints(points: PracticeKnowledgePointI
       id: (point.knowledgePointId || point.id || '').trim(),
       title: (point.knowledgePointText || '').trim(),
       status: point.status,
+      summary: point.summary,
+      explanation: point.explanation,
+      examples: point.examples ?? [],
+      keyConcepts: point.keyConcepts ?? [],
+      commonMistakes: point.commonMistakes ?? [],
+      masteryCriteria: point.masteryCriteria ?? [],
     }))
     .filter((point) => {
       if (!point.id || !point.title || seen.has(point.id)) return false;

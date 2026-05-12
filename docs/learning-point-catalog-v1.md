@@ -30,9 +30,20 @@ data/learning-points/
 2. `subject.code` 只能是 `chinese`、`math`、`english`。
 3. `grade.code` 只能是 `G01` 到 `G06`。
 4. `id` 使用稳定格式：`kp_{subject}_{grade}_{chapterOrder}_{pointOrder}`，例如 `kp_math_g03_001_001`。
-5. 每个知识点必须包含 `summary`、`objectives`、`commonMistakes`、`masteryCriteria`、`practiceProfile`。
-6. `commonMistakes` 至少 1 条，`masteryCriteria` 至少 3 条。
-7. `recommendedQuestionTypes` 只能使用系统允许题型：`single_choice`、`fill_blank`、`short_answer`、`calculation`、`word_problem`、`reading_comprehension`、`sentence_making`。
+5. 每个知识点必须包含 `summary`、`objectives`、`commonMistakes`、`explanation`、`examples`、`masteryCriteria`、`practiceProfile`。
+6. `explanation` 用于 H5 端“先理解再练习”的知识点讲解，必须包含：
+   - `why`：为什么学这个知识点。
+   - `howToLearn`：建议学习方法。
+   - `steps`：至少 2 条可执行学习步骤。
+7. `examples` 至少 1 道例题，每题必须包含 `question`、`answer`、`analysis`，并标注 `difficulty` 与 `type`。题型只能使用系统允许题型：`single_choice`、`fill_blank`、`short_answer`、`calculation`、`word_problem`、`reading_comprehension`、`sentence_making`。
+8. `commonMistakes` 至少 1 条，`masteryCriteria` 至少 3 条。
+9. `recommendedQuestionTypes` 只能使用系统允许题型：`single_choice`、`fill_blank`、`short_answer`、`calculation`、`word_problem`、`reading_comprehension`、`sentence_making`。
+
+## H5 展示约定
+
+- `GET /api/learning-points?...&view=points` 和 `GET /api/children/[id]/knowledge-points?...` 的扁平列表会保留 `explanation`、`examples`、`keyConcepts`、`commonMistakes`、`masteryCriteria`。
+- `/h5/children/[id]/practice/new` 在用户选择知识点后展示：知识点摘要、为什么学、怎么学、学习步骤、关键概念标签和前 2 道例题解析。
+- 若孩子已有 `ChildKnowledgePoint` 掌握状态，API 会把状态/正确数/错题数合并进 catalog 行，但讲解和例题仍以标准 catalog 为准。
 
 ## 数据库映射建议
 

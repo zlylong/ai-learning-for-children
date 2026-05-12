@@ -82,6 +82,11 @@ export async function listCatalogKnowledgePoints(input: { grade: string; subject
     chapterId: chapter.id,
     chapterTitle: chapter.title,
     summary: point.summary,
+    explanation: point.explanation,
+    examples: point.examples,
+    keyConcepts: point.keyConcepts,
+    commonMistakes: point.commonMistakes,
+    masteryCriteria: point.masteryCriteria,
     tags: point.tags,
   })));
 }
