@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { DotLoading, Selector, Toast } from 'antd-mobile';
+import { Button, DotLoading, Popup, Selector, Toast } from 'antd-mobile';
 import { RightOutline } from 'antd-mobile-icons';
 import { WeakPointCard } from './WeakPointCard';
 import { EmptyState } from './EmptyState';
@@ -28,6 +28,22 @@ type KnowledgePointSummary = {
   knowledgePointId: string;
   knowledgePointText: string;
   status: 'UNKNOWN' | 'WEAK' | 'PRACTICING' | 'MASTERED' | string;
+  summary?: string | null;
+  explanation?: {
+    why: string;
+    howToLearn: string;
+    steps: string[];
+  } | null;
+  examples?: Array<{
+    question: string;
+    answer: string;
+    analysis: string;
+    difficulty?: string | null;
+    type?: string | null;
+  }> | null;
+  keyConcepts?: string[] | null;
+  commonMistakes?: Array<{ type: string; description: string; remediation: string }> | null;
+  masteryCriteria?: string[] | null;
 };
 
 export function PracticeEntryClient() {
@@ -37,6 +53,7 @@ export function PracticeEntryClient() {
   const [grade, setGrade] = useState<PracticeGrade>('一年级');
   const [points, setPoints] = useState<KnowledgePointSummary[]>([]);
   const [loading, setLoading] = useState(true);
+  const [detailPoint, setDetailPoint] = useState<KnowledgePointSummary | null>(null);
   const requestSeqRef = useRef(0);
 
   const loadChildGrade = useCallback(async (id: string) => {
@@ -182,17 +199,27 @@ export function PracticeEntryClient() {
         </div>
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/[0.04] divide-y divide-slate-50">
           {points.length > 0 ? points.map((p) => (
-            <div key={p.id} className="flex items-center justify-between p-4 active:bg-slate-50" onClick={() => startPractice(p)}>
-              <div className="text-sm font-medium text-slate-700">{p.knowledgePointText}</div>
-              <div className="flex items-center gap-2">
-                <span className={`rounded-full px-1.5 py-0.5 text-[10px] ${
-                  p.status === 'MASTERED' ? 'bg-green-50 text-green-600' :
-                  p.status === 'WEAK' ? 'bg-rose-50 text-rose-600' :
-                  p.status === 'PRACTICING' ? 'bg-orange-50 text-orange-600' : 'bg-slate-50 text-slate-500'
-                }`}>
-                  {p.status === 'MASTERED' ? '已掌握' : p.status === 'WEAK' ? '薄弱' : p.status === 'PRACTICING' ? '练习中' : '未练习'}
-                </span>
-                <RightOutline className="text-xs text-slate-300" />
+            <div key={p.id} className="p-4 active:bg-slate-50" onClick={() => setDetailPoint(p)}>
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0 flex-1">
+                  <div className="text-sm font-semibold text-slate-800">{p.knowledgePointText}</div>
+                  {p.summary ? <p className="mt-1 line-clamp-2 text-xs leading-5 text-slate-500">{p.summary}</p> : null}
+                  {p.keyConcepts?.length ? (
+                    <div className="mt-2 flex flex-wrap gap-1.5">
+                      {p.keyConcepts.slice(0, 3).map((concept) => <span key={concept} className="rounded-full bg-cyan-50 px-2 py-0.5 text-[10px] text-cyan-700">{concept}</span>)}
+                    </div>
+                  ) : null}
+                </div>
+                <div className="flex shrink-0 items-center gap-2 pt-0.5">
+                  <span className={`rounded-full px-1.5 py-0.5 text-[10px] ${
+                    p.status === 'MASTERED' ? 'bg-green-50 text-green-600' :
+                    p.status === 'WEAK' ? 'bg-rose-50 text-rose-600' :
+                    p.status === 'PRACTICING' ? 'bg-orange-50 text-orange-600' : 'bg-slate-50 text-slate-500'
+                  }`}>
+                    {p.status === 'MASTERED' ? '已掌握' : p.status === 'WEAK' ? '薄弱' : p.status === 'PRACTICING' ? '练习中' : '未练习'}
+                  </span>
+                  <RightOutline className="text-xs text-slate-300" />
+                </div>
               </div>
             </div>
           )) : (
@@ -200,6 +227,94 @@ export function PracticeEntryClient() {
           )}
         </div>
       </section>
+
+      <Popup
+        visible={Boolean(detailPoint)}
+        onMaskClick={() => setDetailPoint(null)}
+        bodyStyle={{ borderTopLeftRadius: 24, borderTopRightRadius: 24, maxHeight: '88vh', overflow: 'hidden' }}
+      >
+        {detailPoint ? (
+          <div className="mx-auto flex h-[88vh] max-w-[480px] flex-col bg-white">
+            <div className="shrink-0 border-b border-slate-100 px-5 py-4">
+              <p className="text-xs font-semibold text-emerald-600">知识点讲解</p>
+              <h3 className="mt-1 text-lg font-bold text-slate-900">{detailPoint.knowledgePointText}</h3>
+            </div>
+            <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain px-5 py-4 pb-28">
+              {detailPoint.summary ? <p className="rounded-2xl bg-slate-50 p-4 text-sm leading-6 text-slate-600">{detailPoint.summary}</p> : null}
+
+              {detailPoint.explanation ? (
+                <section className="space-y-3">
+                  <div className="text-sm font-bold text-slate-900">先理解</div>
+                  <div className="space-y-3 rounded-2xl bg-emerald-50/60 p-4 text-sm leading-6 text-slate-700">
+                    <div>
+                      <div className="font-semibold text-emerald-900">为什么学</div>
+                      <p>{detailPoint.explanation.why}</p>
+                    </div>
+                    <div>
+                      <div className="font-semibold text-emerald-900">怎么学</div>
+                      <p>{detailPoint.explanation.howToLearn}</p>
+                    </div>
+                    <ol className="list-decimal space-y-1 pl-5">
+                      {detailPoint.explanation.steps.map((step) => <li key={step}>{step}</li>)}
+                    </ol>
+                  </div>
+                </section>
+              ) : null}
+
+              {detailPoint.keyConcepts?.length ? (
+                <section>
+                  <div className="mb-2 text-sm font-bold text-slate-900">关键概念</div>
+                  <div className="flex flex-wrap gap-2">
+                    {detailPoint.keyConcepts.map((concept) => <span key={concept} className="rounded-full bg-cyan-50 px-3 py-1 text-xs text-cyan-700">{concept}</span>)}
+                  </div>
+                </section>
+              ) : null}
+
+              {detailPoint.examples?.length ? (
+                <section className="space-y-3">
+                  <div className="text-sm font-bold text-slate-900">例题与解析</div>
+                  {detailPoint.examples.map((example, index) => (
+                    <article key={`${example.question}-${index}`} className="rounded-2xl border border-amber-100 bg-amber-50/70 p-4 text-sm leading-6">
+                      <div className="font-semibold text-amber-900">例题 {index + 1}</div>
+                      <p className="mt-1 text-slate-800">{example.question}</p>
+                      <div className="mt-3 rounded-xl bg-white/80 p-3">
+                        <div className="font-medium text-slate-900">参考答案</div>
+                        <p className="text-slate-700">{example.answer}</p>
+                        <div className="mt-2 font-medium text-slate-900">解析</div>
+                        <p className="text-slate-700">{example.analysis}</p>
+                      </div>
+                    </article>
+                  ))}
+                </section>
+              ) : null}
+
+              {detailPoint.commonMistakes?.length ? (
+                <section className="space-y-2">
+                  <div className="text-sm font-bold text-slate-900">常见错误与订正</div>
+                  {detailPoint.commonMistakes.map((mistake, index) => (
+                    <div key={`${mistake.type}-${index}`} className="rounded-2xl bg-rose-50 p-4 text-sm leading-6 text-slate-700">
+                      <div className="font-semibold text-rose-700">{mistake.description}</div>
+                      <p className="mt-1">订正建议：{mistake.remediation}</p>
+                    </div>
+                  ))}
+                </section>
+              ) : null}
+
+              {detailPoint.masteryCriteria?.length ? (
+                <section>
+                  <div className="mb-2 text-sm font-bold text-slate-900">掌握标准</div>
+                  <ul className="list-disc space-y-1 rounded-2xl bg-slate-50 p-4 pl-8 text-sm leading-6 text-slate-700">
+                    {detailPoint.masteryCriteria.map((item) => <li key={item}>{item}</li>)}
+                  </ul>
+                </section>
+              ) : null}
+            </div>
+            <div className="shrink-0 border-t border-slate-100 bg-white px-5 pb-[calc(16px+env(safe-area-inset-bottom))] pt-3">
+              <Button block color="primary" size="large" className="!rounded-2xl" onClick={() => startPractice(detailPoint)}>根据这个知识点练习</Button>
+            </div>
+          </div>
+        ) : null}
+      </Popup>
     </div>
   );
 }
