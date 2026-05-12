@@ -81,16 +81,23 @@ API：
 
 ## 标准学习要点文件：LearningPointCatalog v1
 
-系统现在支持直接读取 `data/learning-points` 下的标准学习要点 JSON 文件，供 `agent: learning` 后续批量生成小学语文、数学、英语知识点。
+系统现在支持直接读取 `data/learning-points` 下的标准学习要点 JSON 文件，供小学语文、数学、英语知识点讲解和练习入口使用。
 
-- `data/learning-points/manifest.json`：索引所有年级/学科/教材版本文件。
+- `data/learning-points/manifest.json`：索引所有年级/学科/教材版本文件；当前目录版本为 `2026.05.12-quality`。
 - `data/learning-points/g01` 到 `g06`：小学一至六年级语文、数学、英语默认学习要点数据，当前共 364 个知识点。
-- `src/features/learning-points/schema.ts`：LearningPointCatalog v1 的 Zod 校验边界；每个知识点必须包含讲解 `explanation` 和至少 1 道例题 `examples`。
+- `src/features/learning-points/schema.ts`：LearningPointCatalog v1 的 Zod 校验边界；每个知识点必须包含讲解 `explanation` 和至少 1 道可直接教学使用的例题 `examples`。
 - `src/features/learning-points/loader.ts`：运行时读取、年级/学科别名归一化和扁平知识点转换；扁平列表会保留讲解、例题、关键概念、常见错误和掌握标准。
 - `GET /api/learning-points?grade=G01&subject=math&version=default`：读取完整标准学习要点文件。
 - `GET /api/learning-points?grade=一年级&subject=数学&view=points`：读取扁平知识点列表。
 - `GET /api/children/[id]/knowledge-points?subject=math`：优先返回孩子已有掌握状态；暂无错题/掌握记录时，自动回退该孩子年级和教材版本对应的标准学习要点。
 - `GET /api/children/[id]/knowledge-points?grade=三年级&subject=math`：按指定年级读取标准学习要点，并尽量把孩子已有同 ID/同名知识点掌握状态合并回列表。
+
+内容质量约定：
+
+- `explanation` 必须用“为什么学 / 怎么学 / 可执行步骤”解释知识点，不能只重复标题或写空泛口号。
+- `examples` 必须包含具体题干、明确答案和可复盘解析；禁止使用“遇到一道关于……的题”这类无法直接练习的占位文本。
+- 数学例题必须是具体计算、应用题、图形/统计/单位换算等真实题型；语文例题必须提供具体字词、句子、短文或表达任务；英语例题必须提供单词应用、句型构造、语法填空或对话场景。
+- `/h5/practice` 点击知识点会先展示上述讲解与例题，再进入 AI 生成练习。
 
 详细生成规范见 `docs/learning-point-catalog-v1.md`。后续细化教材版本时，只需新增 `{subject}.{version}.json` 并更新 manifest。
 

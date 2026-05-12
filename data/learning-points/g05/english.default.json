@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08-full",
+  "catalogVersion": "2026.05.12-quality",
   "subject": {
     "code": "english",
     "name": "英语"
@@ -17,7 +17,7 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-full-v1"
+    "promptVersion": "primary-school-cn-quality-examples-v2"
   },
   "chapters": [
     {
@@ -84,28 +84,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「月份和日期」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "月份和日期是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「月份和日期」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “月份和日期”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “月份和日期” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -167,28 +160,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「季节和天气」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "季节和天气是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「季节和天气」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “季节和天气”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “季节和天气” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -249,28 +235,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「职业词汇」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "职业词汇是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「职业词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “职业词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “职业词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -331,28 +310,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「日常活动频率」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "日常活动频率是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「日常活动频率」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “日常活动频率”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “日常活动频率” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “日常活动频率” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -413,28 +385,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「地点建筑词汇」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "地点建筑词汇是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「地点建筑词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “地点建筑词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “地点建筑词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         }
@@ -503,28 +468,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「第三人称单数」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "第三人称单数是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「第三人称单数」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “第三人称单数”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “第三人称单数” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Fill in the blank: I play football. He ____ football after school.",
+              "answer": "plays.",
+              "analysis": "In the simple present tense, when the subject is he/she/it, the verb usually adds -s: play → plays.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "fill_blank"
             }
           ]
         },
@@ -585,28 +543,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「频度副词always usually often」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "频度副词always usually often是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「频度副词always usually often」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “频度副词always usually often”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “频度副词always usually often” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Put the words in order: usually / I / read books / on Sundays",
+              "answer": "I usually read books on Sundays.",
+              "analysis": "Frequency adverbs like “usually” often come before the main verb. The normal order is subject + frequency adverb + verb phrase + time.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -668,26 +619,19 @@
             "高频"
           ],
           "explanation": {
-            "why": "「一般疑问句和否定句」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "一般疑问句和否定句是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「一般疑问句和否定句」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “一般疑问句和否定句”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “一般疑问句和否定句” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Change into a question and a negative sentence: You like apples.",
+              "answer": "Question: Do you like apples? Negative: You do not like apples.",
+              "analysis": "For a simple present sentence with “like”, use “Do” to make a question and “do not/don’t” to make a negative sentence.",
               "difficulty": "medium",
               "type": "short_answer"
             }
@@ -750,28 +694,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「there be句型巩固」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "there be句型巩固是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「there be句型巩固」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “there be句型巩固”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “there be句型巩固” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Fill in the blank: There ___ a desk in the room. There ___ two chairs.",
+              "answer": "is; are.",
+              "analysis": "Use “There is” for one thing and “There are” for two or more things.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "fill_blank"
             }
           ]
         },
@@ -832,28 +769,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「物主代词my your his her」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "物主代词my your his her是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「物主代词my your his her」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “物主代词my your his her”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “物主代词my your his her” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “物主代词my your his her” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -914,28 +844,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「祈使句」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "祈使句是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「祈使句」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “祈使句”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “祈使句” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “祈使句” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         }
@@ -1004,28 +927,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「阅读短文判断信息」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "阅读短文判断信息是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「阅读短文判断信息」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “阅读短文判断信息”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “阅读短文判断信息” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “阅读短文判断信息” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -1086,28 +1002,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「写个人日程」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "写个人日程是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「写个人日程」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “写个人日程”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “写个人日程” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “写个人日程” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -1168,28 +1077,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「描述家庭成员职业」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "描述家庭成员职业是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「描述家庭成员职业」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “描述家庭成员职业”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “描述家庭成员职业” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -1250,28 +1152,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「根据提示写小短文」是五年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "根据提示写小短文是五年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「根据提示写小短文」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “根据提示写小短文”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “根据提示写小短文” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “根据提示写小短文” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         }

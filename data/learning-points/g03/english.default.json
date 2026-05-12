@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08-full",
+  "catalogVersion": "2026.05.12-quality",
   "subject": {
     "code": "english",
     "name": "英语"
@@ -17,7 +17,7 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-full-v1"
+    "promptVersion": "primary-school-cn-quality-examples-v2"
   },
   "chapters": [
     {
@@ -83,28 +83,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「学校用品词汇」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "学校用品词汇是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「学校用品词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “学校用品词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “学校用品词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -166,28 +159,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「数字和年龄表达」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "数字和年龄表达是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「数字和年龄表达」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “数字和年龄表达”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “数字和年龄表达” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -249,28 +235,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「家庭和朋友词汇」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "家庭和朋友词汇是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「家庭和朋友词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “家庭和朋友词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “家庭和朋友词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -332,28 +311,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「动物和外貌词汇」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "动物和外貌词汇是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「动物和外貌词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “动物和外貌词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “动物和外貌词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -415,28 +387,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「食物和水果词汇」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "食物和水果词汇是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「食物和水果词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “食物和水果词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “食物和水果词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         }
@@ -505,28 +470,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「be动词am is are」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "be动词am is are是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「be动词am is are」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “be动词am is are”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “be动词am is are” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Fill in the blank: I ___ happy. She ___ my sister. They ___ students.",
+              "answer": "am; is; are.",
+              "analysis": "Use “am” with I, “is” with he/she/it or one person, and “are” with they/we/you or more than one person.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "fill_blank"
             }
           ]
         },
@@ -587,28 +545,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「名词单复数初步」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "名词单复数初步是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「名词单复数初步」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “名词单复数初步”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “名词单复数初步” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Change to plural: one apple, two ____; one box, three ____.",
+              "answer": "apples; boxes.",
+              "analysis": "Most nouns add -s, so apple becomes apples. Words ending in x often add -es, so box becomes boxes.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "fill_blank"
             }
           ]
         },
@@ -670,28 +621,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「冠词a和an」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "冠词a和an是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「冠词a和an」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “冠词a和an”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “冠词a和an” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Choose a or an: ___ apple, ___ book, ___ orange.",
+              "answer": "an apple, a book, an orange.",
+              "analysis": "Use “an” before vowel sounds like apple/orange, and “a” before consonant sounds like book.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "fill_blank"
             }
           ]
         },
@@ -752,28 +696,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「What is this问答」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "What is this问答是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「What is this问答」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “What is this问答”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “What is this问答” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “What is this问答” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -834,28 +771,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「Who is he she问答」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "Who is he she问答是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「Who is he she问答」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “Who is he she问答”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “Who is he she问答” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “Who is he she问答” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -917,28 +847,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「I have和He has初步」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "I have和He has初步是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「I have和He has初步」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “I have和He has初步”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “I have和He has初步” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Use “I have ...” to say you own two pencils.",
+              "answer": "I have two pencils.",
+              "analysis": "“I have + number + noun” shows what you own. Because there are two, use the plural noun “pencils”.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         }
@@ -1007,26 +930,19 @@
             "高频"
           ],
           "explanation": {
-            "why": "「读懂简单对话」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "读懂简单对话是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「读懂简单对话」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “读懂简单对话”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “读懂简单对话” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Choose the best response: Teacher: “Open your book, please.” Student: “____”",
+              "answer": "OK./Yes, Miss Li.",
+              "analysis": "A classroom instruction asks you to do something. A polite short response such as “OK” is suitable.",
               "difficulty": "medium",
               "type": "short_answer"
             }
@@ -1089,28 +1005,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「根据图片补全句子」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "根据图片补全句子是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「根据图片补全句子」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “根据图片补全句子”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “根据图片补全句子” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “根据图片补全句子” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -1171,28 +1080,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「简单自我介绍」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "简单自我介绍是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「简单自我介绍」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “简单自我介绍”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “简单自我介绍” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “简单自我介绍” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -1253,28 +1155,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「常用问候交际」是三年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "常用问候交际是三年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「常用问候交际」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “常用问候交际”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “常用问候交际” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “常用问候交际” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         }

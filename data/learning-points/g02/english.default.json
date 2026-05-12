@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08-full",
+  "catalogVersion": "2026.05.12-quality",
   "subject": {
     "code": "english",
     "name": "英语"
@@ -17,7 +17,7 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-full-v1"
+    "promptVersion": "primary-school-cn-quality-examples-v2"
   },
   "chapters": [
     {
@@ -83,28 +83,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「字母自然拼读初步」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "字母自然拼读初步是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「字母自然拼读初步」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “字母自然拼读初步”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Write the missing letters and read the word: c _ t. Choose a or e.",
+              "answer": "a, cat.",
+              "analysis": "The word “cat” uses the short /æ/ sound. Look at the first and last letters c-t, then choose the vowel that makes a real word.",
               "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “字母自然拼读初步” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
+              "type": "fill_blank"
             }
           ]
         },
@@ -165,28 +158,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「身体部位词汇」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "身体部位词汇是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「身体部位词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “身体部位词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “身体部位词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -247,28 +233,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「食物饮料词汇」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "食物饮料词汇是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「食物饮料词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “食物饮料词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “食物饮料词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -329,28 +308,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「服装词汇」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "服装词汇是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「服装词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “服装词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “服装词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -411,28 +383,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「天气词汇」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "天气词汇是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「天气词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “天气词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “天气词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -494,28 +459,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「玩具和活动词汇」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "玩具和活动词汇是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「玩具和活动词汇」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “玩具和活动词汇”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make one sentence for “玩具和活动词汇” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “玩具和活动词汇” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         }
@@ -584,28 +542,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「This is句型」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "This is句型是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「This is句型」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “This is句型”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Introduce your friend Tom with “This is ...”.",
+              "answer": "This is Tom. He is my friend.",
+              "analysis": "“This is + name/person” is used to introduce someone near you. Start with a capital letter and end with a period.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “This is句型” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -666,28 +617,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「I have句型」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "I have句型是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「I have句型」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “I have句型”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Use “I have ...” to say you own two pencils.",
+              "answer": "I have two pencils.",
+              "analysis": "“I have + number + noun” shows what you own. Because there are two, use the plural noun “pencils”.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “I have句型” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -748,28 +692,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「Do you like问答」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "Do you like问答是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「Do you like问答」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “Do you like问答”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make one sentence for “Do you like问答” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “Do you like问答” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -830,28 +767,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「What color问答」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "What color问答是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「What color问答」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “What color问答”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make one sentence for “What color问答” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “What color问答” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -912,28 +842,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「How many问答」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "How many问答是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「How many问答」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “How many问答”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make one sentence for “How many问答” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “How many问答” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         }
@@ -1002,28 +925,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「听懂课堂活动指令」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "听懂课堂活动指令是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「听懂课堂活动指令」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “听懂课堂活动指令”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make one sentence for “听懂课堂活动指令” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “听懂课堂活动指令” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -1084,28 +1000,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「看图说单词短句」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "看图说单词短句是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「看图说单词短句」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “看图说单词短句”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make one sentence for “看图说单词短句” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “看图说单词短句” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -1166,28 +1075,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「抄写简单句」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "抄写简单句是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「抄写简单句」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “抄写简单句”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Make one sentence for “抄写简单句” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "easy",
               "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “抄写简单句” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
-              "type": "short_answer"
             }
           ]
         },
@@ -1248,27 +1150,20 @@
             "高频"
           ],
           "explanation": {
-            "why": "「角色对话」是二年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "角色对话是二年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「角色对话」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “角色对话”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
+              "question": "Choose the best response: Teacher: “Open your book, please.” Student: “____”",
+              "answer": "OK./Yes, Miss Li.",
+              "analysis": "A classroom instruction asks you to do something. A polite short response such as “OK” is suitable.",
               "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “角色对话” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
-              "difficulty": "medium",
               "type": "short_answer"
             }
           ]

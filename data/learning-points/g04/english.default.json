@@ -1,6 +1,6 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08-full",
+  "catalogVersion": "2026.05.12-quality",
   "subject": {
     "code": "english",
     "name": "英语"
@@ -17,7 +17,7 @@
   },
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-full-v1"
+    "promptVersion": "primary-school-cn-quality-examples-v2"
   },
   "chapters": [
     {
@@ -84,28 +84,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「时间和星期」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "时间和星期是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「时间和星期」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “时间和星期”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “时间和星期” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “时间和星期” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -167,28 +160,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「课程和学科」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "课程和学科是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「课程和学科」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “课程和学科”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “课程和学科” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -250,28 +236,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「房间和家具」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "房间和家具是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「房间和家具」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “房间和家具”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “房间和家具” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -332,28 +311,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「服装与价格」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "服装与价格是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「服装与价格」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “服装与价格”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “服装与价格” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -415,28 +387,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「地点和方位」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "地点和方位是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「地点和方位」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “地点和方位”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “地点和方位” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make a sentence with the words in this topic: “sunny” and “park”.",
+              "answer": "It is sunny. I go to the park.",
+              "analysis": "Use “It is + weather word” to describe weather, then use “I go to + place” to say the activity. Keep the sentence simple and complete.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         }
@@ -505,28 +470,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「一般现在时基础」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "一般现在时基础是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「一般现在时基础」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “一般现在时基础”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “一般现在时基础” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Fill in the blank: I play football. He ____ football after school.",
+              "answer": "plays.",
+              "analysis": "In the simple present tense, when the subject is he/she/it, the verb usually adds -s: play → plays.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "fill_blank"
             }
           ]
         },
@@ -587,28 +545,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「can表示能力」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "can表示能力是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「can表示能力」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “can表示能力”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “can表示能力” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Use “can” to say you are able to swim, then ask your friend.",
+              "answer": "I can swim. Can you swim?",
+              "analysis": "“Can + verb原形” expresses ability. In questions, put “Can” before the subject.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -669,28 +620,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「there be句型初步」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "there be句型初步是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「there be句型初步」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “there be句型初步”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “there be句型初步” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Fill in the blank: There ___ a desk in the room. There ___ two chairs.",
+              "answer": "is; are.",
+              "analysis": "Use “There is” for one thing and “There are” for two or more things.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "fill_blank"
             }
           ]
         },
@@ -751,28 +695,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「方位介词in on under near」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "方位介词in on under near是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「方位介词in on under near」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “方位介词in on under near”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “方位介词in on under near” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “方位介词in on under near” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -833,28 +770,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「现在进行时初步」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "现在进行时初步是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「现在进行时初步」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “现在进行时初步”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “现在进行时初步” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “现在进行时初步” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -915,28 +845,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「特殊疑问词what where when」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "特殊疑问词what where when是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「特殊疑问词what where when」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “特殊疑问词what where when”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “特殊疑问词what where when” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “特殊疑问词what where when” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         }
@@ -1005,26 +928,19 @@
             "高频"
           ],
           "explanation": {
-            "why": "「阅读短篇对话」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "阅读短篇对话是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「阅读短篇对话」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “阅读短篇对话”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “阅读短篇对话” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Choose the best response: Teacher: “Open your book, please.” Student: “____”",
+              "answer": "OK./Yes, Miss Li.",
+              "analysis": "A classroom instruction asks you to do something. A polite short response such as “OK” is suitable.",
               "difficulty": "medium",
               "type": "short_answer"
             }
@@ -1087,28 +1003,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「根据表格获取信息」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "根据表格获取信息是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「根据表格获取信息」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “根据表格获取信息”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “根据表格获取信息” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “根据表格获取信息” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -1169,28 +1078,21 @@
             "高频"
           ],
           "explanation": {
-            "why": "「描述一天活动」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "描述一天活动是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「描述一天活动」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “描述一天活动”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “描述一天活动” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Make one sentence for “描述一天活动” with “I ...”.",
+              "answer": "I like English.",
+              "analysis": "A complete English sentence needs a subject and a verb. “I like English.” has both and starts with a capital letter.",
               "difficulty": "medium",
-              "type": "short_answer"
+              "type": "sentence_making"
             }
           ]
         },
@@ -1252,26 +1154,19 @@
             "高频"
           ],
           "explanation": {
-            "why": "「购物和问路对话」是四年级英语中连接课堂概念与实际做题的关键知识点。掌握它后，孩子能更快判断题目考什么，减少凭感觉作答。",
-            "howToLearn": "学习时建议按“概念说清楚 → 例题看步骤 → 变式自己做 → 错题说原因”的顺序推进，重点关注词汇、句型、听说读写。",
+            "why": "购物和问路对话是四年级英语听说读写的常用基础，能帮助孩子在课堂、家庭、购物、天气、旅行等场景中进行简单交流。",
+            "howToLearn": "先听读模仿，再放进句型或对话中使用；注意大小写、单复数、时态和标点，避免只背单词不会造句。",
             "steps": [
-              "先用自己的话解释「购物和问路对话」是什么意思，并圈出题目中的关键词。",
-              "再对照例题拆解步骤：题目条件、使用的方法、得到答案的依据。",
-              "最后做一道同类型变式题，订正时说出错因和下次检查点。"
+              "跟读单词或句型，确认发音、词义和中文情境。",
+              "用“主语+动词+其他信息”的完整句子表达，不漏be动词或助动词。",
+              "把新词放进一问一答或生活化小对话中复用。"
             ]
           },
           "examples": [
             {
-              "question": "Example: Make one sentence or short answer using the key point “购物和问路对话”.",
-              "answer": "Use the target word/pattern correctly, keep the sentence complete, and check spelling or word order.",
-              "analysis": "英语知识点要在句子里使用。先确认意思，再检查结构，最后朗读确认是否自然。",
-              "difficulty": "easy",
-              "type": "sentence_making"
-            },
-            {
-              "question": "Practice: Explain when to use “购物和问路对话” and give one example.",
-              "answer": "答案可不唯一；需要说明使用场景，并给出一个语法/拼写正确的例句。",
-              "analysis": "能说出使用场景并造句，说明孩子已经从记忆进入应用。",
+              "question": "Choose the best response: Teacher: “Open your book, please.” Student: “____”",
+              "answer": "OK./Yes, Miss Li.",
+              "analysis": "A classroom instruction asks you to do something. A polite short response such as “OK” is suitable.",
               "difficulty": "medium",
               "type": "short_answer"
             }

@@ -1,9 +1,9 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.08-full",
+  "catalogVersion": "2026.05.12-quality",
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-full-v1"
+    "promptVersion": "primary-school-cn-quality-examples-v2"
   },
   "locale": "zh-CN",
   "gradeRange": [
@@ -138,5 +138,5 @@
       "path": "g06/english.default.json"
     }
   ],
-  "updatedAt": "2026-05-08T00:00:00.000Z"
+  "updatedAt": "2026-05-12T00:00:00.000Z"
 }
