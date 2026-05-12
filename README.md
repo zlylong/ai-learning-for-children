@@ -1,6 +1,6 @@
 # AI Learning for Children
 
-面向手机浏览器的 AI 学习诊断 H5 Web 服务。当前版本先搭建清晰可启动的 H5 架构，不接入真实 AI API，不实现复杂业务。
+面向手机浏览器的 AI 学习诊断 H5 Web 服务。当前版本已形成“孩子档案 → 试卷/错题分析 → 知识点讲解 → 练习生成 → 掌握度更新”的闭环，支持 mock 与 OpenAI-compatible 模型档案配置；内置小学一至六年级语文、数学、英语 364 个标准知识点，并在统一练习入口先展示讲解和例题，再生成练习。
 
 ## 技术栈
 
@@ -67,6 +67,8 @@ API：
 - `GET /api/settings/ai`：管理员读取 AI 对接配置的脱敏信息。
 - `PUT /api/settings/ai`：管理员保存 AI 对接配置，API Key 不会在响应中回显。
 - `POST /api/settings/ai/test`：管理员测试 mock 或 OpenAI-compatible 模型服务连通性。
+- `GET /api/learning-points?grade=&subject=&version=&view=`：读取标准学习要点 catalog；`view=points` 时返回扁平知识点列表，并保留讲解、例题、关键概念、常见错误和掌握标准。
+- `GET /api/children/[id]/knowledge-points?subject=&grade=`：读取孩子知识点掌握状态；无记录时回退标准目录，也支持 `grade` 覆盖用于跨年级预习/复习。
 
 字段：`name`、`age`、`grade`、`province`、`city`、`textbookVersion`。表单校验由 Zod + React Hook Form 提供。
 
@@ -95,9 +97,15 @@ API：
 内容质量约定：
 
 - `explanation` 必须用“为什么学 / 怎么学 / 可执行步骤”解释知识点，不能只重复标题或写空泛口号。
-- `examples` 必须包含具体题干、明确答案和可复盘解析；禁止使用“遇到一道关于……的题”这类无法直接练习的占位文本。
+- `examples` 必须包含具体题干、明确答案和可复盘解析；禁止使用“遇到一道关于……的题”“读一段课文或短句……”等无法直接练习的占位文本。
 - 数学例题必须是具体计算、应用题、图形/统计/单位换算等真实题型；语文例题必须提供具体字词、句子、短文或表达任务；英语例题必须提供单词应用、句型构造、语法填空或对话场景。
-- `/h5/practice` 点击知识点会先展示上述讲解与例题，再进入 AI 生成练习。
+- 质量校验时需要抽查 `/h5/practice` 的知识点弹层：孩子应能在同一个弹层中看到“为什么学 / 怎么学 / 学习步骤 / 例题题干 / 参考答案 / 解析 / 常见错误 / 掌握标准”。
+
+示例：
+
+- 数学「100以内数的认识」：`填空：48里面有（ ）个十和（ ）个一；它比50少（ ）。` 答案 `4，8，2。`，解析说明十位、个位与 `50-48`。
+- 语文「多音字辨析」：用“我把种子种在花盆里”区分 `zhǒng` 与 `zhòng`，解析说明名词/动词语境。
+- 英语「be动词am is are」：`I ___ happy. She ___ my sister. They ___ students.` 答案 `am; is; are.`，解析说明主语与 be 动词搭配。
 
 详细生成规范见 `docs/learning-point-catalog-v1.md`。后续细化教材版本时，只需新增 `{subject}.{version}.json` 并更新 manifest。
 
@@ -156,6 +164,15 @@ npm run test             # Vitest 单元测试
 npm run prisma:generate  # 生成 Prisma Client
 npm run prisma:migrate   # 本地开发迁移
 ```
+
+测试环境（192.168.20.155）常用操作：
+
+```bash
+systemctl restart ai-learning-test.service
+systemctl is-active ai-learning-test.service
+```
+
+发布或数据更新后建议至少执行：`npm run typecheck && npm run lint && npm run test`、`npm run build`，并在浏览器访问 `http://192.168.20.155:8080/h5/practice?childId=demo-child-1` 抽查知识点讲解弹层。
 
 ## AI Provider 抽象
 
