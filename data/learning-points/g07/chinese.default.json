@@ -1,0 +1,949 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.12-junior",
+  "subject": {
+    "code": "chinese",
+    "name": "语文"
+  },
+  "grade": {
+    "code": "G07",
+    "name": "七年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-junior-cn-quality-examples-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_chinese_g07_001",
+      "title": "现代文阅读",
+      "order": 1,
+      "description": "七年级语文「现代文阅读」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g07_001_001",
+          "title": "记叙文六要素",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「记叙文六要素」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "记叙文六要素"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「记叙文六要素」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「记叙文六要素」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「记叙文六要素」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "内容概括",
+            "人物情感",
+            "表达效果"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「记叙文六要素」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "记叙文六要素是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "概括语段：放学后，李华留下来擦黑板、整理图书角，直到教室变得整洁才离开。请概括人物特点。",
+              "answer": "李华认真负责、热爱集体。",
+              "analysis": "概括人物特点要依据具体事件。留下打扫和整理图书角说明他愿意为班级服务，做事负责。",
+              "difficulty": "medium",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「记叙文六要素」的核心概念或答题依据",
+            "能独立完成「记叙文六要素」基础题并写出关键步骤",
+            "能发现并订正「记叙文六要素」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "记叙文六要素"
+          ]
+        },
+        {
+          "id": "kp_chinese_g07_001_002",
+          "title": "概括文章主要内容",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「概括文章主要内容」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "概括文章主要内容"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「概括文章主要内容」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「概括文章主要内容」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「概括文章主要内容」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「概括文章主要内容」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "概括文章主要内容是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "概括语段：放学后，李华留下来擦黑板、整理图书角，直到教室变得整洁才离开。请概括人物特点。",
+              "answer": "李华认真负责、热爱集体。",
+              "analysis": "概括人物特点要依据具体事件。留下打扫和整理图书角说明他愿意为班级服务，做事负责。",
+              "difficulty": "medium",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「概括文章主要内容」的核心概念或答题依据",
+            "能独立完成「概括文章主要内容」基础题并写出关键步骤",
+            "能发现并订正「概括文章主要内容」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "概括文章主要内容"
+          ]
+        },
+        {
+          "id": "kp_chinese_g07_001_003",
+          "title": "人物描写方法",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「人物描写方法」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "人物描写方法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「人物描写方法」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「人物描写方法」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「人物描写方法」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "内容概括",
+            "人物情感",
+            "表达效果"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「人物描写方法」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "人物描写方法是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "句子“他把仅有的面包悄悄塞给了身边的小女孩”表现了人物怎样的品质？",
+              "answer": "表现了人物善良、富有同情心、愿意帮助弱者的品质。",
+              "analysis": "动作“悄悄塞给”说明他不张扬；“仅有的面包”突出帮助别人时自己也很困难，因此体现善良和无私。",
+              "difficulty": "medium",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「人物描写方法」的核心概念或答题依据",
+            "能独立完成「人物描写方法」基础题并写出关键步骤",
+            "能发现并订正「人物描写方法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "人物描写方法"
+          ]
+        },
+        {
+          "id": "kp_chinese_g07_001_004",
+          "title": "景物描写与作用",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「景物描写与作用」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "景物描写与作用"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「景物描写与作用」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「景物描写与作用」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「景物描写与作用」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "内容概括",
+            "人物情感",
+            "表达效果"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「景物描写与作用」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "景物描写与作用是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "概括语段：放学后，李华留下来擦黑板、整理图书角，直到教室变得整洁才离开。请概括人物特点。",
+              "answer": "李华认真负责、热爱集体。",
+              "analysis": "概括人物特点要依据具体事件。留下打扫和整理图书角说明他愿意为班级服务，做事负责。",
+              "difficulty": "medium",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「景物描写与作用」的核心概念或答题依据",
+            "能独立完成「景物描写与作用」基础题并写出关键步骤",
+            "能发现并订正「景物描写与作用」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "景物描写与作用"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g07_002",
+      "title": "文言古诗",
+      "order": 2,
+      "description": "七年级语文「文言古诗」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g07_002_001",
+          "title": "修辞手法赏析",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「修辞手法赏析」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "修辞手法赏析"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「修辞手法赏析」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「修辞手法赏析」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「修辞手法赏析」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「修辞手法赏析」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "修辞手法赏析是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "概括语段：放学后，李华留下来擦黑板、整理图书角，直到教室变得整洁才离开。请概括人物特点。",
+              "answer": "李华认真负责、热爱集体。",
+              "analysis": "概括人物特点要依据具体事件。留下打扫和整理图书角说明他愿意为班级服务，做事负责。",
+              "difficulty": "medium",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「修辞手法赏析」的核心概念或答题依据",
+            "能独立完成「修辞手法赏析」基础题并写出关键步骤",
+            "能发现并订正「修辞手法赏析」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "修辞手法赏析"
+          ]
+        },
+        {
+          "id": "kp_chinese_g07_002_002",
+          "title": "病句辨析与修改",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「病句辨析与修改」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "病句辨析与修改"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「病句辨析与修改」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「病句辨析与修改」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「病句辨析与修改」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「病句辨析与修改」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "病句辨析与修改是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "概括语段：放学后，李华留下来擦黑板、整理图书角，直到教室变得整洁才离开。请概括人物特点。",
+              "answer": "李华认真负责、热爱集体。",
+              "analysis": "概括人物特点要依据具体事件。留下打扫和整理图书角说明他愿意为班级服务，做事负责。",
+              "difficulty": "medium",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「病句辨析与修改」的核心概念或答题依据",
+            "能独立完成「病句辨析与修改」基础题并写出关键步骤",
+            "能发现并订正「病句辨析与修改」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "病句辨析与修改"
+          ]
+        },
+        {
+          "id": "kp_chinese_g07_002_003",
+          "title": "文言实词积累",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「文言实词积累」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "文言实词积累"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「文言实词积累」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「文言实词积累」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「文言实词积累」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语境翻译",
+            "意象情感",
+            "依据表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「文言实词积累」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "文言实词积累是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "翻译句子：“学而时习之，不亦说乎？”并指出“说”的通假义。",
+              "answer": "学习了知识并按时温习，不也是很愉快的吗？“说”通“悦”，意思是愉快。",
+              "analysis": "文言翻译要逐字落实，“时”是按时，“习”是温习；“说”在这里不是说话，而是通假字“悦”。",
+              "difficulty": "medium",
+              "type": "short_answer"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「文言实词积累」的核心概念或答题依据",
+            "能独立完成「文言实词积累」基础题并写出关键步骤",
+            "能发现并订正「文言实词积累」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "文言实词积累"
+          ]
+        },
+        {
+          "id": "kp_chinese_g07_002_004",
+          "title": "文言句子翻译",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「文言句子翻译」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "文言句子翻译"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「文言句子翻译」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「文言句子翻译」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「文言句子翻译」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语境翻译",
+            "意象情感",
+            "依据表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「文言句子翻译」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "文言句子翻译是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "翻译句子：“学而时习之，不亦说乎？”并指出“说”的通假义。",
+              "answer": "学习了知识并按时温习，不也是很愉快的吗？“说”通“悦”，意思是愉快。",
+              "analysis": "文言翻译要逐字落实，“时”是按时，“习”是温习；“说”在这里不是说话，而是通假字“悦”。",
+              "difficulty": "medium",
+              "type": "short_answer"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「文言句子翻译」的核心概念或答题依据",
+            "能独立完成「文言句子翻译」基础题并写出关键步骤",
+            "能发现并订正「文言句子翻译」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "文言句子翻译"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_chinese_g07_003",
+      "title": "综合表达",
+      "order": 3,
+      "description": "七年级语文「综合表达」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_chinese_g07_003_001",
+          "title": "古诗意象理解",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「古诗意象理解」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "古诗意象理解"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「古诗意象理解」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「古诗意象理解」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「古诗意象理解」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语境翻译",
+            "意象情感",
+            "依据表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「古诗意象理解」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "古诗意象理解是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "“海内存知己，天涯若比邻”表达了诗人怎样的情感？",
+              "answer": "表达了诗人对朋友的宽慰和真挚深厚的友情。",
+              "analysis": "“天涯若比邻”把远隔天涯写得像近邻一样，说明真正的知己不会因距离而疏远，情感昂扬豁达。",
+              "difficulty": "medium",
+              "type": "short_answer"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「古诗意象理解」的核心概念或答题依据",
+            "能独立完成「古诗意象理解」基础题并写出关键步骤",
+            "能发现并订正「古诗意象理解」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "古诗意象理解"
+          ]
+        },
+        {
+          "id": "kp_chinese_g07_003_002",
+          "title": "名著阅读人物分析",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「名著阅读人物分析」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "名著阅读人物分析"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「名著阅读人物分析」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「名著阅读人物分析」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「名著阅读人物分析」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "内容概括",
+            "人物情感",
+            "表达效果"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「名著阅读人物分析」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "名著阅读人物分析是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "句子“他把仅有的面包悄悄塞给了身边的小女孩”表现了人物怎样的品质？",
+              "answer": "表现了人物善良、富有同情心、愿意帮助弱者的品质。",
+              "analysis": "动作“悄悄塞给”说明他不张扬；“仅有的面包”突出帮助别人时自己也很困难，因此体现善良和无私。",
+              "difficulty": "medium",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「名著阅读人物分析」的核心概念或答题依据",
+            "能独立完成「名著阅读人物分析」基础题并写出关键步骤",
+            "能发现并订正「名著阅读人物分析」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "名著阅读人物分析"
+          ]
+        },
+        {
+          "id": "kp_chinese_g07_003_003",
+          "title": "材料信息提取",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「材料信息提取」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "材料信息提取"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「材料信息提取」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「材料信息提取」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「材料信息提取」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「材料信息提取」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "材料信息提取是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "请为“珍惜时间”这个主题写一个作文中心句。",
+              "answer": "我们应当珍惜每一分每一秒，把有限的时间用在真正有意义的事情上。",
+              "analysis": "中心句要观点明确，并能统领后文选材。这个句子既点出“珍惜时间”，又说明应如何行动。",
+              "difficulty": "medium",
+              "type": "sentence_making"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「材料信息提取」的核心概念或答题依据",
+            "能独立完成「材料信息提取」基础题并写出关键步骤",
+            "能发现并订正「材料信息提取」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "材料信息提取"
+          ]
+        },
+        {
+          "id": "kp_chinese_g07_003_004",
+          "title": "作文审题立意",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级语文「作文审题立意」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "作文审题立意"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「作文审题立意」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「作文审题立意」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「作文审题立意」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "审题立意",
+            "结构组织",
+            "语言得体"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「作文审题立意」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "作文审题立意是七年级语文阅读与表达的核心能力，能帮助学生读懂文本层次、理解作者意图，并在作文和口语表达中准确呈现观点。",
+            "howToLearn": "把知识点放回具体语段中学习：先圈关键词句，再分析表达方法或结构作用，最后用规范答题句式表达。",
+            "steps": [
+              "通读材料，圈出与题目相关的关键词、句子或情节。",
+              "结合上下文分析含义、作用、情感或论证关系。",
+              "用“内容+方法+效果/情感”的结构组织答案，并检查是否扣题。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "请为“珍惜时间”这个主题写一个作文中心句。",
+              "answer": "我们应当珍惜每一分每一秒，把有限的时间用在真正有意义的事情上。",
+              "analysis": "中心句要观点明确，并能统领后文选材。这个句子既点出“珍惜时间”，又说明应如何行动。",
+              "difficulty": "medium",
+              "type": "sentence_making"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「作文审题立意」的核心概念或答题依据",
+            "能独立完成「作文审题立意」基础题并写出关键步骤",
+            "能发现并订正「作文审题立意」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "reading_comprehension",
+              "short_answer",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "语文",
+            "作文审题立意"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-12T00:00:00.000Z"
+}

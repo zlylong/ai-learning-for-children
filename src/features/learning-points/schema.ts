@@ -1,7 +1,7 @@
 import { z } from 'zod';
 
 export const learningSubjectCodeSchema = z.enum(['chinese', 'math', 'english']);
-export const learningGradeCodeSchema = z.enum(['G01', 'G02', 'G03', 'G04', 'G05', 'G06']);
+export const learningGradeCodeSchema = z.enum(['G01', 'G02', 'G03', 'G04', 'G05', 'G06', 'G07', 'G08', 'G09']);
 export const learningPointSchemaVersion = 'learning-point-catalog/v1' as const;
 
 export const learningPointSubjectSchema = z.object({
@@ -35,7 +35,7 @@ export const learningPointExampleSchema = z.object({
 });
 
 export const learningKnowledgePointSchema = z.object({
-  id: z.string().trim().regex(/^kp_(chinese|math|english)_g0[1-6]_\d{3}_\d{3}$/),
+  id: z.string().trim().regex(/^kp_(chinese|math|english)_g0[1-9]_\d{3}_\d{3}$/),
   title: z.string().trim().min(1),
   order: z.number().int().positive(),
   level: z.enum(['foundation', 'core', 'advanced']).default('core'),
@@ -63,7 +63,7 @@ export const learningKnowledgePointSchema = z.object({
 });
 
 export const learningPointChapterSchema = z.object({
-  id: z.string().trim().regex(/^ch_(chinese|math|english)_g0[1-6]_\d{3}$/),
+  id: z.string().trim().regex(/^ch_(chinese|math|english)_g0[1-9]_\d{3}$/),
   title: z.string().trim().min(1),
   order: z.number().int().positive(),
   description: z.string().trim().optional(),

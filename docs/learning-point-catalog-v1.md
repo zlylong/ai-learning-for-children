@@ -1,19 +1,19 @@
 # LearningPointCatalog v1
 
-`data/learning-points` 保存系统可直接读取的标准学习要点文件。用于维护小学一至六年级语文、数学、英语知识点，并供 H5/API 在无数据库或无孩子错题记录时实时读取。当前默认目录版本为 `2026.05.12-quality`，重点保证每个知识点都有可直接展示、可直接练习的讲解和例题。
+`data/learning-points` 保存系统可直接读取的标准学习要点文件。用于维护小学一年级至初中三年级语文、数学、英语知识点，并供 H5/API 在无数据库或无孩子错题记录时实时读取。当前默认目录版本为 `2026.05.12-junior`，重点保证每个知识点都有可直接展示、可直接练习的讲解和例题。
 
 ## 文件布局
 
 ```text
 data/learning-points/
   manifest.json
-  g01/ ... g06/
+  g01/ ... g09/
     chinese.default.json
     math.default.json
     english.default.json
 ```
 
-当前已覆盖 `g01` 到 `g06` 的默认文件；教材版本文件命名为 `{subject}.{version}.json`，如 `math.人教版.json`。系统会优先查请求版本，找不到时回退 `default`。
+当前已覆盖 `g01` 到 `g09` 的默认文件；教材版本文件命名为 `{subject}.{version}.json`，如 `math.人教版.json`。系统会优先查请求版本，找不到时回退 `default`。
 
 ## 读取 API
 
@@ -28,7 +28,7 @@ data/learning-points/
 
 1. `schemaVersion` 固定为 `learning-point-catalog/v1`。
 2. `subject.code` 只能是 `chinese`、`math`、`english`。
-3. `grade.code` 只能是 `G01` 到 `G06`。
+3. `grade.code` 只能是 `G01` 到 `G09`。
 4. `id` 使用稳定格式：`kp_{subject}_{grade}_{chapterOrder}_{pointOrder}`，例如 `kp_math_g03_001_001`。
 5. 每个知识点必须包含 `summary`、`objectives`、`commonMistakes`、`explanation`、`examples`、`masteryCriteria`、`practiceProfile`。
 6. `explanation` 用于 H5 端“先理解再练习”的知识点讲解，必须包含：
@@ -66,7 +66,7 @@ data/learning-points/
 
 ## 当前覆盖范围
 
-本仓库已内置小学一至六年级默认学习要点，共计 364 个，当前目录版本为 `2026.05.12-quality`。本版本已为全部知识点补齐结构化讲解和可直接练习的具体例题：
+本仓库已内置小学一年级至初中三年级默认学习要点，共计 474 个，当前目录版本为 `2026.05.12-junior`。本版本已为全部知识点补齐结构化讲解和可直接练习的具体例题：
 
 - G01 math: 19 个知识点
 - G01 chinese: 22 个知识点
@@ -86,3 +86,12 @@ data/learning-points/
 - G06 math: 29 个知识点
 - G06 chinese: 22 个知识点
 - G06 english: 16 个知识点
+- G07 math: 13 个知识点
+- G07 chinese: 12 个知识点
+- G07 english: 12 个知识点
+- G08 math: 12 个知识点
+- G08 chinese: 12 个知识点
+- G08 english: 12 个知识点
+- G09 math: 13 个知识点
+- G09 chinese: 12 个知识点
+- G09 english: 12 个知识点

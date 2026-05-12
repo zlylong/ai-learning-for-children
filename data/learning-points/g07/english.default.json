@@ -1,0 +1,949 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.12-junior",
+  "subject": {
+    "code": "english",
+    "name": "英语"
+  },
+  "grade": {
+    "code": "G07",
+    "name": "七年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-junior-cn-quality-examples-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_english_g07_001",
+      "title": "词汇语法",
+      "order": 1,
+      "description": "七年级英语「词汇语法」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g07_001_001",
+          "title": "音标与拼读规则",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「音标与拼读规则」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "音标与拼读规则"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「音标与拼读规则」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「音标与拼读规则」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「音标与拼读规则」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「音标与拼读规则」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "音标与拼读规则是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「音标与拼读规则」的核心概念或答题依据",
+            "能独立完成「音标与拼读规则」基础题并写出关键步骤",
+            "能发现并订正「音标与拼读规则」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "音标与拼读规则"
+          ]
+        },
+        {
+          "id": "kp_english_g07_001_002",
+          "title": "七年级核心词汇运用",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「七年级核心词汇运用」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "七年级核心词汇运用"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「七年级核心词汇运用」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「七年级核心词汇运用」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「七年级核心词汇运用」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「七年级核心词汇运用」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "七年级核心词汇运用是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「七年级核心词汇运用」的核心概念或答题依据",
+            "能独立完成「七年级核心词汇运用」基础题并写出关键步骤",
+            "能发现并订正「七年级核心词汇运用」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "七年级核心词汇运用"
+          ]
+        },
+        {
+          "id": "kp_english_g07_001_003",
+          "title": "be动词与人称代词",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「be动词与人称代词」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "be动词与人称代词"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「be动词与人称代词」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「be动词与人称代词」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「be动词与人称代词」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「be动词与人称代词」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "be动词与人称代词是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「be动词与人称代词」的核心概念或答题依据",
+            "能独立完成「be动词与人称代词」基础题并写出关键步骤",
+            "能发现并订正「be动词与人称代词」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "be动词与人称代词"
+          ]
+        },
+        {
+          "id": "kp_english_g07_001_004",
+          "title": "一般现在时",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「一般现在时」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "一般现在时"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「一般现在时」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「一般现在时」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「一般现在时」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「一般现在时」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "一般现在时是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「一般现在时」的核心概念或答题依据",
+            "能独立完成「一般现在时」基础题并写出关键步骤",
+            "能发现并订正「一般现在时」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "一般现在时"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g07_002",
+      "title": "句型语篇",
+      "order": 2,
+      "description": "七年级英语「句型语篇」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g07_002_001",
+          "title": "名词单复数与可数不可数",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「名词单复数与可数不可数」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "名词单复数与可数不可数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「名词单复数与可数不可数」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「名词单复数与可数不可数」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「名词单复数与可数不可数」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「名词单复数与可数不可数」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "名词单复数与可数不可数是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「名词单复数与可数不可数」的核心概念或答题依据",
+            "能独立完成「名词单复数与可数不可数」基础题并写出关键步骤",
+            "能发现并订正「名词单复数与可数不可数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "名词单复数与可数不可数"
+          ]
+        },
+        {
+          "id": "kp_english_g07_002_002",
+          "title": "冠词a an the",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「冠词a an the」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "冠词a an the"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「冠词a an the」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「冠词a an the」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「冠词a an the」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「冠词a an the」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "冠词a an the是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「冠词a an the」的核心概念或答题依据",
+            "能独立完成「冠词a an the」基础题并写出关键步骤",
+            "能发现并订正「冠词a an the」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "冠词a an the"
+          ]
+        },
+        {
+          "id": "kp_english_g07_002_003",
+          "title": "方位介词",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「方位介词」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "方位介词"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「方位介词」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「方位介词」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「方位介词」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「方位介词」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "方位介词是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「方位介词」的核心概念或答题依据",
+            "能独立完成「方位介词」基础题并写出关键步骤",
+            "能发现并订正「方位介词」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "方位介词"
+          ]
+        },
+        {
+          "id": "kp_english_g07_002_004",
+          "title": "there be句型",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「there be句型」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "there be句型"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「there be句型」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「there be句型」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「there be句型」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「there be句型」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "there be句型是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「there be句型」的核心概念或答题依据",
+            "能独立完成「there be句型」基础题并写出关键步骤",
+            "能发现并订正「there be句型」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "there be句型"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g07_003",
+      "title": "阅读写作",
+      "order": 3,
+      "description": "七年级英语「阅读写作」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g07_003_001",
+          "title": "一般疑问句与特殊疑问句",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「一般疑问句与特殊疑问句」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "一般疑问句与特殊疑问句"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「一般疑问句与特殊疑问句」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「一般疑问句与特殊疑问句」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「一般疑问句与特殊疑问句」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「一般疑问句与特殊疑问句」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "一般疑问句与特殊疑问句是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「一般疑问句与特殊疑问句」的核心概念或答题依据",
+            "能独立完成「一般疑问句与特殊疑问句」基础题并写出关键步骤",
+            "能发现并订正「一般疑问句与特殊疑问句」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "一般疑问句与特殊疑问句"
+          ]
+        },
+        {
+          "id": "kp_english_g07_003_002",
+          "title": "祈使句与课堂表达",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「祈使句与课堂表达」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "祈使句与课堂表达"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「祈使句与课堂表达」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「祈使句与课堂表达」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「祈使句与课堂表达」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "审题立意",
+            "结构组织",
+            "语言得体"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「祈使句与课堂表达」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "祈使句与课堂表达是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「祈使句与课堂表达」的核心概念或答题依据",
+            "能独立完成「祈使句与课堂表达」基础题并写出关键步骤",
+            "能发现并订正「祈使句与课堂表达」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "祈使句与课堂表达"
+          ]
+        },
+        {
+          "id": "kp_english_g07_003_003",
+          "title": "阅读主旨与细节",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「阅读主旨与细节」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "阅读主旨与细节"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「阅读主旨与细节」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「阅读主旨与细节」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「阅读主旨与细节」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「阅读主旨与细节」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "阅读主旨与细节是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Read: “Tom missed the bus, so he ran to school.” Why did Tom run to school?",
+              "answer": "Because he missed the bus.",
+              "analysis": "The reason is directly before “so”. “Missed the bus” caused “ran to school”, so the answer should use “because”.",
+              "difficulty": "medium",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「阅读主旨与细节」的核心概念或答题依据",
+            "能独立完成「阅读主旨与细节」基础题并写出关键步骤",
+            "能发现并订正「阅读主旨与细节」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "阅读主旨与细节"
+          ]
+        },
+        {
+          "id": "kp_english_g07_003_004",
+          "title": "看图写句",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级英语「看图写句」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "看图写句"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「看图写句」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「看图写句」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「看图写句」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「看图写句」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "看图写句是七年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Write one sentence to describe a chart: 60% of students choose reading as their favorite activity.",
+              "answer": "According to the chart, 60% of the students choose reading as their favorite activity.",
+              "analysis": "A chart sentence should mention the data and the topic clearly. “According to the chart” is a useful opening for data description.",
+              "difficulty": "medium",
+              "type": "sentence_making"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「看图写句」的核心概念或答题依据",
+            "能独立完成「看图写句」基础题并写出关键步骤",
+            "能发现并订正「看图写句」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "英语",
+            "看图写句"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-12T00:00:00.000Z"
+}

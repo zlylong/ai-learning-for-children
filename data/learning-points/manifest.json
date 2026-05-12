@@ -1,9 +1,9 @@
 {
   "schemaVersion": "learning-point-catalog/v1",
-  "catalogVersion": "2026.05.12-quality",
+  "catalogVersion": "2026.05.12-junior",
   "generatedBy": {
     "agent": "learning",
-    "promptVersion": "primary-school-cn-quality-examples-v2"
+    "promptVersion": "primary-junior-cn-quality-examples-v1"
   },
   "locale": "zh-CN",
   "gradeRange": [
@@ -12,7 +12,10 @@
     "G03",
     "G04",
     "G05",
-    "G06"
+    "G06",
+    "G07",
+    "G08",
+    "G09"
   ],
   "subjects": [
     {
@@ -136,6 +139,60 @@
       "subject": "english",
       "version": "default",
       "path": "g06/english.default.json"
+    },
+    {
+      "grade": "G07",
+      "subject": "math",
+      "version": "default",
+      "path": "g07/math.default.json"
+    },
+    {
+      "grade": "G07",
+      "subject": "chinese",
+      "version": "default",
+      "path": "g07/chinese.default.json"
+    },
+    {
+      "grade": "G07",
+      "subject": "english",
+      "version": "default",
+      "path": "g07/english.default.json"
+    },
+    {
+      "grade": "G08",
+      "subject": "math",
+      "version": "default",
+      "path": "g08/math.default.json"
+    },
+    {
+      "grade": "G08",
+      "subject": "chinese",
+      "version": "default",
+      "path": "g08/chinese.default.json"
+    },
+    {
+      "grade": "G08",
+      "subject": "english",
+      "version": "default",
+      "path": "g08/english.default.json"
+    },
+    {
+      "grade": "G09",
+      "subject": "math",
+      "version": "default",
+      "path": "g09/math.default.json"
+    },
+    {
+      "grade": "G09",
+      "subject": "chinese",
+      "version": "default",
+      "path": "g09/chinese.default.json"
+    },
+    {
+      "grade": "G09",
+      "subject": "english",
+      "version": "default",
+      "path": "g09/english.default.json"
     }
   ],
   "updatedAt": "2026-05-12T00:00:00.000Z"

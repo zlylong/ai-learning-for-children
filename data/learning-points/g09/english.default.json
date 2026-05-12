@@ -1,0 +1,961 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.12-junior",
+  "subject": {
+    "code": "english",
+    "name": "英语"
+  },
+  "grade": {
+    "code": "G09",
+    "name": "九年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-junior-cn-quality-examples-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_english_g09_001",
+      "title": "词汇语法",
+      "order": 1,
+      "description": "九年级英语「词汇语法」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g09_001_001",
+          "title": "现在完成时",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「现在完成时」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "现在完成时"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「现在完成时」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「现在完成时」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「现在完成时」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「现在完成时」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "现在完成时是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Complete the sentence: I ____ already ____ (finish) my homework.",
+              "answer": "have; finished.",
+              "analysis": "“already” often appears with the present perfect tense. The structure is “have/has + past participle”, so the answer is “have finished”.",
+              "difficulty": "hard",
+              "type": "fill_blank"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「现在完成时」的核心概念或答题依据",
+            "能独立完成「现在完成时」基础题并写出关键步骤",
+            "能发现并订正「现在完成时」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "现在完成时"
+          ]
+        },
+        {
+          "id": "kp_english_g09_001_002",
+          "title": "被动语态",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「被动语态」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "被动语态"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「被动语态」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「被动语态」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「被动语态」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「被动语态」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "被动语态是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Change into passive voice: People grow tea in Hangzhou.",
+              "answer": "Tea is grown in Hangzhou.",
+              "analysis": "The object “tea” becomes the subject. Simple present passive uses “am/is/are + past participle”; “grow” becomes “grown”.",
+              "difficulty": "hard",
+              "type": "short_answer"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「被动语态」的核心概念或答题依据",
+            "能独立完成「被动语态」基础题并写出关键步骤",
+            "能发现并订正「被动语态」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "被动语态"
+          ]
+        },
+        {
+          "id": "kp_english_g09_001_003",
+          "title": "定语从句初步",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「定语从句初步」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "定语从句初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「定语从句初步」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「定语从句初步」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「定语从句初步」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「定语从句初步」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "定语从句初步是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Choose the correct order: Could you tell me ____? A. where is the library B. where the library is",
+              "answer": "B. where the library is.",
+              "analysis": "In an object clause, use statement order, not question order. So “where the library is” is correct.",
+              "difficulty": "hard",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「定语从句初步」的核心概念或答题依据",
+            "能独立完成「定语从句初步」基础题并写出关键步骤",
+            "能发现并订正「定语从句初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "定语从句初步"
+          ]
+        },
+        {
+          "id": "kp_english_g09_001_004",
+          "title": "宾语从句综合",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「宾语从句综合」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "宾语从句综合"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「宾语从句综合」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「宾语从句综合」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「宾语从句综合」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「宾语从句综合」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "宾语从句综合是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Choose the correct order: Could you tell me ____? A. where is the library B. where the library is",
+              "answer": "B. where the library is.",
+              "analysis": "In an object clause, use statement order, not question order. So “where the library is” is correct.",
+              "difficulty": "hard",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「宾语从句综合」的核心概念或答题依据",
+            "能独立完成「宾语从句综合」基础题并写出关键步骤",
+            "能发现并订正「宾语从句综合」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "宾语从句综合"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g09_002",
+      "title": "句型语篇",
+      "order": 2,
+      "description": "九年级英语「句型语篇」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g09_002_001",
+          "title": "状语从句综合",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「状语从句综合」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "状语从句综合"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「状语从句综合」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「状语从句综合」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「状语从句综合」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「状语从句综合」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "状语从句综合是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Choose the correct order: Could you tell me ____? A. where is the library B. where the library is",
+              "answer": "B. where the library is.",
+              "analysis": "In an object clause, use statement order, not question order. So “where the library is” is correct.",
+              "difficulty": "hard",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「状语从句综合」的核心概念或答题依据",
+            "能独立完成「状语从句综合」基础题并写出关键步骤",
+            "能发现并订正「状语从句综合」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "状语从句综合"
+          ]
+        },
+        {
+          "id": "kp_english_g09_002_002",
+          "title": "非谓语动词常见搭配",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「非谓语动词常见搭配」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "非谓语动词常见搭配"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「非谓语动词常见搭配」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「非谓语动词常见搭配」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「非谓语动词常见搭配」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「非谓语动词常见搭配」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "非谓语动词常见搭配是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "hard",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「非谓语动词常见搭配」的核心概念或答题依据",
+            "能独立完成「非谓语动词常见搭配」基础题并写出关键步骤",
+            "能发现并订正「非谓语动词常见搭配」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "非谓语动词常见搭配"
+          ]
+        },
+        {
+          "id": "kp_english_g09_002_003",
+          "title": "情景交际综合",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「情景交际综合」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "情景交际综合"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「情景交际综合」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「情景交际综合」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「情景交际综合」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「情景交际综合」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "情景交际综合是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "hard",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「情景交际综合」的核心概念或答题依据",
+            "能独立完成「情景交际综合」基础题并写出关键步骤",
+            "能发现并订正「情景交际综合」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "情景交际综合"
+          ]
+        },
+        {
+          "id": "kp_english_g09_002_004",
+          "title": "阅读主旨推断与标题",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「阅读主旨推断与标题」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "阅读主旨推断与标题"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「阅读主旨推断与标题」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「阅读主旨推断与标题」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「阅读主旨推断与标题」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「阅读主旨推断与标题」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "阅读主旨推断与标题是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Read: “Tom missed the bus, so he ran to school.” Why did Tom run to school?",
+              "answer": "Because he missed the bus.",
+              "analysis": "The reason is directly before “so”. “Missed the bus” caused “ran to school”, so the answer should use “because”.",
+              "difficulty": "hard",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「阅读主旨推断与标题」的核心概念或答题依据",
+            "能独立完成「阅读主旨推断与标题」基础题并写出关键步骤",
+            "能发现并订正「阅读主旨推断与标题」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "阅读主旨推断与标题"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g09_003",
+      "title": "阅读写作",
+      "order": 3,
+      "description": "九年级英语「阅读写作」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g09_003_001",
+          "title": "阅读词义猜测",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「阅读词义猜测」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "阅读词义猜测"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「阅读词义猜测」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「阅读词义猜测」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「阅读词义猜测」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「阅读词义猜测」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "阅读词义猜测是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Read: “Tom missed the bus, so he ran to school.” Why did Tom run to school?",
+              "answer": "Because he missed the bus.",
+              "analysis": "The reason is directly before “so”. “Missed the bus” caused “ran to school”, so the answer should use “because”.",
+              "difficulty": "hard",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「阅读词义猜测」的核心概念或答题依据",
+            "能独立完成「阅读词义猜测」基础题并写出关键步骤",
+            "能发现并订正「阅读词义猜测」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "阅读词义猜测"
+          ]
+        },
+        {
+          "id": "kp_english_g09_003_002",
+          "title": "任务型阅读信息转换",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「任务型阅读信息转换」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "任务型阅读信息转换"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「任务型阅读信息转换」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「任务型阅读信息转换」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「任务型阅读信息转换」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「任务型阅读信息转换」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "任务型阅读信息转换是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Read: “Tom missed the bus, so he ran to school.” Why did Tom run to school?",
+              "answer": "Because he missed the bus.",
+              "analysis": "The reason is directly before “so”. “Missed the bus” caused “ran to school”, so the answer should use “because”.",
+              "difficulty": "hard",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「任务型阅读信息转换」的核心概念或答题依据",
+            "能独立完成「任务型阅读信息转换」基础题并写出关键步骤",
+            "能发现并订正「任务型阅读信息转换」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "任务型阅读信息转换"
+          ]
+        },
+        {
+          "id": "kp_english_g09_003_003",
+          "title": "中考书面表达结构",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「中考书面表达结构」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "中考书面表达结构"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「中考书面表达结构」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「中考书面表达结构」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「中考书面表达结构」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "审题立意",
+            "结构组织",
+            "语言得体"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「中考书面表达结构」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "中考书面表达结构是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "hard",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「中考书面表达结构」的核心概念或答题依据",
+            "能独立完成「中考书面表达结构」基础题并写出关键步骤",
+            "能发现并订正「中考书面表达结构」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "中考书面表达结构"
+          ]
+        },
+        {
+          "id": "kp_english_g09_003_004",
+          "title": "图表作文表达",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级英语「图表作文表达」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "图表作文表达"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「图表作文表达」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「图表作文表达」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「图表作文表达」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "审题立意",
+            "结构组织",
+            "语言得体"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「图表作文表达」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "图表作文表达是九年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Write one sentence to describe a chart: 60% of students choose reading as their favorite activity.",
+              "answer": "According to the chart, 60% of the students choose reading as their favorite activity.",
+              "analysis": "A chart sentence should mention the data and the topic clearly. “According to the chart” is a useful opening for data description.",
+              "difficulty": "hard",
+              "type": "sentence_making"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「图表作文表达」的核心概念或答题依据",
+            "能独立完成「图表作文表达」基础题并写出关键步骤",
+            "能发现并订正「图表作文表达」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "英语",
+            "图表作文表达"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-12T00:00:00.000Z"
+}

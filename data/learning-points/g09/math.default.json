@@ -1,0 +1,1045 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.12-junior",
+  "subject": {
+    "code": "math",
+    "name": "数学"
+  },
+  "grade": {
+    "code": "G09",
+    "name": "九年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-junior-cn-quality-examples-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_math_g09_001",
+      "title": "数与式",
+      "order": 1,
+      "description": "九年级数学「数与式」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g09_001_001",
+          "title": "一元二次方程概念",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「一元二次方程概念」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "一元二次方程概念"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「一元二次方程概念」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「一元二次方程概念」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「一元二次方程概念」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「一元二次方程概念」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "一元二次方程概念是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "解方程：x²-5x+6=0，并说明两个根是否都满足原方程。",
+              "answer": "x=2 或 x=3，两个根都满足。",
+              "analysis": "因式分解得 (x-2)(x-3)=0，所以 x=2 或 x=3。代回原方程均等于0，说明两个根都满足。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「一元二次方程概念」的核心概念或答题依据",
+            "能独立完成「一元二次方程概念」基础题并写出关键步骤",
+            "能发现并订正「一元二次方程概念」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "一元二次方程概念"
+          ]
+        },
+        {
+          "id": "kp_math_g09_001_002",
+          "title": "配方法与公式法",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「配方法与公式法」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "配方法与公式法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「配方法与公式法」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「配方法与公式法」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「配方法与公式法」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「配方法与公式法」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "配方法与公式法是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "某书店一套资料原价80元，优惠后便宜了16元。优惠后的价格是多少？相当于打几折？",
+              "answer": "64元；八折。",
+              "analysis": "优惠价=80-16=64元。64÷80=0.8=80%，即按原价八折出售。",
+              "difficulty": "hard",
+              "type": "word_problem"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「配方法与公式法」的核心概念或答题依据",
+            "能独立完成「配方法与公式法」基础题并写出关键步骤",
+            "能发现并订正「配方法与公式法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "配方法与公式法"
+          ]
+        },
+        {
+          "id": "kp_math_g09_001_003",
+          "title": "一元二次方程应用",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「一元二次方程应用」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "一元二次方程应用"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「一元二次方程应用」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「一元二次方程应用」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「一元二次方程应用」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「一元二次方程应用」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "一元二次方程应用是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "解方程：x²-5x+6=0，并说明两个根是否都满足原方程。",
+              "answer": "x=2 或 x=3，两个根都满足。",
+              "analysis": "因式分解得 (x-2)(x-3)=0，所以 x=2 或 x=3。代回原方程均等于0，说明两个根都满足。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「一元二次方程应用」的核心概念或答题依据",
+            "能独立完成「一元二次方程应用」基础题并写出关键步骤",
+            "能发现并订正「一元二次方程应用」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "一元二次方程应用"
+          ]
+        },
+        {
+          "id": "kp_math_g09_001_004",
+          "title": "二次函数图象",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「二次函数图象」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "二次函数图象"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「二次函数图象」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「二次函数图象」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「二次函数图象」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「二次函数图象」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "二次函数图象是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "已知函数 y=2x-3。当 x=4 时，y 的值是多少？函数图象与 y 轴的交点坐标是什么？",
+              "answer": "y=5；与 y 轴交点是 (0,-3)。",
+              "analysis": "把 x=4 代入 y=2x-3，得 y=8-3=5。与 y 轴相交时 x=0，代入得 y=-3，所以交点为 (0,-3)。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「二次函数图象」的核心概念或答题依据",
+            "能独立完成「二次函数图象」基础题并写出关键步骤",
+            "能发现并订正「二次函数图象」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "二次函数图象"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g09_002",
+      "title": "方程函数",
+      "order": 2,
+      "description": "九年级数学「方程函数」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g09_002_001",
+          "title": "二次函数解析式",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「二次函数解析式」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "二次函数解析式"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「二次函数解析式」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「二次函数解析式」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「二次函数解析式」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「二次函数解析式」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "二次函数解析式是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "已知函数 y=2x-3。当 x=4 时，y 的值是多少？函数图象与 y 轴的交点坐标是什么？",
+              "answer": "y=5；与 y 轴交点是 (0,-3)。",
+              "analysis": "把 x=4 代入 y=2x-3，得 y=8-3=5。与 y 轴相交时 x=0，代入得 y=-3，所以交点为 (0,-3)。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「二次函数解析式」的核心概念或答题依据",
+            "能独立完成「二次函数解析式」基础题并写出关键步骤",
+            "能发现并订正「二次函数解析式」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "二次函数解析式"
+          ]
+        },
+        {
+          "id": "kp_math_g09_002_002",
+          "title": "二次函数应用",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「二次函数应用」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "二次函数应用"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「二次函数应用」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「二次函数应用」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「二次函数应用」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「二次函数应用」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "二次函数应用是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "已知函数 y=2x-3。当 x=4 时，y 的值是多少？函数图象与 y 轴的交点坐标是什么？",
+              "answer": "y=5；与 y 轴交点是 (0,-3)。",
+              "analysis": "把 x=4 代入 y=2x-3，得 y=8-3=5。与 y 轴相交时 x=0，代入得 y=-3，所以交点为 (0,-3)。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「二次函数应用」的核心概念或答题依据",
+            "能独立完成「二次函数应用」基础题并写出关键步骤",
+            "能发现并订正「二次函数应用」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "二次函数应用"
+          ]
+        },
+        {
+          "id": "kp_math_g09_002_003",
+          "title": "相似三角形判定",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「相似三角形判定」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "相似三角形判定"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「相似三角形判定」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「相似三角形判定」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「相似三角形判定」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "图形识别",
+            "性质判定",
+            "规范推理"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「相似三角形判定」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "相似三角形判定是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "直角三角形两条直角边分别为6 cm和8 cm，斜边是多少？如果另一个三角形三边为9、12、15，它们是否相似？",
+              "answer": "斜边10 cm；两个三角形相似。",
+              "analysis": "由勾股定理得斜边√(6²+8²)=10。另一三角形三边9、12、15分别是6、8、10的1.5倍，三边成比例，所以相似。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「相似三角形判定」的核心概念或答题依据",
+            "能独立完成「相似三角形判定」基础题并写出关键步骤",
+            "能发现并订正「相似三角形判定」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "相似三角形判定"
+          ]
+        },
+        {
+          "id": "kp_math_g09_002_004",
+          "title": "相似三角形应用",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「相似三角形应用」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "相似三角形应用"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「相似三角形应用」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「相似三角形应用」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「相似三角形应用」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "图形识别",
+            "性质判定",
+            "规范推理"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「相似三角形应用」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "相似三角形应用是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "直角三角形两条直角边分别为6 cm和8 cm，斜边是多少？如果另一个三角形三边为9、12、15，它们是否相似？",
+              "answer": "斜边10 cm；两个三角形相似。",
+              "analysis": "由勾股定理得斜边√(6²+8²)=10。另一三角形三边9、12、15分别是6、8、10的1.5倍，三边成比例，所以相似。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「相似三角形应用」的核心概念或答题依据",
+            "能独立完成「相似三角形应用」基础题并写出关键步骤",
+            "能发现并订正「相似三角形应用」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "相似三角形应用"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g09_003",
+      "title": "图形几何",
+      "order": 3,
+      "description": "九年级数学「图形几何」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g09_003_001",
+          "title": "锐角三角函数",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「锐角三角函数」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "锐角三角函数"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「锐角三角函数」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「锐角三角函数」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「锐角三角函数」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「锐角三角函数」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "锐角三角函数是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "已知函数 y=2x-3。当 x=4 时，y 的值是多少？函数图象与 y 轴的交点坐标是什么？",
+              "answer": "y=5；与 y 轴交点是 (0,-3)。",
+              "analysis": "把 x=4 代入 y=2x-3，得 y=8-3=5。与 y 轴相交时 x=0，代入得 y=-3，所以交点为 (0,-3)。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「锐角三角函数」的核心概念或答题依据",
+            "能独立完成「锐角三角函数」基础题并写出关键步骤",
+            "能发现并订正「锐角三角函数」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "锐角三角函数"
+          ]
+        },
+        {
+          "id": "kp_math_g09_003_002",
+          "title": "解直角三角形",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「解直角三角形」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "解直角三角形"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「解直角三角形」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「解直角三角形」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「解直角三角形」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "图形识别",
+            "性质判定",
+            "规范推理"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「解直角三角形」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "解直角三角形是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "直角三角形两条直角边分别为6 cm和8 cm，斜边是多少？如果另一个三角形三边为9、12、15，它们是否相似？",
+              "answer": "斜边10 cm；两个三角形相似。",
+              "analysis": "由勾股定理得斜边√(6²+8²)=10。另一三角形三边9、12、15分别是6、8、10的1.5倍，三边成比例，所以相似。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「解直角三角形」的核心概念或答题依据",
+            "能独立完成「解直角三角形」基础题并写出关键步骤",
+            "能发现并订正「解直角三角形」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "解直角三角形"
+          ]
+        },
+        {
+          "id": "kp_math_g09_003_003",
+          "title": "圆的性质",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「圆的性质」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "圆的性质"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「圆的性质」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「圆的性质」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「圆的性质」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "图形识别",
+            "性质判定",
+            "规范推理"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「圆的性质」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "圆的性质是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "直角三角形两条直角边分别为6 cm和8 cm，斜边是多少？如果另一个三角形三边为9、12、15，它们是否相似？",
+              "answer": "斜边10 cm；两个三角形相似。",
+              "analysis": "由勾股定理得斜边√(6²+8²)=10。另一三角形三边9、12、15分别是6、8、10的1.5倍，三边成比例，所以相似。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「圆的性质」的核心概念或答题依据",
+            "能独立完成「圆的性质」基础题并写出关键步骤",
+            "能发现并订正「圆的性质」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "圆的性质"
+          ]
+        },
+        {
+          "id": "kp_math_g09_003_004",
+          "title": "圆与切线",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「圆与切线」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "圆与切线"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「圆与切线」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「圆与切线」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「圆与切线」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "图形识别",
+            "性质判定",
+            "规范推理"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「圆与切线」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "圆与切线是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "直角三角形两条直角边分别为6 cm和8 cm，斜边是多少？如果另一个三角形三边为9、12、15，它们是否相似？",
+              "answer": "斜边10 cm；两个三角形相似。",
+              "analysis": "由勾股定理得斜边√(6²+8²)=10。另一三角形三边9、12、15分别是6、8、10的1.5倍，三边成比例，所以相似。",
+              "difficulty": "hard",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「圆与切线」的核心概念或答题依据",
+            "能独立完成「圆与切线」基础题并写出关键步骤",
+            "能发现并订正「圆与切线」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "圆与切线"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g09_004",
+      "title": "统计概率",
+      "order": 4,
+      "description": "九年级数学「统计概率」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g09_004_001",
+          "title": "概率初步",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握九年级数学「概率初步」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "概率初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「概率初步」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「概率初步」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「概率初步」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「概率初步」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "概率初步是九年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "袋中有3个红球、2个白球，任取1个球，取到红球的概率是多少？",
+              "answer": "3/5。",
+              "analysis": "共有5个球，其中红球3个。每个球被取到的可能性相同，所以概率为3÷5=3/5。",
+              "difficulty": "hard",
+              "type": "short_answer"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「概率初步」的核心概念或答题依据",
+            "能独立完成「概率初步」基础题并写出关键步骤",
+            "能发现并订正「概率初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium",
+              "hard"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "九年级",
+            "数学",
+            "概率初步"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-12T00:00:00.000Z"
+}

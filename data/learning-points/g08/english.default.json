@@ -1,0 +1,949 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.12-junior",
+  "subject": {
+    "code": "english",
+    "name": "英语"
+  },
+  "grade": {
+    "code": "G08",
+    "name": "八年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-junior-cn-quality-examples-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_english_g08_001",
+      "title": "词汇语法",
+      "order": 1,
+      "description": "八年级英语「词汇语法」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g08_001_001",
+          "title": "一般过去时",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「一般过去时」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "一般过去时"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「一般过去时」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「一般过去时」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「一般过去时」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「一般过去时」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "一般过去时是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blanks: Yesterday, I ____ (visit) the museum and ____ (take) many photos.",
+              "answer": "visited; took.",
+              "analysis": "“Yesterday” shows past time. “visit” is regular, so it becomes “visited”; “take” is irregular, so the past form is “took”.",
+              "difficulty": "medium",
+              "type": "fill_blank"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「一般过去时」的核心概念或答题依据",
+            "能独立完成「一般过去时」基础题并写出关键步骤",
+            "能发现并订正「一般过去时」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "一般过去时"
+          ]
+        },
+        {
+          "id": "kp_english_g08_001_002",
+          "title": "过去进行时",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「过去进行时」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "过去进行时"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「过去进行时」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「过去进行时」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「过去进行时」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「过去进行时」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "过去进行时是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blanks: Yesterday, I ____ (visit) the museum and ____ (take) many photos.",
+              "answer": "visited; took.",
+              "analysis": "“Yesterday” shows past time. “visit” is regular, so it becomes “visited”; “take” is irregular, so the past form is “took”.",
+              "difficulty": "medium",
+              "type": "fill_blank"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「过去进行时」的核心概念或答题依据",
+            "能独立完成「过去进行时」基础题并写出关键步骤",
+            "能发现并订正「过去进行时」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "过去进行时"
+          ]
+        },
+        {
+          "id": "kp_english_g08_001_003",
+          "title": "形容词副词比较级",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「形容词副词比较级」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "形容词副词比较级"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「形容词副词比较级」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「形容词副词比较级」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「形容词副词比较级」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「形容词副词比较级」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "形容词副词比较级是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Complete the sentence: The Yangtze River is ____ (long) than the Yellow River.",
+              "answer": "longer.",
+              "analysis": "The word “than” shows comparison between two things, so use the comparative form “longer”.",
+              "difficulty": "medium",
+              "type": "fill_blank"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「形容词副词比较级」的核心概念或答题依据",
+            "能独立完成「形容词副词比较级」基础题并写出关键步骤",
+            "能发现并订正「形容词副词比较级」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "形容词副词比较级"
+          ]
+        },
+        {
+          "id": "kp_english_g08_001_004",
+          "title": "最高级表达",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「最高级表达」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "最高级表达"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「最高级表达」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「最高级表达」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「最高级表达」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "审题立意",
+            "结构组织",
+            "语言得体"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「最高级表达」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "最高级表达是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Complete the sentence: The Yangtze River is ____ (long) than the Yellow River.",
+              "answer": "longer.",
+              "analysis": "The word “than” shows comparison between two things, so use the comparative form “longer”.",
+              "difficulty": "medium",
+              "type": "fill_blank"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「最高级表达」的核心概念或答题依据",
+            "能独立完成「最高级表达」基础题并写出关键步骤",
+            "能发现并订正「最高级表达」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "最高级表达"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g08_002",
+      "title": "句型语篇",
+      "order": 2,
+      "description": "八年级英语「句型语篇」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g08_002_001",
+          "title": "情态动词can must should",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「情态动词can must should」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "情态动词can must should"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「情态动词can must should」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「情态动词can must should」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「情态动词can must should」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「情态动词can must should」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "情态动词can must should是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「情态动词can must should」的核心概念或答题依据",
+            "能独立完成「情态动词can must should」基础题并写出关键步骤",
+            "能发现并订正「情态动词can must should」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "情态动词can must should"
+          ]
+        },
+        {
+          "id": "kp_english_g08_002_002",
+          "title": "不定代词",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「不定代词」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "不定代词"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「不定代词」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「不定代词」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「不定代词」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「不定代词」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "不定代词是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「不定代词」的核心概念或答题依据",
+            "能独立完成「不定代词」基础题并写出关键步骤",
+            "能发现并订正「不定代词」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "不定代词"
+          ]
+        },
+        {
+          "id": "kp_english_g08_002_003",
+          "title": "动词不定式初步",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「动词不定式初步」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "动词不定式初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「动词不定式初步」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「动词不定式初步」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「动词不定式初步」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「动词不定式初步」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "动词不定式初步是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blank: Students should ____ their homework on time. A. finish B. finishes C. finished",
+              "answer": "A. finish.",
+              "analysis": "After the modal verb “should”, use the base form of the verb. Therefore “finish” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「动词不定式初步」的核心概念或答题依据",
+            "能独立完成「动词不定式初步」基础题并写出关键步骤",
+            "能发现并订正「动词不定式初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "动词不定式初步"
+          ]
+        },
+        {
+          "id": "kp_english_g08_002_004",
+          "title": "宾语从句初步",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「宾语从句初步」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "宾语从句初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「宾语从句初步」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「宾语从句初步」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「宾语从句初步」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「宾语从句初步」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "宾语从句初步是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Choose the correct order: Could you tell me ____? A. where is the library B. where the library is",
+              "answer": "B. where the library is.",
+              "analysis": "In an object clause, use statement order, not question order. So “where the library is” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「宾语从句初步」的核心概念或答题依据",
+            "能独立完成「宾语从句初步」基础题并写出关键步骤",
+            "能发现并订正「宾语从句初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "宾语从句初步"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_english_g08_003",
+      "title": "阅读写作",
+      "order": 3,
+      "description": "八年级英语「阅读写作」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_english_g08_003_001",
+          "title": "条件状语从句if",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「条件状语从句if」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "条件状语从句if"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「条件状语从句if」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「条件状语从句if」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「条件状语从句if」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "语法规则",
+            "语境判断",
+            "准确表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「条件状语从句if」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "条件状语从句if是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Choose the correct order: Could you tell me ____? A. where is the library B. where the library is",
+              "answer": "B. where the library is.",
+              "analysis": "In an object clause, use statement order, not question order. So “where the library is” is correct.",
+              "difficulty": "medium",
+              "type": "single_choice"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「条件状语从句if」的核心概念或答题依据",
+            "能独立完成「条件状语从句if」基础题并写出关键步骤",
+            "能发现并订正「条件状语从句if」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "条件状语从句if"
+          ]
+        },
+        {
+          "id": "kp_english_g08_003_002",
+          "title": "阅读推断题",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「阅读推断题」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "阅读推断题"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「阅读推断题」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「阅读推断题」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「阅读推断题」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「阅读推断题」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "阅读推断题是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Read: “Tom missed the bus, so he ran to school.” Why did Tom run to school?",
+              "answer": "Because he missed the bus.",
+              "analysis": "The reason is directly before “so”. “Missed the bus” caused “ran to school”, so the answer should use “because”.",
+              "difficulty": "medium",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「阅读推断题」的核心概念或答题依据",
+            "能独立完成「阅读推断题」基础题并写出关键步骤",
+            "能发现并订正「阅读推断题」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "阅读推断题"
+          ]
+        },
+        {
+          "id": "kp_english_g08_003_003",
+          "title": "完形填空语境线索",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「完形填空语境线索」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "完形填空语境线索"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「完形填空语境线索」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「完形填空语境线索」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「完形填空语境线索」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「完形填空语境线索」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "完形填空语境线索是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Read: “Tom missed the bus, so he ran to school.” Why did Tom run to school?",
+              "answer": "Because he missed the bus.",
+              "analysis": "The reason is directly before “so”. “Missed the bus” caused “ran to school”, so the answer should use “because”.",
+              "difficulty": "medium",
+              "type": "reading_comprehension"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「完形填空语境线索」的核心概念或答题依据",
+            "能独立完成「完形填空语境线索」基础题并写出关键步骤",
+            "能发现并订正「完形填空语境线索」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "完形填空语境线索"
+          ]
+        },
+        {
+          "id": "kp_english_g08_003_004",
+          "title": "短文写作过去经历",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握八年级英语「短文写作过去经历」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "短文写作过去经历"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「短文写作过去经历」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「短文写作过去经历」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「短文写作过去经历」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "审题立意",
+            "结构组织",
+            "语言得体"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「短文写作过去经历」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "短文写作过去经历是八年级英语听说读写的关键基础，能帮助学生在真实语境中理解句意、组织句子，并提升阅读和写作准确性。",
+            "howToLearn": "先理解语境和句子结构，再判断词形、时态、语序或搭配；完成后朗读检查是否符合英语表达习惯。",
+            "steps": [
+              "先判断句子表达的时间、人物和语境，圈出关键词。",
+              "根据语法规则选择正确词形、时态、语序或搭配。",
+              "把答案放回句子朗读，检查主谓一致、大小写和标点。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "Fill in the blanks: Yesterday, I ____ (visit) the museum and ____ (take) many photos.",
+              "answer": "visited; took.",
+              "analysis": "“Yesterday” shows past time. “visit” is regular, so it becomes “visited”; “take” is irregular, so the past form is “took”.",
+              "difficulty": "medium",
+              "type": "fill_blank"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「短文写作过去经历」的核心概念或答题依据",
+            "能独立完成「短文写作过去经历」基础题并写出关键步骤",
+            "能发现并订正「短文写作过去经历」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "single_choice",
+              "fill_blank",
+              "sentence_making"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "八年级",
+            "英语",
+            "短文写作过去经历"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-12T00:00:00.000Z"
+}

@@ -55,6 +55,8 @@ describe('LearningPointCatalog v1', () => {
   it('normalizes Chinese grade and subject labels', () => {
     expect(normalizeGradeCode('二年级')).toBe('G02');
     expect(normalizeGradeCode('g03')).toBe('G03');
+    expect(normalizeGradeCode('七年级')).toBe('G07');
+    expect(normalizeGradeCode('初三')).toBe('G09');
     expect(normalizeSubjectCode('数学')).toBe('math');
     expect(normalizeSubjectCode('english')).toBe('english');
   });
@@ -71,5 +73,15 @@ describe('LearningPointCatalog v1', () => {
       explanation: expect.objectContaining({ why: expect.any(String), howToLearn: expect.any(String) }),
       examples: expect.arrayContaining([expect.objectContaining({ question: expect.any(String), answer: expect.any(String), analysis: expect.any(String) })]),
     });
+  });
+
+  it('loads junior high catalog files', async () => {
+    const catalog = await loadLearningPointCatalog({ grade: '七年级', subject: '数学', version: 'default' });
+    expect(catalog?.grade.code).toBe('G07');
+    expect(catalog?.chapters.flatMap((chapter) => chapter.knowledgePoints).length).toBeGreaterThan(0);
+
+    const points = await listCatalogKnowledgePoints({ grade: '初三', subject: 'english' });
+    expect(points[0].knowledgePointId).toMatch(/^kp_english_g09_/);
+    expect(points[0].examples?.[0]).toEqual(expect.objectContaining({ question: expect.any(String), analysis: expect.any(String) }));
   });
 });

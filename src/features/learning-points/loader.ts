@@ -12,12 +12,21 @@ const gradeNameToCode: Record<string, LearningGradeCode> = {
   四年级: 'G04',
   五年级: 'G05',
   六年级: 'G06',
+  七年级: 'G07',
+  八年级: 'G08',
+  九年级: 'G09',
+  初一: 'G07',
+  初二: 'G08',
+  初三: 'G09',
   '1年级': 'G01',
   '2年级': 'G02',
   '3年级': 'G03',
   '4年级': 'G04',
   '5年级': 'G05',
   '6年级': 'G06',
+  '7年级': 'G07',
+  '8年级': 'G08',
+  '9年级': 'G09',
 };
 
 export function normalizeGradeCode(value: string | null | undefined): LearningGradeCode | null {

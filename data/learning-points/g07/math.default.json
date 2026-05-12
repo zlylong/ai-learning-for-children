@@ -1,0 +1,1032 @@
+{
+  "schemaVersion": "learning-point-catalog/v1",
+  "catalogVersion": "2026.05.12-junior",
+  "subject": {
+    "code": "math",
+    "name": "数学"
+  },
+  "grade": {
+    "code": "G07",
+    "name": "七年级"
+  },
+  "semester": "all",
+  "textbook": {
+    "version": "default",
+    "name": "通用版",
+    "publisher": null
+  },
+  "generatedBy": {
+    "agent": "learning",
+    "promptVersion": "primary-junior-cn-quality-examples-v1"
+  },
+  "chapters": [
+    {
+      "id": "ch_math_g07_001",
+      "title": "数与式",
+      "order": 1,
+      "description": "七年级数学「数与式」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g07_001_001",
+          "title": "有理数与数轴",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「有理数与数轴」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "有理数与数轴"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「有理数与数轴」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「有理数与数轴」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「有理数与数轴」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「有理数与数轴」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "有理数与数轴是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "计算：-3+8×(-2)²，并把 5600000 用科学记数法表示。",
+              "answer": "29；5.6×10⁶。",
+              "analysis": "先算乘方(-2)²=4，再算乘法8×4=32，最后-3+32=29。5600000写成5.6×10⁶。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「有理数与数轴」的核心概念或答题依据",
+            "能独立完成「有理数与数轴」基础题并写出关键步骤",
+            "能发现并订正「有理数与数轴」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "有理数与数轴"
+          ]
+        },
+        {
+          "id": "kp_math_g07_001_002",
+          "title": "有理数加减法",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「有理数加减法」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "有理数加减法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「有理数加减法」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「有理数加减法」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「有理数加减法」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「有理数加减法」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "有理数加减法是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "计算：-3+8×(-2)²，并把 5600000 用科学记数法表示。",
+              "answer": "29；5.6×10⁶。",
+              "analysis": "先算乘方(-2)²=4，再算乘法8×4=32，最后-3+32=29。5600000写成5.6×10⁶。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「有理数加减法」的核心概念或答题依据",
+            "能独立完成「有理数加减法」基础题并写出关键步骤",
+            "能发现并订正「有理数加减法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "有理数加减法"
+          ]
+        },
+        {
+          "id": "kp_math_g07_001_003",
+          "title": "有理数乘除法",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「有理数乘除法」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "有理数乘除法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「有理数乘除法」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「有理数乘除法」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「有理数乘除法」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「有理数乘除法」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "有理数乘除法是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "计算：-3+8×(-2)²，并把 5600000 用科学记数法表示。",
+              "answer": "29；5.6×10⁶。",
+              "analysis": "先算乘方(-2)²=4，再算乘法8×4=32，最后-3+32=29。5600000写成5.6×10⁶。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「有理数乘除法」的核心概念或答题依据",
+            "能独立完成「有理数乘除法」基础题并写出关键步骤",
+            "能发现并订正「有理数乘除法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "有理数乘除法"
+          ]
+        },
+        {
+          "id": "kp_math_g07_001_004",
+          "title": "乘方与科学记数法",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「乘方与科学记数法」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "乘方与科学记数法"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「乘方与科学记数法」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「乘方与科学记数法」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「乘方与科学记数法」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「乘方与科学记数法」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "乘方与科学记数法是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "计算：-3+8×(-2)²，并把 5600000 用科学记数法表示。",
+              "answer": "29；5.6×10⁶。",
+              "analysis": "先算乘方(-2)²=4，再算乘法8×4=32，最后-3+32=29。5600000写成5.6×10⁶。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「乘方与科学记数法」的核心概念或答题依据",
+            "能独立完成「乘方与科学记数法」基础题并写出关键步骤",
+            "能发现并订正「乘方与科学记数法」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "乘方与科学记数法"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g07_002",
+      "title": "方程函数",
+      "order": 2,
+      "description": "七年级数学「方程函数」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g07_002_001",
+          "title": "整式的概念",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「整式的概念」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "整式的概念"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「整式的概念」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「整式的概念」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「整式的概念」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「整式的概念」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "整式的概念是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "化简：3a+2(a-4)-5a。",
+              "answer": "-8。",
+              "analysis": "先去括号得3a+2a-8-5a；同类项3a+2a-5a=0，所以结果为-8。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「整式的概念」的核心概念或答题依据",
+            "能独立完成「整式的概念」基础题并写出关键步骤",
+            "能发现并订正「整式的概念」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "整式的概念"
+          ]
+        },
+        {
+          "id": "kp_math_g07_002_002",
+          "title": "合并同类项",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「合并同类项」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "合并同类项"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「合并同类项」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「合并同类项」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「合并同类项」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "词句理解",
+            "方法应用",
+            "综合表达"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「合并同类项」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "合并同类项是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "化简：3a+2(a-4)-5a。",
+              "answer": "-8。",
+              "analysis": "先去括号得3a+2a-8-5a；同类项3a+2a-5a=0，所以结果为-8。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「合并同类项」的核心概念或答题依据",
+            "能独立完成「合并同类项」基础题并写出关键步骤",
+            "能发现并订正「合并同类项」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "合并同类项"
+          ]
+        },
+        {
+          "id": "kp_math_g07_002_003",
+          "title": "去括号与整式加减",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「去括号与整式加减」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "去括号与整式加减"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「去括号与整式加减」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「去括号与整式加减」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「去括号与整式加减」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「去括号与整式加减」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "去括号与整式加减是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "化简：3a+2(a-4)-5a。",
+              "answer": "-8。",
+              "analysis": "先去括号得3a+2a-8-5a；同类项3a+2a-5a=0，所以结果为-8。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「去括号与整式加减」的核心概念或答题依据",
+            "能独立完成「去括号与整式加减」基础题并写出关键步骤",
+            "能发现并订正「去括号与整式加减」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "去括号与整式加减"
+          ]
+        },
+        {
+          "id": "kp_math_g07_002_004",
+          "title": "一元一次方程",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「一元一次方程」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "一元一次方程"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「一元一次方程」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「一元一次方程」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「一元一次方程」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「一元一次方程」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "一元一次方程是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "小明买3支笔和1本练习本共花18元。每支笔4元，练习本多少元？请列方程求解。",
+              "answer": "练习本6元。",
+              "analysis": "设练习本x元，列方程3×4+x=18，解得x=6。代回12+6=18，符合题意。",
+              "difficulty": "medium",
+              "type": "word_problem"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「一元一次方程」的核心概念或答题依据",
+            "能独立完成「一元一次方程」基础题并写出关键步骤",
+            "能发现并订正「一元一次方程」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "一元一次方程"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g07_003",
+      "title": "图形几何",
+      "order": 3,
+      "description": "七年级数学「图形几何」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g07_003_001",
+          "title": "实际问题与一元一次方程",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「实际问题与一元一次方程」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "实际问题与一元一次方程"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「实际问题与一元一次方程」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「实际问题与一元一次方程」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「实际问题与一元一次方程」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "概念理解",
+            "模型建立",
+            "计算检验"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「实际问题与一元一次方程」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "实际问题与一元一次方程是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "小明买3支笔和1本练习本共花18元。每支笔4元，练习本多少元？请列方程求解。",
+              "answer": "练习本6元。",
+              "analysis": "设练习本x元，列方程3×4+x=18，解得x=6。代回12+6=18，符合题意。",
+              "difficulty": "medium",
+              "type": "word_problem"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「实际问题与一元一次方程」的核心概念或答题依据",
+            "能独立完成「实际问题与一元一次方程」基础题并写出关键步骤",
+            "能发现并订正「实际问题与一元一次方程」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "实际问题与一元一次方程"
+          ]
+        },
+        {
+          "id": "kp_math_g07_003_002",
+          "title": "几何图形初步",
+          "order": 2,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「几何图形初步」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "几何图形初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「几何图形初步」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「几何图形初步」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「几何图形初步」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "图形识别",
+            "性质判定",
+            "规范推理"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「几何图形初步」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "几何图形初步是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "直角三角形两条直角边分别为6 cm和8 cm，斜边是多少？如果另一个三角形三边为9、12、15，它们是否相似？",
+              "answer": "斜边10 cm；两个三角形相似。",
+              "analysis": "由勾股定理得斜边√(6²+8²)=10。另一三角形三边9、12、15分别是6、8、10的1.5倍，三边成比例，所以相似。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「几何图形初步」的核心概念或答题依据",
+            "能独立完成「几何图形初步」基础题并写出关键步骤",
+            "能发现并订正「几何图形初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "几何图形初步"
+          ]
+        },
+        {
+          "id": "kp_math_g07_003_003",
+          "title": "线段与角",
+          "order": 3,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「线段与角」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "线段与角"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「线段与角」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「线段与角」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「线段与角」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "图形识别",
+            "性质判定",
+            "规范推理"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「线段与角」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "线段与角是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "直角三角形两条直角边分别为6 cm和8 cm，斜边是多少？如果另一个三角形三边为9、12、15，它们是否相似？",
+              "answer": "斜边10 cm；两个三角形相似。",
+              "analysis": "由勾股定理得斜边√(6²+8²)=10。另一三角形三边9、12、15分别是6、8、10的1.5倍，三边成比例，所以相似。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「线段与角」的核心概念或答题依据",
+            "能独立完成「线段与角」基础题并写出关键步骤",
+            "能发现并订正「线段与角」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "线段与角"
+          ]
+        },
+        {
+          "id": "kp_math_g07_003_004",
+          "title": "平行线性质与判定",
+          "order": 4,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「平行线性质与判定」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "平行线性质与判定"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「平行线性质与判定」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「平行线性质与判定」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「平行线性质与判定」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "图形识别",
+            "性质判定",
+            "规范推理"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「平行线性质与判定」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "平行线性质与判定是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "直角三角形两条直角边分别为6 cm和8 cm，斜边是多少？如果另一个三角形三边为9、12、15，它们是否相似？",
+              "answer": "斜边10 cm；两个三角形相似。",
+              "analysis": "由勾股定理得斜边√(6²+8²)=10。另一三角形三边9、12、15分别是6、8、10的1.5倍，三边成比例，所以相似。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「平行线性质与判定」的核心概念或答题依据",
+            "能独立完成「平行线性质与判定」基础题并写出关键步骤",
+            "能发现并订正「平行线性质与判定」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "平行线性质与判定"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ch_math_g07_004",
+      "title": "统计概率",
+      "order": 4,
+      "description": "七年级数学「统计概率」模块，覆盖本年级核心学习要点。",
+      "knowledgePoints": [
+        {
+          "id": "kp_math_g07_004_001",
+          "title": "三角形初步",
+          "order": 1,
+          "level": "core",
+          "status": "active",
+          "summary": "掌握七年级数学「三角形初步」的核心概念、方法和典型题型，为课堂学习、单元复习和综合应用打好基础。",
+          "aliases": [
+            "三角形初步"
+          ],
+          "objectives": {
+            "remember": [
+              "记住「三角形初步」的关键概念、规则或答题要点"
+            ],
+            "understand": [
+              "理解「三角形初步」在具体题目、文本或语境中的作用"
+            ],
+            "apply": [
+              "能运用「三角形初步」独立完成基础题、变式题和生活化任务"
+            ]
+          },
+          "keyConcepts": [
+            "图形识别",
+            "性质判定",
+            "规范推理"
+          ],
+          "prerequisites": [],
+          "relatedPoints": [],
+          "commonMistakes": [
+            {
+              "type": "concept_or_context_confusion",
+              "description": "学习「三角形初步」时容易只套模板，忽略题目条件、文本语境或语言规则，导致答案不完整或推理错误。",
+              "remediation": "先回到题干/文本圈出依据，再按步骤计算、分析或造句，最后用代入、上下文或语法规则检查。"
+            }
+          ],
+          "explanation": {
+            "why": "三角形初步是七年级数学的重要知识点，能帮助学生从具体数量关系过渡到代数、几何或函数模型，提升分析题意和规范推理能力。",
+            "howToLearn": "先识别题型和已知条件，再选择定义、公式、性质或模型；解题过程写清依据，最后用代入、估算或图形关系检查。",
+            "steps": [
+              "圈出已知条件、要求的问题和限制条件，必要时画图或列表。",
+              "选择对应的概念、公式、性质或方程/函数模型，分步计算或证明。",
+              "把答案代回原题检查单位、范围和实际意义。"
+            ]
+          },
+          "examples": [
+            {
+              "question": "直角三角形两条直角边分别为6 cm和8 cm，斜边是多少？如果另一个三角形三边为9、12、15，它们是否相似？",
+              "answer": "斜边10 cm；两个三角形相似。",
+              "analysis": "由勾股定理得斜边√(6²+8²)=10。另一三角形三边9、12、15分别是6、8、10的1.5倍，三边成比例，所以相似。",
+              "difficulty": "medium",
+              "type": "calculation"
+            }
+          ],
+          "masteryCriteria": [
+            "能说清「三角形初步」的核心概念或答题依据",
+            "能独立完成「三角形初步」基础题并写出关键步骤",
+            "能发现并订正「三角形初步」中的常见错误"
+          ],
+          "practiceProfile": {
+            "recommendedQuestionTypes": [
+              "calculation",
+              "word_problem",
+              "short_answer"
+            ],
+            "difficultyRange": [
+              "medium"
+            ],
+            "minCorrectRateForMastery": 0.85
+          },
+          "tags": [
+            "七年级",
+            "数学",
+            "三角形初步"
+          ]
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-05-12T00:00:00.000Z"
+}
