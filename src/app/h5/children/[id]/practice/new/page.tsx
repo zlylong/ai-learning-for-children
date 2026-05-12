@@ -1,11 +1,21 @@
-import { AppShell } from '@/components/h5/AppShell';
-import { PracticeNewClient } from '@/components/h5/PracticeNewClient';
+import { redirect } from 'next/navigation';
 
-export default async function NewPracticePage({ params }: { params: Promise<{ id: string }> }) {
+export default async function NewPracticePage({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
   const { id } = await params;
-  return (
-    <AppShell title="知识点练习" activeKey="practice">
-      <PracticeNewClient childId={id} />
-    </AppShell>
-  );
+  const query = new URLSearchParams({ childId: id });
+  const incoming = await searchParams;
+  Object.entries(incoming).forEach(([key, value]) => {
+    if (Array.isArray(value)) {
+      value.forEach((item) => query.append(key, item));
+    } else if (value) {
+      query.set(key, value);
+    }
+  });
+  redirect(`/h5/practice?${query.toString()}`);
 }

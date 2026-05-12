@@ -30,8 +30,8 @@
 - `/h5/profile/users`：**用户管理**。仅管理员可访问，用于新增和删除普通用户。
 
 ### 2. 练习中心
-- `/h5/practice`：**练习入口**。支持一年级到六年级与语文/数学/英语切换，推荐最需练习的 1-3 个知识点；所有知识点列表会展示摘要和关键概念，点击知识点先打开讲解弹层，查看“为什么学 / 怎么学 / 例题解析 / 常见错误 / 掌握标准”后再开始练习。月度错题卷与长期薄弱项保留在首页入口，避免重复。
-- `/h5/children/[id]/practice/new`：**知识点练习创建页**。选择年级、学科、知识点后，会同步展示该知识点的解释、学习步骤、关键概念和例题解析，再生成练习题。
+- `/h5/practice`：**统一练习入口**。支持一年级到六年级与语文/数学/英语切换，推荐最需练习的 1-3 个知识点；所有知识点列表会展示摘要和关键概念，点击知识点先打开讲解弹层，查看“为什么学 / 怎么学 / 例题解析 / 常见错误 / 掌握标准”后再开始练习。可通过 `childId`、`knowledgePointId`、`knowledgePoint` 查询参数从孩子档案或错题卡直达指定孩子/知识点。
+- `/h5/children/[id]/practice/new`：旧版知识点练习创建路径，仅做兼容跳转到 `/h5/practice?childId=[id]`，不再维护独立页面，避免与统一练习入口重复。
 - `/h5/practice-sessions/[id]`：**答题页**。沉浸式答题体验，一屏一题，大号输入/选项，进度追踪。
 - `/h5/practice-sessions/[id]/result`：**练习反馈**。展示正确率、鼓励语、错题解析及后续建议。
 
@@ -72,7 +72,7 @@ API：
 
 试卷分析闭环：`POST /api/exam-uploads` 先创建 `PENDING` 上传记录；`POST /api/exam-uploads/[id]/process` 同步触发 mock AI 分析，输出必须通过 `src/schemas/analyzeWrongQuestionsSchema.ts` 的 Zod 校验后才会写入 `WrongQuestion`、`WrongQuestionKnowledgePoint` 并把关联 `ChildKnowledgePoint` 更新为 `WEAK`。AI 输出异常时上传记录置为 `FAILED`，不会写入错题和掌握状态脏数据。
 
-知识点练习闭环：练习中心和新建练习页均支持一年级到六年级与语文/数学/英语选择；知识点列表请求会携带 `grade`/`subject`，允许跨年级预习或回顾，并将 `subject` 传入练习 session；标准知识点会返回 `explanation`、`examples`、`keyConcepts`、`commonMistakes` 和 `masteryCriteria`，新建练习页在出题前展示“为什么学 / 怎么学 / 学习步骤 / 例题与解析”，帮助孩子先理解再练习。`src/ai/prompts/generatePracticeQuestionsPrompt.ts` 生成严格 JSON Prompt，并通过 `src/ai/ai-client.ts` 统一调用 mock AI。AI 输出必须先经过 `src/schemas/generatedPracticeQuestionsSchema.ts` 校验：题目数量 1-10；`single_choice` 必须 4 个选项；`answer` 与 `explanation` 必填；校验失败不会创建练习 session。`src/services/practiceService.ts` 负责创建 `PracticeSession`/`PracticeQuestion`、答题提交、简单 equals 判分、返回每题结果和 `masteryStatus`。提交后会保存每题 `userAnswer` 与 `isCorrect`，并更新 `ChildKnowledgePoint.practiceCount`、`correctCount`、`lastPracticedAt`；掌握状态规则：题数 >= 5 且正确率 >= 80% 为 `MASTERED`；正确率 >= 50% 且 < 80% 为 `PRACTICING`；正确率 < 50% 为 `WEAK`。
+知识点练习闭环：统一练习入口支持一年级到六年级与语文/数学/英语选择；知识点列表请求会携带 `grade`/`subject`，允许跨年级预习或回顾，并将 `subject` 传入练习 session；标准知识点会返回 `explanation`、`examples`、`keyConcepts`、`commonMistakes` 和 `masteryCriteria`，练习生成前先通过讲解弹层展示“为什么学 / 怎么学 / 学习步骤 / 例题与解析”，帮助孩子先理解再练习。`src/ai/prompts/generatePracticeQuestionsPrompt.ts` 生成严格 JSON Prompt，并通过 `src/ai/ai-client.ts` 统一调用 mock AI。AI 输出必须先经过 `src/schemas/generatedPracticeQuestionsSchema.ts` 校验：题目数量 1-10；`single_choice` 必须 4 个选项；`answer` 与 `explanation` 必填；校验失败不会创建练习 session。`src/services/practiceService.ts` 负责创建 `PracticeSession`/`PracticeQuestion`、答题提交、简单 equals 判分、返回每题结果和 `masteryStatus`。提交后会保存每题 `userAnswer` 与 `isCorrect`，并更新 `ChildKnowledgePoint.practiceCount`、`correctCount`、`lastPracticedAt`；掌握状态规则：题数 >= 5 且正确率 >= 80% 为 `MASTERED`；正确率 >= 50% 且 < 80% 为 `PRACTICING`；正确率 < 50% 为 `WEAK`。
 
 月度错题卷闭环：基于 `WrongQuestion` 表中的 `createdAt` 按月筛选，聚合各知识点的错题频率。AI Prompt (`src/ai/prompts/generateMonthlyWrongSetExamPrompt.ts`) 引导模型按 7:2:1 的比例改编错题知识点、相关知识点和综合题。生成的 `PracticeSession` 类型为 `MONTHLY_WRONG_SET`，答题提交后会根据试卷中的题目来源，**分知识点并行更新** 孩子的掌握度状态。
 

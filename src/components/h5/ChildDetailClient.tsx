@@ -56,9 +56,9 @@ export function ChildDetailClient({ id }: { id: string }) {
       </section>
 
       <section className="grid grid-cols-2 gap-3">
-        <ActionLink href={`/h5/children/${child.id}/uploads`} icon="📤" label="上传试卷" />
-        <ActionLink href={`/h5/children/${child.id}/wrong-questions`} icon="📝" label="错题分析" />
-        <ActionLink href={`/h5/children/${child.id}/practice/new`} icon="🎯" label="知识点练习" />
+        <ActionLink href={`/h5/children/${child.id}/upload`} icon="📤" label="上传试卷" />
+        <ActionLink href={`/h5/wrong-questions?childId=${encodeURIComponent(child.id)}`} icon="📝" label="错题分析" />
+        <ActionLink href={`/h5/practice?childId=${encodeURIComponent(child.id)}`} icon="🎯" label="知识点练习" />
         <ActionLink href={`/h5/children/${child.id}/exams/monthly`} icon="📊" label="月度错题卷" />
       </section>
 

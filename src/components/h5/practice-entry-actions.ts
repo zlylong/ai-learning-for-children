@@ -44,7 +44,7 @@ export type PracticeKnowledgePointOption = {
 
 export function getPracticeCenterActions(childId: string): PracticeCenterAction[] {
   return [
-    { title: '知识点练习', href: `/h5/children/${childId}/practice/new`, color: 'emerald' },
+    { title: '知识点练习', href: `/h5/practice?childId=${encodeURIComponent(childId)}`, color: 'emerald' },
     { title: '月度错题卷', href: `/h5/children/${childId}/exams/monthly`, color: 'indigo' },
     { title: '长期薄弱项', href: `/h5/children/${childId}/exams/weakness`, color: 'rose' },
   ];

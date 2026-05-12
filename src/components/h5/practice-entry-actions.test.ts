@@ -4,7 +4,7 @@ import { getPracticeCenterActions, normalizePracticeKnowledgePoints } from './pr
 describe('practice entry integration', () => {
   it('exposes knowledge-point practice as a first-class practice-center action', () => {
     expect(getPracticeCenterActions('child-1')).toEqual(expect.arrayContaining([
-      expect.objectContaining({ title: '知识点练习', href: '/h5/children/child-1/practice/new' }),
+      expect.objectContaining({ title: '知识点练习', href: '/h5/practice?childId=child-1' }),
     ]));
   });
 

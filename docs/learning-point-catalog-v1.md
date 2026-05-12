@@ -42,8 +42,8 @@ data/learning-points/
 ## H5 展示约定
 
 - `GET /api/learning-points?...&view=points` 和 `GET /api/children/[id]/knowledge-points?...` 的扁平列表会保留 `explanation`、`examples`、`keyConcepts`、`commonMistakes`、`masteryCriteria`。
-- `/h5/practice` 的所有知识点列表会展示摘要与关键概念标签；点击知识点打开底部讲解弹层，完整展示摘要、为什么学、怎么学、学习步骤、关键概念、例题解析、常见错误与掌握标准，底部按钮再进入练习生成。
-- `/h5/children/[id]/practice/new` 在用户选择知识点后展示：知识点摘要、为什么学、怎么学、学习步骤、关键概念标签和前 2 道例题解析。
+- `/h5/practice` 是唯一知识点练习入口：所有知识点列表会展示摘要与关键概念标签；点击推荐练习或任一知识点都会打开底部讲解弹层，完整展示摘要、为什么学、怎么学、学习步骤、关键概念、例题解析、常见错误与掌握标准，底部按钮再进入练习生成。
+- `/h5/practice` 支持 `childId`、`knowledgePointId`、`knowledgePoint` 查询参数，用于孩子档案、错题卡等入口直达指定孩子/知识点；旧路径 `/h5/children/[id]/practice/new` 只保留兼容重定向，不再维护独立页面。
 - 若孩子已有 `ChildKnowledgePoint` 掌握状态，API 会把状态/正确数/错题数合并进 catalog 行，但讲解和例题仍以标准 catalog 为准。
 
 ## 数据库映射建议

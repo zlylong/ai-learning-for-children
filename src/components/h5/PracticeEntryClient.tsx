@@ -54,6 +54,7 @@ export function PracticeEntryClient() {
   const [points, setPoints] = useState<KnowledgePointSummary[]>([]);
   const [loading, setLoading] = useState(true);
   const [detailPoint, setDetailPoint] = useState<KnowledgePointSummary | null>(null);
+  const [requestedPoint, setRequestedPoint] = useState<{ id?: string; title?: string } | null>(null);
   const requestSeqRef = useRef(0);
 
   const loadChildGrade = useCallback(async (id: string) => {
@@ -87,10 +88,17 @@ export function PracticeEntryClient() {
   }, []);
 
   useEffect(() => {
-    const savedId = localStorage.getItem('selectedChildId');
-    if (savedId) {
-      setChildId(savedId);
-      void loadChildGrade(savedId);
+    const params = new URLSearchParams(window.location.search);
+    const queryChildId = params.get('childId')?.trim() || '';
+    const selectedId = queryChildId || localStorage.getItem('selectedChildId');
+    const pointId = params.get('knowledgePointId')?.trim() || undefined;
+    const pointTitle = params.get('knowledgePoint')?.trim() || undefined;
+    if (pointId || pointTitle) setRequestedPoint({ id: pointId, title: pointTitle });
+
+    if (selectedId) {
+      if (queryChildId) localStorage.setItem('selectedChildId', queryChildId);
+      setChildId(selectedId);
+      void loadChildGrade(selectedId);
     } else {
       setLoading(false);
     }
@@ -99,6 +107,19 @@ export function PracticeEntryClient() {
   useEffect(() => {
     if (childId) void loadData(childId, subject, grade);
   }, [childId, loadData, subject, grade]);
+
+  useEffect(() => {
+    if (!requestedPoint || detailPoint || points.length === 0) return;
+    const matched = points.find((point) => {
+      const sameId = requestedPoint.id && (point.knowledgePointId === requestedPoint.id || point.id === requestedPoint.id);
+      const sameTitle = requestedPoint.title && point.knowledgePointText === requestedPoint.title;
+      return sameId || sameTitle;
+    });
+    if (matched) {
+      setDetailPoint(matched);
+      setRequestedPoint(null);
+    }
+  }, [detailPoint, points, requestedPoint]);
 
   const startPractice = async (point: KnowledgePointSummary) => {
     if (!childId) return;
@@ -180,7 +201,7 @@ export function PracticeEntryClient() {
                 key={p.id}
                 name={p.knowledgePointText}
                 reason={p.status === 'WEAK' ? '最近错题较多' : '练习中，需巩固'}
-                onPractice={() => startPractice(p)}
+                onPractice={() => setDetailPoint(p)}
               />
             ))
           ) : (

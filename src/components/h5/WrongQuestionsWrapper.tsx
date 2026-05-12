@@ -11,8 +11,11 @@ export function WrongQuestionsWrapper() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const savedId = localStorage.getItem('selectedChildId');
-    setChildId(savedId);
+    const params = new URLSearchParams(window.location.search);
+    const queryChildId = params.get('childId')?.trim() || '';
+    const selectedId = queryChildId || localStorage.getItem('selectedChildId');
+    if (queryChildId) localStorage.setItem('selectedChildId', queryChildId);
+    setChildId(selectedId);
     setLoading(false);
   }, []);
 

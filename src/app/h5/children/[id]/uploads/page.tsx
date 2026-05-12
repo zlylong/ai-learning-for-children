@@ -1,13 +1,8 @@
-import { AppShell } from '@/components/h5/AppShell';
-import { ExamUploadClient } from '@/components/h5/ExamUploadClient';
+import { redirect } from 'next/navigation';
 
 type PageProps = { params: Promise<{ id: string }> };
 
 export default async function ExamUploadsPage({ params }: PageProps) {
   const { id } = await params;
-  return (
-    <AppShell title="试卷上传" activeKey="profile">
-      <ExamUploadClient childId={id} />
-    </AppShell>
-  );
+  redirect(`/h5/children/${encodeURIComponent(id)}/upload`);
 }

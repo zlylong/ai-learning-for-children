@@ -33,10 +33,10 @@ export function WrongQuestionsClient({ childId }: { childId: string }) {
   const filteredItems = useMemo(() => filterWrongQuestions(items, { subject, knowledgePointId, keyword }), [items, subject, knowledgePointId, keyword]);
 
   const startPractice = (kpId?: string, kpTitle?: string) => {
-    const query = new URLSearchParams();
+    const query = new URLSearchParams({ childId });
     if (kpId) query.set('knowledgePointId', kpId);
     if (kpTitle) query.set('knowledgePoint', kpTitle);
-    router.push(`/h5/children/${childId}/practice/new${query.toString() ? `?${query.toString()}` : ''}`);
+    router.push(`/h5/practice?${query.toString()}`);
   };
 
   if (loading) return <WrongQuestionSkeleton />;
