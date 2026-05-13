@@ -1,6 +1,26 @@
 # AI Learning for Children
 
-面向手机浏览器的 AI 学习诊断 H5 Web 服务。当前版本已形成“孩子档案 → 试卷/错题分析 → 知识点讲解 → 练习生成 → 掌握度更新”的闭环，支持 mock 与 OpenAI-compatible 模型档案配置；内置小学一年级至初中三年级语文、数学、英语 474 个标准知识点，并在统一练习入口先展示讲解和例题，再生成练习。
+面向手机浏览器的儿童 AI 学习诊断 H5 应用。项目围绕“上传试卷/错题 → 识别薄弱知识点 → 查看讲解和例题 → 生成练习 → 更新掌握度”形成学习闭环，适合家长陪伴孩子做课后巩固和错题复盘。
+
+## 主要功能
+
+- **孩子档案**：管理孩子年级、地区、教材版本等基础信息。
+- **错题分析**：支持文本或图片上传试卷/错题，生成错题记录和薄弱知识点。
+- **知识点讲解**：内置小学一年级至初中三年级语文、数学、英语知识点，包含解释、例题、常见错误和掌握标准。
+- **智能练习**：根据孩子薄弱点生成专项练习，支持轻量、标准、强化三种训练强度。
+- **错题本**：按科目和知识点整理错题，支持查看答案、解析和再次练习。
+- **学习计划**：自动安排每周薄弱点专项练习和每月错题卷。
+- **家长/孩子模式**：孩子模式更简单，家长模式提供更多筛选和配置能力。
+- **内容包管理**：管理员可上传或替换标准知识点包。
+- **AI 模型配置**：支持 mock 模式，也可配置 OpenAI-compatible 模型档案和功能路由。
+
+## 页面入口
+
+- `/h5`：首页
+- `/h5/practice`：统一练习入口
+- `/h5/wrong-questions`：错题本
+- `/h5/children/select`：选择或创建孩子档案
+- `/h5/profile`：我的 / 管理入口
 
 ## 技术栈
 
@@ -10,145 +30,45 @@
 - Ant Design Mobile
 - Prisma + PostgreSQL
 - Zod + React Hook Form
-- AI Provider 抽象层（当前仅 `mock` provider）
 
-## H5 设计约定 (v2.0)
+## 一键安装
 
-- **Mobile-first**：专为 375px 手机宽度设计，最大宽度 480px 并居中显示。
-- **任务导向**：每个页面服务一个核心任务，底部主按钮清晰，减少认知负担。
-- **视觉风格**：简洁、干净、高留白，使用卡片圆角（24px-32px）与明亮配色，不幼稚化。
-- **导航架构**：主导航为 4 个 Tab：首页、练习、错题、我的。
-- **当前孩子**：系统自动跟踪当前选择的孩子，所有功能围绕该孩子展开。
-
-## H5 核心模块与路由
-
-### 1. 首页与导航
-- `/h5`：**首页**。展示当前孩子卡片、可解释的今日练习建议、本周目标进度（完成 3 次练习、正确率提升到 80%）、学习状态摘要（薄弱点、本月错题、正确率）及快捷入口；推荐会综合错题频次、最近练习时间和近 3 次正确率，并支持“一键换一个”。目标卡会显示进度条、预计完成时间，达成后给出徽章与鼓励语。
-- `/h5/children/select`：**切换孩子**。选择或创建孩子档案。
-- `/h5/profile`：**我的**。个人信息、档案管理；管理员额外显示 AI 模型高级设置、知识点包管理和用户管理。
-- `/h5/profile/learning-point-packages`：**知识点包管理**。仅管理员可访问，支持粘贴上传 LearningPointCatalog v1 JSON，服务端校验后按年级/学科/版本写入版本化目录并更新 manifest。
-- `/h5/login`：**登录页**。支持管理员和普通用户登录。
-- `/h5/profile/users`：**用户管理**。仅管理员可访问，用于新增和删除普通用户。
-
-### 2. 练习中心
-- `/h5/practice`：**统一练习入口**。支持“孩子模式/家长模式”切换并保存在本机：孩子模式隐藏复杂配置、使用更大的开始按钮和更少文字；家长模式展示推荐依据、年级/学科、教学标签过滤、训练强度与题型设置。入口支持一年级到九年级与语文/数学/英语切换，推荐最需练习的 1-3 个知识点；练习创建支持轻量（3 题/约 5 分钟）、标准（5 题/约 10 分钟）、强化（10 题/约 20 分钟）三档强度，并可选择单选或“单选 + 填空”混合题型。所有知识点列表会展示摘要、关键概念和“易错/基础/拔高/常考”教学标签，点击知识点先打开讲解弹层，查看“为什么学 / 怎么学 / 例题解析 / 常见错误 / 掌握标准”后再开始练习。从错题库进入或同知识点累计再错 2 次以上时，会触发“再错预警”：讲解弹层优先展示预警，自动降级为轻量低难度练习。可通过 `childId`、`knowledgePointId`、`knowledgePoint`、`remediation=1` 查询参数从孩子档案、首页推荐或错题卡直达指定孩子/知识点。
-- `/h5/children/[id]/practice/new`：旧版知识点练习创建路径，仅做兼容跳转到 `/h5/practice?childId=[id]`，不再维护独立页面，避免与统一练习入口重复。
-- `/h5/practice-sessions/[id]`：**答题页**。沉浸式答题体验，一屏一题，大号输入/选项，进度追踪。
-- `/h5/practice-sessions/[id]/result`：**练习反馈**。展示正确率、鼓励语、错题解析、“本次是否解决历史错因”的判定文案及后续建议。
-
-### 3. 错题与分析
-- `/h5/wrong-questions`：**错题本**。展示错题总数/科目/薄弱点摘要，支持题干/答案/解析/知识点搜索、科目筛选、知识点筛选；错题卡可展开查看我的答案、正确答案和解析，并可一键跳到对应知识点练习。
-- `/h5/children/[id]/upload`：**上传试卷**。极简上传流程，支持文本粘贴与图片上传，分阶段显示分析进度。
-
-### 4. 专项训练
-- `/h5/children/[id]/plan`：**学习计划**。自动生成“每周 2 次薄弱点专项 + 每月 1 次月度错题卷”的计划，展示完成率、正确率提升率和站内提醒；每个计划项可直接跳转到专项训练或月度卷。
-- `/h5/children/[id]/exams/monthly`：**月度卷**。基于本月错题库自动生成的巩固试卷。
-- `/h5/children/[id]/exams/weakness`：**薄弱点专项训练**。读取孩子的 `ChildKnowledgePoint`，按 `WEAK/PRACTICING`、错题数和掌握分排序，选择最需要强化的知识点，调用 `practice-generation` 功能路由生成专项练习；无薄弱点时展示空态并禁用生成。
-
-API：
-
-- `GET /api/children`
-- `POST /api/children`
-- `PATCH /api/children/[id]`
-- `DELETE /api/children/[id]`
-- `POST /api/exam-uploads`
-- `GET /api/exam-uploads?childId=`
-- `POST /api/exam-uploads/[id]/process`
-- `GET /api/wrong-questions?childId=`
-- `POST /api/practice-sessions`
-- `GET /api/practice-sessions/[id]`
-- `POST /api/practice-sessions/[id]/submit`
-- `GET /api/exams/monthly/preview`：获取月度错题统计与建议生成题数。
-- `POST /api/exams/monthly`：调用 AI 生成月度复习试卷。
-- `POST /api/auth/login`：账号登录并写入 HttpOnly 会话 Cookie。
-- `GET /api/auth/me`：读取当前登录用户。
-- `POST /api/auth/logout`：退出登录并清除会话。
-- `GET /api/users`：管理员读取用户列表。
-- `POST /api/users`：管理员新增普通用户。
-- `DELETE /api/users/[id]`：管理员删除普通用户；管理员账户不能在此删除。
-- `GET /api/settings/ai`：管理员读取 AI 对接配置的脱敏信息。
-- `PUT /api/settings/ai`：管理员保存 AI 对接配置，API Key 不会在响应中回显。
-- `POST /api/settings/ai/test`：管理员测试 mock 或 OpenAI-compatible 模型服务连通性。
-- `GET /api/learning-points?grade=&subject=&version=&view=`：读取标准学习要点 catalog；`view=points` 时返回扁平知识点列表，并保留讲解、例题、关键概念、常见错误、掌握标准和教学标签。
-- `POST /api/learning-point-packages`：管理员上传/替换 LearningPointCatalog v1 知识点包，服务端校验后写入 `data/learning-points` 并更新 manifest。
-- `GET /api/children/[id]/knowledge-points?subject=&grade=`：读取孩子知识点掌握状态；无记录时回退标准目录，也支持 `grade` 覆盖用于跨年级预习/复习。
-
-字段：`name`、`age`、`grade`、`province`、`city`、`textbookVersion`。表单校验由 Zod + React Hook Form 提供。
-
-试卷分析闭环：`POST /api/exam-uploads` 先创建 `PENDING` 上传记录；`POST /api/exam-uploads/[id]/process` 同步触发 mock AI 分析，输出必须通过 `src/schemas/analyzeWrongQuestionsSchema.ts` 的 Zod 校验后才会写入 `WrongQuestion`、`WrongQuestionKnowledgePoint` 并把关联 `ChildKnowledgePoint` 更新为 `WEAK`。AI 输出异常时上传记录置为 `FAILED`，不会写入错题和掌握状态脏数据。
-
-首页推荐、本周目标与纠错闭环：首页今日建议不再只取第一个薄弱点，而是由 `src/components/h5/home-recommendations.ts` 综合错题频次、近 7 天错题数、最近练习时间、近 3 次正确率趋势生成排序和“推荐原因”，并可一键切换候选知识点。`src/components/h5/home-goals.ts` 会把本周已完成练习次数与本周平均正确率转换成目标进度，默认目标为“完成 3 次练习、正确率达到 80%”，首页展示进度条、预计完成时间，达成后显示徽章和鼓励语。`src/components/h5/remediation-insights.ts` 会统计同知识点累计再错 2 次以上的“再错预警”，从错题卡进入练习或命中该知识点时优先展示讲解弹层并自动切到轻量低难度；结果页会结合本次题目是否仍在历史高频错点上出错，给出“历史错因已初步解决 / 还需要再拆解”的判定文案。
-
-知识点练习闭环：统一练习入口支持一年级到九年级与语文/数学/英语选择；知识点列表请求会携带 `grade`/`subject`，允许跨年级预习或回顾，并将 `subject` 传入练习 session；标准知识点会返回 `explanation`、`examples`、`keyConcepts`、`commonMistakes` 和 `masteryCriteria`，练习生成前先通过讲解弹层展示“为什么学 / 怎么学 / 学习步骤 / 例题与解析”，帮助孩子先理解再练习。`/h5/practice` 创建练习时可选三档强度：轻量（`questionCount=3,difficulty=easy`）、标准（`questionCount=5,difficulty=medium`）、强化（`questionCount=10,difficulty=hard`），题型支持 `single_choice` 或 `mixed`；`mixed` 请求会在 AI Prompt 中要求输出 `single_choice` 与 `fill_blank` 混合题。`src/ai/prompts/generatePracticeQuestionsPrompt.ts` 生成严格 JSON Prompt，并通过 `src/ai/ai-client.ts` 统一调用 mock AI。AI 输出必须先经过 `src/schemas/generatedPracticeQuestionsSchema.ts` 校验：题目数量 1-10；`single_choice` 必须 4 个选项；`fill_blank` 选项为空；`answer` 与 `explanation` 必填；校验失败不会创建练习 session。`src/services/practiceService.ts` 负责创建 `PracticeSession`/`PracticeQuestion`、答题提交、简单 equals 判分、返回每题结果和 `masteryStatus`。提交后会保存每题 `userAnswer` 与 `isCorrect`，并更新 `ChildKnowledgePoint.practiceCount`、`correctCount`、`lastPracticedAt`；掌握状态规则：题数 >= 5 且正确率 >= 80% 为 `MASTERED`；正确率 >= 50% 且 < 80% 为 `PRACTICING`；正确率 < 50% 为 `WEAK`。
-
-月度错题卷闭环：基于 `WrongQuestion` 表中的 `createdAt` 按月筛选，聚合各知识点的错题频率。AI Prompt (`src/ai/prompts/generateMonthlyWrongSetExamPrompt.ts`) 引导模型按 7:2:1 的比例改编错题知识点、相关知识点和综合题。生成的 `PracticeSession` 类型为 `MONTHLY_WRONG_SET`，答题提交后会根据试卷中的题目来源，**分知识点并行更新** 孩子的掌握度状态。
-
-说明：未配置 `DATABASE_URL` 或设置 `CHILDREN_STORE=memory` 时，孩子档案、试卷分析和知识点练习 API 会使用开发期内存存储，方便无 PostgreSQL 环境直接启动 H5；配置 PostgreSQL 后使用 Prisma 存储。账号与会话当前保存到服务器本地 `.data/users.json`，该目录已加入 `.gitignore`；首次启动会自动创建默认管理员 `admin / admin123456`，生产使用前应替换默认密码或改接正式身份系统。
-
-
-## 标准学习要点文件：LearningPointCatalog v1
-
-系统现在支持直接读取 `data/learning-points` 下的标准学习要点 JSON 文件，供小学到初中语文、数学、英语知识点讲解和练习入口使用。
-
-- `data/learning-points/manifest.json`：索引所有年级/学科/教材版本文件；当前目录版本为 `2026.05.12-junior`。
-- `data/learning-points/g01` 到 `g09`：小学一年级至初中三年级语文、数学、英语默认学习要点数据，当前共 474 个知识点。
-- `src/features/learning-points/schema.ts`：LearningPointCatalog v1 的 Zod 校验边界；每个知识点必须包含讲解 `explanation` 和至少 1 道可直接教学使用的例题 `examples`，可额外维护 `teachingTags`（`易错` / `基础` / `拔高` / `常考`）作为教学运营标签。
-- `src/features/learning-points/loader.ts`：运行时读取、年级/学科别名归一化和扁平知识点转换；扁平列表会保留讲解、例题、关键概念、常见错误、掌握标准和教学标签。
-- `GET /api/learning-points?grade=G01&subject=math&version=default`：读取完整标准学习要点文件。
-- `GET /api/learning-points?grade=一年级&subject=数学&view=points`：读取扁平知识点列表。
-- `GET /api/children/[id]/knowledge-points?subject=math`：优先返回孩子已有掌握状态；暂无错题/掌握记录时，自动回退该孩子年级和教材版本对应的标准学习要点。
-- `GET /api/children/[id]/knowledge-points?grade=三年级&subject=math`：按指定年级读取标准学习要点，并尽量把孩子已有同 ID/同名知识点掌握状态合并回列表。
-
-内容质量约定：
-
-- `explanation` 必须用“为什么学 / 怎么学 / 可执行步骤”解释知识点，不能只重复标题或写空泛口号。
-- `examples` 必须包含具体题干、明确答案和可复盘解析；禁止使用“遇到一道关于……的题”“读一段课文或短句……”等无法直接练习的占位文本。
-- 数学例题必须是具体计算、应用题、图形/统计/单位换算等真实题型；语文例题必须提供具体字词、句子、短文或表达任务；英语例题必须提供单词应用、句型构造、语法填空或对话场景。
-- 质量校验时需要抽查 `/h5/practice` 的知识点弹层：孩子应能在同一个弹层中看到“为什么学 / 怎么学 / 学习步骤 / 例题题干 / 参考答案 / 解析 / 常见错误 / 掌握标准”。
-
-示例：
-
-- 数学「100以内数的认识」：`填空：48里面有（ ）个十和（ ）个一；它比50少（ ）。` 答案 `4，8，2。`，解析说明十位、个位与 `50-48`。
-- 语文「多音字辨析」：用“我把种子种在花盆里”区分 `zhǒng` 与 `zhòng`，解析说明名词/动词语境。
-- 英语「be动词am is are」：`I ___ happy. She ___ my sister. They ___ students.` 答案 `am; is; are.`，解析说明主语与 be 动词搭配。
-
-详细生成规范见 `docs/learning-point-catalog-v1.md`。后续细化教材版本时，只需新增 `{subject}.{version}.json` 并更新 manifest。
-
-## 一键安装 / 升级
-
-Debian/Ubuntu 服务器可直接执行一键脚本。脚本会安装 Node.js 20、拉取最新 GitHub Release、执行构建、写入 systemd 服务并启动 H5 服务。
+Debian/Ubuntu 服务器可直接执行：
 
 ```bash
 curl -fsSL -4 https://raw.githubusercontent.com/zlylong/ai-learning-for-children/main/scripts/install.sh | sudo bash
 ```
 
-常用覆盖参数：
+指定版本安装：
 
 ```bash
-# 安装指定版本
 curl -fsSL -4 https://raw.githubusercontent.com/zlylong/ai-learning-for-children/main/scripts/install.sh | sudo VERSION=v0.2.0 bash
-
-# 自定义端口、安装目录和服务名
-curl -fsSL -4 https://raw.githubusercontent.com/zlylong/ai-learning-for-children/main/scripts/install.sh | sudo PORT=8090 INSTALL_DIR=/opt/ai-learning SERVICE_NAME=ai-learning bash
 ```
 
-默认行为：
+常用参数：
 
-- 安装目录：`/opt/ai-learning-for-children`
-- systemd 服务：`ai-learning.service`
-- 监听端口：`8080`
-- 首次安装若未提供 `INITIAL_ADMIN_PASSWORD`，脚本会生成随机管理员初始密码并保存到安装目录下的 `.data-initial-admin.txt`。
-- 重新执行脚本会升级/修复安装，并通过 `systemctl restart` 确保新版本生效。
+```bash
+PORT=8080
+INSTALL_DIR=/opt/ai-learning-for-children
+SERVICE_NAME=ai-learning
+INITIAL_ADMIN_PASSWORD=your-password
+```
+
+安装完成后访问：
+
+```text
+http://<服务器IP>:8080/h5
+```
 
 服务管理：
 
 ```bash
 systemctl status ai-learning.service
-journalctl -u ai-learning.service -f
 systemctl restart ai-learning.service
+journalctl -u ai-learning.service -f
 ```
 
-## 本地开发快速开始
+## 本地开发
 
 ```bash
 cp .env.example .env
@@ -157,79 +77,37 @@ npm run prisma:generate
 npm run dev
 ```
 
-默认开发服务监听 `0.0.0.0`，可通过手机浏览器访问开发机 IP。
+默认监听 `0.0.0.0`，可通过手机浏览器访问开发机 IP。
 
-## 环境变量
-
-见 `.env.example`：
-
-- `DATABASE_URL`: PostgreSQL 连接串。
-- `AI_PROVIDER`: 当前仅支持 `mock`。
-- `CHILDREN_STORE`: 设置为 `memory` 时使用开发期内存存储，便于无 PostgreSQL 演示。
-- `INITIAL_ADMIN_USERNAME` / `INITIAL_ADMIN_PASSWORD`: 首次创建 `.data/users.json` 时使用的管理员账号；已有用户文件不会被覆盖。
-- `AUTH_COOKIE_SECURE`: 仅在 H5 站点通过 HTTPS 提供服务时设置为 `true`；HTTP 测试环境保持为空或 `false`，避免浏览器拒收登录 Cookie。
-
-## 多用户与权限
-
-- 支持两类账号：`ADMIN` 管理员、`USER` 普通用户。
-- 普通用户可以登录并使用学习、练习、错题等 H5 功能，但不会看到“AI 模型设置”和“用户管理”入口。
-- 只有管理员可以访问 `/h5/profile/advanced-settings` 与 `/h5/profile/users`。
-- AI 设置相关 API 与用户管理 API 均做服务端管理员校验，不能只依赖前端隐藏入口。
-- 管理员只能新增/删除普通用户；管理员账户不会通过用户管理页删除，避免误删导致锁死。
-- 账户密码使用 PBKDF2-SHA256 哈希保存，会话使用 HttpOnly Cookie，用户数据文件 `.data/users.json` 权限写为 `0600`。
-
-## 数据模型
-
-Prisma schema 位于 `prisma/schema.prisma`，包含：
-
-- `User`：包含可选 `username`/`passwordHash`/`role` 字段，用于正式数据库账号扩展；当前 H5 登录状态使用 `.data/users.json`。
-- `Child`
-- `Textbook`
-- `Chapter`
-- `KnowledgePoint`
-- `ExamUpload`
-- `WrongQuestion`
-- `WrongQuestionKnowledgePoint`
-- `ChildKnowledgePoint`
-- `PracticeSession`
-- `PracticeQuestion`
-
-## 常用脚本
+## 常用命令
 
 ```bash
-npm run dev              # 启动 Next.js 开发服务
-npm run build            # Prisma generate + Next.js 构建
-npm run typecheck        # TypeScript 类型检查
+npm run dev              # 启动开发服务
+npm run build            # 生产构建
+npm run typecheck        # TypeScript 检查
 npm run lint             # ESLint 检查
-npm run test             # Vitest 单元测试
+npm run test             # 单元测试
 npm run prisma:generate  # 生成 Prisma Client
 npm run prisma:migrate   # 本地开发迁移
 ```
 
-测试环境（192.168.20.155）常用操作：
+## 环境变量
 
-```bash
-systemctl restart ai-learning-test.service
-systemctl is-active ai-learning-test.service
-```
+见 `.env.example`。常用项：
 
-发布或数据更新后建议至少执行：`npm run typecheck && npm run lint && npm run test`、`npm run build`，并在浏览器访问 `http://192.168.20.155:8080/h5/practice?childId=demo-child-1` 抽查知识点讲解弹层。
+- `DATABASE_URL`：PostgreSQL 连接串；不配置时可使用内存模式演示。
+- `AI_PROVIDER`：AI provider，默认 `mock`。
+- `CHILDREN_STORE`：设置为 `memory` 时使用内存存储。
+- `INITIAL_ADMIN_USERNAME` / `INITIAL_ADMIN_PASSWORD`：首次初始化管理员账号。
+- `AUTH_COOKIE_SECURE`：HTTPS 部署时设置为 `true`。
 
-## AI Provider 抽象
+## 知识点数据
 
-入口位于 `src/ai/ai-client.ts`：
+标准知识点位于 `data/learning-points`，格式为 `LearningPointCatalog v1`。新增或替换内容包时需要通过 Zod Schema 校验，详细规范见：
 
-- 默认使用 mock provider，保证无外部 API 时也能完成 H5 演示。
-- “我的 → 高级设置 · AI 对接”不再是单个全局模型，也不再只是 `text/ocr/audio` 能力拆分；正确结构是 **多个模型档案 + 功能路由**。
-- 一个模型档案包含独立的供应商、Base URL、模型名、API Key、启用状态和超时时间；当前支持 `mock` 与 `openai-compatible`。
-- 功能路由 `taskRoutes` 将业务功能绑定到模型档案：
-  - `exam-analysis`：试卷错题分析。
-  - `practice-generation`：知识点练习出题。
-  - `monthly-exam`：月度错题卷生成。
-  - `ocr`：图片/OCR 识别。
-  - `audio`：语音/音频处理。
-  - `text`：通用文本兜底。
-- 因此可以配置：错题分析走 DeepSeek，OCR 走 Qwen-VL，音频走 Whisper，月度卷走另一个 OpenAI-compatible 或 mock 兜底。
-- OpenAI-compatible 档案调用 `{baseUrl}/chat/completions`，要求模型返回严格 JSON；后续仍由各业务 Zod schema 校验后才会写入数据。
-- AI 设置保存到服务器本地 `.data/ai-settings.json`，该目录已加入 `.gitignore`；API 只返回每个档案的 `hasApiKey` 与脱敏 `apiKeyMask`，不会把完整 API Key 回传前端。
-- 生产环境建议把 API Key 迁移到 KMS/环境变量托管，避免长期明文落盘。
+- `docs/learning-point-catalog-v1.md`
+- `data/learning-points/README.md`
+
+## 发布
+
+推送 `v*` 标签会触发 GitHub Actions 自动发布 Release，并生成源码包和 SHA256 校验文件。
