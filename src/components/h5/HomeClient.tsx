@@ -14,6 +14,7 @@ import {
 import type { ChildProfile } from '@/features/children/schema';
 import type { WrongQuestionRecord } from '@/schemas/examUploadSchema';
 import { buildExplainableRecommendations, type ExplainableRecommendation } from './home-recommendations';
+import { buildWeeklyGoal, type WeeklyGoalViewModel } from './home-goals';
 import { ChildSwitcher } from './ChildSwitcher';
 import { StatCard } from './StatCard';
 import { ActionCard } from './ActionCard';
@@ -37,6 +38,7 @@ export function HomeClient() {
     accuracy: 0,
   });
   const [recommendations, setRecommendations] = useState<ExplainableRecommendation[]>([]);
+  const [weeklyGoal, setWeeklyGoal] = useState<WeeklyGoalViewModel | null>(null);
   const [recommendationIndex, setRecommendationIndex] = useState(0);
   const [loading, setLoading] = useState(true);
 
@@ -85,6 +87,7 @@ export function HomeClient() {
       });
 
       setRecommendations(buildExplainableRecommendations({ wrongQuestions: questions, sessions }));
+      setWeeklyGoal(buildWeeklyGoal({ sessions }));
       setRecommendationIndex(0);
 
     } catch (err) {
@@ -172,6 +175,43 @@ export function HomeClient() {
              <PlayOutline /> 开始练习
           </div>
         </Button>
+      </section>
+
+      <section>
+        <div className="mb-3 flex items-center justify-between px-1">
+           <h2 className="text-sm font-bold text-slate-900">本周目标</h2>
+           {weeklyGoal?.achieved ? <span className="rounded-full bg-amber-50 px-2 py-1 text-[10px] font-bold text-amber-600">可分享</span> : null}
+        </div>
+        <div className="rounded-[28px] bg-white p-5 shadow-sm ring-1 ring-black/[0.04]">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <div className="text-sm font-bold text-slate-900">{weeklyGoal?.badge ?? '🎯 本周目标'}</div>
+              <p className="mt-1 text-xs leading-5 text-slate-500">
+                {weeklyGoal?.message ?? '完成 3 次练习，并把正确率提升到 80%。'}
+              </p>
+            </div>
+            <div className="rounded-2xl bg-indigo-50 px-3 py-2 text-center text-indigo-600">
+              <div className="text-xl font-black">{weeklyGoal?.progressPercent ?? 0}%</div>
+              <div className="text-[10px] font-bold">进度</div>
+            </div>
+          </div>
+          <div className="mt-4 h-3 overflow-hidden rounded-full bg-slate-100">
+            <div className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-emerald-400 transition-all" style={{ width: `${weeklyGoal?.progressPercent ?? 0}%` }} />
+          </div>
+          <div className="mt-3 grid grid-cols-2 gap-3 text-xs">
+            <div className="rounded-2xl bg-slate-50 p-3">
+              <div className="font-bold text-slate-900">练习 {weeklyGoal?.practiceDone ?? 0}/{weeklyGoal?.practiceGoal ?? 3} 次</div>
+              <div className="mt-1 text-slate-400">本周完成次数</div>
+            </div>
+            <div className="rounded-2xl bg-slate-50 p-3">
+              <div className="font-bold text-slate-900">{weeklyGoal?.currentAccuracy ?? 0}%/{weeklyGoal?.accuracyGoal ?? 80}%</div>
+              <div className="mt-1 text-slate-400">本周正确率目标</div>
+            </div>
+          </div>
+          <div className={`mt-3 rounded-2xl p-3 text-xs leading-5 ${weeklyGoal?.achieved ? 'bg-amber-50 text-amber-700' : 'bg-blue-50 text-blue-700'}`}>
+            {weeklyGoal?.achieved ? '🎉 目标已达成：你已经获得“本周坚持徽章”，可以把好消息分享给家人。' : `预计完成时间：${weeklyGoal?.estimatedCompletion ?? '按每天 1 次，预计 3 天完成'}`}
+          </div>
+        </div>
       </section>
 
       <section>

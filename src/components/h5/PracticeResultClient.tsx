@@ -3,8 +3,10 @@
 import { useRouter } from 'next/navigation';
 import { useCallback, useEffect, useState } from 'react';
 import { Button, DotLoading, ErrorBlock, Space } from 'antd-mobile';
-import { LeftOutline, RedoOutline, SearchOutline } from 'antd-mobile-icons';
+import { RedoOutline } from 'antd-mobile-icons';
 import type { PracticeSessionRecord } from '@/features/practice/schema';
+import type { WrongQuestionRecord } from '@/schemas/examUploadSchema';
+import { buildRemediationResult, buildRewrongWarnings, type RemediationResult } from './remediation-insights';
 import { ResultSummaryCard } from './ResultSummaryCard';
 import { WrongQuestionCard } from './WrongQuestionCard';
 import { SafeAreaActionBar } from './SafeAreaActionBar';
@@ -12,6 +14,7 @@ import { SafeAreaActionBar } from './SafeAreaActionBar';
 export function PracticeResultClient({ sessionId }: { sessionId: string }) {
   const router = useRouter();
   const [session, setSession] = useState<PracticeSessionRecord | null>(null);
+  const [remediationResult, setRemediationResult] = useState<RemediationResult | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -21,6 +24,9 @@ export function PracticeResultClient({ sessionId }: { sessionId: string }) {
       const data = (await response.json()) as { session?: PracticeSessionRecord; error?: string };
       if (!response.ok || !data.session) throw new Error(data.error ?? '结果加载失败');
       setSession(data.session);
+      const wrongResponse = await fetch(`/api/wrong-questions?childId=${encodeURIComponent(data.session.childId)}`, { cache: 'no-store' });
+      const wrongData = (await wrongResponse.json()) as { wrongQuestions?: WrongQuestionRecord[] };
+      setRemediationResult(buildRemediationResult(data.session, buildRewrongWarnings(wrongData.wrongQuestions ?? [])));
     } catch (err) {
       setError(err instanceof Error ? err.message : '加载失败');
     } finally {
@@ -52,6 +58,13 @@ export function PracticeResultClient({ sessionId }: { sessionId: string }) {
         correctCount={session.result.correctCount}
         message={getEncouragement()}
       />
+
+      {remediationResult ? (
+        <section className={`rounded-3xl p-5 shadow-sm ring-1 ring-black/[0.04] ${remediationResult.solved === true ? 'bg-emerald-50 text-emerald-800' : remediationResult.solved === false ? 'bg-amber-50 text-amber-800' : 'bg-white text-slate-700'}`}>
+          <div className="text-sm font-bold">{remediationResult.solved === true ? '✅ ' : remediationResult.solved === false ? '🔁 ' : '🧭 '}{remediationResult.title}</div>
+          <p className="mt-2 text-sm leading-6">{remediationResult.message}</p>
+        </section>
+      ) : null}
 
       {/* 2. Wrong Analysis */}
       <section>
@@ -85,7 +98,12 @@ export function PracticeResultClient({ sessionId }: { sessionId: string }) {
             block 
             color="primary" 
             className="!h-12 !rounded-2xl !font-bold"
-            onClick={() => router.push(`/h5/practice`)}
+            onClick={() => {
+              const params = new URLSearchParams({ childId: session.childId, knowledgePoint: session.knowledgePoint });
+              if (session.subject) params.set('subject', session.subject);
+              if (remediationResult?.wasRewrongPoint) params.set('remediation', '1');
+              router.push(`/h5/practice?${params.toString()}`);
+            }}
           >
             <RedoOutline /> 再练 5 题
           </Button>

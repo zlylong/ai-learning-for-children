@@ -75,7 +75,7 @@ export function WrongQuestionCard({ item, content, analysis, knowledgePoints = [
             {primaryPoint && normalizedItem.childId && (
               <a
                 className="block w-full rounded-xl border border-blue-500 px-3 py-2 text-center text-sm font-medium text-blue-600 active:opacity-80"
-                href={`/h5/practice?childId=${encodeURIComponent(normalizedItem.childId)}&knowledgePointId=${encodeURIComponent(primaryPoint.knowledgePointId)}&knowledgePoint=${encodeURIComponent(primaryPoint.title)}`}
+                href={`/h5/practice?childId=${encodeURIComponent(normalizedItem.childId)}&knowledgePointId=${encodeURIComponent(primaryPoint.knowledgePointId)}&knowledgePoint=${encodeURIComponent(primaryPoint.title)}&remediation=1`}
               >
                 练这个知识点
               </a>

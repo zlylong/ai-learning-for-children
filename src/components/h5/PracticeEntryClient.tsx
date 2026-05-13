@@ -4,6 +4,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button, DotLoading, Popup, Selector, Toast } from 'antd-mobile';
 import { RightOutline } from 'antd-mobile-icons';
+import type { WrongQuestionRecord } from '@/schemas/examUploadSchema';
+import { buildRewrongWarnings, findWarningForPoint, type RewrongWarning } from './remediation-insights';
 import { WeakPointCard } from './WeakPointCard';
 import { EmptyState } from './EmptyState';
 
@@ -76,6 +78,7 @@ export function PracticeEntryClient() {
   const [requestedPoint, setRequestedPoint] = useState<{ id?: string; title?: string } | null>(null);
   const [intensity, setIntensity] = useState<PracticeIntensity>('standard');
   const [questionMode, setQuestionMode] = useState<PracticeQuestionMode>('mixed');
+  const [rewrongWarnings, setRewrongWarnings] = useState<RewrongWarning[]>([]);
   const requestSeqRef = useRef(0);
 
   const loadChildGrade = useCallback(async (id: string) => {
@@ -97,10 +100,15 @@ export function PracticeEntryClient() {
       requestSeqRef.current = requestSeq;
       setLoading(true);
       const params = new URLSearchParams({ subject: nextSubject, grade: nextGrade });
-      const res = await fetch(`/api/children/${id}/knowledge-points?${params.toString()}`, { cache: 'no-store' });
-      const data = (await res.json()) as { points?: KnowledgePointSummary[] };
+      const [pointRes, wrongRes] = await Promise.all([
+        fetch(`/api/children/${id}/knowledge-points?${params.toString()}`, { cache: 'no-store' }),
+        fetch(`/api/wrong-questions?childId=${encodeURIComponent(id)}`, { cache: 'no-store' }),
+      ]);
+      const data = (await pointRes.json()) as { points?: KnowledgePointSummary[] };
+      const wrongData = (await wrongRes.json()) as { wrongQuestions?: WrongQuestionRecord[] };
       if (requestSeq !== requestSeqRef.current) return;
       setPoints(data.points || []);
+      setRewrongWarnings(buildRewrongWarnings(wrongData.wrongQuestions || []));
     } catch (err) {
       console.error(err);
     } finally {
@@ -114,7 +122,9 @@ export function PracticeEntryClient() {
     const selectedId = queryChildId || localStorage.getItem('selectedChildId');
     const pointId = params.get('knowledgePointId')?.trim() || undefined;
     const pointTitle = params.get('knowledgePoint')?.trim() || undefined;
+    const isRemediation = params.get('remediation') === '1';
     const querySubject = params.get('subject')?.trim();
+    if (isRemediation) setIntensity('light');
     if (querySubject && subjectOptions.some((item) => item.value === querySubject)) {
       setSubject(querySubject as PracticeSubject);
     }
@@ -142,9 +152,10 @@ export function PracticeEntryClient() {
     });
     if (matched) {
       setDetailPoint(matched);
+      if (findWarningForPoint(rewrongWarnings, matched)) setIntensity('light');
       setRequestedPoint(null);
     }
-  }, [detailPoint, points, requestedPoint]);
+  }, [detailPoint, points, requestedPoint, rewrongWarnings]);
 
   const startPractice = async (point: KnowledgePointSummary) => {
     if (!childId) return;
@@ -196,6 +207,13 @@ export function PracticeEntryClient() {
     setGrade(value);
   };
 
+  const openPointDetail = (point: KnowledgePointSummary) => {
+    setDetailPoint(point);
+    if (findWarningForPoint(rewrongWarnings, point)) setIntensity('light');
+  };
+
+  const detailWarning = detailPoint ? findWarningForPoint(rewrongWarnings, detailPoint) : null;
+
   return (
     <div className="space-y-6 pb-10">
       <section className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/[0.04]">
@@ -240,8 +258,8 @@ export function PracticeEntryClient() {
               <WeakPointCard
                 key={p.id}
                 name={p.knowledgePointText}
-                reason={p.status === 'WEAK' ? '最近错题较多' : '练习中，需巩固'}
-                onPractice={() => setDetailPoint(p)}
+                reason={findWarningForPoint(rewrongWarnings, p)?.message ?? (p.status === 'WEAK' ? '最近错题较多' : '练习中，需巩固')}
+                onPractice={() => openPointDetail(p)}
               />
             ))
           ) : (
@@ -260,7 +278,7 @@ export function PracticeEntryClient() {
         </div>
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/[0.04] divide-y divide-slate-50">
           {points.length > 0 ? points.map((p) => (
-            <div key={p.id} className="p-4 active:bg-slate-50" onClick={() => setDetailPoint(p)}>
+            <div key={p.id} className="p-4 active:bg-slate-50" onClick={() => openPointDetail(p)}>
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0 flex-1">
                   <div className="text-sm font-semibold text-slate-800">{p.knowledgePointText}</div>
@@ -301,6 +319,13 @@ export function PracticeEntryClient() {
               <h3 className="mt-1 text-lg font-bold text-slate-900">{detailPoint.knowledgePointText}</h3>
             </div>
             <div className="min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain px-5 py-4 pb-28">
+              {detailWarning ? (
+                <section className="rounded-2xl border border-rose-100 bg-rose-50 p-4 text-sm leading-6 text-rose-700">
+                  <div className="font-bold">⚠️ 再错预警</div>
+                  <p className="mt-1">{detailWarning.message}</p>
+                  <p className="mt-1 text-xs text-rose-500">已自动切换为“轻量 · 低难度”练习，建议先读讲解和例题再开始。</p>
+                </section>
+              ) : null}
               {detailPoint.summary ? <p className="rounded-2xl bg-slate-50 p-4 text-sm leading-6 text-slate-600">{detailPoint.summary}</p> : null}
 
               {detailPoint.explanation ? (
