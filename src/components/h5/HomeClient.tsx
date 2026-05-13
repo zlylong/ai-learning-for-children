@@ -242,6 +242,12 @@ export function HomeClient() {
             icon={<FileOutline />} 
             href={`/h5/wrong-questions`}
           />
+          <ActionCard
+            title="学习计划"
+            desc="每周专项 + 月度卷，查看完成率与提醒"
+            icon={<StarOutline />}
+            href={`/h5/children/${child.id}/plan`}
+          />
           <ActionCard 
             title="生成月度卷" 
             desc="本月错题重新练，巩固薄弱项" 

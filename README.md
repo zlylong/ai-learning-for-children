@@ -25,12 +25,13 @@
 ### 1. 首页与导航
 - `/h5`：**首页**。展示当前孩子卡片、可解释的今日练习建议、本周目标进度（完成 3 次练习、正确率提升到 80%）、学习状态摘要（薄弱点、本月错题、正确率）及快捷入口；推荐会综合错题频次、最近练习时间和近 3 次正确率，并支持“一键换一个”。目标卡会显示进度条、预计完成时间，达成后给出徽章与鼓励语。
 - `/h5/children/select`：**切换孩子**。选择或创建孩子档案。
-- `/h5/profile`：**我的**。个人信息、档案管理；管理员额外显示 AI 模型高级设置和用户管理。
+- `/h5/profile`：**我的**。个人信息、档案管理；管理员额外显示 AI 模型高级设置、知识点包管理和用户管理。
+- `/h5/profile/learning-point-packages`：**知识点包管理**。仅管理员可访问，支持粘贴上传 LearningPointCatalog v1 JSON，服务端校验后按年级/学科/版本写入版本化目录并更新 manifest。
 - `/h5/login`：**登录页**。支持管理员和普通用户登录。
 - `/h5/profile/users`：**用户管理**。仅管理员可访问，用于新增和删除普通用户。
 
 ### 2. 练习中心
-- `/h5/practice`：**统一练习入口**。支持一年级到九年级与语文/数学/英语切换，推荐最需练习的 1-3 个知识点；练习创建支持轻量（3 题/约 5 分钟）、标准（5 题/约 10 分钟）、强化（10 题/约 20 分钟）三档强度，并可选择单选或“单选 + 填空”混合题型。所有知识点列表会展示摘要和关键概念，点击知识点先打开讲解弹层，查看“为什么学 / 怎么学 / 例题解析 / 常见错误 / 掌握标准”后再开始练习。从错题库进入或同知识点累计再错 2 次以上时，会触发“再错预警”：讲解弹层优先展示预警，自动降级为轻量低难度练习。可通过 `childId`、`knowledgePointId`、`knowledgePoint`、`remediation=1` 查询参数从孩子档案、首页推荐或错题卡直达指定孩子/知识点。
+- `/h5/practice`：**统一练习入口**。支持“孩子模式/家长模式”切换并保存在本机：孩子模式隐藏复杂配置、使用更大的开始按钮和更少文字；家长模式展示推荐依据、年级/学科、教学标签过滤、训练强度与题型设置。入口支持一年级到九年级与语文/数学/英语切换，推荐最需练习的 1-3 个知识点；练习创建支持轻量（3 题/约 5 分钟）、标准（5 题/约 10 分钟）、强化（10 题/约 20 分钟）三档强度，并可选择单选或“单选 + 填空”混合题型。所有知识点列表会展示摘要、关键概念和“易错/基础/拔高/常考”教学标签，点击知识点先打开讲解弹层，查看“为什么学 / 怎么学 / 例题解析 / 常见错误 / 掌握标准”后再开始练习。从错题库进入或同知识点累计再错 2 次以上时，会触发“再错预警”：讲解弹层优先展示预警，自动降级为轻量低难度练习。可通过 `childId`、`knowledgePointId`、`knowledgePoint`、`remediation=1` 查询参数从孩子档案、首页推荐或错题卡直达指定孩子/知识点。
 - `/h5/children/[id]/practice/new`：旧版知识点练习创建路径，仅做兼容跳转到 `/h5/practice?childId=[id]`，不再维护独立页面，避免与统一练习入口重复。
 - `/h5/practice-sessions/[id]`：**答题页**。沉浸式答题体验，一屏一题，大号输入/选项，进度追踪。
 - `/h5/practice-sessions/[id]/result`：**练习反馈**。展示正确率、鼓励语、错题解析、“本次是否解决历史错因”的判定文案及后续建议。
@@ -40,6 +41,7 @@
 - `/h5/children/[id]/upload`：**上传试卷**。极简上传流程，支持文本粘贴与图片上传，分阶段显示分析进度。
 
 ### 4. 专项训练
+- `/h5/children/[id]/plan`：**学习计划**。自动生成“每周 2 次薄弱点专项 + 每月 1 次月度错题卷”的计划，展示完成率、正确率提升率和站内提醒；每个计划项可直接跳转到专项训练或月度卷。
 - `/h5/children/[id]/exams/monthly`：**月度卷**。基于本月错题库自动生成的巩固试卷。
 - `/h5/children/[id]/exams/weakness`：**薄弱点专项训练**。读取孩子的 `ChildKnowledgePoint`，按 `WEAK/PRACTICING`、错题数和掌握分排序，选择最需要强化的知识点，调用 `practice-generation` 功能路由生成专项练习；无薄弱点时展示空态并禁用生成。
 
@@ -67,7 +69,8 @@ API：
 - `GET /api/settings/ai`：管理员读取 AI 对接配置的脱敏信息。
 - `PUT /api/settings/ai`：管理员保存 AI 对接配置，API Key 不会在响应中回显。
 - `POST /api/settings/ai/test`：管理员测试 mock 或 OpenAI-compatible 模型服务连通性。
-- `GET /api/learning-points?grade=&subject=&version=&view=`：读取标准学习要点 catalog；`view=points` 时返回扁平知识点列表，并保留讲解、例题、关键概念、常见错误和掌握标准。
+- `GET /api/learning-points?grade=&subject=&version=&view=`：读取标准学习要点 catalog；`view=points` 时返回扁平知识点列表，并保留讲解、例题、关键概念、常见错误、掌握标准和教学标签。
+- `POST /api/learning-point-packages`：管理员上传/替换 LearningPointCatalog v1 知识点包，服务端校验后写入 `data/learning-points` 并更新 manifest。
 - `GET /api/children/[id]/knowledge-points?subject=&grade=`：读取孩子知识点掌握状态；无记录时回退标准目录，也支持 `grade` 覆盖用于跨年级预习/复习。
 
 字段：`name`、`age`、`grade`、`province`、`city`、`textbookVersion`。表单校验由 Zod + React Hook Form 提供。
@@ -89,8 +92,8 @@ API：
 
 - `data/learning-points/manifest.json`：索引所有年级/学科/教材版本文件；当前目录版本为 `2026.05.12-junior`。
 - `data/learning-points/g01` 到 `g09`：小学一年级至初中三年级语文、数学、英语默认学习要点数据，当前共 474 个知识点。
-- `src/features/learning-points/schema.ts`：LearningPointCatalog v1 的 Zod 校验边界；每个知识点必须包含讲解 `explanation` 和至少 1 道可直接教学使用的例题 `examples`。
-- `src/features/learning-points/loader.ts`：运行时读取、年级/学科别名归一化和扁平知识点转换；扁平列表会保留讲解、例题、关键概念、常见错误和掌握标准。
+- `src/features/learning-points/schema.ts`：LearningPointCatalog v1 的 Zod 校验边界；每个知识点必须包含讲解 `explanation` 和至少 1 道可直接教学使用的例题 `examples`，可额外维护 `teachingTags`（`易错` / `基础` / `拔高` / `常考`）作为教学运营标签。
+- `src/features/learning-points/loader.ts`：运行时读取、年级/学科别名归一化和扁平知识点转换；扁平列表会保留讲解、例题、关键概念、常见错误、掌握标准和教学标签。
 - `GET /api/learning-points?grade=G01&subject=math&version=default`：读取完整标准学习要点文件。
 - `GET /api/learning-points?grade=一年级&subject=数学&view=points`：读取扁平知识点列表。
 - `GET /api/children/[id]/knowledge-points?subject=math`：优先返回孩子已有掌握状态；暂无错题/掌握记录时，自动回退该孩子年级和教材版本对应的标准学习要点。

@@ -34,6 +34,8 @@ export const learningPointExampleSchema = z.object({
   type: z.enum(['single_choice', 'fill_blank', 'short_answer', 'calculation', 'word_problem', 'reading_comprehension', 'sentence_making']).default('short_answer'),
 });
 
+export const learningPointTeachingTagSchema = z.enum(['易错', '基础', '拔高', '常考']);
+
 export const learningKnowledgePointSchema = z.object({
   id: z.string().trim().regex(/^kp_(chinese|math|english)_g0[1-9]_\d{3}_\d{3}$/),
   title: z.string().trim().min(1),
@@ -60,6 +62,7 @@ export const learningKnowledgePointSchema = z.object({
     minCorrectRateForMastery: z.number().min(0).max(1),
   }),
   tags: z.array(z.string().trim().min(1)).default([]),
+  teachingTags: z.array(learningPointTeachingTagSchema).default([]),
 });
 
 export const learningPointChapterSchema = z.object({
@@ -110,6 +113,7 @@ export const learningPointManifestSchema = z.object({
 
 export type LearningSubjectCode = z.infer<typeof learningSubjectCodeSchema>;
 export type LearningGradeCode = z.infer<typeof learningGradeCodeSchema>;
+export type LearningPointTeachingTag = z.infer<typeof learningPointTeachingTagSchema>;
 export type LearningPointCatalog = z.infer<typeof learningPointCatalogSchema>;
 export type LearningKnowledgePoint = z.infer<typeof learningKnowledgePointSchema>;
 export type LearningPointManifest = z.infer<typeof learningPointManifestSchema>;

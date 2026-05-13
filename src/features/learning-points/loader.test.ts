@@ -42,6 +42,7 @@ const sampleCatalog = {
       masteryCriteria: ['会读数', '会写数', '会比较'],
       practiceProfile: { recommendedQuestionTypes: ['single_choice'], difficultyRange: ['easy'], minCorrectRateForMastery: 0.85 },
       tags: ['基础'],
+      teachingTags: ['基础', '常考'],
     }],
   }],
   updatedAt: '2026-05-08T00:00:00.000Z',
@@ -72,6 +73,7 @@ describe('LearningPointCatalog v1', () => {
       status: 'UNKNOWN',
       explanation: expect.objectContaining({ why: expect.any(String), howToLearn: expect.any(String) }),
       examples: expect.arrayContaining([expect.objectContaining({ question: expect.any(String), answer: expect.any(String), analysis: expect.any(String) })]),
+      teachingTags: expect.arrayContaining([expect.stringMatching(/基础|易错|拔高|常考/)]),
     });
   });
 

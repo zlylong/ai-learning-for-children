@@ -39,10 +39,19 @@ const questionModeOptions = [
   { label: '单选', value: 'single_choice' },
   { label: '单选 + 填空', value: 'mixed' },
 ];
+const teachingTagOptions = [
+  { label: '全部', value: 'all' },
+  { label: '易错', value: '易错' },
+  { label: '基础', value: '基础' },
+  { label: '拔高', value: '拔高' },
+  { label: '常考', value: '常考' },
+];
 type PracticeSubject = 'chinese' | 'math' | 'english';
 type PracticeGrade = '一年级' | '二年级' | '三年级' | '四年级' | '五年级' | '六年级' | '七年级' | '八年级' | '九年级';
 type PracticeIntensity = keyof typeof intensityProfiles;
 type PracticeQuestionMode = 'single_choice' | 'mixed';
+type PracticeViewMode = 'child' | 'parent';
+type TeachingTagFilter = 'all' | '易错' | '基础' | '拔高' | '常考';
 
 type KnowledgePointSummary = {
   id: string;
@@ -65,6 +74,7 @@ type KnowledgePointSummary = {
   keyConcepts?: string[] | null;
   commonMistakes?: Array<{ type: string; description: string; remediation: string }> | null;
   masteryCriteria?: string[] | null;
+  teachingTags?: string[] | null;
 };
 
 export function PracticeEntryClient() {
@@ -78,6 +88,8 @@ export function PracticeEntryClient() {
   const [requestedPoint, setRequestedPoint] = useState<{ id?: string; title?: string } | null>(null);
   const [intensity, setIntensity] = useState<PracticeIntensity>('standard');
   const [questionMode, setQuestionMode] = useState<PracticeQuestionMode>('mixed');
+  const [viewMode, setViewMode] = useState<PracticeViewMode>('child');
+  const [tagFilter, setTagFilter] = useState<TeachingTagFilter>('all');
   const [rewrongWarnings, setRewrongWarnings] = useState<RewrongWarning[]>([]);
   const requestSeqRef = useRef(0);
 
@@ -123,6 +135,8 @@ export function PracticeEntryClient() {
     const pointId = params.get('knowledgePointId')?.trim() || undefined;
     const pointTitle = params.get('knowledgePoint')?.trim() || undefined;
     const isRemediation = params.get('remediation') === '1';
+    const savedMode = localStorage.getItem('practiceViewMode');
+    if (savedMode === 'child' || savedMode === 'parent') setViewMode(savedMode);
     const querySubject = params.get('subject')?.trim();
     if (isRemediation) setIntensity('light');
     if (querySubject && subjectOptions.some((item) => item.value === querySubject)) {
@@ -197,7 +211,14 @@ export function PracticeEntryClient() {
     );
   }
 
-  const weakPoints = points.filter((p) => p.status === 'WEAK' || p.status === 'PRACTICING').slice(0, 3);
+  const filteredPoints = tagFilter === 'all' ? points : points.filter((p) => p.teachingTags?.includes(tagFilter));
+  const weakPoints = filteredPoints.filter((p) => p.status === 'WEAK' || p.status === 'PRACTICING').slice(0, 3);
+  const parentMode = viewMode === 'parent';
+
+  const changeViewMode = (mode: PracticeViewMode) => {
+    setViewMode(mode);
+    localStorage.setItem('practiceViewMode', mode);
+  };
 
   const changeSubject = (value: PracticeSubject) => {
     setSubject(value);
@@ -217,40 +238,45 @@ export function PracticeEntryClient() {
   return (
     <div className="space-y-6 pb-10">
       <section className="rounded-2xl bg-white p-4 shadow-sm ring-1 ring-black/[0.04]">
-        <div className="mb-3 text-sm font-bold text-slate-900">选择年级</div>
-        <Selector
-          columns={3}
-          options={gradeOptions}
-          value={[grade]}
-          onChange={(items) => changeGrade((items[0] as PracticeGrade) ?? '一年级')}
-        />
-        <div className="mb-3 mt-4 text-sm font-bold text-slate-900">选择学科</div>
-        <Selector
-          columns={3}
-          options={subjectOptions}
-          value={[subject]}
-          onChange={(items) => changeSubject((items[0] as PracticeSubject) ?? 'math')}
-        />
-        <div className="mb-3 mt-4 text-sm font-bold text-slate-900">练习强度</div>
-        <Selector
-          columns={1}
-          options={intensityOptions}
-          value={[intensity]}
-          onChange={(items) => setIntensity((items[0] as PracticeIntensity) ?? 'standard')}
-        />
-        <div className="mb-3 mt-4 text-sm font-bold text-slate-900">题型</div>
-        <Selector
-          columns={2}
-          options={questionModeOptions}
-          value={[questionMode]}
-          onChange={(items) => setQuestionMode((items[0] as PracticeQuestionMode) ?? 'mixed')}
-        />
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <div>
+            <div className="text-sm font-bold text-slate-900">练习模式</div>
+            <div className="mt-1 text-[10px] text-slate-400">孩子自学更清爽，家长陪练可调参数</div>
+          </div>
+          <Selector
+            columns={2}
+            options={[{ label: '孩子模式', value: 'child' }, { label: '家长模式', value: 'parent' }]}
+            value={[viewMode]}
+            onChange={(items) => changeViewMode((items[0] as PracticeViewMode) ?? 'child')}
+          />
+        </div>
+
+        {parentMode ? (
+          <>
+            <div className="mb-3 mt-4 text-sm font-bold text-slate-900">选择年级</div>
+            <Selector columns={3} options={gradeOptions} value={[grade]} onChange={(items) => changeGrade((items[0] as PracticeGrade) ?? '一年级')} />
+            <div className="mb-3 mt-4 text-sm font-bold text-slate-900">选择学科</div>
+            <Selector columns={3} options={subjectOptions} value={[subject]} onChange={(items) => changeSubject((items[0] as PracticeSubject) ?? 'math')} />
+            <div className="mb-3 mt-4 text-sm font-bold text-slate-900">教学标签</div>
+            <Selector columns={3} options={teachingTagOptions} value={[tagFilter]} onChange={(items) => setTagFilter((items[0] as TeachingTagFilter) ?? 'all')} />
+            <div className="mb-3 mt-4 text-sm font-bold text-slate-900">练习强度</div>
+            <Selector columns={1} options={intensityOptions} value={[intensity]} onChange={(items) => setIntensity((items[0] as PracticeIntensity) ?? 'standard')} />
+            <div className="mb-3 mt-4 text-sm font-bold text-slate-900">题型</div>
+            <Selector columns={2} options={questionModeOptions} value={[questionMode]} onChange={(items) => setQuestionMode((items[0] as PracticeQuestionMode) ?? 'mixed')} />
+          </>
+        ) : (
+          <div className="rounded-3xl bg-cyan-50 p-4 text-center">
+            <div className="text-4xl">🚀</div>
+            <div className="mt-2 text-lg font-black text-cyan-900">选一个知识点，马上开始</div>
+            <div className="mt-1 text-xs text-cyan-700">系统会自动使用适合孩子的题量和题型</div>
+          </div>
+        )}
       </section>
 
       <section>
         <div className="mb-3 px-1">
           <h2 className="text-sm font-bold text-slate-900">推荐练习</h2>
-          <p className="mt-0.5 text-[10px] text-slate-400">根据当前年级/学科与近期学习情况自动生成</p>
+          <p className="mt-0.5 text-[10px] text-slate-400">{parentMode ? '根据年级/学科、错题频率、练习状态与标签过滤自动生成' : '优先推荐最需要巩固的内容'}</p>
         </div>
         <div className="space-y-3">
           {weakPoints.length > 0 ? (
@@ -258,7 +284,7 @@ export function PracticeEntryClient() {
               <WeakPointCard
                 key={p.id}
                 name={p.knowledgePointText}
-                reason={findWarningForPoint(rewrongWarnings, p)?.message ?? (p.status === 'WEAK' ? '最近错题较多' : '练习中，需巩固')}
+                reason={parentMode ? (findWarningForPoint(rewrongWarnings, p)?.message ?? (p.status === 'WEAK' ? '最近错题较多' : '练习中，需巩固')) : '先理解，再闯关'}
                 onPractice={() => openPointDetail(p)}
               />
             ))
@@ -274,18 +300,23 @@ export function PracticeEntryClient() {
       <section>
         <div className="mb-3 flex items-center justify-between px-1">
           <h2 className="text-sm font-bold text-slate-900">所有知识点</h2>
-          <span className="text-[10px] text-slate-400">当前年级/学科 · 弱项优先</span>
+          <span className="text-[10px] text-slate-400">{parentMode ? '当前筛选 · 弱项优先' : '点一下开始'}</span>
         </div>
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/[0.04] divide-y divide-slate-50">
-          {points.length > 0 ? points.map((p) => (
+          {filteredPoints.length > 0 ? filteredPoints.map((p) => (
             <div key={p.id} className="p-4 active:bg-slate-50" onClick={() => openPointDetail(p)}>
               <div className="flex items-start justify-between gap-3">
                 <div className="min-w-0 flex-1">
                   <div className="text-sm font-semibold text-slate-800">{p.knowledgePointText}</div>
                   {p.summary ? <p className="mt-1 line-clamp-2 text-xs leading-5 text-slate-500">{p.summary}</p> : null}
-                  {p.keyConcepts?.length ? (
+                  {parentMode && p.keyConcepts?.length ? (
                     <div className="mt-2 flex flex-wrap gap-1.5">
                       {p.keyConcepts.slice(0, 3).map((concept) => <span key={concept} className="rounded-full bg-cyan-50 px-2 py-0.5 text-[10px] text-cyan-700">{concept}</span>)}
+                    </div>
+                  ) : null}
+                  {parentMode && p.teachingTags?.length ? (
+                    <div className="mt-2 flex flex-wrap gap-1.5">
+                      {p.teachingTags.map((tag) => <span key={tag} className="rounded-full bg-amber-50 px-2 py-0.5 text-[10px] text-amber-700">{tag}</span>)}
                     </div>
                   ) : null}
                 </div>
@@ -396,10 +427,12 @@ export function PracticeEntryClient() {
               ) : null}
             </div>
             <div className="shrink-0 border-t border-slate-100 bg-white px-5 pb-[calc(16px+env(safe-area-inset-bottom))] pt-3">
-              <div className="mb-3 rounded-2xl bg-slate-50 p-3 text-xs leading-5 text-slate-600">
-                本次设置：{intensityOptions.find((option) => option.value === intensity)?.label} · {questionMode === 'mixed' ? '单选 + 填空混合' : '单选题'}
-              </div>
-              <Button block color="primary" size="large" className="!rounded-2xl" onClick={() => startPractice(detailPoint)}>根据这个知识点练习</Button>
+              {parentMode ? (
+                <div className="mb-3 rounded-2xl bg-slate-50 p-3 text-xs leading-5 text-slate-600">
+                  本次设置：{intensityOptions.find((option) => option.value === intensity)?.label} · {questionMode === 'mixed' ? '单选 + 填空混合' : '单选题'}
+                </div>
+              ) : null}
+              <Button block color="primary" size="large" className="!h-14 !rounded-2xl !text-base !font-black" onClick={() => startPractice(detailPoint)}>{parentMode ? '根据这个知识点练习' : '开始闯关'}</Button>
             </div>
           </div>
         ) : null}

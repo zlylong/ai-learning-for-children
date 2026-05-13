@@ -61,6 +61,11 @@ export default async function ProfilePage() {
                   label="AI 模型设置"
                 />
                 <MenuLink
+                  href="/h5/profile/learning-point-packages"
+                  icon={<CheckOutline />}
+                  label="知识点包管理"
+                />
+                <MenuLink
                   href="/h5/profile/users"
                   icon={<AddCircleOutline />}
                   label="用户管理"

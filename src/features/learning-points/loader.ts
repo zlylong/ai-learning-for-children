@@ -1,6 +1,6 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { learningGradeCodeSchema, learningPointCatalogSchema, learningPointManifestSchema, learningSubjectCodeSchema, type LearningGradeCode, type LearningPointCatalog, type LearningPointManifest, type LearningSubjectCode } from './schema';
+import { learningGradeCodeSchema, learningPointCatalogSchema, learningPointManifestSchema, learningSubjectCodeSchema, type LearningGradeCode, type LearningKnowledgePoint, type LearningPointCatalog, type LearningPointManifest, type LearningPointTeachingTag, type LearningSubjectCode } from './schema';
 
 const catalogRoot = path.join(process.cwd(), 'data', 'learning-points');
 const manifestPath = path.join(catalogRoot, 'manifest.json');
@@ -75,6 +75,16 @@ export async function loadLearningPointCatalog(input: { grade: string; subject: 
   return learningPointCatalogSchema.parse(await readJsonFile(resolved));
 }
 
+function deriveTeachingTags(point: LearningKnowledgePoint): LearningPointTeachingTag[] {
+  const tags = new Set<LearningPointTeachingTag>(point.teachingTags);
+  if (point.level === 'foundation') tags.add('基础');
+  if (point.level === 'advanced') tags.add('拔高');
+  if (point.commonMistakes.length >= 2 || point.tags.some((tag) => tag.includes('易错'))) tags.add('易错');
+  if (point.tags.some((tag) => tag.includes('常考') || tag.toLowerCase().includes('exam'))) tags.add('常考');
+  if (tags.size === 0) tags.add(point.level === 'advanced' ? '拔高' : '基础');
+  return Array.from(tags);
+}
+
 export async function listCatalogKnowledgePoints(input: { grade: string; subject?: string | null; version?: string | null }) {
   const catalog = await loadLearningPointCatalog({ grade: input.grade, subject: input.subject ?? 'math', version: input.version });
   if (!catalog) return [];
@@ -97,5 +107,6 @@ export async function listCatalogKnowledgePoints(input: { grade: string; subject
     commonMistakes: point.commonMistakes,
     masteryCriteria: point.masteryCriteria,
     tags: point.tags,
+    teachingTags: deriveTeachingTags(point),
   })));
 }

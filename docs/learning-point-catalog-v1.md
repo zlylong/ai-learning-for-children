@@ -41,7 +41,8 @@ data/learning-points/
    - 英语：必须给出具体单词、句型、语法填空、造句或对话场景，并说明语言点。
    - 禁止使用“遇到一道关于……的题”“读一段课文或短句……”等没有真实题干、答案和解析的占位模板。
 8. `commonMistakes` 至少 1 条，`masteryCriteria` 至少 3 条。
-9. `recommendedQuestionTypes` 只能使用系统允许题型：`single_choice`、`fill_blank`、`short_answer`、`calculation`、`word_problem`、`reading_comprehension`、`sentence_making`。
+9. 可选 `teachingTags` 用于内容运营和练习入口过滤，只能从 `易错`、`基础`、`拔高`、`常考` 中选择；不填写时运行时会根据 `level`、`tags` 和常见错误数量自动派生基础标签。
+10. `recommendedQuestionTypes` 只能使用系统允许题型：`single_choice`、`fill_blank`、`short_answer`、`calculation`、`word_problem`、`reading_comprehension`、`sentence_making`。
 
 ## 内容质量示例
 
@@ -55,8 +56,9 @@ data/learning-points/
 
 ## H5 展示约定
 
-- `GET /api/learning-points?...&view=points` 和 `GET /api/children/[id]/knowledge-points?...` 的扁平列表会保留 `explanation`、`examples`、`keyConcepts`、`commonMistakes`、`masteryCriteria`。
-- `/h5/practice` 是唯一知识点练习入口：所有知识点列表会展示摘要与关键概念标签；点击推荐练习或任一知识点都会打开底部讲解弹层，完整展示摘要、为什么学、怎么学、学习步骤、关键概念、例题解析、常见错误与掌握标准，底部按钮再进入练习生成。
+- `GET /api/learning-points?...&view=points` 和 `GET /api/children/[id]/knowledge-points?...` 的扁平列表会保留 `explanation`、`examples`、`keyConcepts`、`commonMistakes`、`masteryCriteria` 和 `teachingTags`。
+- `/h5/practice` 是唯一知识点练习入口：支持孩子模式/家长模式切换。孩子模式隐藏强度、题型、标签等配置，使用更大的开始按钮；家长模式展示推荐依据、年级/学科、教学标签过滤、训练强度和题型设置。
+- `/h5/practice` 的所有知识点列表会展示摘要与关键概念/教学标签；点击推荐练习或任一知识点都会打开底部讲解弹层，完整展示摘要、为什么学、怎么学、学习步骤、关键概念、例题解析、常见错误与掌握标准，底部按钮再进入练习生成。
 - `/h5/practice` 支持 `childId`、`knowledgePointId`、`knowledgePoint` 查询参数，用于孩子档案、错题卡等入口直达指定孩子/知识点；旧路径 `/h5/children/[id]/practice/new` 只保留兼容重定向，不再维护独立页面。
 - 若孩子已有 `ChildKnowledgePoint` 掌握状态，API 会把状态/正确数/错题数合并进 catalog 行，但讲解和例题仍以标准 catalog 为准。
 
