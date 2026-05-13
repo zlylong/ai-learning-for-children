@@ -6,8 +6,8 @@ import type { CurrentUser, UserCreateValues, UserRole, UserSummary } from './sch
 export const SESSION_COOKIE_NAME = 'ai-learning-session';
 
 const USERS_FILE = path.join(process.cwd(), '.data', 'users.json');
-const DEFAULT_ADMIN_USERNAME = 'admin';
-const DEFAULT_ADMIN_PASSWORD = 'admin123456';
+const DEFAULT_ADMIN_USERNAME = process.env.INITIAL_ADMIN_USERNAME?.trim() || 'admin';
+const DEFAULT_ADMIN_PASSWORD = process.env.INITIAL_ADMIN_PASSWORD?.trim() || 'admin123456';
 
 const globalForAuth = globalThis as typeof globalThis & {
   __aiLearningAuthWriteQueue?: Promise<unknown>;

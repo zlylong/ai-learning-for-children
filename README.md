@@ -114,7 +114,41 @@ API：
 
 详细生成规范见 `docs/learning-point-catalog-v1.md`。后续细化教材版本时，只需新增 `{subject}.{version}.json` 并更新 manifest。
 
-## 快速开始
+## 一键安装 / 升级
+
+Debian/Ubuntu 服务器可直接执行一键脚本。脚本会安装 Node.js 20、拉取最新 GitHub Release、执行构建、写入 systemd 服务并启动 H5 服务。
+
+```bash
+curl -fsSL -4 https://raw.githubusercontent.com/zlylong/ai-learning-for-children/main/scripts/install.sh | sudo bash
+```
+
+常用覆盖参数：
+
+```bash
+# 安装指定版本
+curl -fsSL -4 https://raw.githubusercontent.com/zlylong/ai-learning-for-children/main/scripts/install.sh | sudo VERSION=v0.2.0 bash
+
+# 自定义端口、安装目录和服务名
+curl -fsSL -4 https://raw.githubusercontent.com/zlylong/ai-learning-for-children/main/scripts/install.sh | sudo PORT=8090 INSTALL_DIR=/opt/ai-learning SERVICE_NAME=ai-learning bash
+```
+
+默认行为：
+
+- 安装目录：`/opt/ai-learning-for-children`
+- systemd 服务：`ai-learning.service`
+- 监听端口：`8080`
+- 首次安装若未提供 `INITIAL_ADMIN_PASSWORD`，脚本会生成随机管理员初始密码并保存到安装目录下的 `.data-initial-admin.txt`。
+- 重新执行脚本会升级/修复安装，并通过 `systemctl restart` 确保新版本生效。
+
+服务管理：
+
+```bash
+systemctl status ai-learning.service
+journalctl -u ai-learning.service -f
+systemctl restart ai-learning.service
+```
+
+## 本地开发快速开始
 
 ```bash
 cp .env.example .env
@@ -131,7 +165,9 @@ npm run dev
 
 - `DATABASE_URL`: PostgreSQL 连接串。
 - `AI_PROVIDER`: 当前仅支持 `mock`。
-- `AUTH_COOKIE_SECURE`: 仅在 H5 站点通过 HTTPS 提供服务时设置为 `true`；HTTP 测试环境保持为空，避免浏览器拒收登录 Cookie。
+- `CHILDREN_STORE`: 设置为 `memory` 时使用开发期内存存储，便于无 PostgreSQL 演示。
+- `INITIAL_ADMIN_USERNAME` / `INITIAL_ADMIN_PASSWORD`: 首次创建 `.data/users.json` 时使用的管理员账号；已有用户文件不会被覆盖。
+- `AUTH_COOKIE_SECURE`: 仅在 H5 站点通过 HTTPS 提供服务时设置为 `true`；HTTP 测试环境保持为空或 `false`，避免浏览器拒收登录 Cookie。
 
 ## 多用户与权限
 
