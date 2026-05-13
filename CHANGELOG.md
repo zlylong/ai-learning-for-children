@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.2.1 - 2026-05-13
+
+### 修复
+
+- 一键安装脚本默认安装并初始化 PostgreSQL，不再默认使用内存模式。
+- 新增 Prisma 初始迁移文件，安装时自动执行 `prisma migrate deploy` 创建业务表。
+- `.env` 首次生成时自动写入 `DATABASE_URL`；本机生成的数据库凭据保存到 `.data-database.txt`。
+- 支持外部 `DATABASE_URL`、`INSTALL_POSTGRES=false` 内存演示模式以及 `DB_NAME` / `DB_USER` / `DB_PASSWORD` 覆盖。
+
 ## v0.2.0 - 2026-05-13
 
 ### 新增

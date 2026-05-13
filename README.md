@@ -42,7 +42,7 @@ curl -fsSL -4 https://raw.githubusercontent.com/zlylong/ai-learning-for-children
 指定版本安装：
 
 ```bash
-curl -fsSL -4 https://raw.githubusercontent.com/zlylong/ai-learning-for-children/main/scripts/install.sh | sudo VERSION=v0.2.0 bash
+curl -fsSL -4 https://raw.githubusercontent.com/zlylong/ai-learning-for-children/main/scripts/install.sh | sudo VERSION=v0.2.1 bash
 ```
 
 常用参数：
@@ -52,7 +52,12 @@ PORT=8080
 INSTALL_DIR=/opt/ai-learning-for-children
 SERVICE_NAME=ai-learning
 INITIAL_ADMIN_PASSWORD=your-password
+DB_NAME=ai_learning_for_children
+DB_USER=ai_learning
+DB_PASSWORD=your-db-password
 ```
+
+默认会在本机安装 PostgreSQL，创建数据库和用户，写入 `DATABASE_URL`，并执行 Prisma 迁移。数据库凭据会保存到安装目录下的 `.data-database.txt`。如需使用外部数据库，可在安装时传入 `DATABASE_URL`；如仅临时演示且不需要持久化，可传入 `INSTALL_POSTGRES=false` 使用内存模式。
 
 安装完成后访问：
 
@@ -95,9 +100,9 @@ npm run prisma:migrate   # 本地开发迁移
 
 见 `.env.example`。常用项：
 
-- `DATABASE_URL`：PostgreSQL 连接串；不配置时可使用内存模式演示。
+- `DATABASE_URL`：PostgreSQL 连接串；一键安装默认创建本机 PostgreSQL 并自动写入。
 - `AI_PROVIDER`：AI provider，默认 `mock`。
-- `CHILDREN_STORE`：设置为 `memory` 时使用内存存储。
+- `CHILDREN_STORE`：仅临时演示时设置为 `memory`，正式安装不要设置。
 - `INITIAL_ADMIN_USERNAME` / `INITIAL_ADMIN_PASSWORD`：首次初始化管理员账号。
 - `AUTH_COOKIE_SECURE`：HTTPS 部署时设置为 `true`。
 
