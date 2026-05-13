@@ -9,7 +9,7 @@ export const practiceQuestionTypeSchema = z.preprocess((value) => {
   if (value === 'FILL_BLANK') return 'fill_blank';
   if (value === 'JUDGEMENT') return 'single_choice';
   return typeof value === 'string' ? value : value;
-}, generatedPracticeQuestionTypeSchema);
+}, z.union([generatedPracticeQuestionTypeSchema, z.literal('mixed')]));
 
 export const practiceSessionCreateSchema = z.object({
   childId: z.string().min(1, '缺少孩子 ID'),

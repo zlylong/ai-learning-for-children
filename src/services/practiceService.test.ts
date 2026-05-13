@@ -42,6 +42,20 @@ describe('practiceService public API', () => {
     expect(afterDuplicate).toMatchObject({ practiceCount: 5, correctCount: 4, wrongCount: 1 });
   });
 
+  it('creates mixed single-choice and fill-blank practice sessions for custom intensity', async () => {
+    const created = await practiceService.createPracticeSession({
+      childId: 'demo-child-1',
+      knowledgePointId: 'kp-carry-addition',
+      questionCount: 3,
+      difficulty: 'easy',
+      questionType: 'mixed',
+    });
+
+    const full = await practiceService.getPracticeSessionForResult(created.sessionId);
+    expect(full).toMatchObject({ questionCount: 3, difficulty: 'easy', questionType: 'mixed' });
+    expect(full?.questions.map((question) => question.questionType)).toEqual(['single_choice', 'fill_blank', 'single_choice']);
+  });
+
   it('does not create a session when AI output fails schema validation', async () => {
     await expect(practiceService.createPracticeSession({
       childId: 'demo-child-1',

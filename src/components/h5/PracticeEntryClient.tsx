@@ -23,8 +23,24 @@ const gradeOptions = [
   { label: '八年级', value: '八年级' },
   { label: '九年级', value: '九年级' },
 ];
+const intensityOptions = [
+  { label: '轻量 · 3题 · 约5分钟', value: 'light' },
+  { label: '标准 · 5题 · 约10分钟', value: 'standard' },
+  { label: '强化 · 10题 · 约20分钟', value: 'intensive' },
+];
+const intensityProfiles = {
+  light: { questionCount: 3, difficulty: 'easy' },
+  standard: { questionCount: 5, difficulty: 'medium' },
+  intensive: { questionCount: 10, difficulty: 'hard' },
+} as const;
+const questionModeOptions = [
+  { label: '单选', value: 'single_choice' },
+  { label: '单选 + 填空', value: 'mixed' },
+];
 type PracticeSubject = 'chinese' | 'math' | 'english';
 type PracticeGrade = '一年级' | '二年级' | '三年级' | '四年级' | '五年级' | '六年级' | '七年级' | '八年级' | '九年级';
+type PracticeIntensity = keyof typeof intensityProfiles;
+type PracticeQuestionMode = 'single_choice' | 'mixed';
 
 type KnowledgePointSummary = {
   id: string;
@@ -58,6 +74,8 @@ export function PracticeEntryClient() {
   const [loading, setLoading] = useState(true);
   const [detailPoint, setDetailPoint] = useState<KnowledgePointSummary | null>(null);
   const [requestedPoint, setRequestedPoint] = useState<{ id?: string; title?: string } | null>(null);
+  const [intensity, setIntensity] = useState<PracticeIntensity>('standard');
+  const [questionMode, setQuestionMode] = useState<PracticeQuestionMode>('mixed');
   const requestSeqRef = useRef(0);
 
   const loadChildGrade = useCallback(async (id: string) => {
@@ -96,6 +114,10 @@ export function PracticeEntryClient() {
     const selectedId = queryChildId || localStorage.getItem('selectedChildId');
     const pointId = params.get('knowledgePointId')?.trim() || undefined;
     const pointTitle = params.get('knowledgePoint')?.trim() || undefined;
+    const querySubject = params.get('subject')?.trim();
+    if (querySubject && subjectOptions.some((item) => item.value === querySubject)) {
+      setSubject(querySubject as PracticeSubject);
+    }
     if (pointId || pointTitle) setRequestedPoint({ id: pointId, title: pointTitle });
 
     if (selectedId) {
@@ -126,6 +148,7 @@ export function PracticeEntryClient() {
 
   const startPractice = async (point: KnowledgePointSummary) => {
     if (!childId) return;
+    const profile = intensityProfiles[intensity];
     Toast.show({ icon: 'loading', content: '正在生成练习...', duration: 0 });
     try {
       const res = await fetch('/api/practice-sessions', {
@@ -136,9 +159,9 @@ export function PracticeEntryClient() {
           subject,
           knowledgePoint: point.knowledgePointText,
           knowledgePointId: point.knowledgePointId,
-          questionCount: 5,
-          difficulty: 'medium',
-          questionType: 'single_choice',
+          questionCount: profile.questionCount,
+          difficulty: profile.difficulty,
+          questionType: questionMode,
         }),
       });
       const data = await res.json();
@@ -189,6 +212,20 @@ export function PracticeEntryClient() {
           options={subjectOptions}
           value={[subject]}
           onChange={(items) => changeSubject((items[0] as PracticeSubject) ?? 'math')}
+        />
+        <div className="mb-3 mt-4 text-sm font-bold text-slate-900">练习强度</div>
+        <Selector
+          columns={1}
+          options={intensityOptions}
+          value={[intensity]}
+          onChange={(items) => setIntensity((items[0] as PracticeIntensity) ?? 'standard')}
+        />
+        <div className="mb-3 mt-4 text-sm font-bold text-slate-900">题型</div>
+        <Selector
+          columns={2}
+          options={questionModeOptions}
+          value={[questionMode]}
+          onChange={(items) => setQuestionMode((items[0] as PracticeQuestionMode) ?? 'mixed')}
         />
       </section>
 
@@ -334,6 +371,9 @@ export function PracticeEntryClient() {
               ) : null}
             </div>
             <div className="shrink-0 border-t border-slate-100 bg-white px-5 pb-[calc(16px+env(safe-area-inset-bottom))] pt-3">
+              <div className="mb-3 rounded-2xl bg-slate-50 p-3 text-xs leading-5 text-slate-600">
+                本次设置：{intensityOptions.find((option) => option.value === intensity)?.label} · {questionMode === 'mixed' ? '单选 + 填空混合' : '单选题'}
+              </div>
               <Button block color="primary" size="large" className="!rounded-2xl" onClick={() => startPractice(detailPoint)}>根据这个知识点练习</Button>
             </div>
           </div>

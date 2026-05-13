@@ -13,6 +13,7 @@ import {
 } from 'antd-mobile-icons';
 import type { ChildProfile } from '@/features/children/schema';
 import type { WrongQuestionRecord } from '@/schemas/examUploadSchema';
+import { buildExplainableRecommendations, type ExplainableRecommendation } from './home-recommendations';
 import { ChildSwitcher } from './ChildSwitcher';
 import { StatCard } from './StatCard';
 import { ActionCard } from './ActionCard';
@@ -20,6 +21,9 @@ import { EmptyState } from './EmptyState';
 
 type PracticeSessionSummary = {
   status: string;
+  subject?: string | null;
+  knowledgePoint?: string | null;
+  startedAt?: string | null;
   result?: { accuracy?: number } | null;
 };
 
@@ -32,7 +36,8 @@ export function HomeClient() {
     monthWrong: 0,
     accuracy: 0,
   });
-  const [recommendation, setRecommendation] = useState<string | null>(null);
+  const [recommendations, setRecommendations] = useState<ExplainableRecommendation[]>([]);
+  const [recommendationIndex, setRecommendationIndex] = useState(0);
   const [loading, setLoading] = useState(true);
 
   const loadData = useCallback(async (id: string) => {
@@ -79,12 +84,8 @@ export function HomeClient() {
         accuracy: avgAccuracy,
       });
 
-      if (weakKpSet.size > 0) {
-        const firstKp = Array.from(weakKpSet)[0];
-        setRecommendation(`建议今天练习：${firstKp}`);
-      } else {
-        setRecommendation('暂无推荐练习，建议上传试卷分析');
-      }
+      setRecommendations(buildExplainableRecommendations({ wrongQuestions: questions, sessions }));
+      setRecommendationIndex(0);
 
     } catch (err) {
       console.error(err);
@@ -121,6 +122,8 @@ export function HomeClient() {
     );
   }
 
+  const recommendation = recommendations[recommendationIndex % Math.max(1, recommendations.length)] ?? null;
+
   return (
     <div className="space-y-6 pb-10">
       <ChildSwitcher name={child.name} grade={child.grade} id={child.id} />
@@ -131,12 +134,39 @@ export function HomeClient() {
           <span className="text-xs font-bold uppercase tracking-wider">今日建议</span>
         </div>
         <div className="mt-2 text-xl font-bold leading-tight">
-          {recommendation}
+          {recommendation ? `建议今天练习：${recommendation.knowledgePoint}` : '暂无推荐练习，建议上传试卷分析'}
         </div>
+        {recommendation ? (
+          <div className="mt-3 rounded-2xl bg-white/10 p-3 text-xs leading-5 text-indigo-50">
+            <div className="font-semibold">推荐原因：{recommendation.reason}</div>
+            <div className="mt-1 opacity-85">
+              错题 {recommendation.metrics.wrongCount} 次
+              {recommendation.metrics.recentWrongCount > 0 ? ` · 近7天 ${recommendation.metrics.recentWrongCount} 次` : ''}
+              {recommendation.metrics.daysSincePractice === null ? ' · 尚未练习' : ` · 距上次练习 ${recommendation.metrics.daysSincePractice} 天`}
+              {recommendation.metrics.recentAccuracy !== null ? ` · 近3次正确率 ${recommendation.metrics.recentAccuracy}%` : ''}
+            </div>
+          </div>
+        ) : null}
+        {recommendations.length > 1 ? (
+          <button
+            type="button"
+            className="mt-4 rounded-full bg-white/10 px-3 py-1.5 text-xs font-semibold text-white active:bg-white/20"
+            onClick={() => setRecommendationIndex((index) => (index + 1) % recommendations.length)}
+          >
+            换一个推荐
+          </button>
+        ) : null}
         <Button 
           block 
           className="mt-6 !h-12 !rounded-2xl !bg-white !text-indigo-600 !font-bold !border-none active:opacity-90"
-          onClick={() => router.push(`/h5/practice`)}
+          onClick={() => {
+            const params = new URLSearchParams({ childId: child.id });
+            if (recommendation) {
+              params.set('knowledgePoint', recommendation.knowledgePoint);
+              if (recommendation.subject) params.set('subject', recommendation.subject);
+            }
+            router.push(`/h5/practice?${params.toString()}`);
+          }}
         >
           <div className="flex items-center justify-center gap-2">
              <PlayOutline /> 开始练习

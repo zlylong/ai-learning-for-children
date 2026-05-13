@@ -33,7 +33,7 @@ export type GenerateJsonInput = {
   knowledgePointTitle?: string;
   questionCount?: number;
   difficulty?: 'easy' | 'medium' | 'hard';
-  questionType?: 'single_choice' | 'fill_blank' | 'short_answer';
+  questionType?: 'single_choice' | 'fill_blank' | 'short_answer' | 'mixed';
   childId?: string;
   month?: string;
 };
@@ -146,13 +146,14 @@ function mockGeneratePracticeQuestionsJson(input: GenerateJsonInput): unknown {
 
   const count = Math.min(30, Math.max(1, input.questionCount ?? 5));
   const difficulty = input.difficulty ?? 'medium';
-  const questionType = input.questionType ?? 'single_choice';
+  const requestedQuestionType = input.questionType ?? 'single_choice';
   const baseNumber = difficulty === 'easy' ? 20 : difficulty === 'medium' ? 40 : 70;
   return {
     questions: Array.from({ length: count }, (_, index) => {
       const left = baseNumber + index + 6;
       const right = difficulty === 'hard' ? 28 + index : 17 + index;
       const answer = String(left + right);
+      const questionType = requestedQuestionType === 'mixed' ? (index % 2 === 0 ? 'single_choice' : 'fill_blank') : requestedQuestionType;
       if (questionType === 'single_choice') {
         return {
           questionText: `${knowledgePointTitle}：${left} + ${right} = ?`,

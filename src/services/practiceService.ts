@@ -119,7 +119,10 @@ async function generateQuestions(input: PracticeSessionCreateInput, knowledgePoi
   const parsed = generatedPracticeQuestionsSchema.safeParse(raw);
   if (!parsed.success) throw new Error('AI 练习题生成结果校验失败');
   if (parsed.data.questions.length !== input.questionCount) throw new Error('AI 练习题数量不匹配');
-  const mismatched = parsed.data.questions.find((question) => question.questionType !== input.questionType || question.difficulty !== input.difficulty);
+  const mismatched = parsed.data.questions.find((question) => {
+    const expectedType = input.questionType === 'mixed' ? (question.questionType === 'single_choice' || question.questionType === 'fill_blank') : question.questionType === input.questionType;
+    return !expectedType || question.difficulty !== input.difficulty;
+  });
   if (mismatched) throw new Error('AI 练习题类型或难度不匹配');
   return parsed.data.questions;
 }
@@ -224,7 +227,7 @@ function sessionFromDb(session: {
     knowledgePoint: session.knowledgePointText ?? '',
     questionCount: session.questionCount,
     difficulty: session.difficulty === 'hard' ? 'hard' : session.difficulty === 'easy' ? 'easy' : 'medium',
-    questionType: session.questionType === 'fill_blank' ? 'fill_blank' : session.questionType === 'short_answer' ? 'short_answer' : 'single_choice',
+    questionType: session.questionType === 'mixed' ? 'mixed' : session.questionType === 'fill_blank' ? 'fill_blank' : session.questionType === 'short_answer' ? 'short_answer' : 'single_choice',
     startedAt: session.startedAt.toISOString(),
     endedAt: session.endedAt?.toISOString() ?? null,
     result: session.status === 'COMPLETED' ? {
