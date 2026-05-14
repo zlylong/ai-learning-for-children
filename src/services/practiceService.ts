@@ -5,6 +5,8 @@ import { childService } from '../features/children/service';
 import { masteryFromAccuracy, practiceSessionCreateSchema, type MasteryStatus, type PracticeQuestionRecord, type PracticeSessionCreateInput, type PracticeSessionRecord } from '../features/practice/schema';
 import { prisma } from '../lib/prisma';
 import { generatedPracticeQuestionsSchema, type GeneratedPracticeQuestion } from '../schemas/generatedPracticeQuestionsSchema';
+import { loadLearningPointCatalog } from '../features/learning-points/loader';
+import type { LearningKnowledgePoint } from '../features/learning-points/schema';
 
 const DEMO_USER_ID = 'demo-user';
 
@@ -101,12 +103,27 @@ async function resolveKnowledgePoint(input: PracticeSessionCreateInput): Promise
   return { id: null, title: input.knowledgePoint ?? '' };
 }
 
+async function findPromptLearningPoints(input: PracticeSessionCreateInput, knowledgePointTitle: string): Promise<LearningKnowledgePoint[]> {
+  const child = await childService.get(input.childId).catch(() => null);
+  const catalog = child?.grade && input.subject
+    ? await loadLearningPointCatalog({ grade: child.grade, subject: input.subject, version: child.textbookVersion }).catch(() => null)
+    : null;
+  if (!catalog) return [];
+  const points = catalog.chapters.flatMap((chapter) => chapter.knowledgePoints);
+  const exact = points.find((point) => point.id === input.knowledgePointId || point.title === knowledgePointTitle);
+  if (exact) return [exact];
+  const normalized = knowledgePointTitle.trim().toLowerCase();
+  return points.filter((point) => point.title.toLowerCase().includes(normalized) || normalized.includes(point.title.toLowerCase())).slice(0, 3);
+}
+
 async function generateQuestions(input: PracticeSessionCreateInput, knowledgePointTitle: string): Promise<GeneratedPracticeQuestion[]> {
-  const prompt = generatePracticeQuestionsPrompt({
+  const learningPoints = await findPromptLearningPoints(input, knowledgePointTitle);
+  const prompt = await generatePracticeQuestionsPrompt({
     knowledgePointTitle,
     questionCount: input.questionCount,
     difficulty: input.difficulty,
     questionType: input.questionType,
+    learningPoints,
   });
   const raw = await aiClient.generateJson({
     task: 'practice-generation',

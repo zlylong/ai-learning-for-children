@@ -66,6 +66,11 @@ export default async function ProfilePage() {
                   label="知识点包管理"
                 />
                 <MenuLink
+                  href="/h5/profile/prompt-templates"
+                  icon={<MessageOutline />}
+                  label="提示词包管理"
+                />
+                <MenuLink
                   href="/h5/profile/users"
                   icon={<AddCircleOutline />}
                   label="用户管理"

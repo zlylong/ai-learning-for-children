@@ -1,34 +1,25 @@
-export function generatePracticeQuestionsPrompt(input: {
+import { promptTemplateService } from '@/features/prompt-templates/service';
+import type { LearningKnowledgePoint } from '@/features/learning-points/schema';
+
+export async function generatePracticeQuestionsPrompt(input: {
   knowledgePointTitle: string;
   questionCount: number;
   difficulty: 'easy' | 'medium' | 'hard';
   questionType: 'single_choice' | 'fill_blank' | 'short_answer' | 'mixed';
+  learningPoints?: LearningKnowledgePoint[];
 }) {
-  const typeInstruction = input.questionType === 'mixed'
+  const questionTypeInstruction = input.questionType === 'mixed'
     ? '单选题和填空题混合（single_choice 与 fill_blank 尽量均衡，题目数量为奇数时单选题可多 1 道）'
     : `${input.questionType} 题`;
-  return `你是面向中小学学生的 AI 练习题老师。请围绕知识点「${input.knowledgePointTitle}」生成 ${input.questionCount} 道 ${input.difficulty} 难度的 ${typeInstruction}。
 
-要求：
-1. 只返回严格 JSON，不要输出 Markdown。
-2. JSON 顶层必须是 questions 数组，数组长度必须为 ${input.questionCount}。
-3. questionType 只能是 single_choice、fill_blank、short_answer；如果本次要求 mixed，输出题目中只能混合 single_choice 与 fill_blank，不要输出 mixed。
-4. single_choice 必须提供正好 4 个 options；fill_blank 和 short_answer 的 options 必须为空数组。
-5. answer 和 explanation 必须存在且非空。
-6. difficulty 只能是 easy、medium、hard。
-
-输出格式：
-{
-  "questions": [
-    {
-      "questionText": "...",
-      "questionType": "single_choice | fill_blank | short_answer",
-      "options": [],
-      "answer": "...",
-      "explanation": "...",
-      "knowledgePointTitle": "...",
-      "difficulty": "easy | medium | hard"
-    }
-  ]
-}`;
+  return promptTemplateService.renderPrompt('generate-practice-questions', {
+    variables: {
+      knowledgePointTitle: input.knowledgePointTitle,
+      questionCount: input.questionCount,
+      difficulty: input.difficulty,
+      questionType: input.questionType,
+      questionTypeInstruction,
+    },
+    learningPoints: input.learningPoints,
+  });
 }

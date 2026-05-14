@@ -5,6 +5,7 @@ import { childService } from '../features/children/service';
 import { prisma } from '../lib/prisma';
 import { analyzeWrongQuestionsSchema, type AnalyzeWrongQuestionsResult, type AnalyzedKnowledgePoint } from '../schemas/analyzeWrongQuestionsSchema';
 import { examUploadCreateSchema, type ExamUploadCreateInput, type ExamUploadRecord, type WrongQuestionKnowledgePointRecord, type WrongQuestionRecord } from '../schemas/examUploadSchema';
+import { loadLearningPointCatalog } from '../features/learning-points/loader';
 
 const DEMO_USER_ID = 'demo-user';
 const PENDING_KNOWLEDGE_POINT = '待确认知识点';
@@ -80,6 +81,11 @@ function uniqueByKnowledgePointId<T extends { knowledgePoint: { id: string }; co
     if (!existing || item.confidence > existing.confidence) byId.set(item.knowledgePoint.id, item);
   }
   return [...byId.values()];
+}
+
+async function promptLearningPointsForUpload(subject: string) {
+  const catalog = await loadLearningPointCatalog({ grade: 'G03', subject, version: null }).catch(() => null);
+  return catalog?.chapters.flatMap((chapter) => chapter.knowledgePoints).slice(0, 8) ?? [];
 }
 
 function uniqueMemoryLinks(items: WrongQuestionKnowledgePointRecord[]): WrongQuestionKnowledgePointRecord[] {
@@ -271,7 +277,7 @@ async function processWithMemory(uploadId: string) {
   }
 
   upload.status = 'PROCESSING';
-  const prompt = analyzeWrongQuestionsPrompt({ subject: upload.subject, rawText: upload.rawText });
+  const prompt = await analyzeWrongQuestionsPrompt({ subject: upload.subject, rawText: upload.rawText, learningPoints: await promptLearningPointsForUpload(upload.subject) });
   const rawResult = await aiClient.generateJson({ task: 'exam-analysis', prompt, subject: upload.subject, rawText: upload.rawText });
   const parsed = analyzeWrongQuestionsSchema.safeParse(rawResult);
   if (!parsed.success) {
@@ -367,7 +373,7 @@ export const examUploadService = {
       await prisma.examUpload.update({ where: { id: uploadId }, data: { status: 'PROCESSING' } });
 
       try {
-        const prompt = analyzeWrongQuestionsPrompt({ subject: upload.subject, rawText: upload.rawText });
+        const prompt = await analyzeWrongQuestionsPrompt({ subject: upload.subject, rawText: upload.rawText, learningPoints: await promptLearningPointsForUpload(upload.subject) });
         const rawResult = await aiClient.generateJson({ task: 'exam-analysis', prompt, subject: upload.subject, rawText: upload.rawText });
         const parsed = analyzeWrongQuestionsSchema.safeParse(rawResult);
         if (!parsed.success) {

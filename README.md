@@ -12,6 +12,7 @@
 - **学习计划**：自动安排每周薄弱点专项练习和每月错题卷。
 - **家长/孩子模式**：孩子模式更简单，家长模式提供更多筛选和配置能力。
 - **内容包管理**：管理员可上传或替换标准知识点包。
+- **提示词包管理**：错题诊断、练习生成、月度复习卷提示词支持像 Learning Points 一样上传自定义包。
 - **AI 模型配置**：支持 mock 模式，也可配置 OpenAI-compatible 模型档案和功能路由。
 
 ## 页面入口
@@ -21,6 +22,7 @@
 - `/h5/wrong-questions`：错题本
 - `/h5/children/select`：选择或创建孩子档案
 - `/h5/profile`：我的 / 管理入口
+- `/h5/profile/prompt-templates`：管理员提示词包管理
 
 ## 技术栈
 
@@ -112,6 +114,12 @@ npm run prisma:migrate   # 本地开发迁移
 
 - `docs/learning-point-catalog-v1.md`
 - `data/learning-points/README.md`
+
+## 提示词数据
+
+提示词位于内置 `PromptTemplatePack v1`，管理员可在 `/h5/profile/prompt-templates` 上传自定义包，生效文件保存到 `.data/prompt-templates/active.json`。所有 AI 功能仍保留 Zod 输出校验，详细规范见：
+
+- `docs/prompt-template-pack-v1.md`
 
 ## 发布
 

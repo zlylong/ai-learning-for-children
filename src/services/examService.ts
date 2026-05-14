@@ -3,6 +3,7 @@ import { aiClient } from '../ai/ai-client';
 import { generateMonthlyWrongSetExamPrompt } from '../ai/prompts/generateMonthlyWrongSetExamPrompt';
 import { generatedExamSchema } from '../schemas/generatedExamSchema';
 import type { Prisma } from '@prisma/client';
+import { loadLearningPointCatalog } from '../features/learning-points/loader';
 
 export interface MonthlyWrongQuestionSummary {
   totalWrongQuestions: number;
@@ -108,7 +109,12 @@ export const examService = {
     const summary = await this.getMonthlyWrongQuestionSummary(input);
 
     // 3. Call AI
-    const prompt = generateMonthlyWrongSetExamPrompt({
+    const catalog = await loadLearningPointCatalog({ grade: child.grade || 'G03', subject: input.subject, version: child.textbookVersion }).catch(() => null);
+    const learningPoints = catalog?.chapters.flatMap((chapter) => chapter.knowledgePoints).filter((point) =>
+      summary.topKnowledgePoints.some((kp) => kp.title === point.title || kp.title.includes(point.title) || point.title.includes(kp.title))
+    ).slice(0, 10) ?? [];
+
+    const prompt = await generateMonthlyWrongSetExamPrompt({
       grade: child.grade || '未知年级',
       subject: input.subject,
       textbookVersion: child.textbookVersion || '通用版本',
@@ -116,6 +122,7 @@ export const examService = {
       wrongCount: summary.totalWrongQuestions,
       topKnowledgePoints: summary.topKnowledgePoints.map(kp => kp.title),
       summaryJson: summary,
+      learningPoints,
     });
 
     const aiResponse = await aiClient.generateJson({
