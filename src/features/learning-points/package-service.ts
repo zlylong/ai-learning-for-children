@@ -25,6 +25,40 @@ async function readManifest() {
   return learningPointManifestSchema.parse(raw);
 }
 
+export async function listLearningPointCatalogPackages() {
+  const manifest = await readManifest();
+  const packages = await Promise.all(manifest.files.map(async (file) => {
+    const resolved = path.resolve(catalogRoot, file.path);
+    if (!resolved.startsWith(catalogRoot + path.sep)) throw new Error('Invalid learning point catalog path');
+    const catalog = learningPointCatalogSchema.parse(JSON.parse(await fs.readFile(resolved, 'utf8')) as unknown);
+    return {
+      grade: file.grade,
+      subject: file.subject,
+      version: file.version,
+      path: file.path,
+      textbookName: catalog.textbook.name,
+      chapterCount: catalog.chapters.length,
+      pointCount: catalog.chapters.reduce((sum, chapter) => sum + chapter.knowledgePoints.length, 0),
+      updatedAt: catalog.updatedAt,
+    };
+  }));
+  return {
+    catalogVersion: manifest.catalogVersion,
+    updatedAt: manifest.updatedAt,
+    packageCount: packages.length,
+    packages,
+  };
+}
+
+export async function exportSampleLearningPointCatalog() {
+  const manifest = await readManifest();
+  const first = manifest.files[0];
+  if (!first) return null;
+  const resolved = path.resolve(catalogRoot, first.path);
+  if (!resolved.startsWith(catalogRoot + path.sep)) throw new Error('Invalid learning point catalog path');
+  return learningPointCatalogSchema.parse(JSON.parse(await fs.readFile(resolved, 'utf8')) as unknown);
+}
+
 export async function installLearningPointCatalogPackage(input: LearningPointPackageUpload) {
   const { catalog, replace } = learningPointPackageUploadSchema.parse(input);
   const relativePath = safeCatalogRelativePath(catalog);

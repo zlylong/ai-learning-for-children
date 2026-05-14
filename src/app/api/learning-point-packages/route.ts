@@ -1,7 +1,20 @@
 import { NextResponse } from 'next/server';
 import { ZodError } from 'zod';
 import { authService } from '@/features/auth/auth-service';
-import { installLearningPointCatalogPackage, learningPointPackageUploadSchema } from '@/features/learning-points/package-service';
+import { exportSampleLearningPointCatalog, installLearningPointCatalogPackage, learningPointPackageUploadSchema, listLearningPointCatalogPackages } from '@/features/learning-points/package-service';
+
+export async function GET() {
+  try {
+    const [summary, sampleCatalog] = await Promise.all([
+      listLearningPointCatalogPackages(),
+      exportSampleLearningPointCatalog(),
+    ]);
+    return NextResponse.json({ ...summary, sampleCatalog });
+  } catch (error) {
+    console.error('[learning-point-packages] GET failed:', error);
+    return NextResponse.json({ error: '知识点包读取失败' }, { status: 500 });
+  }
+}
 
 export async function POST(request: Request) {
   try {
