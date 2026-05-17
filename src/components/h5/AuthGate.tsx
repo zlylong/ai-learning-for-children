@@ -26,7 +26,7 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
       .then(() => {
         if (!controller.signal.aborted) setReady(true);
       })
-      .catch((error) => {
+      .catch(() => {
         if (controller.signal.aborted) return;
         router.replace(`/h5/login?next=${encodeURIComponent(pathname)}`);
       });
