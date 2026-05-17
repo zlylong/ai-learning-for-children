@@ -17,21 +17,22 @@ export function AuthGate({ children }: { children: React.ReactNode }) {
       return;
     }
 
-    let cancelled = false;
-    fetch('/api/auth/me', { cache: 'no-store' })
+    const controller = new AbortController();
+    fetch('/api/auth/me', { cache: 'no-store', signal: controller.signal })
       .then((response) => {
         if (!response.ok) throw new Error('unauthorized');
         return response.json();
       })
       .then(() => {
-        if (!cancelled) setReady(true);
+        if (!controller.signal.aborted) setReady(true);
       })
-      .catch(() => {
-        if (!cancelled) router.replace(`/h5/login?next=${encodeURIComponent(pathname)}`);
+      .catch((error) => {
+        if (controller.signal.aborted) return;
+        router.replace(`/h5/login?next=${encodeURIComponent(pathname)}`);
       });
 
     return () => {
-      cancelled = true;
+      controller.abort();
     };
   }, [pathname, router]);
 
