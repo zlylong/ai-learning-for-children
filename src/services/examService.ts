@@ -134,7 +134,7 @@ export const examService = {
       month: input.month,
     });
 
-    const parsed = generatedExamSchema.safeParse(aiResponse);
+    const parsed = generatedExamSchema.safeParse(aiResponse.result);
     if (!parsed.success) {
       console.error('AI Response Validation Failed:', parsed.error);
       throw new Error('AI 生成试卷结果校验失败');

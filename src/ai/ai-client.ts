@@ -42,13 +42,16 @@ export const aiClient = {
   generateJson,
 };
 
-export async function generateJson(input: GenerateJsonInput): Promise<unknown> {
+export async function generateJson(input: GenerateJsonInput): Promise<{ result: unknown; _mock?: boolean }> {
   const settings = await aiSettingsService.getRuntimeSettings().catch(() => undefined);
   const profile = settings?.enabled ? resolveProfileForTask(settings, input.task) : undefined;
   if (profile?.enabled && profile.provider === 'openai-compatible') {
-    return generateJsonWithOpenAiCompatible(input, profile);
+    const result = await generateJsonWithOpenAiCompatible(input, profile);
+    return { result, _mock: false };
   }
-  return mockGenerateJson(input);
+  const result = await mockGenerateJson(input);
+  console.warn(`[ai-client] Using mock AI response for task: ${input.task ?? 'unknown'}. Configure AI settings to use a real provider.`);
+  return { result, _mock: true };
 }
 
 function resolveProfileForTask(settings: AiSettings, task?: AiTask): AiProfile | undefined {

@@ -1,12 +1,13 @@
 import { Prisma } from '@prisma/client';
-import { aiClient } from '../ai/ai-client';
-import { generatePracticeQuestionsPrompt } from '../ai/prompts/generatePracticeQuestionsPrompt';
-import { childService } from '../features/children/service';
-import { masteryFromAccuracy, practiceSessionCreateSchema, type MasteryStatus, type PracticeQuestionRecord, type PracticeSessionCreateInput, type PracticeSessionRecord } from '../features/practice/schema';
-import { prisma } from '../lib/prisma';
-import { generatedPracticeQuestionsSchema, type GeneratedPracticeQuestion } from '../schemas/generatedPracticeQuestionsSchema';
-import { loadLearningPointCatalog } from '../features/learning-points/loader';
-import type { LearningKnowledgePoint } from '../features/learning-points/schema';
+import { aiClient } from '@/ai/ai-client';
+import { generatePracticeQuestionsPrompt } from '@/ai/prompts/generatePracticeQuestionsPrompt';
+import { childService } from '@/features/children/service';
+import { masteryFromAccuracy, practiceSessionCreateSchema, type MasteryStatus, type PracticeQuestionRecord, type PracticeSessionCreateInput, type PracticeSessionRecord } from '@/features/practice/schema';
+import { prisma } from '@/lib/prisma';
+import { shouldUseMemoryStore } from '@/lib/with-fallback';
+import { generatedPracticeQuestionsSchema, type GeneratedPracticeQuestion } from '@/schemas/generatedPracticeQuestionsSchema';
+import { loadLearningPointCatalog } from '@/features/learning-points/loader';
+import type { LearningKnowledgePoint } from '@/features/learning-points/schema';
 
 const DEMO_USER_ID = 'demo-user';
 
@@ -17,10 +18,6 @@ const demoKnowledgePoints: Record<string, string> = {
   'kp-word-problem': '应用题数量关系',
   'kp-perimeter': '图形周长计算',
 };
-
-function shouldUseMemoryStore() {
-  return !process.env.DATABASE_URL || process.env.CHILDREN_STORE === 'memory';
-}
 
 function now() { return new Date().toISOString(); }
 function id(prefix: string) { return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`; }
@@ -133,7 +130,7 @@ async function generateQuestions(input: PracticeSessionCreateInput, knowledgePoi
     difficulty: input.difficulty,
     questionType: input.questionType,
   });
-  const parsed = generatedPracticeQuestionsSchema.safeParse(raw);
+  const parsed = generatedPracticeQuestionsSchema.safeParse(raw.result);
   if (!parsed.success) throw new Error('AI 练习题生成结果校验失败');
   if (parsed.data.questions.length !== input.questionCount) throw new Error('AI 练习题数量不匹配');
   const mismatched = parsed.data.questions.find((question) => {
@@ -332,7 +329,6 @@ export const practiceService = {
         masteryBefore,
         questions: {
           create: questions.map((question, index) => ({
-            sessionId: '',
             order: index + 1,
             knowledgePointId: knowledgePoint.id,
             knowledgePointText: question.knowledgePointTitle,

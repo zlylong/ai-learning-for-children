@@ -11,6 +11,7 @@ const DEFAULT_ADMIN_PASSWORD = process.env.INITIAL_ADMIN_PASSWORD?.trim() || 'ad
 
 const globalForAuth = globalThis as typeof globalThis & {
   __aiLearningAuthWriteQueue?: Promise<unknown>;
+  __aiLearningAuthStateCache?: { state: AuthState; loadedAt: number };
 };
 
 type StoredUser = {
@@ -87,7 +88,17 @@ function createDefaultState(): AuthState {
   };
 }
 
+function invalidateCache() {
+  globalForAuth.__aiLearningAuthStateCache = undefined;
+}
+
 async function readState(): Promise<AuthState> {
+  // Memory cache: avoid readFile on every API call
+  const cached = globalForAuth.__aiLearningAuthStateCache;
+  if (cached && Date.now() - cached.loadedAt < 2_000) {
+    return cached.state;
+  }
+
   try {
     const content = await readFile(USERS_FILE, 'utf8');
     const parsed = JSON.parse(content) as AuthState;
@@ -96,6 +107,7 @@ async function readState(): Promise<AuthState> {
       const fallback = createDefaultState().users[0];
       parsed.users.unshift({ ...fallback, username: 'admin', id: createId('user') });
     }
+    globalForAuth.__aiLearningAuthStateCache = { state: parsed, loadedAt: Date.now() };
     return parsed;
   } catch (error) {
     if (error instanceof Error && 'code' in error && error.code === 'ENOENT') {
@@ -111,6 +123,7 @@ async function writeState(state: AuthState): Promise<AuthState> {
   await mkdir(path.dirname(USERS_FILE), { recursive: true });
   await writeFile(USERS_FILE, `${JSON.stringify(state, null, 2)}\n`, { mode: 0o600 });
   await chmod(USERS_FILE, 0o600).catch(() => undefined);
+  invalidateCache();
   return state;
 }
 
@@ -121,6 +134,7 @@ async function mutateState<T>(mutator: (state: AuthState) => Promise<T> | T): Pr
     release = resolve;
   });
   await previous.catch(() => undefined);
+  invalidateCache(); // invalidate cache before reading on write path
   try {
     const state = await readState();
     const result = await mutator(state);
@@ -146,7 +160,6 @@ async function getUserByToken(token?: string | null): Promise<CurrentUser | null
 
 export const authService = {
   sessionCookieName: SESSION_COOKIE_NAME,
-  defaultAdmin: { username: DEFAULT_ADMIN_USERNAME, password: DEFAULT_ADMIN_PASSWORD },
 
   async login(input: { username: string; password: string }): Promise<{ user: CurrentUser; token: string; expiresAt: string } | null> {
     const state = await readState();
@@ -156,7 +169,8 @@ export const authService = {
     const token = randomBytes(32).toString('hex');
     const expiresAt = new Date(Date.now() + 1000 * 60 * 60 * 24 * 30).toISOString();
     await mutateState((next) => {
-      next.sessions = next.sessions.filter((session) => !isExpired(session) && session.userId !== user.id);
+      // Remove only expired sessions — keep other active sessions for multi-device support
+      next.sessions = next.sessions.filter((session) => !isExpired(session));
       next.sessions.push({ token, userId: user.id, createdAt: nowIso(), expiresAt });
     });
     return { user: toSummary(user), token, expiresAt };

@@ -1,13 +1,10 @@
 import { Prisma } from '@prisma/client';
 import { prisma } from '@/lib/prisma';
+import { withFallback } from '@/lib/with-fallback';
 import { memoryChildStore } from './memory-store';
 import type { ChildFormValues, ChildPatchValues, ChildProfile } from './schema';
 
 const DEMO_USER_ID = 'demo-user';
-
-function shouldUseMemoryStore() {
-  return !process.env.DATABASE_URL || process.env.CHILDREN_STORE === 'memory';
-}
 
 function toProfile(child: {
   id: string;
@@ -39,20 +36,6 @@ async function ensureDemoUser() {
     update: {},
     create: { id: DEMO_USER_ID, name: 'H5 Demo User' },
   });
-}
-
-async function withFallback<T>(operation: () => Promise<T>, fallback: () => T): Promise<T> {
-  if (shouldUseMemoryStore()) return fallback();
-
-  try {
-    return await operation();
-  } catch (error) {
-    if (error instanceof Prisma.PrismaClientKnownRequestError || error instanceof Prisma.PrismaClientInitializationError) {
-      console.warn('[children] Prisma unavailable, falling back to memory store:', error.message);
-      return fallback();
-    }
-    throw error;
-  }
 }
 
 export const childService = {

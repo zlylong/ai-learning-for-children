@@ -1,18 +1,15 @@
 import { Prisma } from '@prisma/client';
-import { aiClient } from '../ai/ai-client';
-import { analyzeWrongQuestionsPrompt } from '../ai/prompts/analyzeWrongQuestionsPrompt';
-import { childService } from '../features/children/service';
-import { prisma } from '../lib/prisma';
-import { analyzeWrongQuestionsSchema, type AnalyzeWrongQuestionsResult, type AnalyzedKnowledgePoint } from '../schemas/analyzeWrongQuestionsSchema';
-import { examUploadCreateSchema, type ExamUploadCreateInput, type ExamUploadRecord, type WrongQuestionKnowledgePointRecord, type WrongQuestionRecord } from '../schemas/examUploadSchema';
-import { loadLearningPointCatalog } from '../features/learning-points/loader';
+import { aiClient } from '@/ai/ai-client';
+import { analyzeWrongQuestionsPrompt } from '@/ai/prompts/analyzeWrongQuestionsPrompt';
+import { childService } from '@/features/children/service';
+import { prisma } from '@/lib/prisma';
+import { withFallback, shouldUseMemoryStore } from '@/lib/with-fallback';
+import { analyzeWrongQuestionsSchema, type AnalyzeWrongQuestionsResult, type AnalyzedKnowledgePoint } from '@/schemas/analyzeWrongQuestionsSchema';
+import { examUploadCreateSchema, type ExamUploadCreateInput, type ExamUploadRecord, type WrongQuestionKnowledgePointRecord, type WrongQuestionRecord } from '@/schemas/examUploadSchema';
+import { loadLearningPointCatalog } from '@/features/learning-points/loader';
 
 const DEMO_USER_ID = 'demo-user';
 const PENDING_KNOWLEDGE_POINT = '待确认知识点';
-
-function shouldUseMemoryStore() {
-  return !process.env.DATABASE_URL || process.env.CHILDREN_STORE === 'memory';
-}
 
 function makeId(prefix: string) {
   return `${prefix}_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`;
@@ -255,19 +252,6 @@ async function ensureDbKnowledgePoint(tx: Prisma.TransactionClient, title: strin
   return tx.knowledgePoint.create({ data: { chapterId: chapter.id, name: title, description: 'AI 分析自动关联', order: 0 } });
 }
 
-async function withFallback<T>(operation: () => Promise<T>, fallback: () => T | Promise<T>): Promise<T> {
-  if (shouldUseMemoryStore()) return fallback();
-  try {
-    return await operation();
-  } catch (error) {
-    if (error instanceof Prisma.PrismaClientKnownRequestError || error instanceof Prisma.PrismaClientInitializationError) {
-      console.warn('[exam-upload-service] Prisma unavailable, falling back to memory store:', error.message);
-      return fallback();
-    }
-    throw error;
-  }
-}
-
 async function processWithMemory(uploadId: string) {
   const state = memoryState();
   const upload = state.uploads.find((item) => item.id === uploadId);
@@ -279,7 +263,7 @@ async function processWithMemory(uploadId: string) {
   upload.status = 'PROCESSING';
   const prompt = await analyzeWrongQuestionsPrompt({ subject: upload.subject, rawText: upload.rawText, learningPoints: await promptLearningPointsForUpload(upload.subject) });
   const rawResult = await aiClient.generateJson({ task: 'exam-analysis', prompt, subject: upload.subject, rawText: upload.rawText });
-  const parsed = analyzeWrongQuestionsSchema.safeParse(rawResult);
+  const parsed = analyzeWrongQuestionsSchema.safeParse(rawResult.result);
   if (!parsed.success) {
     upload.status = 'FAILED';
     upload.resultJson = null;
@@ -375,67 +359,82 @@ export const examUploadService = {
       try {
         const prompt = await analyzeWrongQuestionsPrompt({ subject: upload.subject, rawText: upload.rawText, learningPoints: await promptLearningPointsForUpload(upload.subject) });
         const rawResult = await aiClient.generateJson({ task: 'exam-analysis', prompt, subject: upload.subject, rawText: upload.rawText });
-        const parsed = analyzeWrongQuestionsSchema.safeParse(rawResult);
+        const parsed = analyzeWrongQuestionsSchema.safeParse(rawResult.result);
         if (!parsed.success) {
           await prisma.examUpload.update({ where: { id: uploadId }, data: { status: 'FAILED' } });
           throw new Error('AI 错题分析结果校验失败');
         }
 
         return await prisma.$transaction(async (tx) => {
-        const createdWrongQuestions = [];
-        for (const item of parsed.data.wrongQuestions) {
-          const linkedPoints = uniqueByKnowledgePointId(await Promise.all(item.knowledgePoints.map((point) => matchDbKnowledgePoint(tx, point, upload.subject))));
-          const primary = linkedPoints[0]?.knowledgePoint;
-          const wrong = await tx.wrongQuestion.create({
-            data: {
-              childId: upload.childId,
-              examUploadId: upload.id,
-              subject: upload.subject,
-              questionText: item.questionText,
-              userAnswer: item.userAnswer,
-              studentAnswer: item.userAnswer,
-              correctAnswer: item.correctAnswer,
-              analysis: item.analysis,
-              errorReason: item.analysis,
-              source: upload.id,
-              knowledgePointId: primary?.id,
-              knowledgePointText: primary?.name,
-              answerText: item.correctAnswer,
-              knowledgePoints: {
-                create: linkedPoints.map((linked) => ({
-                  knowledgePointId: linked.knowledgePoint.id,
-                  confidence: linked.confidence,
-                })),
-              },
-            },
-            include: { knowledgePoints: { include: { knowledgePoint: true } } },
-          });
+          // Phase 1: pre-load all knowledge point matches (outside loop)
+          const allLinked = await Promise.all(
+            parsed.data.wrongQuestions.map((item) =>
+              Promise.all(item.knowledgePoints.map((point) => matchDbKnowledgePoint(tx, point, upload.subject)))
+            )
+          );
 
-          for (const linked of linkedPoints) {
-            await tx.childKnowledgePoint.upsert({
-              where: { childId_knowledgePointId: { childId: upload.childId, knowledgePointId: linked.knowledgePoint.id } },
-              create: {
-                childId: upload.childId,
-                knowledgePointId: linked.knowledgePoint.id,
-                knowledgePointText: linked.knowledgePoint.name,
-                status: 'WEAK',
-                masteryScore: 0,
-                wrongCount: 1,
-              },
-              update: {
-                status: 'WEAK',
-                wrongCount: { increment: 1 },
-              },
-            });
-          }
-          createdWrongQuestions.push(toWrongQuestionRecord(wrong));
-        }
+          // Phase 2: batch create wrong questions
+          const createdWrongQuestions = await Promise.all(
+            parsed.data.wrongQuestions.map(async (item, idx) => {
+              const linkedPoints = uniqueByKnowledgePointId(allLinked[idx]);
+              const primary = linkedPoints[0]?.knowledgePoint;
+
+              const wrong = await tx.wrongQuestion.create({
+                data: {
+                  childId: upload.childId,
+                  examUploadId: upload.id,
+                  subject: upload.subject,
+                  questionText: item.questionText,
+                  userAnswer: item.userAnswer,
+                  studentAnswer: item.userAnswer,
+                  correctAnswer: item.correctAnswer,
+                  analysis: item.analysis,
+                  errorReason: item.analysis,
+                  source: upload.id,
+                  knowledgePointId: primary?.id,
+                  knowledgePointText: primary?.name,
+                  answerText: item.correctAnswer,
+                  knowledgePoints: {
+                    create: linkedPoints.map((linked) => ({
+                      knowledgePointId: linked.knowledgePoint.id,
+                      confidence: linked.confidence,
+                    })),
+                  },
+                },
+                include: { knowledgePoints: { include: { knowledgePoint: true } } },
+              });
+
+              return { wrong, linkedPoints };
+            })
+          );
+
+          // Phase 3: batch upsert child knowledge point mastery
+          const allUpserts = createdWrongQuestions.flatMap(({ linkedPoints }) =>
+            linkedPoints.map((linked) =>
+              tx.childKnowledgePoint.upsert({
+                where: { childId_knowledgePointId: { childId: upload.childId, knowledgePointId: linked.knowledgePoint.id } },
+                create: {
+                  childId: upload.childId,
+                  knowledgePointId: linked.knowledgePoint.id,
+                  knowledgePointText: linked.knowledgePoint.name,
+                  status: 'WEAK',
+                  masteryScore: 0,
+                  wrongCount: 1,
+                },
+                update: {
+                  status: 'WEAK',
+                  wrongCount: { increment: 1 },
+                },
+              })
+            )
+          );
+          await Promise.all(allUpserts);
 
           const doneUpload = await tx.examUpload.update({
             where: { id: uploadId },
             data: { status: 'DONE', resultJson: parsed.data as unknown as Prisma.JsonObject, processedAt: new Date() },
           });
-          return { upload: toUploadRecord(doneUpload), wrongQuestions: createdWrongQuestions };
+          return { upload: toUploadRecord(doneUpload), wrongQuestions: createdWrongQuestions.map(({ wrong }) => toWrongQuestionRecord(wrong)) };
         });
       } catch (error) {
         if (!(error instanceof Error && error.message === 'AI 错题分析结果校验失败')) {
