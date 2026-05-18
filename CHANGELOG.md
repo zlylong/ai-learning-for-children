@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.2.2 - 2026-05-18
+
+### 修复
+
+- **登录 Cookie Secure 标记修复**：修复了管理员无法登录的问题。之前在生产模式下 `NODE_ENV=production` 导致 Set-Cookie 始终带有 `Secure` 标记，HTTP 请求的浏览器不会将该 Cookie 发回服务器，表现为“登录成功但始终未登录”。现改为自动检测请求的实际协议（`x-forwarded-proto` / `request.url`），仅在真正走 HTTPS 时设置 `Secure`。
+- **移除 `AUTH_COOKIE_SECURE` 环境变量**：改为自动检测，不再需要手动配置。
+
+### 文档
+
+- `.env.example` 移除已弃用的 `AUTH_COOKIE_SECURE` 变量，补充默认密码说明。
+- `README.md` 添加开发环境默认密码说明和注意事项。
+
 ## v0.2.1 - 2026-05-13
 
 ### 修复

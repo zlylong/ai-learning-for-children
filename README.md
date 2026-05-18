@@ -84,7 +84,15 @@ npm run prisma:generate
 npm run dev
 ```
 
-默认监听 `0.0.0.0`，可通过手机浏览器访问开发机 IP。
+`npm run dev` 默认监听 `0.0.0.0`。首次启动会自动在 `.data/users.json` 创建管理员账号。
+
+| 环境 | 登录密码 |
+|------|----------|
+| 开发环境（新建） | `admin123456` |
+| 首次安装脚本 | 随机生成 |
+| 自定义 | 设置 `INITIAL_ADMIN_PASSWORD` |
+
+> ⚠️ **开发环境密码默认为 `admin123456`**（而非 `INITIAL_ADMIN_PASSWORD` 的默认值 `change-me-before-production`），因为首次构建后重启不经过安装脚本，重置 `.data` 后会用代码层硬编码的默认值 `admin123456` 创建用户。建议首次登录后立即在管理界面修改密码或设置环境变量重新部署。
 
 ## 常用命令
 
@@ -106,7 +114,8 @@ npm run prisma:migrate   # 本地开发迁移
 - `AI_PROVIDER`：AI provider，默认 `mock`。
 - `CHILDREN_STORE`：仅临时演示时设置为 `memory`，正式安装不要设置。
 - `INITIAL_ADMIN_USERNAME` / `INITIAL_ADMIN_PASSWORD`：首次初始化管理员账号。
-- `AUTH_COOKIE_SECURE`：HTTPS 部署时设置为 `true`。
+
+> 💡 Cookie Secure 标记已改为自动检测请求协议（HTTP → 不设 Secure，HTTPS → 自动设 Secure），无需手动配置。
 
 ## 知识点数据
 
