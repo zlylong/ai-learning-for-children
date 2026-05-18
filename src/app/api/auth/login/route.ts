@@ -40,11 +40,13 @@ export async function POST(request: Request) {
   }
 
   const response = NextResponse.json({ user: result.user });
-  const isProduction = process.env.NODE_ENV === 'production';
+  // Only set Secure when the incoming request is actually HTTPS
+  const proto = request.headers.get('x-forwarded-proto')?.toLowerCase() ?? '';
+  const isHttps = proto === 'https' || request.url.startsWith('https://');
   response.cookies.set(authService.sessionCookieName, result.token, {
     httpOnly: true,
     sameSite: 'lax',
-    secure: isProduction, // default to true in production
+    secure: isHttps,
     path: '/',
     expires: new Date(result.expiresAt),
   });
