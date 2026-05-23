@@ -7,6 +7,7 @@ import { prisma } from '@/lib/prisma';
 import { now, makeId, normalizeAnswer } from '@/lib/utils';
 import { shouldUseMemoryStore } from '@/lib/with-fallback';
 import { generatedPracticeQuestionsSchema, type GeneratedPracticeQuestion } from '@/schemas/generatedPracticeQuestionsSchema';
+import { generatedExamSchema, type GeneratedExam } from '@/schemas/generatedExamSchema';
 import { loadLearningPointCatalog } from '@/features/learning-points/loader';
 import type { LearningKnowledgePoint } from '@/features/learning-points/schema';
 
@@ -489,6 +490,52 @@ export const practiceService = {
 
   getMemoryChildKnowledgePoint(childId: string, knowledgePointId: string) {
     return memoryState().mastery.get(`${childId}:${knowledgePointId}`) ?? null;
+  },
+
+  createDirectMemorySession(input: {
+    childId: string;
+    subject: string;
+    month: string;
+    exam: GeneratedExam;
+    questionCount: number;
+  }) {
+    if (!shouldUseMemoryStore()) throw new Error('仅在内存模式下可用');
+    const sessionId = makeId('practice');
+    const session: PracticeSessionRecord = {
+      id: sessionId,
+      childId: input.childId,
+      title: input.exam.title,
+      type: 'MONTHLY_WRONG_SET',
+      subject: input.subject,
+      sourceMonth: input.month,
+      status: 'ACTIVE',
+      knowledgePoint: '',
+      questionCount: input.questionCount,
+      difficulty: 'medium',
+      questionType: 'single_choice',
+      startedAt: now(),
+      endedAt: null,
+      result: null,
+      questions: input.exam.questions.slice(0, input.questionCount).map((q, index) => ({
+        id: makeId(`pq${index + 1}`),
+        sessionId,
+        order: index + 1,
+        stem: q.questionText,
+        questionText: q.questionText,
+        questionType: q.questionType,
+        options: q.options,
+        answerText: q.answer,
+        answer: q.answer,
+        analysis: q.explanation,
+        explanation: q.explanation,
+        knowledgePoint: q.knowledgePointTitle,
+        knowledgePointId: null,
+        userAnswer: null,
+        isCorrect: null,
+      })),
+    };
+    memoryState().sessions.set(sessionId, session);
+    return { sessionId };
   },
 
   async listPracticeSessions(childId: string): Promise<PracticeSessionRecord[]> {

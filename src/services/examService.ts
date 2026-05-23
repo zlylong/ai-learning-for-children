@@ -4,9 +4,9 @@ import { generateMonthlyWrongSetExamPrompt } from '../ai/prompts/generateMonthly
 import { generatedExamSchema } from '../schemas/generatedExamSchema';
 import type { Prisma } from '@prisma/client';
 import { loadLearningPointCatalog } from '../features/learning-points/loader';
-import { withFallback, shouldUseMemoryStore } from '../lib/with-fallback';
+import { shouldUseMemoryStore } from '../lib/with-fallback';
 import { childService } from '../features/children/service';
-import { makeId } from '../lib/utils';
+import { practiceService } from './practiceService';
 
 export interface MonthlyWrongQuestionSummary {
   totalWrongQuestions: number;
@@ -125,7 +125,7 @@ export const examService = {
 
     const summary = await this.getMonthlyWrongQuestionSummary(input);
 
-    const catalog = await loadLearningPointCatalog({ grade: child.grade || 'G03', subject: input.subject, version: (child as any).textbookVersion || null }).catch(() => null);
+    const catalog = await loadLearningPointCatalog({ grade: child.grade || 'G03', subject: input.subject, version: child.textbookVersion || null }).catch(() => null);
     const learningPoints = catalog?.chapters.flatMap((chapter) => chapter.knowledgePoints).filter((point) =>
       summary.topKnowledgePoints.some((kp) => kp.title === point.title || kp.title.includes(point.title) || point.title.includes(kp.title))
     ).slice(0, 10) ?? [];
@@ -133,7 +133,7 @@ export const examService = {
     const prompt = await generateMonthlyWrongSetExamPrompt({
       grade: child.grade || '未知年级',
       subject: input.subject,
-      textbookVersion: (child as any).textbookVersion || '通用版本',
+      textbookVersion: child.textbookVersion || '通用版本',
       month: input.month,
       wrongCount: summary.totalWrongQuestions,
       topKnowledgePoints: summary.topKnowledgePoints.map(kp => kp.title),
@@ -158,7 +158,13 @@ export const examService = {
     const exam = parsed.data;
 
     if (shouldUseMemoryStore()) {
-      return { sessionId: makeId('exam') };
+      return practiceService.createDirectMemorySession({
+        childId: input.childId,
+        subject: input.subject,
+        month: input.month,
+        exam,
+        questionCount,
+      });
     }
 
     const session = await prisma.practiceSession.create({
