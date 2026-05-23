@@ -4,6 +4,9 @@ import { generateMonthlyWrongSetExamPrompt } from '../ai/prompts/generateMonthly
 import { generatedExamSchema } from '../schemas/generatedExamSchema';
 import type { Prisma } from '@prisma/client';
 import { loadLearningPointCatalog } from '../features/learning-points/loader';
+import { withFallback, shouldUseMemoryStore } from '../lib/with-fallback';
+import { childService } from '../features/children/service';
+import { makeId } from '../lib/utils';
 
 export interface MonthlyWrongQuestionSummary {
   totalWrongQuestions: number;
@@ -20,12 +23,29 @@ export interface MonthlyWrongQuestionSummary {
 
 const DEMO_USER_ID = 'demo-user';
 
+function memoryMockSummary(input: { childId: string; subject: string; month: string }): MonthlyWrongQuestionSummary {
+  return {
+    totalWrongQuestions: 5,
+    topKnowledgePoints: [
+      { title: '两位数加法进位', wrongCount: 2, knowledgePointId: null },
+      { title: '阅读理解-内容概括', wrongCount: 2, knowledgePointId: null },
+      { title: '图形周长计算', wrongCount: 1, knowledgePointId: null },
+    ],
+    sampleQuestions: [
+      { questionText: '计算：36 + 27 = ?', knowledgePointTitle: '两位数加法进位' },
+      { questionText: '请概括短文主要内容。', knowledgePointTitle: '阅读理解-内容概括' },
+    ],
+  };
+}
+
 export const examService = {
   async getMonthlyWrongQuestionSummary(input: {
     childId: string;
     subject: string;
     month: string; // YYYY-MM
   }): Promise<MonthlyWrongQuestionSummary> {
+    if (shouldUseMemoryStore()) return memoryMockSummary(input);
+
     const startDate = new Date(`${input.month}-01T00:00:00Z`);
     const endDate = new Date(startDate);
     endDate.setMonth(endDate.getMonth() + 1);
@@ -48,7 +68,6 @@ export const examService = {
       throw new Error('该月没有错题，无法生成复习卷');
     }
 
-    // Aggregate by knowledge point
     const kpMap = new Map<string, { title: string; count: number; id: string | null }>();
     for (const wq of wrongQuestions) {
       const kpTitle = wq.knowledgePoint?.name || wq.knowledgePointText || '未分类知识点';
@@ -99,17 +118,14 @@ export const examService = {
   }) {
     const questionCount = input.questionCount || 20;
 
-    // 1. Check child and ownership
-    const child = await prisma.child.findFirst({
-      where: { id: input.childId, userId: DEMO_USER_ID }
-    });
+    const child = shouldUseMemoryStore()
+      ? await childService.get(input.childId)
+      : await prisma.child.findFirst({ where: { id: input.childId, userId: DEMO_USER_ID } });
     if (!child) throw new Error('孩子档案不存在或无权访问');
 
-    // 2. Get summary
     const summary = await this.getMonthlyWrongQuestionSummary(input);
 
-    // 3. Call AI
-    const catalog = await loadLearningPointCatalog({ grade: child.grade || 'G03', subject: input.subject, version: child.textbookVersion }).catch(() => null);
+    const catalog = await loadLearningPointCatalog({ grade: child.grade || 'G03', subject: input.subject, version: (child as any).textbookVersion || null }).catch(() => null);
     const learningPoints = catalog?.chapters.flatMap((chapter) => chapter.knowledgePoints).filter((point) =>
       summary.topKnowledgePoints.some((kp) => kp.title === point.title || kp.title.includes(point.title) || point.title.includes(kp.title))
     ).slice(0, 10) ?? [];
@@ -117,7 +133,7 @@ export const examService = {
     const prompt = await generateMonthlyWrongSetExamPrompt({
       grade: child.grade || '未知年级',
       subject: input.subject,
-      textbookVersion: child.textbookVersion || '通用版本',
+      textbookVersion: (child as any).textbookVersion || '通用版本',
       month: input.month,
       wrongCount: summary.totalWrongQuestions,
       topKnowledgePoints: summary.topKnowledgePoints.map(kp => kp.title),
@@ -128,7 +144,6 @@ export const examService = {
     const aiResponse = await aiClient.generateJson({
       task: 'monthly-exam',
       prompt,
-      // Metadata for tracking
       childId: input.childId,
       subject: input.subject,
       month: input.month,
@@ -142,7 +157,10 @@ export const examService = {
 
     const exam = parsed.data;
 
-    // 4. Create PracticeSession
+    if (shouldUseMemoryStore()) {
+      return { sessionId: makeId('exam') };
+    }
+
     const session = await prisma.practiceSession.create({
       data: {
         childId: input.childId,
@@ -164,7 +182,6 @@ export const examService = {
             explanation: q.explanation,
             analysis: q.explanation,
             knowledgePointText: q.knowledgePointTitle,
-            // Try to find knowledgePointId from summary if it matches title
             knowledgePointId: summary.topKnowledgePoints.find(kp => kp.title === q.knowledgePointTitle)?.knowledgePointId || null,
           }))
         }

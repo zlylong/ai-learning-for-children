@@ -3,6 +3,7 @@ import { aiClient } from '@/ai/ai-client';
 import { analyzeWrongQuestionsPrompt } from '@/ai/prompts/analyzeWrongQuestionsPrompt';
 import { childService } from '@/features/children/service';
 import { prisma } from '@/lib/prisma';
+import { now, makeId, normalizeTitle, titleFromText } from '@/lib/utils';
 import { withFallback, shouldUseMemoryStore } from '@/lib/with-fallback';
 import { analyzeWrongQuestionsSchema, type AnalyzeWrongQuestionsResult, type AnalyzedKnowledgePoint } from '@/schemas/analyzeWrongQuestionsSchema';
 import { examUploadCreateSchema, type ExamUploadCreateInput, type ExamUploadRecord, type WrongQuestionKnowledgePointRecord, type WrongQuestionRecord } from '@/schemas/examUploadSchema';
@@ -10,18 +11,6 @@ import { loadLearningPointCatalog } from '@/features/learning-points/loader';
 
 const DEMO_USER_ID = 'demo-user';
 const PENDING_KNOWLEDGE_POINT = '待确认知识点';
-
-function makeId(prefix: string) {
-  return `${prefix}_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 8)}`;
-}
-
-function now() {
-  return new Date().toISOString();
-}
-
-function titleFromText(text: string) {
-  return text.split(/\n+/).find(Boolean)?.slice(0, 24) || '试卷错题分析';
-}
 
 async function assertChildOwnedByCurrentUser(childId: string) {
   if (shouldUseMemoryStore()) {
@@ -61,10 +50,6 @@ function toUploadRecord(upload: {
     resultJson: upload.resultJson as AnalyzeWrongQuestionsResult | null,
     createdAt: upload.createdAt.toISOString(),
   };
-}
-
-function normalizeTitle(value: string) {
-  return value.trim().toLowerCase();
 }
 
 function confidenceForFallback(point: AnalyzedKnowledgePoint) {
@@ -216,18 +201,16 @@ function toWrongQuestionRecord(wrong: {
 }
 
 async function matchDbKnowledgePoint(tx: Prisma.TransactionClient, point: AnalyzedKnowledgePoint, subject: string) {
+  const wanted = normalizeTitle(point.title);
   const subjectScopedWhere = { name: point.title, chapter: { textbook: { subject } } };
   const exact = await tx.knowledgePoint.findFirst({ where: subjectScopedWhere });
   if (exact) return { knowledgePoint: exact, confidence: point.confidence };
 
-  const all = await tx.knowledgePoint.findMany({
-    where: { chapter: { textbook: { subject } } },
-    take: 200,
-  });
-  const wanted = normalizeTitle(point.title);
-  const fuzzy = all.find((item) => {
-    const title = normalizeTitle(item.name);
-    return title.includes(wanted) || wanted.includes(title);
+  const fuzzy = await tx.knowledgePoint.findFirst({
+    where: {
+      name: { contains: wanted, mode: 'insensitive' },
+      chapter: { textbook: { subject } },
+    },
   });
   if (fuzzy) return { knowledgePoint: fuzzy, confidence: point.confidence };
 

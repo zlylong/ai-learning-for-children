@@ -4,6 +4,7 @@ import { generatePracticeQuestionsPrompt } from '@/ai/prompts/generatePracticeQu
 import { childService } from '@/features/children/service';
 import { masteryFromAccuracy, practiceSessionCreateSchema, type MasteryStatus, type PracticeQuestionRecord, type PracticeSessionCreateInput, type PracticeSessionRecord } from '@/features/practice/schema';
 import { prisma } from '@/lib/prisma';
+import { now, makeId, normalizeAnswer } from '@/lib/utils';
 import { shouldUseMemoryStore } from '@/lib/with-fallback';
 import { generatedPracticeQuestionsSchema, type GeneratedPracticeQuestion } from '@/schemas/generatedPracticeQuestionsSchema';
 import { loadLearningPointCatalog } from '@/features/learning-points/loader';
@@ -18,10 +19,6 @@ const demoKnowledgePoints: Record<string, string> = {
   'kp-word-problem': '应用题数量关系',
   'kp-perimeter': '图形周长计算',
 };
-
-function now() { return new Date().toISOString(); }
-function id(prefix: string) { return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`; }
-function normalizeAnswer(value: string) { return value.trim().replace(/\s+/g, '').toLowerCase(); }
 
 function toAccuracyRatio(correctCount: number, totalCount: number) {
   return Number((correctCount / totalCount).toFixed(4));
@@ -141,19 +138,15 @@ async function generateQuestions(input: PracticeSessionCreateInput, knowledgePoi
   return parsed.data.questions;
 }
 
+type PracticeQuestionPublic = Omit<PracticeQuestionRecord, 'answer' | 'answerText' | 'explanation' | 'analysis'>;
+
 function hideAnswers(session: PracticeSessionRecord): PracticeSessionRecord {
   if (session.status === 'COMPLETED') return structuredClone(session);
-  return {
+  const hidden: Omit<PracticeSessionRecord, 'questions'> & { questions: PracticeQuestionPublic[] } = {
     ...structuredClone(session),
-    questions: session.questions.map((question) => {
-      const safeQuestion = { ...question } as Partial<PracticeQuestionRecord>;
-      delete safeQuestion.answer;
-      delete safeQuestion.answerText;
-      delete safeQuestion.explanation;
-      delete safeQuestion.analysis;
-      return safeQuestion as PracticeQuestionRecord;
-    }),
+    questions: session.questions.map(({ answer, answerText, explanation, analysis, ...rest }) => rest),
   };
+  return hidden as unknown as PracticeSessionRecord;
 }
 
 function validateCompleteAnswers(questionIds: string[], answers: Record<string, string>) {
@@ -280,7 +273,7 @@ export const practiceService = {
     const masteryBefore = await getMasteryBefore(input.childId, knowledgePoint.id, knowledgePoint.title);
 
     if (shouldUseMemoryStore()) {
-      const sessionId = id('practice');
+      const sessionId = makeId('practice');
       const session: PracticeSessionRecord = {
         id: sessionId,
         childId: input.childId,
@@ -295,7 +288,7 @@ export const practiceService = {
         endedAt: null,
         result: null,
         questions: questions.map((question, index) => ({
-          id: id(`pq${index + 1}`),
+          id: makeId(`pq${index + 1}`),
           sessionId,
           order: index + 1,
           stem: question.questionText,
